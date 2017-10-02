@@ -19,7 +19,7 @@
             padding-left: 15px;
             margin-right: auto;
             margin-left: auto;
-            background-color: #f2fdff;
+
 
 
         }
@@ -32,11 +32,11 @@
             background-color: #f2fdff;
         }
             .menu {
-
+                box-shadow: 10px 10px 10px 5px #888888;
                 padding-top: 15px;
                 background-color: white;
-                height: 50px;
-                border: dashed;
+                height: 70px;
+
             }
 
         .menublock1 {
@@ -45,14 +45,72 @@
         .menublock2 {
             float: left;
         }
-        ul {
 
-            list-style-type: none;
-        }
 
         ul li {
+            display:inline;
             float: left;
         }
+        .menuimg {
+
+            text-align: center;
+        }
+        .popular {
+            margin-top: 60px;
+            margin-bottom: 60px;
+        }
+        .container p {
+            font-weight: 600;
+            font-size: bold;
+            text-align: center;
+        }
+        .block1 {
+            float: left;
+        }
+        .block2 ul li  {
+            padding: 0 10px 0 10px;
+        }
+
+        .block2 {
+            float: left;
+        }
+        .block3 {
+            float: right;
+        }
+
+        a:link {
+            color: black;
+            background-color: transparent;
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: black;
+            background-color: transparent;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: red;
+            background-color: transparent;
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: yellow;
+            background-color: transparent;
+            text-decoration: underline;
+        }
+        .shopfrontmenuleft ul li {
+            padding: 0 10px 0 10px;
+        }
+        .shopfrontmenuleft {
+            float: left;
+        }
+        .shopfrontmenuright {
+            float: right;
+        }
+
     </style>
 </head>
 
@@ -60,36 +118,96 @@
  <!-- container -->
  <header>
      <div class="wrap">
-<div class="container">
-    <!-- header -->
-            <nav> <!---- nav ---->
-                <div class="menu">
-                    <div class="menublock1">
-                       <img src="images/book.png" alt="logo" style="width:45px; height:56px;">
-                    </div>
-                    <div class="menublock2">
-                        All about literature
-                        <br>
-                        Bookworm
-                    </div>
-                </div>
-            </nav> <!-- end nav -->
-            <div>
-                <!-- slider -->
-            </div>
+        <div class="container">
+            <!-- header -->
+                    <nav> <!---- nav ---->
+                        <div class="menu">
+                            <div class="block1">
+                                <div class="menublock1">
+                                   <img src="images/book.png" alt="logo" style="width:45px; height:56px;">
+                                </div>
+                                <div class="menublock2">
+                                    All about literature
+                                    <br>
+                                    Bookworm
+                                </div>
+                            </div>
+                            <div class="block2">
+                                <ul>
+                                    <li><a href="BOOKS">BOOKS</a></li>
+                                    <li><a href="WRITERS">WRITERS</a></li>
+                                    <li><a href="PUBLISHERS">PUBLISHERS</a></li>
+                                    <li><a href="BLOG">BLOG</a></li>
+                                    <li><a href="CONTACT">CONTACT</a></li>
+                                </ul>
+                            </div>
+                            <div class="block3">
+                                <ul>
+                                    <li><img src="images/Search.png" alt="Search" style=" height: 23px; width: 23px;"></li>
+                                    <li><img src="images/Shoppingcart.png" alt="shoppingcart" style=" width: 22px; height: 20px;"></li>
+                                    <li><img src="images/Userpic.png" alt="" style="width: 39px; height: 39px;"></li>
+                                </ul>
+                            </div>
+                        </div> <!-- end menu -->
 
-    </div> <!-- end container -->
-     </div> <!-- end wrap -->
-    </header> <!-- end header -->
+                    </nav> <!-- end nav -->
+        </div> <!-- end container -->
+    </div> <!-- end wrap -->
+ </header> <!-- end header -->
+            <div class="menuimg">
+                <img src="images/Banner.png" alt="slider" style="height: 1080px; width: 1920px;">
+            </div>
+ 
+ <div class="container">
+         <div class="popular">
+             <div class="picture1">
+                 <img src="images/Popular.png" alt="picture" style="width: 1120px; height: 272px " >
+             </div>
+             <div class="picture2">
+                 <img src="" alt="">
+             </div>
+        </div>
+ </div>
+
+ <div class="container">
+     <p>Shopfront</p>
+    <nav>
+        <div class="shopfrontmenuleft">
+        <ul>
+            <li><a href="All">All</a></li>
+            <li><a href="Art & Photography">Art & Photography</a></li>
+            <li><a href="">Audio books</a></li>
+            <li><a href="">Biography</a></li>
+            <li><a href="">Business</a></li>
+            <li><a href="">Children Book</a></li>
+        </ul>
+        </div>
+        <div class="shopfrontmenuright">
+            <ul>
+                <li><a href="Popular">Popular</a></li>
+            </ul>
+        </div>
+    </nav>
+ </div> <!-- end container -->
+
+     <div class="books">
+         <ul>
+             <li>
+                 <a href="https://placeholder.com"><img src="http://via.placeholder.com/145x60"></a>
+             </li>
+         </ul>
+     </div>
+
+ <div class="container">
+ <div class="button">
+     <button>All books</button>
+ </div>
+ </div> <!-- end container -->
+
+
     <!-- footer -->
     <div class="footer">
     </div>
-
-
-
-
-
-
 
 </body>
 </html>
