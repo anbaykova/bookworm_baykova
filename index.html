@@ -14,14 +14,11 @@
         }
 
         .container {
-            width: 60%;
+            width: 65%;
             padding-right: 15px;
             padding-left: 15px;
             margin-right: auto;
             margin-left: auto;
-
-
-
         }
         nav {
             padding-top: 30px;
@@ -101,6 +98,9 @@
             background-color: transparent;
             text-decoration: underline;
         }
+        .shopfrontmenu {
+            float: left;
+        }
         .shopfrontmenuleft ul li {
             padding: 0 10px 0 10px;
         }
@@ -110,7 +110,25 @@
         .shopfrontmenuright {
             float: right;
         }
-
+        .container .button {
+           float: left;
+        }
+        .button {
+            display: inline;
+        }
+        .books {
+            float: left;
+        }
+        .books ul li a {
+            float: left;
+            padding: 0 5px 0 5px;
+        }
+        .clearfix {
+            clear: both;
+        }
+        .popopularauthors {
+            height: inherit;
+        }
     </style>
 </head>
 
@@ -172,39 +190,111 @@
  <div class="container">
      <p>Shopfront</p>
     <nav>
-        <div class="shopfrontmenuleft">
-        <ul>
-            <li><a href="All">All</a></li>
-            <li><a href="Art & Photography">Art & Photography</a></li>
-            <li><a href="">Audio books</a></li>
-            <li><a href="">Biography</a></li>
-            <li><a href="">Business</a></li>
-            <li><a href="">Children Book</a></li>
-        </ul>
-        </div>
-        <div class="shopfrontmenuright">
+        <div class="shopfrontmenu">
+            <div class="shopfrontmenuleft">
             <ul>
-                <li><a href="Popular">Popular</a></li>
+                <li><a href="All">All</a></li>
+                <li><a href="Art & Photography">Art & Photography</a></li>
+                <li><a href="">Audio books</a></li>
+                <li><a href="">Biography</a></li>
+                <li><a href="">Business</a></li>
+                <li><a href="">Children Book</a></li>
             </ul>
+            </div>
+            <div class="shopfrontmenuright">
+                <ul>
+                    <li><a href="Popular">Popular</a></li>
+                </ul>
+            </div>
         </div>
     </nav>
  </div> <!-- end container -->
 
+ <div class="container">
      <div class="books">
          <ul>
              <li>
-                 <a href="https://placeholder.com"><img src="http://via.placeholder.com/145x60"></a>
+                 <a href=""><img src="images/Book1.png" alt="" style="width: 146px; height: 298px;"></a>
+             </li>
+             <li>
+                 <a href=""><img src="images/Book2.png" alt="" style="width: 146px; height: 298px;"></a>
+             </li>
+             <li>
+                 <a href=""><img src="images/Book3.png" alt="" style="width: 146px; height: 298px;"></a>
+             </li>
+             <li>
+                 <a href=""><img src="images/Book4.png" alt="" style="width: 146px; height: 298px;"></a>
+             </li>
+             <li>
+                 <a href=""><img src="images/Book5.png" alt="" style="width: 146px; height: 298px;"></a>
+             </li>
+             <li>
+                 <a href=""><img src="images/Book6.png" alt="" style="width: 146px; height: 298px;"></a>
              </li>
          </ul>
+
      </div>
+     <div class="books">
+         <ul>
+             <li>
+                 <a href=""><img src="images/Book7.png" alt="" style="width: 146px; height: 298px;"></a>
+             </li>
+             <li>
+                 <a href=""><img src="images/Book8.png" alt="" style="width: 146px; height: 298px;"></a>
+             </li>
+             <li>
+                 <a href=""><img src="images/Book9.png" alt="" style="width: 146px; height: 298px;"></a>
+             </li>
+             <li>
+                 <a href=""><img src="images/Book10.png" alt="" style="width: 146px; height: 298px;"></a>
+             </li>
+             <li>
+                 <a href=""><img src="images/Book11.png" alt="" style="width: 146px; height: 298px;"></a>
+             </li>
+             <li>
+                 <a href=""><img src="images/Book12.png" alt="" style="width: 146px; height: 298px;"></a>
+             </li>
+         </ul>
+
+     </div>
+     <div class="books">
+         <ul>
+             <li>
+                 <a href=""><img src="images/Book13.png" alt="" style="width: 146px; height: 298px;"></a>
+             </li>
+             <li>
+                 <a href=""><img src="images/Book14.png" alt="" style="width: 146px; height: 298px;"></a>
+             </li>
+             <li>
+                 <a href=""><img src="images/Book15.png" alt="" style="width: 146px; height: 298px;"></a>
+             </li>
+             <li>
+                 <a href=""><img src="images/Book16.png" alt="" style="width: 146px; height: 298px;"></a>
+             </li>
+             <li>
+                 <a href=""><img src="images/Book17.png" alt="" style="width: 146px; height: 298px;"></a>
+             </li>
+             <li>
+                 <a href=""><img src="images/Book18.png" alt="" style="width: 146px; height: 298px;"></a>
+             </li>
+         </ul>
+
+     </div>
+ </div> <!-- end container -->
+ <div class="clearfix"></div>
 
  <div class="container">
- <div class="button">
-     <button>All books</button>
- </div>
+     <div class="button">
+         <button>All books</button>
+     </div>
  </div> <!-- end container -->
-
-
+<div class="wrap">
+<div class="container">
+    <div class="popopularauthors">
+        <img src="images/popularauthors.png" alt="pop" style="width: 1020px; height: 490px;">
+    </div>
+</div>
+</div> <!-- end wrap -->
     <!-- footer -->
     <div class="footer">
     </div>
