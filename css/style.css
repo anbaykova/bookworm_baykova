@@ -1,6 +1,6 @@
 
 
-@import url('https://fonts.googleapis.com/css?family=Amiri|Lato|Ramaraja|Work+Sans|Yrsa');
+@import url('https://fonts.googleapis.com/css?family=Amiri|Lato|Ramaraja|Rozha+One|Work+Sans|Yrsa');
 
 * {
     margin: 0;
@@ -269,7 +269,7 @@ span.font_vote {
     line-height: 58pt;
     color: #555963;
 }
-span.shopfront {
+span.header {
     font-family: 'Ramaraja', serif;
     font-size: 42pt;
     line-height: 32pt;
@@ -283,7 +283,7 @@ span.font_yrsa {
     line-height: 32pt;
     color: #555963;
 }
-span.font_menu_shop {
+span.font_menu {
     font-family: 'Lato', sans-serif;
     font-size: 16pt;
     line-height: 32p;
@@ -299,4 +299,14 @@ span.books_font_orange {
     font-size: 16pt;
     line-height: 30pt;
     color: #dd9327;
+}
+span.aboutliterature {
+    font-family: 'Lato', sans-serif;
+    font-size: 11pt;
+    line-height: 37.46pt;
+}
+span.bookworm {
+    font-family: 'Rozha One', serif;
+    font-size: 29pt;
+    line-height: 37.46pt;
 }
