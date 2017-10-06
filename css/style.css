@@ -114,10 +114,11 @@ a:active {
     display: block;
 }
 .booktext {
+    display: block;
     float: right;
     width: 604px;
     height: 700px;
-    display: block;
+
 }
 
 
@@ -136,7 +137,7 @@ a:active {
 
 }
 .shopfrontmenu {
-    float: left;
+
 }
 .shopfronttext p {
     text-align: center;
@@ -231,6 +232,8 @@ span.fontcaption_orange {
     color: #eaad54;
 }
 span.font_slider_grey {
+    display: inherit;
+    text-align: left;
     line-height: 58pt;
     font-family: 'Ramaraja', serif;
     color: #555963;
@@ -259,4 +262,41 @@ span.fontmenu {
     font-weight: bold;
     line-height: 37.46pt;
 
+}
+span.font_vote {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 15pt;
+    line-height: 58pt;
+    color: #555963;
+}
+span.shopfront {
+    font-family: 'Ramaraja', serif;
+    font-size: 42pt;
+    line-height: 32pt;
+    color: #555963;
+}
+span.font_yrsa {
+    display: block;
+    margin-top: 50px;
+    font-family: 'Yrsa', serif;
+    font-size: 38pt;
+    line-height: 32pt;
+    color: #555963;
+}
+span.font_menu_shop {
+    font-family: 'Lato', sans-serif;
+    font-size: 16pt;
+    line-height: 32p;
+}
+span.books_font_grey {
+    font-family: 'Ramaraja', serif;
+    font-size: 21pt;
+    line-height: 30pt;
+    color: #555963;
+}
+span.books_font_orange {
+    font-family: 'Amiri', serif;
+    font-size: 16pt;
+    line-height: 30pt;
+    color: #dd9327;
 }
