@@ -32,7 +32,7 @@ nav {
     padding-top: 30px;
 }
 .wrap {
-
+    margin: 0 auto;
     height: 150px;
     background-color: #f2fdff;
 }
@@ -183,8 +183,12 @@ a:active {
 .literaturenews {
     float: left;
 }
-#literature_news ul li {
+.literature_news ul li {
     width: 300px;
+}
+.literature_news_autor {
+    margin: 10 px 10px;
+    float: left;
 }
 .popularseries p {
     text-align: center;
@@ -225,6 +229,7 @@ span.fontcaption {
 span.fontcaption_orange {
     font-family: 'Amiri', serif;
     font-size: 18pt;
+    line-height: 22pt;
     color: #eaad54;
 }
 span.font_slider_grey {
@@ -341,4 +346,38 @@ span.fontcaption_text {
     line-height: 29pt;
     color: #555963;
     font-style: italic;
+}
+span.fontcaption_grey {
+    font-family: 'Lato', sans-serif;
+    font-size: 13pt;
+    color: #bfbfbf;
+    line-height: 22pt;
+}
+.slide_info {
+    min-width: 1060px;
+    margin: 0 auto;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.block_news {
+    width: 240px;
+    float: left;
+}
+.button_all_news {
+    text-align: center;
+    display: inline-block;
+}
+span.text_info {
+    font-family: 'Yrsa', serif;
+    color: #555963;
+    line-height: 29pt;
+    font-size: 21pt;
+}
+span.slide_block1 {
+    float: left;
+}
+.popular_series {
+    margin: 30px 0;
+    text-align: center;
 }
