@@ -220,6 +220,7 @@ span.fontcaption {
     font-family: 'Ramaraja', serif;
     font-size: 28pt;
     color: #555963;
+    line-height: 30pt;
 }
 span.fontcaption_orange {
     font-family: 'Amiri', serif;
