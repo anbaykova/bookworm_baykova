@@ -2,222 +2,103 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Main</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta property="og:title" content="">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="" />
+    <title>Bookworm</title>
+    <link rel="stylesheet" href="css/index.css">
 
-    <style>
-        html {
-            width: 100%;
-        }
-        body {
-            margin: 0 auto;
-
-        }
-
-        .container {
-            width: 65%;
-            padding-right: 15px;
-            padding-left: 15px;
-            margin-right: auto;
-            margin-left: auto;
-        }
-        nav {
-            padding-top: 30px;
-        }
-        .wrap {
-
-            height: 150px;
-            background-color: #f2fdff;
-        }
-            .menu {
-                box-shadow: 0 0 10px rgba(0,0,0,0.5);
-                padding-top: 15px;
-                background-color: white;
-                height: 70px;
-
-            }
-
-        .menublock1 {
-            float: left;
-        }
-        .menublock2 {
-            float: left;
-        }
-
-
-        ul li {
-            display:inline;
-            float: left;
-        }
-        .menuimg {
-
-            text-align: center;
-        }
-        .popular {
-            margin-top: 60px;
-            margin-bottom: 60px;
-        }
-        .container p {
-            font-weight: bold;
-            font-size: 40px;
-            text-align: center;
-        }
-        .block1 {
-            float: left;
-        }
-        .block2 ul li  {
-            padding: 0 10px 0 10px;
-        }
-
-        .block2 {
-            float: left;
-        }
-        .block3 {
-            float: right;
-        }
-
-        a:link {
-            color: black;
-            background-color: transparent;
-            text-decoration: none;
-        }
-
-        a:visited {
-            color: black;
-            background-color: transparent;
-            text-decoration: none;
-        }
-
-        a:hover {
-            color: red;
-            background-color: transparent;
-            text-decoration: underline;
-        }
-
-        a:active {
-            color: yellow;
-            background-color: transparent;
-            text-decoration: underline;
-        }
-        .shopfrontmenu {
-            float: left;
-        }
-        .shopfrontmenuleft ul li {
-            padding: 0 10px 0 10px;
-        }
-        .shopfrontmenuleft {
-            float: left;
-        }
-        .shopfrontmenuright {
-            float: right;
-        }
-        .container .button {
-           float: left;
-        }
-        .button {
-            display: inline;
-        }
-        .books {
-            float: left;
-        }
-        .books ul li a {
-            float: left;
-            padding: 0 5px 0 5px;
-        }
-        .clearfix {
-            clear: both;
-        }
-        .popopularauthors {
-            height: inherit;
-            float: left;
-        }
-        .button {
-            text-align: center;
-        }
-        .discount {
-            background-image: url("images/books.png");
-            width: 1134px;
-            height: 908px;
-        }
-        .literaturenews {
-            float: left;
-        }
-        .popularseries p {
-            text-align: center;
-        }
-        .popularseries ul li {
-            float: left;
-        }
-    </style>
 </head>
-
 <body>
- <!-- container -->
- <header>
-     <div class="wrap">
+<header>
+    <div class="wrap">
+        <!-- container -->
         <div class="container">
             <!-- header -->
-                    <nav> <!---- nav ---->
-                        <div class="menu">
-                            <div class="block1">
-                                <div class="menublock1">
-                                   <img src="images/book.png" alt="logo" style="width:45px; height:56px;">
-                                </div>
-                                <div class="menublock2">
-                                    All about literature
-                                    <br>
-                                    Bookworm
-                                </div>
-                            </div>
-                            <div class="block2">
-                                <ul>
-                                    <li><a href="BOOKS">BOOKS</a></li>
-                                    <li><a href="WRITERS">WRITERS</a></li>
-                                    <li><a href="PUBLISHERS">PUBLISHERS</a></li>
-                                    <li><a href="BLOG">BLOG</a></li>
-                                    <li><a href="CONTACT">CONTACT</a></li>
-                                </ul>
-                            </div>
-                            <div class="block3">
-                                <ul>
-                                    <li><img src="images/Search.png" alt="Search" style=" height: 23px; width: 23px;"></li>
-                                    <li><img src="images/Shoppingcart.png" alt="shoppingcart" style=" width: 22px; height: 20px;"></li>
-                                    <li><img src="images/Userpic.png" alt="" style="width: 39px; height: 39px;"></li>
-                                </ul>
-                            </div>
-                        </div> <!-- end menu -->
+            <nav> <!---- nav ---->
+                <div class="menu">
+                    <div class="block1">
+                        <div class="menublock1">
+                            <img src="img/book.png" alt="logo" style="width:45px; height:56px;">
+                        </div>
+                        <div class="menublock2">
+                            All about literature
+                            <br>
+                            Bookworm
+                        </div>
+                    </div>
+                    <div class="block2">
+                        <ul>
+                            <li><a href="BOOKS">BOOKS</a></li>
+                            <li><a href="WRITERS">WRITERS</a></li>
+                            <li><a href="PUBLISHERS">PUBLISHERS</a></li>
+                            <li><a href="BLOG">BLOG</a></li>
+                            <li><a href="CONTACT">CONTACT</a></li>
+                        </ul>
+                    </div>
+                    <div class="block3">
+                        <ul>
+                            <li><img src="img/icons_svg/search.svg" alt="Search" style=" height: 23px; width: 23px;"></li>
+                            <li><img src="img/icons_svg/shoppingcart.svg" alt="shoppingcart" style=" width: 22px; height: 20px;"></li>
+                            <li><img src="img/Userpic.png" alt="Userpic" style="width: 39px; height: 39px;"></li>
+                        </ul>
+                    </div>
+                </div> <!-- end menu -->
 
-                    </nav> <!-- end nav -->
+            </nav> <!-- end nav -->
         </div> <!-- end container -->
     </div> <!-- end wrap -->
- </header> <!-- end header -->
-            <div class="menuimg">
-                <img src="images/Banner.png" alt="slider" style="height: 1080px; width: 1920px;">
+</header> <!-- end header -->
+
+<div class="bookslide">
+    <div class="bookschoice">
+        <img src="img/bookharry.png" alt="bookharry" style="width: 496px; height: 679px; ">
+    </div>
+    <div class="booktext">
+        <h1><span class="font_slider_grey">Harry Potter And  <br>
+        The Sorcerer's Stone</span></h1>
+        <p><span class="font_slider_orange">By Joan Rowling </span>  <span class="font_slider_vote">| 5 *</span></p>
+        <span class="font_slider_comment"> Vestibulum rutrum quam vitae fringilla tincidunt.
+            Suspendisse nec tortor urna.
+            Ut laoreet sodales nisi, quis iaculis nulla iaculis vitae.</span>
+
+    </div>
+</div>
+
+    <div class="container">
+
+            <div class="presentation_book1">
+                <p> The Da Vinci Code </p>
+                <p> Dan Brown 5 * </p>
+                <img src="img/bitmap.png" alt="Bitmap" style="width: 160px; height: 249px;">
             </div>
+            <div class="presentation_book2">
+                <p>A major update in the Detective section</p>
+                <img src="img/images.png" alt="Images" style="width: 180px; height: 272px;">
 
- <div class="container">
-         <div class="popular">
-             <div class="picture1">
-                 <img src="images/Popular.png" alt="picture" style="width: 1120px; height: 272px " >
-             </div>
-             <div class="picture2">
-                 <img src="" alt="">
-             </div>
-        </div>
- </div>
+            </div>
+    </div>
 
- <div class="container">
-     <p>Shopfront</p>
+<div class="container">
+    <div class="shopfronttext">
+        <p>Shopfront</p>
+    </div>
+
     <nav>
         <div class="shopfrontmenu">
             <div class="shopfrontmenuleft">
-            <ul>
-                <li><a href="All">All</a></li>
-                <li><a href="Art & Photography">Art & Photography</a></li>
-                <li><a href="">Audio books</a></li>
-                <li><a href="">Biography</a></li>
-                <li><a href="">Business</a></li>
-                <li><a href="">Children Book</a></li>
-            </ul>
+                <ul>
+                    <li><a href="All">All</a></li>
+                    <li><a href="Art & Photography">Art & Photography</a></li>
+                    <li><a href="">Audio books</a></li>
+                    <li><a href="">Biography</a></li>
+                    <li><a href="">Business</a></li>
+                    <li><a href="">Children Book</a></li>
+                </ul>
             </div>
             <div class="shopfrontmenuright">
                 <ul>
@@ -226,132 +107,203 @@
             </div>
         </div>
     </nav>
- </div> <!-- end container -->
+</div> <!-- end container -->
 
- <div class="container">
-     <div class="books">
-         <ul>
-             <li>
-                 <a href=""><img src="images/Book1.png" alt="" style="width: 146px; height: 298px;"></a>
-             </li>
-             <li>
-                 <a href=""><img src="images/Book2.png" alt="" style="width: 146px; height: 298px;"></a>
-             </li>
-             <li>
-                 <a href=""><img src="images/Book3.png" alt="" style="width: 146px; height: 298px;"></a>
-             </li>
-             <li>
-                 <a href=""><img src="images/Book4.png" alt="" style="width: 146px; height: 298px;"></a>
-             </li>
-             <li>
-                 <a href=""><img src="images/Book5.png" alt="" style="width: 146px; height: 298px;"></a>
-             </li>
-             <li>
-                 <a href=""><img src="images/Book6.png" alt="" style="width: 146px; height: 298px;"></a>
-             </li>
-         </ul>
+<div class="container">
+    <div class="books">
+        <ul>
+            <li>
+                <a href=""><img src="img/books/book1.png" alt="book" style="width: 146px; height: 227px;"></a>
+                <p>Opaque Region </p>
+                <p>Carlos Fuentos</p>
+            </li>
+            <li>
+                <a href=""><img src="img/books/2.png" alt="book" style="width: 146px; height: 227px;"></a>
+                <p>The Meandering Corpsep </p>
+                    <p>Richard & Prather</p>
+            </li>
+            <li>
+                <a href=""><img src="img/books/5.png" alt="book" style="width: 146px; height: 227px;"></a>
+                <p>English Detective Stories </p>
+                     <p> Patricia Craig</p>
+            </li>
+            <li>
+                <a href=""><img src="img/books/3.png" alt="book" style="width: 146px; height: 227px;"></a>
+                <p>Die Like a Dog</p>
+                <p> Brett Halliday</p>
+            </li>
+            <li>
+                <a href=""><img src="img/books/6.png" alt="book" style="width: 146px; height: 227px;"></a>
+                <p>1984 </p>
+                <p>George Orwell</p>
+            </li>
+            <li>
+                <a href=""><img src="img/books/33.png" alt="book" style="width: 146px; height: 227px;"></a>
+                <p>The Lord of the Rings</p>
+                <p>J.R.R. Tolkien</p>
 
-     </div>
-     <div class="books">
-         <ul>
-             <li>
-                 <a href=""><img src="images/Book7.png" alt="" style="width: 146px; height: 298px;"></a>
-             </li>
-             <li>
-                 <a href=""><img src="images/Book8.png" alt="" style="width: 146px; height: 298px;"></a>
-             </li>
-             <li>
-                 <a href=""><img src="images/Book9.png" alt="" style="width: 146px; height: 298px;"></a>
-             </li>
-             <li>
-                 <a href=""><img src="images/Book10.png" alt="" style="width: 146px; height: 298px;"></a>
-             </li>
-             <li>
-                 <a href=""><img src="images/Book11.png" alt="" style="width: 146px; height: 298px;"></a>
-             </li>
-             <li>
-                 <a href=""><img src="images/Book12.png" alt="" style="width: 146px; height: 298px;"></a>
-             </li>
-         </ul>
+            </li>
+        </ul>
 
-     </div>
-     <div class="books">
-         <ul>
-             <li>
-                 <a href=""><img src="images/Book13.png" alt="" style="width: 146px; height: 298px;"></a>
-             </li>
-             <li>
-                 <a href=""><img src="images/Book14.png" alt="" style="width: 146px; height: 298px;"></a>
-             </li>
-             <li>
-                 <a href=""><img src="images/Book15.png" alt="" style="width: 146px; height: 298px;"></a>
-             </li>
-             <li>
-                 <a href=""><img src="images/Book16.png" alt="" style="width: 146px; height: 298px;"></a>
-             </li>
-             <li>
-                 <a href=""><img src="images/Book17.png" alt="" style="width: 146px; height: 298px;"></a>
-             </li>
-             <li>
-                 <a href=""><img src="images/Book18.png" alt="" style="width: 146px; height: 298px;"></a>
-             </li>
-         </ul>
-
-     </div>
- </div> <!-- end container -->
-
-
- <div class="container">
-     <div class="button">
-         <button>All books</button>
-     </div>
- </div> <!-- end container -->
-<div class="wrap">
-
-    <div class="popopularauthors">
-        <img src="images/popularauthors.png" alt="pop" style="width: 1020px; height: 490px;">
     </div>
+    <div class="books">
+        <ul>
+            <li>
+                <a href=""><img src="img/books/1.png" alt="book" style="width: 146px; height: 227px;"></a>
+                <p>Opaque Region</p> <p>Carlos Fuentes</p>
+            </li>
+            <li>
+                <a href=""><img src="img/books/4.png" alt="book" style="width: 146px; height: 227px;"></a>
+                <p>The Meandering Corpse</p> <p>Richard Prather</p>
+            </li>
+            <li>
+                <a href=""><img src="img/books/9.png" alt="book" style="width: 146px; height: 227px;"></a>
+                <p>English Detective Stories</p> <p>Patricia Craig</p>
+            </li>
+            <li>
+                <a href=""><img src="img/books/7.png" alt="book" style="width: 146px; height: 227px;"></a>
+                <p>Die Like a Dog</p>
+                <p>Brett Halliday</p>
+            </li>
+            <li>
+                <a href=""><img src="img/books/10.png" alt="book" style="width: 146px; height: 227px;"></a>
+                <p>1984</p>
+                <p>George Orwell</p>
+            </li>
+            <li>
+                <a href=""><img src="img/books/11.png" alt="book" style="width: 146px; height: 227px;"></a>
+                <p>The Lord of the Rings</p>
+                <p>J.R.R. Tolkien</p>
+            </li>
+        </ul>
 
-</div> <!-- end wrap -->
-
- <div class="container">
-     <div class="literaturenews">
-         <img src="images/literaturenews.png" alt="" style="width: 1210px; height: 1256px; ">
-     </div>
- </div>
-
-
-    <div class="comingsoon">
-        <img src="images/comingsoon.png" alt="" style="width: 1920px; height: 717px">
     </div>
+    <div class="books">
+        <ul>
+            <li>
+                <a href=""><img src="img/books/12.png" alt="book" style="width: 146px; height: 227px;"></a>
+                <p>The french lieutenents woman</p>
+                <p>J.R.R. John Fowles</p>
+            </li>
+            <li>
+                <a href=""><img src="img/books/13.png" alt="book" style="width: 146px; height: 227px;"></a>
+                <p>Fantastic beasts</p>
+                <p>J.K. Rowling</p>            </li>
+            <li>
+                <a href=""><img src="img/books/14.png" alt="book" style="width: 146px; height: 227px;"></a>
+                <p>Hollow city</p>
+                <p>Ransom Riggs</p>            </li>
+            <li>
+                <a href=""><img src="img/books/15.png" alt="book" style="width: 146px; height: 227px;"></a>
+                <p>The collector</p>
+                <p>John Fowles</p>            </li>
+            <li>
+                <a href=""><img src="img/books/16.png" alt="book" style="width: 146px; height: 227px;"></a>
+                <p>The magus</p>
+                <p>John Fowles</p>            </li>
+            <li>
+                <a href=""><img src="img/books/17.png" alt="book" style="width: 146px; height: 227px;"></a>
+                <p>Everything I Never Told You</p>
+                <p>Celeste Ng</p>            </li>
+        </ul>
 
- <div class="container">
-     <div class="discount">
-         <div class="infodiscount">
+    </div>
+    <button>All books</button>
+</div> <!-- end container -->
 
-         </div>
-     </div>
- </div>
-    <div class="content">
-        <div class="popularseries">
-        <p>Popular series</p>
+<div class="container">
+    <nav class="menupopular">
+        <ul>
+            <li><a href="">Stefen King</a>S</li>
+            <li><a href="">John Fowles</a></li>
+            <li><a href="">James Patterson</a></li>
+            <li><a href="">John Crisham</a></li>
+            <li><a href="">Danielle Stil</a></li>
+            <li><a href="">Ernest Hemingwey</a></li>
+            <li><a href="">Dan Brown</a></li>
+            <li><a href="">Rich Riordan</a></li>
+        </ul>
+
+
+    </nav>
+
+    <div id="literature_writes">
+        <div class="comment1">
+            <div>John Fowles</div>
+            <br>
+            <div>31 March 1926 Leigh-on-Sea, Essex, England | 5*</div>
+            <br>
+            <div>You are right. He did not. But  millions of Germans did betray their selves.
+                That was the tragedy. Not that one man had the courage to be evil.
+                But that milions had not the courage. </div>
+        </div>
+        <div class="comment">
+            <img src="img/fowles_djaongly.png" alt="fowles_djaongly" style="width: 331px; height: 497px;">
+        </div>
+        <div class="comment">
+            <div>About</div>
+            <br>
+            <p>In hac habitasse platea dictumst. Vivamus adipiscing fermentum </p>
+            <br>
+            <div>Books</div>
+            <img src="img/b1.png" alt="book" style="width: 73px; height: 114px;">
+            <img src="img/b2.png" alt="book" style="width: 73px; height: 114px;">
+            <img src="img/b3.png" alt="book" style="width: 73px; height: 114px;">
+            <img src="img/b4.png" alt="book" style="width: 73px; height: 114px;">
+            <br>
+            <div>to writer page</div>
+        </div>
+
     </div>
-    </div>
- <div class="container">
+</div>
+
+<div class="container">
+    <h1>Literature news</h1>
+ <div id="literature_news">
      <ul>
-         <li><img src="images/bitmap.png" alt="" style="width: 160px; height: 249px;">
+         <li><a><img src="img/111.png" alt="picture" style="width: 342px; height: 553px;"></a>
+             <p><span class="fontcaption">How literature can help people cope with mental health problems</p></span>
+             <p><span class="fontcaption_orange">Nathan Sandoval | 15.10.16</span></p>
          </li>
-         <li><img src="images/book14.png" alt="" style="width: 160px; height: 249px;"></li>
-
-         <li><img src="images/childrensliterature.png" alt="" style="width: 160px; height: 249px;"></li>
-         <li><img src="images/1.png" alt="" style="width: 160px; height: 249px;"></li>
-
-
+         <li><a><img src="img/222.png" alt="picture" style="width: 342px; height: 553px;"></a>
+             <p><span class="fontcaption">Sales of 'Harry Potter and the Cursed Child' script book hit </span></p>
+             <p><span class="fontcaption_orange">Jacqueline Taylor | 23.10.16</span></p>
+         </li>
+         <li><a><img src="img/333.png" alt="picture" style="width: 342px; height: 553px;"></a>
+             <p><span class="fontcaption">Marvel introduces character Riri Williams, a woman who takes ov</span></p>
+             <p><span class="fontcaption_orange">Elizabeth Dixon | 16.10.15 </span></p>
+         </li>
      </ul>
- </div>
-    <!-- footer -->
-    <div class="footer">
+     </div>
+</div>
+
+<div class="container">
+    <div class="block_news">
+        <p>Association of Former Agents of the United States Secret Service
+            denounces anti-Clinton tell-all book - Politico</p>
+        <p>Lori Steves | 15.10.16</p>
     </div>
+    <div class="block_news">
+        <p>Edmonton bookseller, publisher and activist Mel Hurtig dies at 84 -CBC</p>
+        <p>Michelle Taylor | 28.10.16</p>
+    </div>
+    <div class="block_news">
+        <p>5 Britons, 5 Americans, 2 Canadians and South African on short list for English
+            literature's Man Booker Prize </p>
+        <p>Nicholas Guerrero | 15.10.16</p>
+    </div>
+    <div class="block_news">
+        <p> BBC to produce Les Miserables as 6 - part TV special
+            - The Guardian</span></p>
+        <p>Cyntia Simmons | 28.10.16</p>
+    </div>
+    <button>All news</button>
+</div>
+
+
+
+
 
 </body>
 </html>
+

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="32px" height="26px" viewBox="0 0 32 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>Arrow right</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Bookshop-Desktop-HD_main" transform="translate(-1499.000000, -570.000000)" stroke-width="2" stroke="#45474B">
+            <g id="Banner" transform="translate(-226.000000, 0.000000)">
+                <g id="Next-book" transform="translate(1725.000000, 301.000000)">
+                    <g id="Arrow-right" transform="translate(0.000000, 270.000000)">
+                        <polyline id="Shape" points="18.5348837 0 30 12.1395349 18.5348837 24.2790698"></polyline>
+                        <path d="M29,12 L0,12" id="Shape"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
