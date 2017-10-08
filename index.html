@@ -15,12 +15,15 @@
 </head>
 <body>
 <header>
+    <!-- fixme: Излишняя вложенность элементов -->
     <div class="wrap">
         <!-- container -->
         <div class="container">
             <!-- header -->
+            <!-- fixme: Лишние символы -- в комментарии -->
             <nav> <!---- nav ---->
                 <div class="menu">
+                    <!-- fixme: Имена класов должны быть "говорящим". Не понятно что такое block1. Исправить тут и дальше-->
                     <div class="block1">
                         <div class="menublock1">
                             <img src="img/icons_svg/logo.svg" alt="logo">
@@ -28,6 +31,8 @@
                     </div>
                     <div class="block2">
                         <ul>
+                            <!-- fixme: Аттрибут указывать так: href="#". Стилизация прописными буквами описывается в css. -->
+                            <!-- fixme: Излишняя вложенность элементов -->
                             <li><span class="fontmenu"><a href="BOOKS">BOOKS</a></span></li>
                             <li><span class="fontmenu"><a href="WRITERS">WRITERS</a></span></li>
                             <li><span class="fontmenu"><a href="PUBLISHERS">PUBLISHERS</a></span></li>
@@ -37,6 +42,7 @@
                     </div>
                     <div class="block3">
                         <ul>
+                            <!-- fixme: Стили пишутся в .css файлах. Нужно збегать инлйновых стилей -->
                             <li><img src="img/icons_svg/search.svg" alt="Search" style=" height: 23px; width: 23px;"></li>
                             <li><img src="img/icons_svg/shoppingcart.svg" alt="shoppingcart" style=" width: 22px; height: 20px;"></li>
                             <li><img src="img/Userpic.png" alt="Userpic" style="width: 39px; height: 39px;"></li>
@@ -55,12 +61,16 @@
         <img src="img/bookharry.png" alt="bookharry" style="width: 496px; height: 679px; ">
     </div>
     <div class="booktext">
+        <!-- fixme: Излишняя вложенность элементов -->
+        <!-- fixme: Тег br не должен использоватся для стилизации -->
         <p><span class="font_slider_grey">Harry Potter And  <br>
         The Sorcerer's Stone</span></p>
         <p><span class="font_slider_orange">By Joan Rowling </span>  <span class="font_slider_vote">| 5 *</span></p>
+        <!-- fixme: Класс должен описывать назначение элемента, а не его стилевые характеристики -->
         <span class="font_slider_comment"> Vestibulum rutrum quam vitae fringilla tincidunt.
             Suspendisse nec tortor urna.
             Ut laoreet sodales nisi, quis iaculis nulla iaculis vitae.</span>
+        <!-- fixme: Подобный класс должен расширать стили, а не задавать отдельно -->
         <div><span class="font_yrsa">$100</span></div>
     </div>
 
@@ -70,6 +80,7 @@
 
             <div class="presentation_book1">
                 <p><span class="fontcaption"> The Da Vinci Code </span> </p>
+                <!-- fixme: Класс должен описывать назначение элемента, а не его стилевые характеристики -->
                 <p> <span class="fontcaption_orange">Dan Brown</span><span class="font_vote"> 5 * </span></p>
                 <img src="img/bitmap.png" alt="Bitmap" style="width: 160px; height: 249px;">
             </div>
@@ -81,6 +92,7 @@
     </div>
 
 <div class="container">
+    <!-- fixme: Несколько слов в имени класса должны разделятся знаком "-" или "_". Исправить тут и дальше -->
     <div class="shopfronttext">
         <p><span class="header">Shopfront</span></p>
     </div>
@@ -89,7 +101,9 @@
         <div class="shopfrontmenu">
             <div class="shopfrontmenuleft">
                 <ul>
+                    <!-- fixme: Излишняя вложенность элементов -->
                     <li><span class="font_menu"><a href="All">All</a></span></li>
+                    <!-- fixme: аттрибут id, src, href не должен содержать пробелы  -->
                     <li><span class="font_menu"><a href="Art & Photography">Art & Photography</a></span></li>
                     <li><span class="font_menu"><a href="">Audio books</a></span></li>
                     <li><span class="font_menu"><a href="">Biography</a></span></li>
@@ -107,10 +121,13 @@
 </div> <!-- end container -->
 
 <div class="container">
+    <!-- fixme: Разделение на "строки" в сетке должно задаватся в стилях -->
     <div class="books">
         <ul>
             <li>
                 <a href=""><img src="img/books/book1.png" alt="book" style="width: 146px; height: 227px;"></a>
+                <!-- fixme: Элемент строчного типа не должен содержать внутри элемент блочного типаю Исправить здесь и дальше -->
+                <!-- fixme: Излишняя вложенность элементов -->
                 <span class="books_font_grey"><p>Opaque Region </p></span>
                 <span class="books_font_orange"><p>Carlos Fuentos</p></span>
             </li>
@@ -131,6 +148,7 @@
             </li>
             <li>
                 <a href=""><img src="img/books/6.png" alt="book" style="width: 146px; height: 227px;"></a>
+                <!-- fixme: Некорректное закрытие тега  -->
                 <span class="books_font_grey"><p></span><p>1984 </p></span>
                 <span class="books_font_orange"><p>George Orwell</p></span>
             </li>
@@ -166,6 +184,7 @@
             </li>
             <li>
                 <a href=""><img src="img/books/10.png" alt="book" style="width: 146px; height: 227px;"></a>
+                <!-- fixme: Некорректное закрытие тега  -->
                 <span class="books_font_grey"><p></span><p>1984 </p></span>
                 <span class="books_font_orange"><p>George Orwell</p></span>
             </li>
@@ -212,11 +231,13 @@
         </ul>
 
     </div>
+    <!-- fixme: Излишняя вложенность элементов. Должна быть ссылка, а не  кнопка -->
     <button><span class="all_books">All books</span></button>
 </div> <!-- end container -->
 
 <div class="container">
     <div><span class="header">Popular writers</span></div>
+        <!-- fixme: Излишняя вложенность элементов -->
         <nav class="menupopular">
             <ul>
                 <li><span class="font_menu"><a href="">Stefen King</a></span></li>
@@ -232,9 +253,12 @@
         </nav>
 
     <div id="literature_writes">
+        <!-- fixme: Излишняя вложенность элементов. Плохо идентированный блок кода -->
         <div class="comment1">
             <div><span class="fontcaption">John Fowles</span></div>
+            <!-- fixme: Тег br не должен использоватся для стилизации -->
             <br>
+            <!-- fixme: Некорректное закрытие тега  -->
             <div><span class="fontcaption_orange">31 March 1926 Leigh-on-Sea, Essex, England</span><span class="literature_vote">| 5*</span></span></div>
             <br>
             <div><span class="fontcaption_text">You are right. He did not. But  millions of Germans did betray their selves.
@@ -268,7 +292,9 @@
     <p><span class="header">Literature news</span></p>
     <div class="literature_news">
      <ul>
+         <!-- fixme: Излишняя вложенность элементов -->
          <li><a><img src="img/111.png" alt="picture" style="width: 342px; height: 553px;"></a>
+             <!-- fixme: Некорректное закрытие тега  -->
              <p><span class="fontcaption">How literature can help people cope with mental health problems</p></span>
              <p><span class="fontcaption_orange">Nathan Sandoval </span> <span class="fontcaption_grey"> | 15.10.16</span></p>
          </li>
@@ -287,6 +313,7 @@
 <div class="literature_news_autor">
 
     <div class="block_news">
+        <!-- fixme: Излишняя вложенность элементовю Плохая идентация -->
         <p><span class="font_comment">Association of Former Agents of the United States Secret Service
             denounces anti-Clinton tell-all book - Politico</span></p>
         <p><span class="fontcaption_orange">Lori Steves </span> <span class="fontcaption_grey">| 15.10.16</span></p>
@@ -315,12 +342,14 @@
 
 
     <div class=container>
+        <!-- fixme: Некорректный аттрибут slide_block1  -->
         <div slide_block1>
             <img src="img/man.png" alt="man with dog" style="width: 866px; height: 632px;">
         </div>
         <div slide_block1>
             <img src="img/lili.png" alt="lili" style="width: 353px; height: 513px;">
         </div>
+        <!-- fixme: Излишняя вложенность элементов -->
         <div slide_block1>
             <p><span class="header">Lily atnd the octopus</span></p>
             <p><span class="font_slider_orange">Steven Rowley </span> <span class="font_slider_vote">| 5 *</span> </p>
@@ -336,6 +365,7 @@
     <div class="popular_series"><span class="header">Popular series</span></div>
     <div class="book_serias" >
         <div class="book_1">
+            <!-- fixme: Отсутсвует пробел между аттрибутами. Аттрибут height должен содержать цифровое значение -->
             <img src="img/best1.png" alt="" style="width: 215px;"height="295px;">
         </div>
         <div class="book_"></div>
