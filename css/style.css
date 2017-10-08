@@ -1,7 +1,7 @@
 
 
 @import url('https://fonts.googleapis.com/css?family=Amiri|Lato|Ramaraja|Rozha+One|PT+Serif|Work+Sans|Yrsa');
-
+/* fixme: Предпочтительней подключать шрифты из удаленных источников в html */
 * {
     margin: 0;
     padding: 0;
@@ -73,7 +73,7 @@ ul li {
 .block3 {
     float: right;
 }
-
+/* fixme: Сначала указываем общие стили для страницы, затем специфические */
 a:link {
     color: black;
     background-color: transparent;
@@ -173,7 +173,7 @@ a:active {
     text-align: center;
 }
 .discount {
-    background-image: url("images/books.png");
+    background-image: url("images/books.png"); // fixme: неправильный путь
     width: 1134px;
     height: 908px;
 }
@@ -187,7 +187,7 @@ a:active {
     width: 300px;
 }
 .literature_news_autor {
-    margin: 10 px 10px;
+    margin: 10 px 10px; // fixme: Не должно тыть пробелов между значением и единицей измерения
     float: left;
 }
 .popularseries p {
@@ -218,11 +218,11 @@ h1 {
     float: left;
 }
 
-
+/* fixme: Не лучший подход к глобльным стилям. Предпочтительней модульный подход */
 /* fonts used in html */
 span.fontcaption {
     font-family: 'Ramaraja', serif;
-    font-size: 28pt;
+    font-size: 28pt; /* fixme: Размеры указывать в: px, em, rem */
     color: #555963;
     line-height: 30pt;
 }
@@ -287,7 +287,7 @@ span.font_yrsa {
 span.font_menu {
     font-family: 'Lato', sans-serif;
     font-size: 16px;
-    line-height: 32p;
+    line-height: 32p; /* fixme: Некорректная единица измерения */
 }
 span.books_font_grey {
     font-family: 'Ramaraja', serif;
@@ -304,7 +304,7 @@ span.books_font_orange {
 span.aboutliterature {
     font-family: 'Lato', sans-serif;
     font-size: 11px;
-    line-height: 37.46px;
+    line-height: 37.46px; /* fixme: Дробные значания в пикселях игнорируются браузером. Исправить тут и дальше */
 }
 span.bookworm {
     font-family: 'Rozha One', serif;
@@ -317,7 +317,7 @@ span.all_books {
     line-height: 32px;
 }
 span.literature_vote {
-    font-family: "Work Sans";
+    font-family: "Work Sans"; /* fixme: Отсутсвует общая группа шрифтов */
     font-size: 16px;
     line-height: 58px;
     color: #555963;
