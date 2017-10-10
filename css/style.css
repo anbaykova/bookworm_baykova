@@ -1,6 +1,6 @@
 
 
-@import url('https://fonts.googleapis.com/css?family=Amiri|Lato|Ramaraja|Rozha+One|PT+Serif|Work+Sans|Yrsa');
+@import url('https://fonts.googleapis.com/css?family=Amiri|Lato:400,700|Ramaraja|Rozha+One|PT+Serif|Work+Sans|Yrsa');
 
 * {
     margin: 0;
@@ -11,13 +11,13 @@ html {
     width: 100%;
 }
 body {
-    margin: 0 auto;
-
+    font-family: 'Yrsa', serif;
+    font-size: 23px;
+    line-height: 32px;
 }
 
-
 .container  {
-    width: 1210px;
+    max-width: 1211px;
     margin: 0 auto;
 }
 .wrap {
@@ -31,11 +31,10 @@ body {
 }
 
 
-
 .menu {
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
     background-color: white;
-    height: 93px;
+    height: 98px;
 }
 
 ul li {
@@ -52,12 +51,16 @@ ul li {
 
 .block1 {
     float: left;
+    padding: 19px 15px 15px 35px;
 }
-.block2 ul li  {
-    padding: 0 10px 0 10px;
+.block2 ul li a {
+
+
+    padding: 0 23px 0 21px;
 }
 
 .block2 {
+
     float: left;
 }
 .block3 {
@@ -88,17 +91,41 @@ a:active {
     text-decoration: underline;
 }
 .bookslide {
-    margin: 0 auto;
-    width: 100%;
+
+    margin-top: 100px;
     background-color: #f2fdff;
     height: 679px;
 }
+.img_Harry {
+    position: absolute;
+    padding-top: 121px;
+    padding-left: 68px;
+  }
+.img_hogwarts {
+    padding-top: 50px;
+    position: relative;
+}
+.category_slider {
+    top: 111px;
+    max-width: 150px;
+    padding: 0px 17px;
+    text-align: center;
+    margin-bottom: 5px;
+    right: -10px;
+    z-index: 3;
+    position: absolute;
+    border: solid 2px #ffbb58;
+    background-color: white;
+    overflow: hidden;
+}
 
 .bookschoice {
+    position: relative ;
     width: 40%;
     float: left;
     display: block;
 }
+
 .booktext {
     display: block;
     float: right;
@@ -331,6 +358,13 @@ span.fontmenu {
     font-weight: bold;
     line-height: 37.46px;
 
+}
+span.fontmenu_title {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 32px;
+    color: #45474b;
 }
 
 span.font_yrsa {
