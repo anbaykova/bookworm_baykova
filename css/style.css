@@ -21,16 +21,12 @@ body {
     margin: 0 auto;
 }
 .wrap {
-    margin-top: 20px;
     margin-bottom: 100px;
-    height: 150px;
-    background-color: #f2fdff;}
-
+    background-color: #f2fdff;
+}
 .container button {
     text-align: center;
 }
-
-
 .menu {
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
     background-color: white;
@@ -91,10 +87,7 @@ a:active {
     text-decoration: underline;
 }
 .bookslide {
-
-    margin-top: 100px;
-    background-color: #f2fdff;
-    height: 679px;
+    height: 831px;
 }
 .img_Harry {
     position: absolute;
@@ -121,17 +114,15 @@ a:active {
 
 .bookschoice {
     position: relative ;
-    width: 40%;
+    width: 50%;
     float: left;
-    display: block;
+    margin-left: -253px;
 }
 
 .booktext {
-    display: block;
     float: right;
-    width: 40%;
-    height: 700px;
-
+    width: 36%;
+    margin-top: 40px;
 }
 .presentation_book {
 width: 100%
@@ -351,6 +342,9 @@ span.font_slider_comment {
     color: #555963;
     font-size: 23px;
     line-height: 32px;
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
 }
 span.fontmenu {
     font-family: 'Lato', sans-serif;
