@@ -256,6 +256,7 @@ a.button7:active { background: black; }
 
 }
 .literature_writes {
+    padding: 108px 20px 20px 20px;
     width: 100%;
 
 }
@@ -266,6 +267,7 @@ a.button7:active { background: black; }
     float: left;
 }
 .literature_news ul li {
+    margin: 10px 93px 10px 10px;
     width: 300px;
 }
 .literature_news_autor {
@@ -293,13 +295,17 @@ h1 {
     text-align: center;
 }
 .comment1 {
+    text-align: right;
     padding: 10px;
     width: 25%;
     float: left;
 }
+.writer_info {
+    float: left;
+    width: 200px;
+
+}
 .comment2 {
-
-
     float: left;
 }
 
