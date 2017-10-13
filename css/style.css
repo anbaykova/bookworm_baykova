@@ -271,7 +271,7 @@ a.button7:active { background: black; }
     width: 300px;
 }
 .literature_news_autor {
-    margin: 10px 10px;
+    margin: 80px 10px;
     float: left;
 }
 .popularseries p {
@@ -509,6 +509,7 @@ span.text_info {
 }
 
 .slider_block {
+    margin: 150px 0;
     width: 100%;
 }
 
@@ -542,7 +543,8 @@ span.text_info {
 .background_books {
     background-image: url("../img/Bitmap.png");
     background-repeat: repeat;
-    padding: 80px 40px 40px 40px;
+    padding: 180px 40px 40px 40px;
+    height: 750px;
 }
 .discount p {
     padding-top: 20px;
@@ -551,7 +553,7 @@ span.text_info {
     width: 600px;
     text-align: center;
     background-color: white;
-    height: 340px;
+    height: 550px;
     margin: 0 auto;
 }
 
