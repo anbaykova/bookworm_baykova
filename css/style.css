@@ -158,7 +158,7 @@ a:active {
     margin-top: 170px;
 }
 .presentation_books {
-width: 100%
+width: 100%;
 }
 
 .wraper_books {
@@ -174,6 +174,11 @@ width: 100%;
     float: left;
     margin: 0 25px 0 25px;
 }
+.presentation_book p {
+    padding: 35px 0 0 20px;
+    width: 235px;
+}
+
 .presentation_book img {
     right: 34px;
     position: absolute;
@@ -223,8 +228,9 @@ a.button7:active { background: black; }
 .books ul li  {
     width: 150px;
     float: left;
-    padding: 0 5px 0 5px;
+    padding: 42px 42px 0 9px;
 }
+
 .clearfix {
     clear: both;
 }
@@ -272,6 +278,9 @@ a.button7:active { background: black; }
 .popularseries ul li {
     float: left;
 }
+
+.menupopular {
+}
 .menupopular ul li {
     padding: 0 10px;
 }
@@ -303,6 +312,7 @@ h1 {
 
 /* fonts used in html */
 span.fontcaption {
+
     font-family: 'Ramaraja', serif;
     font-size: 28px;
     color: #555963;
@@ -330,7 +340,7 @@ width: 100%;
 }
 
 span.header {
-    margin: 120px 0 0 0;
+    margin: 143px 0 70px 0;
     display: block;
     text-align: center;
     font-family: 'Ramaraja', serif;
@@ -400,6 +410,7 @@ span.font_yrsa {
     color: #555963;
 }
 span.font_menu {
+    padding: 10px 10px 10px 10px;
     font-family: 'Lato', sans-serif;
     font-size: 16px;
     line-height: 32px;
