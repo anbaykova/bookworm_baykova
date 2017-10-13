@@ -33,7 +33,7 @@ body {
     left: 100px;
     right: 100px;
     position: fixed;
-    z-index: 1;
+    z-index: 10000;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
     background-color: white;
     height: 98px;
@@ -132,7 +132,7 @@ a:active {
     position: relative;
 }
 .category_slider {
-    top: 111px;
+    top: 107px;
     max-width: 150px;
     padding: 0px 17px;
     text-align: center;
@@ -166,11 +166,18 @@ width: 100%;
 }
 
 .presentation_book {
-    width: 44%;
+    width: 535px;
+    height: 215px;
+    position: relative;
     background-color: #f1fdff;
     font-size: 1.5em;
     float: left;
-    margin: 0 10px 0 10px;
+    margin: 0 25px 0 25px;
+}
+.presentation_book img {
+    right: 34px;
+    position: absolute;
+    bottom: -18px;
 }
 
 .container_button {
@@ -190,11 +197,6 @@ a.button7 {
 a.button7:hover { background: rgb(53, 167, 110); }
 a.button7:active { background: black; }
 
-
-
-.shopfrontmenu {
-
-}
 .shopfronttext p {
     text-align: center;
 }
@@ -328,6 +330,9 @@ width: 100%;
 }
 
 span.header {
+    margin: 120px 0 0 0;
+    display: block;
+    text-align: center;
     font-family: 'Ramaraja', serif;
     font-size: 42px;
     line-height: 32px;
