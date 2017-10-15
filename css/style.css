@@ -301,6 +301,14 @@ a.button7:active { background: black; }
 h1 {
     text-align: center;
 }
+
+.writer_title h2 {
+    font-family: 'Ramaraja', serif;
+    font-size: 28px;
+    color: #555963;
+    line-height: 30px;
+    font-weight: 400;
+}
 .comment1 {
     text-align: right;
     padding: 10px;
@@ -324,13 +332,15 @@ h1 {
 
 
 /* fonts used in html */
-span.fontcaption {
+/*span.fontcaption */
 
+span.fontcaption {
     font-family: 'Ramaraja', serif;
     font-size: 28px;
     color: #555963;
     line-height: 30px;
 }
+
 span.font_slider_grey {
     font-family: 'Ramaraja', serif;
     display: inherit;
@@ -353,7 +363,7 @@ width: 100%;
 }
 
 span.header {
-    margin: 143px 0 70px 0;
+    margin: 32px 0 70px 0;
     display: block;
     text-align: center;
     font-family: 'Ramaraja', serif;
@@ -460,6 +470,13 @@ span.literature_vote {
     font-size: 16px;
     line-height: 58px;
     color: #555963;
+}
+.comment3 h3 {
+    font-family: 'Ramaraja', serif;
+    font-size: 21px;
+    line-height: 23px;
+    color: #555963;
+    font-weight: 400;
 }
 span.font_comment {
     font-family: 'Ramaraja', serif;
@@ -595,7 +612,7 @@ width: 1060px;
 }
 .partners {
     float: right;
-    width: 70%;
+    width: 60%;
 }
 
 .partners_block {
@@ -607,9 +624,135 @@ width: 1060px;
     float: left;
 }
 .menu_futer {
-    height: 150px;
+    height: 50px;
     width: 100%;
 }
 .menu_futer ul li  {
     margin: 20px 20px;
+}
+hr {
+    width: 100%;
+}
+.footer_content {
+    width: 100%;
+}
+.footer_section_about {
+   width: 55%;
+    float: left;
+}
+.footer_section_active {
+    margin: 95px 0 0 0;
+    width: 40%;
+    float: right;
+}
+
+.footer_section_active {
+    position: relative;
+}
+.footer_section_active form {
+    margin: 13px 0 0 0;
+}
+.footer_section_active hr {
+    size: 8px;
+    color: #555963;
+}
+
+.footer_section_inner_box {
+    width: 100%;
+}
+
+.section_about_header {
+    margin: 95px 0 0 0;
+
+}
+
+.section_about_header p {
+    margin: 35px 0 0 0;
+    font-family: 'Yrsa', serif;
+    color: #555963;
+    font-size: 19px;
+    line-height: 26px;
+    margin: 15px 0 0 0;
+
+}
+.footer_section_box {
+    width: 100%;
+    height: 40px;
+    margin: 40px 0 0 0;
+}
+.section_box {
+    float: left;
+    width: 30%;
+}
+
+.section_box p {
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    line-height: 26px;
+    color: #4f6569;
+}
+.footer_section_inner_box {
+    margin: 45px 0 0 0;
+}
+.footer_info {
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    color: #555963;
+    margin: 150px 0 70px 0;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+input[type=text] {
+    width: 206px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+    color: #45474b;
+}
+
+input[type=text], select {
+    border: none;
+    color: #da8913;
+    width: 206px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    position: relative;
+    width: 130px;
+    background-color: white;
+    color: #555963;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.footer_section_active img {
+    position: absolute;
+    bottom: 24px;
+    right: 186px;
+}
+
+h3 {
+    font-family: 'Ramaraja', serif;
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 10px;
+    color: #555963;
+}
+h2 {
+    font-weight: 400;
+    font-family: 'Ramaraja', serif;
+    font-size: 28px;
+    color: #555963;
+    line-height: 30px;
 }
