@@ -9,9 +9,12 @@
 
 html {
 
+    margin: 0;
 }
 
 body {
+    margin: 0;
+    height: 100%;
     font-family: 'Yrsa', serif;
     font-size: 23px;
     line-height: 32px;
@@ -663,6 +666,15 @@ width: 1060px;
 .menu_futer ul li  {
     margin: 20px 20px;
 }
+.menu_futer a {
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    color: #45474b;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+    list-style-type: none;
+}
 hr {
     width: 100%;
 }
@@ -706,7 +718,6 @@ hr {
     color: #555963;
     font-size: 19px;
     line-height: 26px;
-    margin: 15px 0 0 0;
 
 }
 .footer_section_box {
