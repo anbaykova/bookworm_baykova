@@ -134,7 +134,7 @@ a:active {
     position: relative;
 }
 .category_slider {
-    top: 107px;
+    top: 55px;
     max-width: 150px;
     padding: 0px 17px;
     text-align: center;
@@ -653,6 +653,7 @@ hr {
     margin: 13px 0 0 0;
 }
 .footer_section_active hr {
+    display: block;
     size: 8px;
     color: #555963;
 }
@@ -737,9 +738,16 @@ input[type=submit] {
     cursor: pointer;
 }
 .footer_section_active img {
-    position: absolute;
     bottom: 24px;
     right: 186px;
+}
+.social_icon ul li {
+    float: left;
+    padding: 25px 15px 0 0;
+    list-style-type: none;
+}
+.footer_social {
+    margin: 80px 0 0 0;
 }
 
 h3 {
