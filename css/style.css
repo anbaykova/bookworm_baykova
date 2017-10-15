@@ -3,21 +3,22 @@
 @import url('https://fonts.googleapis.com/css?family=Amiri|Lato:400,700|Ramaraja|Rozha+One|PT+Serif|Work+Sans|Yrsa');
 
 * {
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
 }
 
 html {
-    width: 100%;
+
 }
+
 body {
     font-family: 'Yrsa', serif;
     font-size: 23px;
     line-height: 32px;
+    color: #45474b;
 }
-
 .container  {
-    max-width: 1211px;
+    max-width: 1210px;
     margin: 0 auto;
 }
 .wrap {
@@ -64,11 +65,17 @@ ul li {
 .menu_list li a {
     padding: 0 23px 0 21px;
     text-transform: uppercase;
+    color: #45474b;
 }
 
 .menu_list {
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 37px;
     margin-top: 30px;
     float: left;
+
 }
 .search {
     background-image: url("../img/icons_svg/search.svg");
@@ -145,6 +152,11 @@ a:active {
     border: solid 2px #ffbb58;
     background-color: white;
     overflow: hidden;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 32px;
+    color: #45474b;
 }
 
 .img_cover img {
@@ -173,7 +185,7 @@ width: 100%;
 }
 
 .presentation_book {
-    width: 535px;
+    width: 45%;
     height: 215px;
     position: relative;
     background-color: #f1fdff;
@@ -181,9 +193,10 @@ width: 100%;
     float: left;
     margin: 0 25px 0 25px;
 }
-.presentation_book p {
-    padding: 35px 0 0 20px;
-    width: 235px;
+.presentation_text {
+    float: left;
+    width: 55%;
+    margin: 35px 10px 35px 35px;
 }
 
 .presentation_book_img {
@@ -195,33 +208,51 @@ width: 100%;
 .container_button {
     text-align: center;
 }
-a.button7 {
+a.btn {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
     text-align: center;
-    font-weight: 700;
-    color: white;
+    font-weight: 400;
+    color: #45474b;
     text-decoration: none;
-    padding: .8em 1em calc(.8em + 3px);
-    border: 2px solid;
-    background: rgb(64,199,129);
-    box-shadow: 0 -3px rgb(53,167,110) inset;
-    transition: 0.2s;
+    padding: 10px 60px;
+    border: 2px solid #555963;
+    background: white;
 }
-a.button7:hover { background: rgb(53, 167, 110); }
-a.button7:active { background: black; }
+a.btn:hover { background: #da8913; }
+a.btn:active { background: white; }
 
-.shopfronttext p {
-    text-align: center;
+.shopfrontmenu {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    line-height: 32px;
+    color: #45474b;
+    width: 100%;
 }
-.shopfrontmenuleft ul li {
-    padding: 0 10px 0 10px;
+.shopfrontmenu a:hover {
+    text-decoration: none;
+    color: #da8913;
+}
+.shopfront {
+    padding: 90px 0 0 0;
+}
+.shopfrontmenuleft ul li a {
+    list-style-type: none;
+    color: #45474b;
+    padding: 10px 10px 10px 10px;
+
 }
 .shopfrontmenuleft {
     float: left;
+
 }
 .shopfrontmenuright {
     float: right;
+    color: #45474b;
 }
-
+.shopfrontmenuright a {
+    color: #45474b;
+}
 .container .button {
     float: left;
 }
@@ -287,19 +318,27 @@ a.button7:active { background: black; }
 .popularseries ul li {
     float: left;
 }
-
-.menupopular {
+.menupopular a {
+    text-decoration: none;
+    color: #45474b;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    }
+.menupopular a:hover {
+    color: #da8913;
+    transition: top 1s ease-out 0.5s;
 }
+
 .menupopular ul li {
     padding: 0 10px;
+
+    list-style-type: none;
 }
+
 .popular {
     min-width: 300px;
     border: solid 1px red;
 
-}
-h1 {
-    text-align: center;
 }
 
 .writer_title h2 {
@@ -362,7 +401,11 @@ span.book_series_fonts {
 width: 100%;
 }
 
-span.header {
+
+/* ---- font amiri --- */
+
+h1 {
+    font-weight: 400;
     margin: 32px 0 70px 0;
     display: block;
     text-align: center;
@@ -371,7 +414,21 @@ span.header {
     line-height: 32px;
     color: #555963;
 }
-/* ---- font amiri --- */
+
+h3 {
+    font-family: 'Ramaraja', serif;
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 23px;
+    color: #555963;
+}
+h2 {
+    font-weight: 400;
+    font-family: 'Ramaraja', serif;
+    font-size: 28px;
+    color: #555963;
+    line-height: 30px;
+}
 span.fontcaption_orange {
     font-family: 'Amiri', serif;
     font-size: 18px;
@@ -399,31 +456,6 @@ span.font_vote {
     line-height: 58px;
     color: #555963;
 }
-
-span.font_slider_comment {
-    font-family: 'Yrsa', serif;
-    color: #555963;
-    font-size: 23px;
-    line-height: 32px;
-    -moz-hyphens: auto;
-    -webkit-hyphens: auto;
-    -ms-hyphens: auto;
-}
-span.fontmenu {
-    font-family: 'Lato', sans-serif;
-    font-size: 14px;
-    font-weight: bold;
-    line-height: 37.46px;
-
-}
-span.fontmenu_title {
-    font-family: 'Lato', sans-serif;
-    font-size: 16px;
-    font-weight: bold;
-    line-height: 32px;
-    color: #45474b;
-}
-
 span.font_yrsa {
     display: block;
     margin-top: 50px;
@@ -433,10 +465,7 @@ span.font_yrsa {
     color: #555963;
 }
 span.font_menu {
-    padding: 10px 10px 10px 10px;
-    font-family: 'Lato', sans-serif;
-    font-size: 16px;
-    line-height: 32px;
+
 }
 span.books_font_grey {
     font-family: 'Ramaraja', serif;
@@ -460,7 +489,7 @@ span.bookworm {
     font-size: 29px;
     line-height: 37.46px;
 }
-span.all_books {
+span.btn {
     font-family: 'Lato', sans-serif;
     font-size: 16px;
     line-height: 32px;
@@ -524,6 +553,7 @@ span.text_info {
 }
 
 .block_news {
+    padding: 0 50px 10px 0;
     width: 240px;
     float: left;
 }
@@ -603,12 +633,15 @@ width: 1060px;
     margin: 80px auto;
     width: 100%;
 }
-.description p {
+.description h1 {
     text-align: left;
 }
 .description {
     float: left;
     width: 30%;
+}
+.description p{
+    margin-bottom: 75px;
 }
 .partners {
     float: right;
@@ -703,7 +736,7 @@ hr {
 }
 
 input[type=submit]:hover {
-    background-color: #45a049;
+    border: none;
 }
 input[type=text] {
     width: 206px;
@@ -722,16 +755,14 @@ input[type=text], select {
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
-    border-radius: 4px;
     box-sizing: border-box;
 }
 
 input[type=submit] {
     position: relative;
-    width: 130px;
     background-color: white;
     color: #555963;
-    padding: 14px 20px;
+    padding: 10px 0px;
     margin: 8px 0;
     border: none;
     border-radius: 4px;
@@ -750,17 +781,3 @@ input[type=submit] {
     margin: 80px 0 0 0;
 }
 
-h3 {
-    font-family: 'Ramaraja', serif;
-    font-size: 21px;
-    font-weight: 400;
-    line-height: 10px;
-    color: #555963;
-}
-h2 {
-    font-weight: 400;
-    font-family: 'Ramaraja', serif;
-    font-size: 28px;
-    color: #555963;
-    line-height: 30px;
-}
