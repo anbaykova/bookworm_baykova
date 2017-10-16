@@ -46,6 +46,7 @@ body {
 ul li {
     display:inline;
     float: left;
+    list-style-type: none;
 }
 .menuimg {
     text-align: center;
@@ -287,9 +288,13 @@ a.btn:active { background: white; }
     width: 70%;
 }
 .discount {
+    width: 600px;
+    text-align: center;
+    background-color: white;
+    margin: 0 auto;
+    padding: 50px 0 0 0;
     background-image: url("images/books.png");
-    width: 1134px;
-    height: 908px;
+    height: 390px;
 }
 .block_discount {
     width: 31%;
@@ -397,11 +402,15 @@ span.book_series_fonts {
     line-height: 23px;
     color: #555963;
 }
+.book_series {
+    width: 100%;
+}
 .popwrites_header p {
     text-align: center;
 }
 .popwrites {
-width: 100%;
+    margin: 210px 0 0 0;
+    width: 100%;
 }
 
 
@@ -437,6 +446,10 @@ span.fontcaption_orange {
     font-size: 18px;
     line-height: 22px;
     color: #eaad54;
+    border-right: 1px solid #45474b;
+    padding: 0 15px;
+    display: inline-block;
+
 }
 span.font_slider_orange {
     font-family: 'Amiri', serif;
@@ -447,6 +460,24 @@ span.font_slider_orange {
 
 
 span.font_slider_vote {
+    font-family: 'Work Sans', sans-serif;
+    color: #555963;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+span.font_slider_vote::before {
+    content: "";
+    width: 1px;
+    height: 20px;
+    background: #45474b;
+    display: inline-block;
+    margin: 0 10px;
+    vertical-align: middle;
+}
+
+
+span.font_slider_sum {
     font-family: 'Work Sans', sans-serif;
     color: #555963;
     font-size: 17px;
@@ -502,6 +533,7 @@ span.literature_vote {
     font-size: 16px;
     line-height: 58px;
     color: #555963;
+    display: inline-block;
 }
 .comment3 h3 {
     font-family: 'Ramaraja', serif;
@@ -591,8 +623,11 @@ span.text_info {
     float: right;
     box-sizing: border-box;
 }
+.slide_block3 h1 {
+    text-align: left;
+}
 .popular_series {
-    margin: 30px 0;
+    margin: 120px 0 0 0;
     text-align: center;
 }
 
@@ -603,17 +638,8 @@ span.text_info {
     padding: 180px 40px 40px 40px;
     height: 750px;
 }
-.discount p {
-    padding-top: 20px;
-}
 .discount {
-    width: 600px;
-    text-align: center;
-    background-color: white;
-    height: 550px;
-    margin: 0 auto;
 }
-
 
 .clearfix {
     clear: both;
@@ -628,8 +654,8 @@ span.text_info {
 .container_slider {
 width: 1060px;
 }
-
-.book_1 {
+.popular_book {
+    padding: 0 40px 0 40px;
     float: left;
 }
 .publishers {
@@ -675,9 +701,7 @@ width: 1060px;
     text-decoration: none;
     list-style-type: none;
 }
-hr {
-    width: 100%;
-}
+
 .footer_content {
     width: 100%;
 }
