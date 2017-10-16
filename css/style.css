@@ -290,10 +290,9 @@ a.btn:active { background: white; }
 .discount {
     width: 600px;
     text-align: center;
-    background-color: white;
     margin: 0 auto;
     padding: 50px 0 0 0;
-    background-image: url("images/books.png");
+    background-color: white;
     height: 390px;
 }
 .block_discount {
@@ -396,6 +395,10 @@ span.font_slider_grey {
     color: #555963;
     font-size: 57px;
 }
+
+
+
+
 span.book_series_fonts {
     font-family: 'Ramaraja', serif;
     font-size: 23px;
@@ -449,8 +452,15 @@ span.fontcaption_orange {
     border-right: 1px solid #45474b;
     padding: 0 15px;
     display: inline-block;
-
 }
+
+span.font_orange {
+    font-family: 'Amiri', serif;
+    font-size: 18px;
+    line-height: 22px;
+    color: #eaad54;
+    }
+
 span.font_slider_orange {
     font-family: 'Amiri', serif;
     font-size: 21px;
@@ -567,6 +577,20 @@ span.fontcaption_text {
     color: #555963;
     font-style: italic;
 }
+
+span.fontcaption_text::before {
+    font-family: 'Ramaraja', serif;
+    content: '';
+    position: absolute;
+    display: inline-block;
+    font-size: 57px;
+    color: #555963;
+    background-image: url("../img/rectangle26.png");
+    width: 20px;
+    height: 18px;
+    margin: -24px 0px 0px 267px;
+}
+
 span.fontcaption_grey {
     font-family: 'Lato', sans-serif;
     font-size: 13px;
@@ -605,8 +629,9 @@ span.text_info {
 .container_wrap {
     background-color: #f7fdff;
     width: 100%;
+    height: 634px;
     margin-top: 40px;
-    margin-bottom: 60px;
+    margin-bottom: 172px;
 }
 
 .slide_block1 {
@@ -773,7 +798,16 @@ width: 1060px;
 input[type=submit]:hover {
     border: none;
 }
-input[type=text] {
+.subscribe {
+    position: relative;
+}
+input[type=submit]::before {
+    content: "";
+    background: url("../img/icons_svg/mail.svg");
+    position: absolute;
+}
+
+input[type=email] {
     width: 206px;
     padding: 12px 20px;
     margin: 8px 0;
@@ -783,7 +817,7 @@ input[type=text] {
     color: #45474b;
 }
 
-input[type=text], select {
+input[type=email], select {
     border: none;
     color: #da8913;
     width: 206px;
@@ -794,7 +828,7 @@ input[type=text], select {
 }
 
 input[type=submit] {
-    position: relative;
+    /*position: relative; */
     background-color: white;
     color: #555963;
     padding: 10px 0px;
@@ -803,10 +837,13 @@ input[type=submit] {
     border-radius: 4px;
     cursor: pointer;
 }
-.footer_section_active img {
+.footer_section_active {
+    position: relative;
+}
+ /*.footer_section_active img {
     bottom: 24px;
     right: 186px;
-}
+} */
 .social_icon ul li {
     float: left;
     padding: 25px 15px 0 0;
