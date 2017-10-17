@@ -285,15 +285,16 @@ a.btn:active { background: white; }
 .button {
     text-align: center;
 }
-.procent {
+.discount_procent {
+    padding: 20px 20px 83px 20px;
     margin: 0 auto;
     width: 70%;
 }
 .discount {
-    width: 600px;
+    width: 55%;
     text-align: center;
     margin: 0 auto;
-    padding: 50px 0 0 0;
+    padding: 50px 0 185px 0;
     background-color: white;
     height: 390px;
 }
@@ -661,12 +662,11 @@ span.text_info {
 
 
 .background_books {
-    background-image: url("../img/Bitmap.png");
+    /* background-image: url("../img/Bitmap.png");
     background-repeat: repeat;
-    padding: 180px 40px 40px 40px;
-    height: 750px;
-}
-.discount {
+    height: 750px;*/
+    padding: 200px 40px 200px 40px;
+    background-color: #da8913;
 }
 
 .clearfix {
