@@ -108,27 +108,27 @@ ul li {
    }
 
 a:link {
-    color: black;
+    color: #555963;
     background-color: transparent;
     text-decoration: none;
 }
 
 a:visited {
-    color: black;
+    color: #555963;
     background-color: transparent;
     text-decoration: none;
 }
 
 a:hover {
-    color: red;
+    color: #da8913;
     background-color: transparent;
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 a:active {
-    color: yellow;
+    color: #da8913;
     background-color: transparent;
-    text-decoration: underline;
+    text-decoration: none;
 }
 .bookslide {
     height: 831px;
