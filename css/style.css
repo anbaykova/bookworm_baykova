@@ -166,23 +166,27 @@ a:active {
     line-height: 32px;
     color: #45474b;
 }
+.img_slider img {
+    box-shadow: 0 0 50px rgba(0,0,0,0.5);
 
-.img_cover img {
+}
+.img_book img {
     opacity: 0.45;
     z-index: 2;
 }
 
 .bookschoice {
     position: relative ;
-    width: 50%;
+    width: 41%;
     float: left;
     margin-left: 100px;
 }
 
 .booktext {
     float: right;
-    width: 36%;
-    margin-top: 170px;
+    width: 45%;
+    margin-top: 135px;
+    padding: 0 20px 0 0;
 }
 .presentation_books {
 width: 100%;
@@ -373,7 +377,9 @@ a.btn:active { background: white; }
     padding: 0 50px;
     float: left;
 }
-
+.section_photo_autor img {
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
+}
 .section_book_autor {
     padding: 10px 10px 10px 10px;
     width: 35%;
