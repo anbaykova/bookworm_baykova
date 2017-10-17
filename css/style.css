@@ -72,6 +72,10 @@ ul li {
     color: #45474b;
 }
 
+.menu_list li a:hover {
+    color: #da8913;
+}
+
 .menu_list {
     font-family: 'Lato', sans-serif;
     font-size: 14px;
@@ -254,9 +258,7 @@ a.btn:active { background: white; }
     float: right;
     color: #45474b;
 }
-.shopfrontmenuright a {
-    color: #45474b;
-}
+
 .container .button {
     float: left;
 }
@@ -355,27 +357,31 @@ a.btn:active { background: white; }
     line-height: 30px;
     font-weight: 400;
 }
-.comment1 {
+.section_about_autor {
     text-align: right;
     padding: 10px;
     width: 25%;
     float: left;
 }
 .writer_info {
-    float: left;
-    width: 200px;
+    width: 90%;
+    padding: 10px 10px 33px 10px
 
 }
-.comment2 {
+.section_photo_autor {
+    padding: 0 50px;
     float: left;
 }
 
-.comment3 {
-    padding: 10px;
+.section_book_autor {
+    padding: 10px 10px 10px 10px;
     width: 35%;
     float: left;
 }
 
+.list_book img {
+    padding: 45px 15px 10px 0px;
+}
 
 /* fonts used in html */
 /*span.fontcaption */
@@ -445,11 +451,12 @@ h2 {
     line-height: 30px;
 }
 span.fontcaption_orange {
+    width: 60%;
     font-family: 'Amiri', serif;
     font-size: 18px;
     line-height: 22px;
     color: #eaad54;
-    border-right: 1px solid #45474b;
+    border-right: 1px solid #d3d9db;
     padding: 0 15px;
     display: inline-block;
 }
@@ -544,14 +551,10 @@ span.literature_vote {
     line-height: 58px;
     color: #555963;
     display: inline-block;
+    vertical-align: bottom;
+    padding-left: 10px;
 }
-.comment3 h3 {
-    font-family: 'Ramaraja', serif;
-    font-size: 21px;
-    line-height: 23px;
-    color: #555963;
-    font-weight: 400;
-}
+
 span.font_comment {
     font-family: 'Ramaraja', serif;
     font-size: 21px;
@@ -705,11 +708,15 @@ width: 1060px;
 .partners_block {
     float: left;
 }
-
+.partners_block img {
+    text-align: center;
+}
 .partners_block ul li {
-    padding: 10px 10px;
+    padding: 20px 20px;
     float: left;
 }
+
+
 .menu_futer {
     height: 50px;
     width: 100%;
@@ -720,10 +727,8 @@ width: 1060px;
 .menu_futer a {
     font-family: 'Lato', sans-serif;
     font-size: 14px;
-    color: #45474b;
     text-transform: uppercase;
     font-weight: bold;
-    text-decoration: none;
     list-style-type: none;
 }
 
@@ -731,18 +736,16 @@ width: 1060px;
     width: 100%;
 }
 .footer_section_about {
-   width: 55%;
+    width: 65%;
     float: left;
 }
 .footer_section_active {
     margin: 95px 0 0 0;
-    width: 40%;
+    width: 30%;
     float: right;
-}
-
-.footer_section_active {
     position: relative;
 }
+
 .footer_section_active form {
     margin: 13px 0 0 0;
 }
@@ -752,11 +755,8 @@ width: 1060px;
     color: #555963;
 }
 
-.footer_section_inner_box {
-    width: 100%;
-}
-
 .section_about_header {
+    width: 73%;
     margin: 95px 0 0 0;
 
 }
@@ -776,7 +776,7 @@ width: 1060px;
 }
 .section_box {
     float: left;
-    width: 30%;
+    width: 25%;
 }
 
 .section_box p {
@@ -795,17 +795,25 @@ width: 1060px;
     margin: 150px 0 70px 0;
 }
 
-input[type=submit]:hover {
+button[type=submit]:hover {
     border: none;
 }
 .subscribe {
     position: relative;
 }
-input[type=submit]::before {
+button.subscribe_button::after {
+    content: "";
+    background-image: url("../img/icons_svg/mail.svg");
+    width: 21px;
+    height: 13px;
+    display: inline-block;
+}
+
+/* button[type=submit]::after {
     content: "";
     background: url("../img/icons_svg/mail.svg");
     position: absolute;
-}
+} */
 
 input[type=email] {
     width: 206px;
@@ -827,7 +835,7 @@ input[type=email], select {
     box-sizing: border-box;
 }
 
-input[type=submit] {
+button[type=submit] {
     /*position: relative; */
     background-color: white;
     color: #555963;
