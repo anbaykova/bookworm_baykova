@@ -341,15 +341,19 @@ a.btn:active { background: white; }
 .literature_books p {
     text-align: center;
 }
-.literaturenews {
-    float: left;
+.literature_news {
+    height: 670px;
+    margin: 80px auto;
+    width: calc(100% - 33px);
 }
 .literature_news ul li {
-    margin: 10px 93px 10px 10px;
-    width: 300px;
+    display: inline-block;
+    padding: 35px 25px 10px 25px;
+    width: 342px;
+    height: 553px;
 }
 .literature_news_autor {
-    margin: 80px 10px;
+    margin: 10px 23px 140px 23px;
     float: left;
 }
 .popularseries p {
@@ -370,9 +374,15 @@ a.btn:active { background: white; }
 }
 
 .menupopular ul li {
-    padding: 0 10px;
-
+    padding: 0 0 20px 35px;
     list-style-type: none;
+}
+
+.menupopular hr {
+    display: block;
+    size: 8px;
+    color: #555963;
+    position: relative;
 }
 
 .popular {
@@ -647,8 +657,8 @@ span.text_info {
 }
 
 .block_news {
-    padding: 0 50px 10px 0;
-    width: 240px;
+    padding: 0 50px 0 0;
+    width: 236px;
     float: left;
 }
 .button_all_news {
@@ -657,8 +667,9 @@ span.text_info {
 }
 
 .slider_block {
-    margin: 150px 0;
-    width: 100%;
+    margin: 150px auto;
+    width: 1500px;
+
 }
 
 .container_wrap {
@@ -696,7 +707,7 @@ span.text_info {
     /* background-image: url("../img/Bitmap.png");
     background-repeat: repeat;
     height: 750px;*/
-    padding: 200px 40px 200px 40px;
+    padding: 200px 0;
     background-color: #da8913;
 }
 
@@ -733,24 +744,27 @@ width: 1060px;
 }
 .partners {
     float: right;
-    width: 60%;
+    width: 66%;
 }
-
 .partners_block {
-    float: left;
+    width: 100%;
 }
-.partners_block img {
+.partners_block li {
     text-align: center;
-}
-.partners_block ul li {
-    padding: 20px 20px;
-    float: left;
-}
-
-
+    width: 160px;
+    margin: 20px 15px;
+    display: inline-block;
+    height: 120px;
+   }
 .menu_futer {
     height: 50px;
     width: 100%;
+}
+.menu_futer hr {
+    display: block;
+    size: 8px;
+    color: #555963;
+    position: relative;
 }
 .menu_futer ul li  {
     margin: 20px 20px;
@@ -762,7 +776,7 @@ width: 1060px;
     font-weight: bold;
     list-style-type: none;
 }
-
+.menu_futer::after
 .footer_content {
     width: 100%;
 }
