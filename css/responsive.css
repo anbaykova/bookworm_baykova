@@ -1,0 +1,25 @@
+
+@media all and (max-width: 1024px){
+    .menu_list {
+        display: none;
+    }
+    .presentation_book {
+        float: none;
+        width: auto;
+        margin-bottom: 50px;
+    }
+    .presentation_text {
+        border: 1px solid grey;
+        width: auto;
+    }
+}
+@media all and (max-width: 600px){
+    .presentation_book {
+        background-color: #da8913;
+    }
+}
+@media all and (max-width: 600px) and (orientation: landscape){
+    .presentation_book {
+        background-color: chocolate;
+    }
+}
