@@ -18,8 +18,7 @@ body {
     font-family: 'Yrsa', serif;
     font-size: 23px;
     line-height: 32px;
-    color: #45474b;
-}
+    }
 .container  {
     max-width: 1210px;
     margin: 0 auto;
@@ -127,15 +126,21 @@ a:visited {
 }
 
 a:hover {
+    transition: color 0.5s ease;
     color: #da8913;
     background-color: transparent;
     text-decoration: none;
 }
 
 a:active {
+    transition: color 0.5s ease;
     color: #da8913;
     background-color: transparent;
     text-decoration: none;
+}
+a:focus {
+    transition: color 0.5s ease;
+    color: #da8913;
 }
 .bookslide {
     height: 831px;
@@ -256,21 +261,38 @@ a.btn:active { background: white; }
     font-family: 'Lato', sans-serif;
     font-size: 16px;
     line-height: 32px;
-    color: #45474b;
+    color: #d3d9db;
     width: 100%;
+}
+.shopfrontmenu::after {
+    content: "";
+    width: 100%;
+    height: 2px;
+    display: block;
+    background-color: #ececed;
+    margin-top: 5px;
 }
 .shopfrontmenu a:hover {
     text-decoration: none;
-    color: #da8913;
+    color: #45474b;
 }
 .shopfront {
     padding: 90px 0 0 0;
 }
 .shopfrontmenuleft ul li a {
-    list-style-type: none;
-    color: #45474b;
-    padding: 10px 10px 10px 10px;
+     list-style-type: none;
+     color: #d3d9db;
+     padding: 10px 10px 10px 10px;
 
+ }
+.shopfrontmenuleft ul li a:hover::after {
+    content: "";
+    width: 30px;
+    height: 2px;
+    display: block;
+    margin-top: 5px;
+    background: #ececed;
+    transition: color 0.5s ease ;
 }
 .shopfrontmenuleft {
     float: left;
@@ -362,9 +384,14 @@ a.btn:active { background: white; }
 .popularseries ul li {
     float: left;
 }
+
+.menupopular hr {
+    size: 8px;
+    color: #d3d9db;
+}
 .menupopular a {
     text-decoration: none;
-    color: #45474b;
+    color: #d3d9db;
     font-family: 'Lato', sans-serif;
     font-size: 16px;
     }
@@ -377,14 +404,6 @@ a.btn:active { background: white; }
     padding: 0 0 20px 35px;
     list-style-type: none;
 }
-
-.menupopular hr {
-    display: block;
-    size: 8px;
-    color: #555963;
-    position: relative;
-}
-
 .popular {
     min-width: 300px;
     border: solid 1px red;
@@ -846,6 +865,13 @@ button[type=submit]:hover {
 .subscribe_form {
     position: relative;
 }
+input[type=email]:focus {
+    border-color: #da8913;
+}
+input[type=email]:active {
+    border-color: red;
+}
+
 button.subscribe_button::after {
     content: "";
     background-image: url("../img/icons_svg/mail.svg");

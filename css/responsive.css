@@ -12,6 +12,8 @@
         border: 1px solid grey;
         width: auto;
     }
+
+    
 }
 @media all and (max-width: 600px){
     .presentation_book {
