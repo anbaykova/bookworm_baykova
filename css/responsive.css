@@ -13,8 +13,34 @@
         width: auto;
     }
 
-    
+
+
 }
+
+@media all and (max-width: 1150px) {
+    .bookschoice {
+        height: 910px;
+        margin-left: 50px;
+        float: none;
+        margin: 0 auto;
+    }
+    .booktext {
+        margin: 0 auto;
+        height: 355px;
+        float: none;
+        width: 500px;
+
+    }
+    .presentation_books {
+        margin-top: 500px;
+
+    }
+    .presentation_book_img {
+        right: -100px;
+    }
+}
+
+
 @media all and (max-width: 600px){
     .presentation_book {
         background-color: #da8913;

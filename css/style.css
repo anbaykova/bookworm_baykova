@@ -206,6 +206,35 @@ a:focus {
 width: 100%;
 }
 
+.book-title {
+    font-family: 'Ramaraja', serif;
+    font-size: 21px;
+    line-height: 30px;
+    color: #555963;
+}
+.book-author {
+    font-family: 'Amiri', serif;
+    font-size: 16px;
+    line-height: 30px;
+    color: #dd9327;
+}
+.book-item {
+    text-align: center;
+
+    margin: 20px 15px;
+    display: inline-block;
+
+}
+.book-item img {
+    width: 146px;
+    height: 227px;
+}
+.book-item a {
+    display: block;
+}
+.book-title {
+    width: 146px;
+}
 .presentation_book {
      width: 48%;
      position: relative;
@@ -314,19 +343,21 @@ a.btn:active { background: white; }
     float: left;
     min-width: 650px;
 }
-.books li:nth-child(1) {
+/* books li:nth-child(1) {
     padding: 42px 31px 0 0;
 }
 .books li:nth-child(6) {
     padding: 42px 0 0 31px;
 }
+*/
 
-.books ul li  {
+/*.books ul li  {
     width: 150px;
     float: left;
     padding: 42px 31px 0 31px;
 
-}
+} */
+
 .clearfix {
     clear: both;
 }
