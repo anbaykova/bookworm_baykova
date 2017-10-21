@@ -51,3 +51,35 @@
         background-color: chocolate;
     }
 }
+
+
+/*
+<div class="creditcard">
+<input type="radio" id="creditcard" name="payment" value="creditcard">
+<label for="creditcard">Credit Card</label> <img src="img/cart/creditcard.png" width="23" height="16" alt="creditcart">
+</div>
+  <div class="bancontract">
+<input type="radio" id="bancontract" name="payment" value="bancontract">
+<label for="bancontract">Bancontract</label>
+                                      </div>
+                                        <div class="paypal">
+<input type="radio" id="paypal" name="payment" value="paypal">
+<label for="paypal">Paypal</label>
+                            </div>
+                              <div class="banktransfer">
+<input type="radio" id="banktransfer" name="payment" value="banktransfer">
+<label for="banktransfer">Banktransfer</label>
+                                        </div>
+                                          <div class="ideal">
+<input type="radio" id="ideal" name="payment" value="ideal">
+<label for="ideal">IDEAL</label>
+                          </div>
+                            <div class="sofort">
+<input type="radio" id="sofort" name="payment" value="sofort">
+<label for="sofort">SOFORT Banking</label>
+                                    </div>
+                                      <div class="bitcoin">
+<input type="radio" id="bitcoin" name="payment" value="bitcoin">
+<label for="bitcoin">Bitcoin</label>
+                              </div>
+*/

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta property="og:title" content="">
+    <meta property="og:description" content="">
+    <meta property="og:image" content=""/>
+    <title>Cart</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <div id="your-cart">
+        <nav class="menu container">
+            <div class="menu_logo">
+            </div>
+            <ul class="menu_list">
+                <li><a href="#">Books</a></li>
+                <li><a href="#">Writers</a></li>
+                <li><a href="#">Publishers</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <ul class="info_boks">
+                <li><div class="search"></div></li>
+                <li><div class="shoppingcart"></div></li>
+                <li> <div class="userpic"></div></li>
+            </ul>
+        </nav>
+
+        <div class="cart-wrap container">
+
+            <form id="cart" class="form-cart" action="">
+                <legend>Billing address</legend>
+                <div class="billing-address">
+                    <div class="leftpart">
+                        <div class="gender">
+                            <label>Gender:</label>
+                            <input id="gen-man" type="radio" name="gender" value="man">
+                            <label for="gen-man">Man</label>
+                            <input id="gen-woman" type="radio" name="gender" value="woman">
+                            <label for="gen-woman">Woman</label>
+                        </div>
+                        <div class="firstname">
+                            <input type="text" placeholder="First name">
+                        </div>
+                        <div class="lastname">
+                            <input type="text" placeholder="Last name">
+                        </div>
+                        <div class="e-mail">
+                            <input type="email" placeholder="E-mail">
+                        </div>
+                        <div class="phone">
+                            <input type="text" placeholder="phone">
+                        </div>
+                    </div>
+                    <div class="rightpart">
+                        <div class="address">
+                            <input type="text" placeholder="address">
+                        </div>
+                        <div class="country">
+                            <input type="text" placeholder="City">
+                        </div>
+                        <div class="state">
+                            <input type="text" placeholder="State/Providence">
+                        </div>
+                        <div class="zippostal">
+                            <input type="text" placeholder="Zip/Postal">
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+
+                <div class="shipping-method" >
+                    <div class="shipping_left">
+                        <label>Shipping method:</label>
+                        <input id="ups_saver" type="radio" name="ups" value="ups_saver">
+                        <label for="ups_saver">UPS_SAVER</label> Free
+                        <!--<input type="text" name="ups" value="Free"> -->
+                        <input id="ups_express" type="radio" name="ups" value="ups_express">
+                        <label for="ups_express">UPS Express</label> $7,50
+                        <!-- <input type="text" name="ups" value="$7,50"> -->
+                    </div>
+                    <div class="shipping_right">
+                        <div class="create_account">
+                            <input type="checkbox">Create account for latter use
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            <div class="payment container">
+                <legend>Payment method</legend>
+                <div id="payment" class="payment" action="">
+                    <div class="payment-radio">
+                        <input type="radio" id="creditcard" name="payment" value="creditcard">
+                        <label for="creditcard">Credit Card</label> <img src="img/cart/creditcard.png" width="23" height="16" alt="creditcart">
+                    </div>
+                    <div class="payment-radio">
+                        <input type="radio" id="bancontract" name="payment" value="bancontract">
+                        <label for="bancontract">Bancontract</label> <img src="img/cart/mistercash.png" width="23" height="10" alt="bancontract">
+                    </div>
+                    <div class="payment-radio">
+                        <input type="radio" id="paypal" name="payment" value="paypal">
+                        <label for="paypal">Paypal</label> <img src="img/cart/paypal.png" width="19" height="20" alt="paypal">
+                    </div>
+                    <div class="payment-radio">
+                        <input type="radio" id="banktransfer" name="payment" value="banktransfer">
+                        <label for="banktransfer">Banktransfer</label><img src="img/cart/banktransfer.png" width="19" height="17" alt="banktransfer">
+                    </div>
+                    <div class="payment-radio">
+                        <input type="radio" id="ideal" name="payment" value="ideal">
+                        <label for="ideal">IDEAL</label><img src="img/cart/ideal.png" width="22" height="18" alt="ideal">
+                    </div>
+                    <div class="payment-radio">
+                        <input type="radio" id="sofort" name="payment" value="sofort">
+                        <label for="sofort">SOFORT Banking</label><img src="img/cart/sofort.png" width="21" height="15" alt="sofort">
+                    </div>
+                    <div class="payment-radio">
+                        <input type="radio" id="bitcoin" name="payment" value="bitcoin">
+                        <label for="bitcoin">Bitcoin</label><img src="img/cart/bitcoin.png" width="16" height="20" alt="bitcoin">
+                    </div>
+                </div>
+            </div>
+        </form> <!-- end form -->
+
+
+        <div class="wrap">
+        <div class="footer_content container ">
+            <div class="footer_section_about">
+                <div class="section_about_header">
+                    <h2>About</h2>
+                    <p>Cras quis nulla commodo, aliquam lectus sed, blandit augue.
+                        Cras ullamcorper bibendum bibendum. Duis tincidunt urna non pretium porta.
+                        Nam condimentum vitae ligula vel ornare. Phasellus at semper turpis.</p>
+                </div>
+                <div class="footer_section_inner_box">
+                    <div class="footer_section_box">
+                        <div class="section_box">
+                            <h3><a href="#">Ade books</a></h3>
+                            <p>Rare Books & Textbooks</p>
+                        </div>
+                        <div class="section_box">
+                            <h3><a href="#">DpReview</a></h3>
+                            <p>Digital Photography</p>
+                        </div>
+                        <div class="section_box">
+                            <h3><a href="#">Audible</a></h3>
+                            <p>Download Audio Books</p>
+                        </div>
+                    </div>
+                    <div class="footer_section_box">
+                        <div class="section_box">
+                            <h3><a href="#">Junglee</a></h3>
+                            <p>Shop Online in India</p>
+                        </div>
+                        <div class="section_box">
+                            <h3><a href="#">Look</a></h3>
+                            <p>Kids' Clothing & Shoes</p>
+                        </div>
+                        <div class="section_box">
+                            <h3><a href="#">MYHABIT</a></h3>
+                            <p>Private Fashion Designer
+                                Sales</p>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- footer_section_about -->
+            <div class="footer_section_active">
+                <h2>Stay in touch</h2>
+                <form action="" class="subscribe_form">
+                    <input type="email" id="fname" name="fname" placeholder="Your E-mail">
+                    <button class="subscribe_button" type="submit" >Subscribe </button>
+                    <!--<img src="img/icons_svg/mail.svg" alt="mail"> -->
+                </form>
+                <hr>
+                <div class="footer_social">
+                    <h2>Follow us</h2>
+                    <div class="social_icon">
+                        <ul class="menu_social">
+                            <li><a href="#"><img src="img/icons_svg/facebook.svg" alt="facebook"></a></li>
+                            <li><a href="#"><img src="img/icons_svg/twitter.svg" alt="twitter"></a></li>
+                            <li><a href="#"><img src="img/icons_svg/pinterest.svg" alt="pinterest"></a></li>
+                            <li><a href="#"><img src="img/icons_svg/instagram.svg" alt="instagram"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+            <div class="footer_info">
+                <p>&#169; 2016 Bookworm. All rights reserved</p>
+                <hr>
+            </div>
+        </div>
+        </div>
+
+        <div class="billing">
+            <form action="">
+                <p>
+                    <select name="country" id="country" >
+                        <option value="">country</option>
+                        <option value="">USA</option>
+                        <option value="">fr</option>
+                        <option value="">kz</option>
+                        <option value="">ru</option>
+                    </select>
+                </p>
+            </form>
+        </div>
+    </div>
+
+    </div> <!-- end your cart> -->
+</body>
+</html>
