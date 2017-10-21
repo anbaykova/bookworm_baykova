@@ -273,13 +273,29 @@ width: 100%;
 }
 
 .container_button {
-
     margin-top: 90px;
     text-align: center;
 }
+.proceed-payment {
+    text-align: center;
+}
+
 .container_button a {
     transition: 5s ease color;
 }
+button.btn:hover {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    text-align: center;
+    font-weight: 400;
+    color: #45474b;
+    text-decoration: none;
+    padding: 10px 60px;
+    border: 2px solid #555963;
+    background: white;
+}
+
+
 a.btn {
     font-family: 'Lato', sans-serif;
     font-size: 16px;
@@ -291,8 +307,34 @@ a.btn {
     border: 2px solid #555963;
     background: white;
 }
+button.btn {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    text-align: center;
+    font-weight: 400;
+    color: #45474b;
+    text-decoration: none;
+    padding: 10px 60px;
+    border: 2px solid #555963;
+    background: white;
+}
+button.btn:hover { background: #da8913; }
+button.btn:active { background: white; }
+
 a.btn:hover { background: #da8913; }
 a.btn:active { background: white; }
+
+.proceed-inner {
+    width: 100%;
+}
+.proceed-count {
+    float: left;
+    width: 25%;
+}
+.proceed-payment {
+    float: right;
+    width: 25%;
+}
 
 .shopfrontmenu {
     font-family: 'Lato', sans-serif;
@@ -970,9 +1012,8 @@ button[type=submit] {
 .footer_social {
     margin: 80px 0 0 0;
 }
-.billing {
-    margin: 150px;
-    padding: 150px;
+.country {
+
 }
 input[type=radio] {
     display: none;
@@ -1045,7 +1086,7 @@ input[type=radio]:checked + label::after {
 }
 .payment {
     width: 100%;
-    height: 300px;
+    height: 255px;
 }
 .payment-radio {
     width: 187px;
@@ -1057,11 +1098,23 @@ input[type=radio]:checked + label::after {
 .payment label {
     margin-right: 10px;
 }
-/*
-.payment img {
-    margin-right: 135px;
+.coupon-code {
+    width: 100% ;
+    height: 100px;
+;
 }
-.payment h1 {
-    text-align: left;
+.wrap-footer {
+    background-color: #f2fdff;
 }
-*/
+
+.count-form-inner {
+    width: 100%;
+}
+.coupon-code {
+    float: left;
+    width: 50%;
+}
+.proceed-checkbox {
+    float: right;
+    width: 50%;
+}
