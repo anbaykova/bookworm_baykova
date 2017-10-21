@@ -937,7 +937,7 @@ width: 1060px;
     font-family: 'Lato', sans-serif;
     font-size: 15px;
     color: #555963;
-    margin: 150px 0 70px 0;
+    margin: 150px 0 0 0;
 }
 
 button[type=submit]:hover {
@@ -1082,7 +1082,7 @@ input[type=radio]:checked + label::after {
     margin-top: 240px;
 }
 .cart-wrap h1 {
-    text-align: left;
+    text-align: center;
 }
 .payment {
     width: 100%;
@@ -1101,7 +1101,15 @@ input[type=radio]:checked + label::after {
 .coupon-code {
     width: 100% ;
     height: 100px;
-;
+}
+button.coupon_button::after {
+
+    background-repeat: no-repeat;
+    content: "";
+    background-image: url(../img/Rectangle45.png);
+    width: 16px;
+    height: 14px;
+    display: inline-block;
 }
 .wrap-footer {
     background-color: #f2fdff;
