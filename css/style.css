@@ -325,15 +325,42 @@ a.btn:hover { background: #da8913; }
 a.btn:active { background: white; }
 
 .proceed-inner {
+    margin-top: 42px;
     width: 100%;
 }
 .proceed-count {
     float: left;
     width: 50%;
 }
+span.proceed-count-font1 {
+    margin-right: ;
+    font-family: 'Ramaraja', serif;
+    font-size: 21px;
+    color: #45474b;
+}
+span.proceed-count-font2 {
+     font-family: 'Yrsa', serif;
+     font-size: 25px;
+     color: #555963;
+ }
+span.proceed-count-font3 {
+    font-family: 'Ramaraja', serif;
+    font-size: 28px;
+    color: #555963;
+}
+span.proceed-count-font4 {
+    font-family: 'Yrsa', serif;
+    font-size: 31px;
+    color: #555963;
+}
 .proceed-payment {
     float: right;
     width: 50%;
+}
+
+.proceed-count table tr td {
+    padding-bottom: 15px;
+    padding-right: 10px;
 }
 
 .shopfrontmenu {
@@ -1235,9 +1262,11 @@ input[type=radio]:checked + label::after {
     margin-right: 10px;
 }
 .coupon-code {
+    border-bottom: 1px solid #555963;
     width: 350px ;
-    height:20px;
+    height:61px;
 }
+
 .coupon-inner {
     float: left;
     width: 50%;
@@ -1248,6 +1277,7 @@ input[type=radio]:checked + label::after {
     font-size: 15px;
     color: #959ba1;;
 }
+
 .coupon-code input:after{
     content: '';
     height: 2px;
@@ -1255,6 +1285,9 @@ input[type=radio]:checked + label::after {
     width: 100%;
 }
 .coupon-code p {
+    font-family: 'Yrsa', serif;
+    font-size: 19px;
+    color: #555963;
     margin-top: 20px;
 }
 .coupon_button {
@@ -1262,6 +1295,7 @@ input[type=radio]:checked + label::after {
     font-size: 16px;
     color: #45474b;
 }
+
 button.coupon_button {
     background-color: white;
     color: #555963;
@@ -1278,6 +1312,18 @@ button.coupon_button::after {
     height: 14px;
     display: inline-block;
 }
+
+button.coupon_button::before {
+    content: "";
+    width: 1px;
+    height: 20px;
+    background: #555963;
+    display: inline-block;
+    margin: 0 20px;
+    vertical-align: middle;
+
+}
+
 .wrap-footer {
     background-color: #f2fdff;
 }
@@ -1294,6 +1340,18 @@ button.coupon_button::after {
     margin-right: 168px;
     float: right;
     width: 50%;
+}
+.proceed-checkbox label {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    color: #45474b;
+}
+.proceed-checkbox a {
+    font-family: 'Amiri', serif;
+    font-size: 16px;
+    color: #dd9327;
+    text-decoration: underline;
+    text-decoration-color: #dd9327;
 }
 .form-input {
     width: 100%;
