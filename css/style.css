@@ -329,11 +329,11 @@ a.btn:active { background: white; }
 }
 .proceed-count {
     float: left;
-    width: 25%;
+    width: 50%;
 }
 .proceed-payment {
     float: right;
-    width: 25%;
+    width: 50%;
 }
 
 .shopfrontmenu {
@@ -944,13 +944,48 @@ button[type=submit]:hover {
     border: none;
 }
 .subscribe_form {
+    background-color: #f2fdff;
     position: relative;
+}
+
+.subscribe_form input {
+    width: 206px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+    color: #45474b;
+    border: none;
+}
+button.subscribe_button::before {
+    content: "";
+    width: 1px;
+    height: 20px;
+    background: #555963;
+    display: inline-block;
+    margin: 0 20px;
+    vertical-align: middle;
+}
+
+input[type=email] {
+    background-color: #f2fdff;
+    border-color: #da8913;
 }
 input[type=email]:focus {
     border-color: #da8913;
 }
 input[type=email]:active {
     border-color: red;
+}
+
+button.subscribe_button{
+    background-color: #f2fdff;
+    color: #555963;
+    padding: 10px 0px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
 }
 
 button.subscribe_button::after {
@@ -967,36 +1002,17 @@ button.subscribe_button::after {
     position: absolute;
 } */
 
-input[type=email] {
+input[type=email], select {
     width: 206px;
-    padding: 12px 20px;
     margin: 8px 0;
     box-sizing: border-box;
     font-size: 16px;
     font-family: 'Lato', sans-serif;
-    color: #45474b;
-}
-
-input[type=email], select {
-    border: none;
     color: #da8913;
-    width: 206px;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    box-sizing: border-box;
 }
 
-button[type=submit] {
-    /*position: relative; */
-    background-color: white;
-    color: #555963;
-    padding: 10px 0px;
-    margin: 8px 0;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
+/*button[type=submit]*/
+
 .footer_section_active {
     position: relative;
 }
@@ -1011,9 +1027,6 @@ button[type=submit] {
 }
 .footer_social {
     margin: 80px 0 0 0;
-}
-.country {
-
 }
 input[type=radio] {
     display: none;
@@ -1049,13 +1062,107 @@ input[type=radio]+label::after{
 input[type=radio]:checked + label::after {
     background: #da8913;
 }
+
+/* Далее идет оформление чекбокса в современных браузерах, а также IE9 и выше.
+Благодаря тому, что старые браузеры не поддерживают селекторы :not и :checked,
+в них все нижеследующие стили не сработают. */
+
+/* Прячем оригинальный чекбокс. */
+.checkbox-create-account:not(checked) {
+    position: absolute;
+    opacity: 0;
+}
+.checkbox-accept:not(checked) {
+    position: absolute;
+    opacity: 0;
+}
+
+.checkbox-create-account:not(checked) + label {
+    position: relative; /* будем позиционировать псевдочекбокс относительно label */
+    padding: 0 0 0 35px; /* оставляем слева от label место под псевдочекбокс */
+}
+.checkbox-accept:not(checked) + label {
+    position: relative; /* будем позиционировать псевдочекбокс относительно label */
+    padding: 0 0 0 35px; /* оставляем слева от label место под псевдочекбокс */
+}
+/* Оформление первой части чекбокса в выключенном состоянии (фон). */
+.checkbox-create-account:not(checked) + label:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 17px;
+    height: 17px;
+    border: 2px solid #45474b;
+   /* box-shadow: inset 0 2px 3px rgba(0,0,0,.2); */
+    background: transparent;
+}
+.checkbox-accept:not(checked) + label:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 17px;
+    height: 17px;
+    border: 2px solid #45474b;
+    /* box-shadow: inset 0 2px 3px rgba(0,0,0,.2); */
+    background: transparent;
+}
+/* Оформление второй части чекбокса в выключенном состоянии (переключатель). */
+.checkbox-create-account:not(checked) + label:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 17px;
+    height: 17px;
+    border: 2px solid #45474b;
+    /* box-shadow: inset 0 2px 3px rgba(0,0,0,.2); */
+    background: transparent;
+    box-shadow: 0 2px 5px rgba(0,0,0,.3);
+    transition: all .2s; /* анимация, чтобы чекбокс переключался плавно */
+}
+.checkbox-accept:not(checked) + label:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 17px;
+    height: 17px;
+    border: 2px solid #45474b;
+    /* box-shadow: inset 0 2px 3px rgba(0,0,0,.2); */
+    background: transparent;
+    box-shadow: 0 2px 5px rgba(0,0,0,.3);
+    transition: all .2s; /* анимация, чтобы чекбокс переключался плавно */
+}
+/* Меняем фон чекбокса, когда он включен. */
+.checkbox-create-account:checked + label:before {
+     background: #da8913;
+ }
+.checkbox-accept:checked + label:before {
+    background: #da8913;
+}
+/* Сдвигаем переключатель чекбокса, когда он включен. */
+/*.checkbox:checked + label:after {
+    left: 26px;
+}*/
+/* Показываем получение фокуса. */
+.checkbox-create-account:focus + label:before {
+    box-shadow: 0 0 0 3px rgba(255,255,0,.5);
+}
+.checkbox-accept:focus + label:before {
+    box-shadow: 0 0 0 3px rgba(255,255,0,.5);
+}
+
+.proceed-checkbox a {
+    color: #da8913;
+}
+
 .shipping label {
     padding-right: 35px;
 }
-.e-mail::before {
-
-}
 .leftpart {
+    margin-top: 42px;
     float: left;
     width: 50%;
 }
@@ -1065,13 +1172,26 @@ input[type=radio]:checked + label::after {
 }
 .form-cart {
     width: 100%;
+    padding-top: 42px;
 }
+
 .shipping-method {
     width: 100%;
 }
 .shipping_left {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    padding-top: 65px;
     width: 50%;
     float: left;
+    color: #45474b;
+}
+.shipping_left h3{
+    padding: 9px 45px 0 0;
+    float: left;
+}
+.shipping_left {
+
 }
 .shipping_right {
     text-align: right;
@@ -1079,31 +1199,78 @@ input[type=radio]:checked + label::after {
     float: right;
 }
 .cart-wrap {
-    margin-top: 240px;
+    margin-top: 230px;
 }
 .cart-wrap h1 {
     text-align: center;
 }
+.payment-method {
+    margin-top: 65px;
+}
 .payment {
     width: 100%;
-    height: 255px;
+    margin-top: 25px;
+
 }
+.payment::after {
+    content: "";
+    width: 100%;
+    background-color: #ececed;
+    height: 2px;
+    display: block;
+    margin-top: 86px;
+
+    }
 .payment-radio {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    color: #45474b;
     width: 187px;
     height: 29px;
     display: inline-block;
-    margin: 0px 87px 0 10px
+    margin: 35px 87px 0 10px
 }
 
 .payment label {
     margin-right: 10px;
 }
 .coupon-code {
-    width: 100% ;
-    height: 100px;
+    width: 350px ;
+    height:20px;
+}
+.coupon-inner {
+    float: left;
+    width: 50%;
+}
+.coupon-code input{
+    border: none;
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    color: #959ba1;;
+}
+.coupon-code input:after{
+    content: '';
+    height: 2px;
+    background-color: #45474b;
+    width: 100%;
+}
+.coupon-code p {
+    margin-top: 20px;
+}
+.coupon_button {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    color: #45474b;
+}
+button.coupon_button {
+    background-color: white;
+    color: #555963;
+    padding: 10px 0px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
 }
 button.coupon_button::after {
-
     background-repeat: no-repeat;
     content: "";
     background-image: url(../img/Rectangle45.png);
@@ -1114,15 +1281,70 @@ button.coupon_button::after {
 .wrap-footer {
     background-color: #f2fdff;
 }
-
-.count-form-inner {
-    width: 100%;
-}
-.coupon-code {
-    float: left;
-    width: 50%;
-}
-.proceed-checkbox {
+.proceed-wrap {
     float: right;
     width: 50%;
 }
+.count-form-inner {
+    margin-top: 85px;
+    width: 100%;
+}
+
+.proceed-checkbox {
+    margin-right: 168px;
+    float: right;
+    width: 50%;
+}
+.form-input {
+    width: 100%;
+}
+.input-text p {
+    color: #959ba1;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    padding: 10px 0 0 0;
+}
+.input-text {
+    width: 245px;
+    display: inline-block;
+    border: none;
+    border-bottom: 1px solid #555963;
+    margin: 0 45px 0 10px ;
+    }
+.input-text input {
+    border: none;
+    color: #959ba1;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+}
+.input-text-inner p {
+    color: #959ba1;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+}
+.input-text-inner input {
+    border: none;
+}
+.input-text-inner{
+    width: 546px;
+    border-bottom: 1px solid #555963;
+    margin: 0 0 0 10px;
+}
+.gender label {
+    font-family: 'Lato', sans-serif
+    font-style: 16px;
+    color: #45474b;
+}
+.gender h3 {
+    padding: 9px 25px 0 0;
+    float: left;
+}
+.create_account {
+    width: 220px;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    color: #45474b;
+    padding-top: 65px;
+    margin-right: 60px;
+}
+
