@@ -7,7 +7,8 @@ div.cs-select {
 	background: #fff;
 	z-index: 100;
 	width: 100%;
-	max-width: 205px;
+	max-width: 245px;
+	margin-left: 10px;
 	-webkit-touch-callout: none;
 	-webkit-user-select: none;
 	-khtml-user-select: none;
@@ -36,8 +37,9 @@ div.cs-select:focus {
 
 /* Placeholder and selected option */
 .cs-select > span {
+	border-bottom: 1px solid #555963;
 	padding-right: 3em;
-	padding-bottom: 28px;
+
 }
 
 .cs-select > span::after,

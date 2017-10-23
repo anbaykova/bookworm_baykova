@@ -48,33 +48,33 @@
                             <label for="gen-woman">Woman</label>
                         </div>
                         <div class="form-input">
-                            <div class="input-text">
-                                <p>First name</p>
-                                <input type="text" required >
+                            <div class="input-text required has-error has-success">
+                                <input type="text" placeholder="First name" class="form-control" name="firstname" maxlength="100" required >
+                                <div class="help-block">Title cannot be blank</div>
                             </div>
-                            <div class="input-text">
-                                <p>Last name</p>
-                                <input type="text" required >
+                            <div class="input-text required has-error has-success">
+                                <input type="text" placeholder="Last name" name="lastname" maxlength="100" required >
+                                <div class="help-block">Title cannot be blank</div>
                             </div>
-                            <div class="input-text">
-                                <p>E-mail</p>
-                                <input type="email" required >
+                            <div class="input-text required has-error has-success">
+                                <input type="email" placeholder="E-mail" name="email" maxlength="100" required >
+                                <div class="help-block">Title cannot be blank</div>
                             </div>
-                            <div class="input-text">
-                                <p>Phone</p>
-                                <input type="text" required >
+                            <div class="input-text required has-error has-success">
+                                <input type="text" placeholder="Phone" name="phone" maxlength="100" required >
+                                <div class="help-block">Title cannot be blank.</div>
                             </div>
                         </div>
                     </div>
                     <div class="rightpart">
-                        <div class="input-text-inner">
-                            <p>Address</p>
-                            <input type="text"  required >
+                        <div class="input-text-inner required has-error has-success">
+                            <input type="text" placeholder="Address" name="address" required >
+                            <div class="help-block">Title cannot be blank</div>
                         </div>
                         <div class="form-input">
-                            <div class="input-text">
+                            <div class="input-text required has-error has-success ">
                                 <section>
-                                    <select class="cs-select cs-skin-elastic">
+                                    <select name="country" class="cs-select cs-skin-elastic" >
                                         <option value="" disabled selected>Country</option>
                                         <option value="france" data-class="flag-france">France</option>
                                         <option value="brazil" data-class="flag-brazil">Brazil</option>
@@ -83,17 +83,17 @@
                                     </select>
                                 </section>
                             </div>
-                            <div class="input-text">
-                                <p>City</p>
-                                <input type="text" required >
+                            <div class="input-text required has-error has-success">
+                                <input type="text" name="city" placeholder="City" class="" maxlength="100" required >
+                                <div class="help-block">Title cannot be blank.</div>
                             </div>
-                            <div class="input-text">
-                                <p>State/Providence</p>
-                                <input type="text" required >
+                            <div class="input-text required has-error has-success">
+                                <input type="text" name="state" placeholder="State/Providence" maxlength="100" required >
+                                <div class="help-block">Title cannot be blank.</div>
                             </div>
-                            <div class="input-text">
-                                <p>Zip/Postal</p>
-                                <input type="text" >
+                            <div class="input-text has-error has-success ">
+                                <input type="text" name="zip" class="form-block" placeholder="Zip/Postal" maxlength="100"  >
+                                <div class="help-block">Title cannot be blank.</div>
                             </div>
                         </div>
                     </div>
@@ -151,17 +151,18 @@
                         </div>
                     </div>
                 </div>
-            </form> <!-- end form -->
 
-            <form >
+
+
                 <div class="count-form-inner">
                     <div class="coupon-inner">
-                        <div class="coupon-code">
-                            <input type="number" id="coupon" name="coupon" placeholder="Coupon code">
-                            <button class="coupon_button" type="submit" >Apply </button>
-                             <p>Type your coupone code (if you have), and take 20% discount for your order.</p>
-
-                        </div>
+                        <form class="">
+                            <div class="coupon-code">
+                                <input type="number" id="coupon" name="coupon" placeholder="Coupon code">
+                                <button class="coupon_button" type="submit" >Apply </button>
+                                 <p>Type your coupone code (if you have), and take 20% discount for your order.</p>
+                            </div>
+                        </form>
                     </div>
                     <div class="proceed-wrap">
                         <div class="proceed-checkbox">

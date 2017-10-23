@@ -1,56 +1,83 @@
 
-@media all and (max-width: 1024px){
-    .menu_list {
-        display: none;
+    @media all and (max-width: 1024px){
+        .menu_list {
+            display: none;
+        }
+        .presentation_book {
+            float: none;
+            width: auto;
+            margin-bottom: 50px;
+        }
+        .presentation_text {
+            border: 1px solid grey;
+            width: auto;
+        }
+
     }
-    .presentation_book {
-        float: none;
-        width: auto;
-        margin-bottom: 50px;
-    }
-    .presentation_text {
-        border: 1px solid grey;
-        width: auto;
+
+    @media all and (max-width: 1150px) {
+        .bookschoice {
+            height: 910px;
+            margin-left: 50px;
+            float: none;
+            margin: 0 auto;
+        }
+        .booktext {
+            margin: 0 auto;
+            height: 355px;
+            float: none;
+            width: 500px;
+
+        }
+        .presentation_books {
+            margin-top: 500px;
+
+        }
+        .presentation_book_img {
+            right: -100px;
+        }
     }
 
 
-
-}
-
-@media all and (max-width: 1150px) {
-    .bookschoice {
-        height: 910px;
-        margin-left: 50px;
-        float: none;
-        margin: 0 auto;
+    @media all and (max-width: 600px){
+        .presentation_book {
+            background-color: #da8913;
+        }
     }
-    .booktext {
-        margin: 0 auto;
-        height: 355px;
-        float: none;
-        width: 500px;
+    @media all and (max-width: 600px) and (orientation: landscape){
+        .presentation_book {
+            background-color: chocolate;
+        }
+    }
+
+    @media only screen and (max-width: 768px) {
+        /* For mobile phones: */
 
     }
-    .presentation_books {
-        margin-top: 500px;
+
+    /* больше чем 768px */
+    @media only screen and (min-width: 768px) {
 
     }
-    .presentation_book_img {
-        right: -100px;
-    }
-}
 
+    /* при меньше 500px ) */
+    @media only screen and (max-width: 500px) {
+        body {
+            background-color: lightblue;
+        }
+    }
 
-@media all and (max-width: 600px){
-    .presentation_book {
-        background-color: #da8913;
+    /* For width 400px and larger: */
+    @media only screen and (min-width: 400px) {
+
     }
-}
-@media all and (max-width: 600px) and (orientation: landscape){
-    .presentation_book {
-        background-color: chocolate;
+
+    /* For devices 400px and larger: */
+    @media only screen and (min-device-width: 400px) {
+        body {
+            background-image: url('img_flowers.jpg');
+        }
     }
-}
 
 
 /*
