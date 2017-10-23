@@ -970,12 +970,12 @@ width: 1060px;
 button[type=submit]:hover {
     border: none;
 }
-.subscribe_form {
-    background-color: #f2fdff;
-    position: relative;
-}
+input.subscribe_form {
+     position: relative;
+ }
 
 .subscribe_form input {
+    background-color: #f2fdff;
     width: 206px;
     padding: 12px 20px;
     margin: 8px 0;
@@ -996,16 +996,18 @@ button.subscribe_button::before {
 }
 
 input[type=email] {
-    background-color: #f2fdff;
     border-color: #da8913;
 }
 input[type=email]:focus {
     border-color: #da8913;
+
 }
 input[type=email]:active {
     border-color: red;
 }
-
+input[type=text] {
+    border-color: #da8913;
+}
 button.subscribe_button{
     background-color: #f2fdff;
     color: #555963;
@@ -1332,6 +1334,7 @@ button.coupon_button::before {
     width: 50%;
 }
 .count-form-inner {
+    margin-bottom: 80px;
     margin-top: 85px;
     width: 100%;
 }
