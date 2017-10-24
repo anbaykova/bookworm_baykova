@@ -996,42 +996,87 @@ button.subscribe_button::before {
 
 input[type=email] {
     border: none;
-   /* border-color: #da8913; */
+    padding: 5px 0;
+    outline: none;
+    box-sizing: border-box;
 }
 input[type=email]:focus {
     border-color: #da8913;
-
+    color: #da8913;
 }
 input[type=email]:active {
-    border-color: red;
+    border-color: #959ba1;
+    color: #959ba1;
 }
+
+input[type=tel] {
+    border: none;
+    padding: 5px 0;
+    outline: none;
+    box-sizing: border-box;
+}
+input[type=tel]:focus {
+    border-color: #da8913;
+    color: #da8913;
+}
+
+.input-text textarea {
+    border-bottom: 1px solid #555963;
+}
+.shipping-inner {
+    width: 170px;
+    float: left;
+}
+textarea {
+    margin-left: 10px;
+    display: block;
+    width: 245px;
+    height: 20px;
+    border: none;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    color: #959ba1;
+    outline: none;
+}
+textarea:focus {
+    border-color: #da8913;
+    color: #da8913;
+}
+
 input[type=text] {
     border: none;
     outline: none;
     padding: 5px 0;
-   /* border-color: #959ba1; */
+    /* border-color: #959ba1; */
     box-sizing: border-box;
     /*border: 3px solid #1e4c4a;
     -webkit-transition: 0.5s;
     transition: 0.5s;
     outline: none; */
-
 }
-input[type=tel] {
-    border: none;
+input[type=text]:success {
+    border-color: green;
+    color: green;
+}
+input[type=text]:disabled {
+    border-color: #45474b;
+    background-color: #959ba1;
+    color: #45474b;
 }
 input[type=text]:active {
-    border-color: #da8913;
+    border-color: #959ba1;
+    color: #959ba1;
 }
-.has-error:focus {
-    border: 3px solid red;
+input[type=text]:focus {
+    border-color: #da8913;
+    color: #da8913;
+}
+input[type=text]:error {
+    border-color: red;
+    color: red;
 }
 input[type=number] {
     border: none;
-}
-
-input.has-error {
-    color: red;
 }
 .form-input input {
     position: relative;
@@ -1070,14 +1115,7 @@ button.subscribe_button::after {
     position: absolute;
 } */
 
-input[type=email], select {
-    width: 206px;
-   /* margin: 8px 0; */
-    box-sizing: border-box;
-    font-size: 16px;
-    font-family: 'Lato', sans-serif;
-    color: #da8913;
-}
+
 
 /*button[type=submit]*/
 
@@ -1303,7 +1341,7 @@ input[type=radio]:checked + label::after {
     border-bottom: 1px solid #555963;
     width: 350px ;
     height:61px;
-}
+   }
 
 .coupon-inner {
     float: left;
@@ -1313,15 +1351,20 @@ input[type=radio]:checked + label::after {
     border: none;
     font-family: 'Lato', sans-serif;
     font-size: 15px;
-    color: #959ba1;;
+    color: #959ba1;
+    outline: none;
+}
+.coupon-code input:focus{
+    border-color: #da8913;
+    color: #da8913;
 }
 
-.coupon-code input:after{
+/*.coupon-code input:after{
     content: '';
     height: 2px;
     background-color: #45474b;
     width: 100%;
-}
+} */
 .coupon-code p {
     font-family: 'Yrsa', serif;
     font-size: 19px;
@@ -1404,20 +1447,7 @@ button.coupon_button::before {
     /*border-bottom: 1px solid #555963;*/
     margin: 10px 35px 0 1px ;
     }
-.input-text textarea {
-    border-bottom: 1px solid #555963;
-}
-textarea {
-    margin-left: 10px;
-    display: block;
-    width: 245px;
-    height: 20px;
-    border: none;
-    font-family: 'Lato', sans-serif;
-    font-size: 16px;
-    color: #959ba1;
-}
-textarea:-moz-placeholder { color: red; }
+
 
 .help-block {
     /*display: none; */
