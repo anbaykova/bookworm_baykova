@@ -59,7 +59,7 @@ ul li {
 .menu_logo {
     margin: 20px 0 0 35px;
     background-image: url("../img/Logo.png");
-    width: 15%;
+    width: 120px;
     height: 56px;
     float: left;
     padding: 19px 60px 15px 35px;
@@ -913,7 +913,7 @@ width: 1060px;
 }
 .footer_section_active {
     margin: 95px 0 0 0;
-    width: 30%;
+    width: 35%;
     float: right;
     position: relative;
 }
@@ -970,10 +970,9 @@ width: 1060px;
 button[type=submit]:hover {
     border: none;
 }
-input.subscribe_form {
-     position: relative;
- }
-
+form.subscribe_form {
+   width: 100%;
+}
 .subscribe_form input {
     background-color: #f2fdff;
     width: 206px;
@@ -996,7 +995,8 @@ button.subscribe_button::before {
 }
 
 input[type=email] {
-    border-color: #da8913;
+    border: none;
+   /* border-color: #da8913; */
 }
 input[type=email]:focus {
     border-color: #da8913;
@@ -1017,11 +1017,17 @@ input[type=text] {
     outline: none; */
 
 }
+input[type=tel] {
+    border: none;
+}
 input[type=text]:active {
     border-color: #da8913;
 }
 .has-error:focus {
     border: 3px solid red;
+}
+input[type=number] {
+    border: none;
 }
 
 input.has-error {
@@ -1075,9 +1081,7 @@ input[type=email], select {
 
 /*button[type=submit]*/
 
-.footer_section_active {
-    position: relative;
-}
+
  /*.footer_section_active img {
     bottom: 24px;
     right: 186px;
@@ -1229,6 +1233,7 @@ input[type=radio]:checked + label::after {
     width: 50%;
 }
 .rightpart {
+    margin-top: 40px;
     float: right;
     width: 50%;
 }
@@ -1252,9 +1257,7 @@ input[type=radio]:checked + label::after {
     padding: 9px 45px 0 0;
     float: left;
 }
-.shipping_left {
 
-}
 .shipping_right {
     text-align: right;
     width: 50%;
@@ -1395,15 +1398,29 @@ button.coupon_button::before {
 }
 
 .input-text {
-    width: 100%;
-    max-width: 245px;
+    width: 245px;
     display: inline-block;
     border: none;
     /*border-bottom: 1px solid #555963;*/
-    margin: 10px 45px 0 10px ;
+    margin: 10px 35px 0 1px ;
     }
+.input-text textarea {
+    border-bottom: 1px solid #555963;
+}
+textarea {
+    margin-left: 10px;
+    display: block;
+    width: 245px;
+    height: 20px;
+    border: none;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    color: #959ba1;
+}
+textarea:-moz-placeholder { color: red; }
+
 .help-block {
-    /*display: none;*/
+    /*display: none; */
     font-family: 'Lato', sans-serif;
     font-size: 15px;
     color: red;

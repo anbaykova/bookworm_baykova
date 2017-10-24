@@ -61,15 +61,18 @@
                                 <div class="help-block">Title cannot be blank</div>
                             </div>
                             <div class="input-text required has-error has-success">
-                                <input type="text" placeholder="Phone" name="phone" maxlength="100" required >
+                                <input type="tel" placeholder="Phone" pattern="[0-9]{5,13}" name="phone" required >
+                                <div class="help-block">Title cannot be blank.</div>
                                 <div class="help-block">Title cannot be blank.</div>
                             </div>
                         </div>
                     </div>
                     <div class="rightpart">
-                        <div class="input-text-inner required has-error has-success">
-                            <input type="text" placeholder="Address" name="address" required >
-                            <div class="help-block">Title cannot be blank</div>
+                        <div class="input-text required has-error has-success">
+                            <textarea placeholder="Address" maxlength="150" required name="address" id=""></textarea>
+                            <div class="help-block">Title cannot be blank.</div>
+                            <!--<input type="text" placeholder="Address" name="address" maxlength="150" required >
+                            <div class="help-block">Title cannot be blank</div> -->
                         </div>
                         <div class="form-input">
                             <div class="input-text required has-error has-success ">
@@ -82,13 +85,14 @@
                                         <option value="south-africa" data-class="flag-safrica">South Africa</option>
                                     </select>
                                 </section>
-                            </div>
-                            <div class="input-text required has-error has-success">
-                                <input type="text" name="city" placeholder="City" class="" maxlength="100" required >
                                 <div class="help-block">Title cannot be blank.</div>
                             </div>
                             <div class="input-text required has-error has-success">
-                                <input type="text" name="state" placeholder="State/Providence" maxlength="100" required >
+                                <input type="text" name="city" placeholder="City" class="" maxlength="150" required >
+                                <div class="help-block">Title cannot be blank.</div>
+                            </div>
+                            <div class="input-text required has-error has-success">
+                                <input type="text" name="state" placeholder="State/Providence" minlength="5" maxlength="10" required >
                                 <div class="help-block">Title cannot be blank.</div>
                             </div>
                             <div class="input-text has-error has-success ">
@@ -103,12 +107,16 @@
                 <div class="shipping-method" >
                     <div class="shipping_left">
                         <h3>Shipping method:</h3>
-                        <input id="ups_saver" type="radio" name="ups" value="ups_saver">
-                        <label for="ups_saver">UPS_SAVER</label> Free
-                        <!--<input type="text" name="ups" value="Free"> -->
-                        <input id="ups_express" type="radio" name="ups" value="ups_express">
-                        <label for="ups_express">UPS Express</label> $7,50
-                        <!-- <input type="text" name="ups" value="$7,50"> -->
+                        <div class="shipping-inner">
+                            <input id="ups_saver" type="radio" name="ups" value="ups_saver">
+                            <label for="ups_saver">UPS_SAVER</label> Free
+                        </div>
+                        <div class="shipping-inner">
+                            <!--<input type="text" name="ups" value="Free"> -->
+                            <input id="ups_express" type="radio" name="ups" value="ups_express">
+                            <label for="ups_express">UPS Express</label> $7,50
+                            <!-- <input type="text" name="ups" value="$7,50"> -->
+                        </div>
                     </div>
                     <div class="shipping_right">
                         <div class="create_account">
@@ -151,8 +159,6 @@
                         </div>
                     </div>
                 </div>
-
-
 
                 <div class="count-form-inner">
                     <div class="coupon-inner">
@@ -289,6 +295,22 @@
                 new SelectFx(el);
             } );
         })();
+    </script>
+    <script>
+        var placeholder = 'This is a line \nthis should be a new line';
+        $('textarea').attr('value', placeholder);
+
+        $('textarea').focus(function(){
+            if($(this).val() === placeholder){
+                $(this).attr('value', '');
+            }
+        });
+
+        $('textarea').blur(function(){
+            if($(this).val() ===''){
+                $(this).attr('value', placeholder);
+            }
+        });
     </script>
 
 </body>

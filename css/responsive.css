@@ -1,4 +1,21 @@
 
+    /* большие экраны свыше 1200px, планшеты (768 - 922 px) и смартфоны (320px - 480px) */
+    @media all and (max-width: 980px){
+        .info_boks {
+            float: left;
+        }
+        button.btn {
+            padding: 10px 10px;
+        }
+        .form-cart {
+            padding-top: 2px;
+        }
+        .shipping-inner {
+            float: left;
+            box-sizing: border-box;
+        }
+    }
+
     @media all and (max-width: 1024px){
         .menu_list {
             display: none;
@@ -12,13 +29,17 @@
             border: 1px solid grey;
             width: auto;
         }
-
     }
 
+    @media all and (max-width: 1200px){
+         .menu_list {
+             display: none;
+         }
+    }
     @media all and (max-width: 1150px) {
         .bookschoice {
             height: 910px;
-            margin-left: 50px;
+            /*margin-left: 50px; */
             float: none;
             margin: 0 auto;
         }
@@ -27,11 +48,9 @@
             height: 355px;
             float: none;
             width: 500px;
-
         }
         .presentation_books {
             margin-top: 500px;
-
         }
         .presentation_book_img {
             right: -100px;
@@ -43,6 +62,10 @@
         .presentation_book {
             background-color: #da8913;
         }
+        .form-cart {
+            padding-top: 2px;
+        }
+
     }
     @media all and (max-width: 600px) and (orientation: landscape){
         .presentation_book {
@@ -51,7 +74,12 @@
     }
 
     @media only screen and (max-width: 768px) {
-        /* For mobile phones: */
+        .form-cart {
+            padding-top: 2px;
+        }
+        .button.btn {
+            padding: 10px 10px;
+        }
 
     }
 
@@ -62,9 +90,7 @@
 
     /* при меньше 500px ) */
     @media only screen and (max-width: 500px) {
-        body {
-            background-color: lightblue;
-        }
+
     }
 
     /* For width 400px and larger: */
@@ -74,9 +100,7 @@
 
     /* For devices 400px and larger: */
     @media only screen and (min-device-width: 400px) {
-        body {
-            background-image: url('img_flowers.jpg');
-        }
+       
     }
 
 
