@@ -37,71 +37,71 @@
         <div class="cart-wrap container">
             <h1>Your cart</h1>
             <h2>Billing address</h2>
-            <form id="cart" class="form-cart" >
-                <div class="billing-address">
-                    <div class="leftpart">
-                        <div class="gender">
-                            <h3>Gender:</h3>
-                            <input id="gen-man" type="radio" name="gender" value="man">
-                            <label for="gen-man">Man</label>
-                            <input id="gen-woman" type="radio" name="gender" value="woman">
-                            <label for="gen-woman">Woman</label>
-                        </div>
-                        <div class="form-input">
-                            <div class="input-text required has-error has-success">
-                                <input type="text" placeholder="First name" class="form-control" name="firstname" maxlength="100" required >
-                                <div class="help-block">Title cannot be blank</div>
-                            </div>
-                            <div class="input-text required has-error has-success">
-                                <input type="text" placeholder="Last name" name="lastname" maxlength="100" required >
-                                <div class="help-block">Title cannot be blank</div>
-                            </div>
-                            <div class="input-text required has-error has-success">
-                                <input type="email" placeholder="E-mail" name="email" maxlength="100" required >
-                                <div class="help-block">Title cannot be blank</div>
-                            </div>
-                            <div class="input-text required has-error has-success">
-                                <input type="tel" placeholder="Phone" pattern="[0-9]{10,13}" name="phone" required >
-                                <div class="help-block">Title cannot be blank.</div>
-                            </div>
-                        </div>
+            <form id="cart" action="">
+             <div class="form-cart">
+                <div class="leftpart">
+                    <div class="gender">
+                        <h3>Gender:</h3>
+                        <input id="gen-man" type="radio" name="gender" value="man">
+                        <label for="gen-man">Man</label>
+                        <input id="gen-woman" type="radio" name="gender" value="woman">
+                        <label for="gen-woman">Woman</label>
                     </div>
-                    <div class="rightpart">
+                    <div class="form-input">
                         <div class="input-text required has-error has-success">
-                            <textarea placeholder="Address" maxlength="150" required name="address" id=""></textarea>
-                            <div class="help-block">Title cannot be blank.</div>
-                            <!--<input type="text" placeholder="Address" name="address" maxlength="150" required >
-                            <div class="help-block">Title cannot be blank</div> -->
+                            <input type="text" placeholder="First name" class="form-control" name="firstname" maxlength="100" required >
+                            <div class="help-block">Title cannot be blank</div>
                         </div>
-                        <div class="form-input">
-                            <div class="input-text required has-error has-success ">
-                                <section>
-                                    <select name="country" class="cs-select cs-skin-elastic" >
-                                        <option value="" disabled selected>Country</option>
-                                        <option value="france" data-class="flag-france">France</option>
-                                        <option value="brazil" data-class="flag-brazil">Brazil</option>
-                                        <option value="argentina" data-class="flag-argentina">Argentina</option>
-                                        <option value="south-africa" data-class="flag-safrica">South Africa</option>
-                                    </select>
-                                </section>
-                                <div class="help-block">Title cannot be blank.</div>
-                            </div>
-                            <div class="input-text required has-error has-success">
-                                <input type="text" name="city" placeholder="City" class="" maxlength="150" required >
-                                <div class="help-block">Title cannot be blank.</div>
-                            </div>
-                            <div class="input-text required has-error has-success">
-                                <input type="text" name="state" placeholder="State/Providence" minlength="5" maxlength="10" required >
-                                <div class="help-block">Title cannot be blank.</div>
-                            </div>
-                            <div class="input-text has-error has-success ">
-                                <input type="text" name="zip" class="form-block" placeholder="Zip/Postal" maxlength="100"  >
-                                <div class="help-block">Title cannot be blank.</div>
-                            </div>
+                        <div class="input-text required has-error has-success">
+                            <input type="text" placeholder="Last name" name="lastname" maxlength="100" required >
+                            <div class="help-block">Title cannot be blank</div>
+                        </div>
+                        <div class="input-text required has-error has-success">
+                            <input type="email" placeholder="E-mail" name="email" maxlength="100" required >
+                            <div class="help-block">Title cannot be blank</div>
+                        </div>
+                        <div class="input-text required has-error has-success">
+                            <input type="tel" placeholder="Phone" pattern="[0-9]{10,13}" name="phone" required >
+                            <div class="help-block">Title cannot be blank.</div>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div> <!-- leftpart -->
+                <div class="rightpart">
+                    <div class="input-text required has-error has-success">
+                        <textarea placeholder="Address" maxlength="150" required name="address" id="address"></textarea>
+                        <div class="help-block">Title cannot be blank</div>
+                        <!--<input type="text" placeholder="Address" name="address" maxlength="150" required >
+                           <div class="help-block">Title cannot be blank</div> -->
+                    </div>
+                    <div class="form-input">
+                        <div class="input-text required has-error has-success ">
+                            <select name="country" class="cs-select cs-skin-elastic"  title="country">
+                                <option value="" disabled selected>Country</option>
+                                <option value="france" data-class="flag-france">France</option>
+                                <option value="brazil" data-class="flag-brazil">Brazil</option>
+                                <option value="argentina" data-class="flag-argentina">Argentina</option>
+                                <option value="south-africa" data-class="flag-safrica">South Africa</option>
+                            </select>
+                            <div class="help-block">Title cannot be blank</div>
+                        </div>
+                        <div class="input-text required has-error has-success">
+                            <input type="text" name="city" placeholder="City" class="" maxlength="150" required >
+                            <div class="help-block">Title cannot be blank</div>
+                        </div>
+                        <div class="input-text required has-error has-success">
+                            <input type="text" name="state" placeholder="State/Providence" minlength="5" maxlength="10" required >
+                            <div class="help-block">Title cannot be blank.</div>
+                        </div>
+                        <div class="input-text has-error has-success ">
+                            <input type="text" name="zip" class="form-block" placeholder="Zip/Postal" maxlength="100"  >
+                            <div class="help-block">Title cannot be blank.</div>
                         </div>
                     </div>
                     <div class="clearfix"></div>
                 </div>
+             <div class="clearfix"></div>
+             </div>
 
                 <div class="shipping-method" >
                     <div class="shipping_left">
@@ -125,7 +125,7 @@
                     </div>
                     <div class="clearfix"></div>
                 </div>
-                <div class="payment-method container">
+                <div class="payment-method">
                     <h2>Payment method</h2>
                     <div id="payment" class="payment">
                         <div class="payment-radio">
@@ -158,54 +158,55 @@
                         </div>
                     </div>
                 </div>
+                </form>
 
-                <div class="count-form-inner">
-                    <div class="coupon-inner">
-                        <form class="">
-                            <div class="coupon-code">
-                                <input type="number" id="coupon" name="coupon" placeholder="Coupon code">
-                                <button class="coupon_button" type="submit" >Apply </button>
-                                 <p>Type your coupone code (if you have), and take 20% discount for your order.</p>
+                <div class="count-form-inner ">
+                    <form action="\">
+                        <div class="coupon-wrap">
+                            <div class="coupon-inner">
+                                <div class="coupon-code">
+                                    <input type="number" id="coupon" name="coupon" placeholder="Coupon code">
+                                    <button class="coupon_button" type="submit" >Apply </button>
+                                    <p>Type your coupone code (if you have), and take 20% discount for your order.</p>
+                                </div>
                             </div>
-                        </form>
-                    </div>
-                    <div class="proceed-wrap">
-                        <div class="proceed-checkbox">
-                            <input type="checkbox" id="checkbox-proceed" class="checkbox-accept" >
-                            <label for="checkbox-proceed">I accept the</label>
-                            <a href="#">Terms & conditions </a>
                         </div>
-                        <div class="clearfix"></div>
-                        <div class="proceed-inner">
-                            <div class="proceed-count">
-                                <table>
-                                    <tr>
-                                        <td><span class="proceed-count-font1">Shipping</span></td>
-                                        <td><span class="proceed-count-font2">$4.95</span></td>
-                                    </tr>
-                                    <tr>
-                                        <td><span class="proceed-count-font1">Subtotal</span></td>
-                                        <td> <span class="proceed-count-font2">$25</span></td>
-                                    </tr>
-                                    <tr>
-                                        <td><span class="proceed-count-font3"> Total</span></td>
-                                        <td><span class="proceed-count-font4"> $28.50</span></td>
-                                    </tr>
-                                </table>
+                        <div class="proceed-wrap">
+                            <div class="proceed-checkbox">
+                                <input type="checkbox" id="checkbox-proceed" class="checkbox-accept" >
+                                <label for="checkbox-proceed">I accept the</label>
+                                <a href="#">Terms & conditions </a>
                             </div>
-                            <div class="proceed-payment">
-                                <button class="btn">Proceed to payment</button>
+                            <div class="proceed-inner">
+                                <div class="proceed-count">
+                                    <table>
+                                        <tr>
+                                            <td><span class="proceed-count-font1">Shipping</span></td>
+                                            <td><span class="proceed-count-font2">$4.95</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span class="proceed-count-font1">Subtotal</span></td>
+                                            <td> <span class="proceed-count-font2">$25</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span class="proceed-count-font3"> Total</span></td>
+                                            <td><span class="proceed-count-font4"> $28.50</span></td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <div class="proceed-payment">
+                                    <input type="button" class="btn" value="Proceed to payment">
+                                </div>
+                                <div class="clearfix"></div>
                             </div>
                             <div class="clearfix"></div>
                         </div>
-                        <div class="clearfix"></div>
-                    </div>
                     <div class="clearfix"></div>
+                    </form>
                 </div>
-            </form>
-        </div>
+            </div>
 
-        <div class="wrap-footer">
+        <div class="wrap-footer container">
             <nav class="menu_futer">
                 <ul>
                     <li><a href="#">sitemap</a></li>
@@ -258,13 +259,11 @@
                     </div>
                 </div> <!-- footer_section_about -->
                 <div class="footer_section_active">
-                    <h2>Stay in touch</h2>
-                    <form class="subscribe_form">
+                     <form action="" name="subscribe-form" class="subscribe_form">
+                        <h2>Stay in touch</h2>
                         <input type="email" id="fname" name="fname" placeholder="Your E-mail">
                         <button class="subscribe_button" type="submit" >Subscribe </button>
-                        <!--<img src="img/icons_svg/mail.svg" alt="mail"> -->
                     </form>
-                    <hr>
                     <div class="footer_social">
                         <h2>Follow us</h2>
                         <div class="social_icon">
@@ -295,22 +294,7 @@
             } );
         })();
     </script>
-    <script>
-        var placeholder = 'This is a line \nthis should be a new line';
-        $('textarea').attr('value', placeholder);
 
-        $('textarea').focus(function(){
-            if($(this).val() === placeholder){
-                $(this).attr('value', '');
-            }
-        });
-
-        $('textarea').blur(function(){
-            if($(this).val() ===''){
-                $(this).attr('value', placeholder);
-            }
-        });
-    </script>
 
 </body>
 </html>

@@ -2,7 +2,7 @@
     /* большие экраны свыше 1200px, планшеты (768 - 922 px) и смартфоны (320px - 480px) */
     @media all and (max-width: 980px){
         .info_boks {
-            float: left;
+            float: right;
         }
         button.btn {
             padding: 10px 10px;
@@ -11,9 +11,9 @@
             padding-top: 2px;
         }
         .shipping-inner {
-
             box-sizing: border-box;
         }
+
     }
 
     @media all and (max-width: 1024px){
@@ -28,6 +28,9 @@
         .presentation_text {
             border: 1px solid grey;
             width: auto;
+        }
+        .form-cart {
+           width: calc(100%-10px);
         }
     }
 
@@ -57,7 +60,6 @@
         }
     }
 
-
     @media all and (max-width: 600px){
         .presentation_book {
             background-color: #da8913;
@@ -67,17 +69,43 @@
         }
 
     }
-    @media all and (max-width: 655px){
+    @media all and (max-width: 658px){
         .info_boks {
             float: left;
         }
         .menu {
+            width: 300px;
             height: 190px;
         }
         .cart-wrap {
             margin-top: 280px;
         }
+        .coupon-code input {
+            width: 120px;
+        }
+        .coupon-code {
+            width: 233px;
+        }
+        button.btn {
+            padding: 5px 5px;
+        }
+        span.proceed-count-font1 {
+            font-size: 18px;
+        }
+        span.proceed-count-font2 {
+            font-size: 21px;
+        }
+        span.proceed-count-font3 {
+            font-size: 25px;
+        }
+        span.proceed-count-font4 {
+            font-size: 28px;
+        }
+        .proceed-payment {
+            float: none;
+        }
     }
+
     @media all and (max-width: 600px) and (orientation: landscape){
         .presentation_book {
             background-color: chocolate;
@@ -91,7 +119,12 @@
         .button.btn {
             padding: 10px 10px;
         }
-
+        .coupon-code {
+         width: 277px;
+        }
+        .coupon-code input {
+            width: 120px;
+        }
     }
 
     /* больше чем 768px */
