@@ -662,6 +662,33 @@ h2 {
     color: #555963;
     line-height: 30px;
 }
+span.font-name-book {
+    font-family: 'Ramaraja', serif;
+    font-size: 19px;
+    color: #45474b;
+}
+span.font-autor {
+    font-family: 'Amiri', serif;
+    font-size: 15px;
+    color: #dd9327;
+}
+span.font-book-size {
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    color: #555963;
+}
+span.font-number {
+    font-family: 'Yrsa', serif;
+    font-size: 25px;
+    color: #555963;
+    font-weight: 400;
+}
+span.font-money {
+    font-family: 'Yrsa', serif;
+    font-style: 25px;
+    color: #555963;
+    font-weight: 600;
+}
 .fontcaption_orange {
     font-family: 'Amiri', serif;
     font-size: 18px;
@@ -1022,7 +1049,7 @@ form.subscribe_form {
 }
 .subscribe_form input {
     background-color: #f2fdff;
-    
+
     padding: 12px 20px;
     margin: 8px 0;
     box-sizing: border-box;
@@ -1077,8 +1104,8 @@ input[type=tel]:focus {
 textarea {
     margin-left: 10px;
     display: block;
-    width: 245px;
-    height: 20px;
+
+    height: 27px;
     border: none;
     font-family: 'Lato', sans-serif;
     font-size: 16px;
@@ -1127,11 +1154,11 @@ input[type=number] {
     padding: 5px 5px;
 }
 .has-success {
-    /*height: 20px; */
-    width: 206px;
     color: darkgreen;
+    border-bottom-color: darkgreen;
 }
 .has-error{
+    border-bottom-color: red;
     color: red;
 }
 button.subscribe_button{
@@ -1293,7 +1320,7 @@ input[type=radio]:checked + label::after {
     padding-right: 35px;
 }
 .leftpart {
-    margin-top: 42px;
+    margin-top: 50px;
     float: left;
     width: 50%;
 }
@@ -1436,7 +1463,9 @@ button.coupon_button::before {
 }
 
 .wrap-footer {
+    width: 100%;
     background-color: #f2fdff;
+    margin: 0 auto;
 }
 .proceed-wrap {
     float: right;
@@ -1468,13 +1497,7 @@ button.coupon_button::before {
     width: 100%;
 }
 
-.input-text {
-    width: 245px;
-    display: inline-block;
-    border: none;
-    /*border-bottom: 1px solid #555963;*/
-    margin: 10px 35px 0 1px ;
-    }
+
 
 
 .help-block {
@@ -1500,6 +1523,14 @@ input.form-control::after {
     display: inline-block;
     border-bottom: solid 2px #ececed;
 } */
+
+.input-text {
+    width: 245px;
+    display: inline-block;
+    border: none;
+    /*border-bottom: 1px solid #555963;*/
+    margin: 37px 35px 0 1px ;
+}
 .input-text input {
     width: 245px;
     border-bottom: 1px solid #555963;
@@ -1507,8 +1538,22 @@ input.form-control::after {
     font-family: 'Lato', sans-serif;
     font-size: 16px;
 }
+.input-text-inner {
+   width: auto;
+    display: inline-block;
+    border: none;
+    margin: 6px 35px 0 1px ;
+}
+.input-text-inner textarea {
+    width: 530px;
+    border-bottom: 1px solid #555963;
+    color: #959ba1;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+}
 
-.input-text-inner input {
+
+/*.input-text-inner input {
     width: 245px;
     margin-left: 10px;
     color: #959ba1;
@@ -1517,11 +1562,13 @@ input.form-control::after {
     border-bottom: 1px solid #555963;
 }
 .input-text-inner{
-    width: 245px;
-
-    /*border-bottom: 1px solid #555963;*/
+    width: 100%;
+    border-bottom: 1px solid #555963;
     margin: 0 0 0 10px;
-}
+} */
+
+
+
 input.form-block  {
 }
 .required::before {
@@ -1531,6 +1578,9 @@ input.form-block  {
     color: #ffbb58;
     padding: 0 5px 0 0;
     margin-left: -9px;
+}
+.gender {
+    margin-bottom: 5px;
 }
 .gender label {
     font-family: 'Lato', sans-serif;
@@ -1550,6 +1600,14 @@ input.form-block  {
     margin-right: 60px;
 }
 .table-cart {
-  /*  table-layout: fixed; */
+    border-collapse: separate;
+    border-spacing: 20px 40px;
 }
-
+input.size-button {
+    padding: 10px 56px;
+}
+.table-header {
+    font-family: 'Ramaraja', serif;
+    font-size: 18px;
+    color: #555963;
+}

@@ -61,18 +61,20 @@
                             <div class="help-block">Title cannot be blank</div>
                         </div>
                         <div class="input-text required has-error has-success">
-                            <input type="tel" placeholder="Phone" pattern="[0-9]{10,13}" name="phone" required >
+                            <input type="tel" placeholder="Phone" pattern="^\+?\d{10,13}" name="phone" required >
                             <div class="help-block">Title cannot be blank.</div>
                         </div>
                         <div class="clearfix"></div>
                     </div>
                 </div> <!-- leftpart -->
                 <div class="rightpart">
-                    <div class="input-text required has-error has-success">
-                        <textarea placeholder="Address" maxlength="150" required name="address" id="address"></textarea>
-                        <div class="help-block">Title cannot be blank</div>
-                        <!--<input type="text" placeholder="Address" name="address" maxlength="150" required >
-                           <div class="help-block">Title cannot be blank</div> -->
+                    <div class="form-input required has-error has-success">
+                        <div class="input-text-inner">
+                            <textarea placeholder="Address" maxlength="150" required name="address" id="address"></textarea>
+                            <div class="help-block">Title cannot be blank</div>
+                            <!--<input type="text" placeholder="Address" name="address" maxlength="150" required >
+                               <div class="help-block">Title cannot be blank</div> -->
+                        </div>
                     </div>
                     <div class="form-input">
                         <div class="input-text required has-error has-success ">
@@ -94,7 +96,7 @@
                             <div class="help-block">Title cannot be blank.</div>
                         </div>
                         <div class="input-text has-error has-success ">
-                            <input type="text" name="zip" class="form-block" placeholder="Zip/Postal" maxlength="100"  >
+                            <input type="text" name="zip" class="form-block" placeholder="Zip/Postal" pattern="[A-Z,a-z, ]*" maxlength="100"  >
                             <div class="help-block">Title cannot be blank.</div>
                         </div>
                     </div>
@@ -206,8 +208,8 @@
                 </div>
             </div>
 
-        <div class="wrap-footer container">
-            <nav class="menu_futer">
+        <div class="wrap-footer">
+            <nav class="menu_futer container">
                 <ul>
                     <li><a href="#">sitemap</a></li>
                     <li><a href="#">help</a></li>
