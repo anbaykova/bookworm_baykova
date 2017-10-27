@@ -1600,8 +1600,9 @@ input.form-block  {
     margin-right: 60px;
 }
 .table-cart {
-    border-collapse: separate;
-    border-spacing: 20px 40px;
+    width: 1140px;
+    border-collapse: collapse;
+    /*border-spacing: 20px 40px;*/
 }
 input.size-button {
     padding: 10px 56px;
@@ -1610,4 +1611,38 @@ input.size-button {
     font-family: 'Ramaraja', serif;
     font-size: 18px;
     color: #555963;
+}
+.quantity-number input {
+    background-color: #f5fdff;
+    width: 30px;
+    text-align: center;
+    font-family: 'Yrsa', serif;
+    font-size: 25px;
+    color: #555963;
+}
+span.minus {
+    padding-right: 13px;
+}
+.name-book {
+    padding-bottom: 50px;
+}
+tr.tr-container {
+    margin: 15px 15px;
+    background-color: #f5fdff;
+}
+.td-background {
+
+}
+
+.del-img {
+    padding: 10px 23px;
+}
+tr {
+    margin-bottom: 10px;
+}
+td {
+    padding: 24px 0 24px 0
+}
+.td-height {
+    height: ;
 }
