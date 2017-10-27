@@ -285,9 +285,6 @@ width: 100%;
     margin-top: 90px;
     text-align: center;
 }
-.proceed-payment {
-    text-align: center;
-}
 
 .container_button a {
     transition: 5s ease color;
@@ -389,9 +386,11 @@ span.proceed-count-font4 {
     color: #555963;
 }
 .proceed-payment {
+    text-align: center;
     float: right;
     width: 50%;
     box-sizing: border-box;
+    margin-top: 30px;
 }
 
 .proceed-count table tr td {
