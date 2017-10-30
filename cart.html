@@ -11,7 +11,7 @@
     <meta property="og:image" content=""/>
     <title>Cart</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive.css"><!-- fixme: Страница должны быть адаптивной. На маленьких расширениях не влезают поля   -->
     <link rel="stylesheet" type="text/css" href="css/cs-select.css" />
     <link rel="stylesheet" type="text/css" href="css/cs-skin-elastic.css" />
 </head>
@@ -48,9 +48,9 @@
                         <label for="gen-woman">Woman</label>
                     </div>
                     <div class="form-input">
-                        <div class="input-text required has-error has-success">
+                        <div class="input-text required has-error has-success"><!-- fixme: Стили для валидного и невалидного поля не применяются  -->
                             <input type="text" placeholder="First name" class="form-control" name="firstname" maxlength="100" required >
-                            <div class="help-block">Title cannot be blank</div>
+                            <div class="help-block">Title cannot be blank</div><!-- fixme: Указать разные подсказви для полей  -->
                         </div>
                         <div class="input-text required has-error has-success">
                             <input type="text" placeholder="Last name" name="lastname" maxlength="100" required >
@@ -78,7 +78,7 @@
                     </div>
                     <div class="form-input">
                         <div class="input-text required has-error has-success ">
-                            <select name="country" class="cs-select cs-skin-elastic"  title="country">
+                            <select name="country" class="cs-select cs-skin-elastic"  title="country"><!-- fixme: Стилизировать в цветах и отступах макета. Убрать флаги  -->
                                 <option value="" disabled selected>Country</option>
                                 <option value="france" data-class="flag-france">France</option>
                                 <option value="brazil" data-class="flag-brazil">Brazil</option>
@@ -97,6 +97,7 @@
                         </div>
                         <div class="input-text has-error has-success ">
                             <input type="text" name="zip" class="form-block" placeholder="Zip/Postal" pattern="[A-Z,a-z, ]*" maxlength="100"  >
+                            <!-- fixme: Почтовый индекс может содердать и буквы и цифры (в Украине используются цифры) -->
                             <div class="help-block">Title cannot be blank.</div>
                         </div>
                     </div>
@@ -122,6 +123,7 @@
                     <div class="shipping_right">
                         <div class="create_account">
                             <input type="checkbox" class="checkbox-create-account" id="checkbox-create">
+                            <!-- fixme: Инпут должен содержать аттрибут name  -->
                             <label for="checkbox-create">Create account for latter use</label>
                         </div>
                     </div>
@@ -197,7 +199,7 @@
                                     </table>
                                 </div>
                                 <div class="proceed-payment">
-                                    <input type="button" class="btn" value="Proceed to payment">
+                                    <input type="button" class="btn" value="Proceed to payment"><!-- fixme: Эта кнопка не отправляет форму и не связана с ней.  -->
                                 </div>
                                 <div class="clearfix"></div>
                             </div>

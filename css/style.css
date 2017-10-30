@@ -365,7 +365,7 @@ a.btn:active { background: white; }
     float: left;
     width: 50%;
 }
-span.proceed-count-font1 {
+span.proceed-count-font1 { /* fixme: Убрать селекторы по тегу. Тут и ниже. Удалтиь лишние теги в html */
     font-family: 'Ramaraja', serif;
     font-size: 21px;
     color: #45474b;
@@ -1185,7 +1185,7 @@ button.subscribe_button::after {
 .footer_social {
     margin: 80px 0 0 0;
 }
-input[type=radio] {
+input[type=radio] { /* fixme: Глобальные стили - плохо.  */
     display: none;
 }
 input[type=radio]+label {
@@ -1432,7 +1432,7 @@ input[type=radio]:checked + label::after {
     color: #45474b;
 }
 
-button.coupon_button {
+button.coupon_button { /* fixme: Убрать селекторы по тегу */
     background-color: white;
     color: #555963;
     padding: 10px 0px;
