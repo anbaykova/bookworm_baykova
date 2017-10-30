@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta property="og:type" content="website">
+    <meta property="og:type" content="website"><!-- fixme: Убери ненужные метатеги или обоснуй их необходимость  -->
     <meta property="og:url" content="">
     <meta property="og:title" content="">
     <meta property="og:description" content="">
     <meta property="og:image" content=""/>
     <title>cart2</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/responsive.css"><!-- fixme: Страница должна быть адаптивной  -->
 </head>
 <body>
     <div id="your-cart">
@@ -34,9 +34,9 @@
 
         <div class="cart-wrap container">
             <h1>Your cart</h1>
-            <table class="table-cart">
+            <table class="table-cart"><!-- fixme: Нет формы и скрытых инпутов для ID продуктов  -->
                 <tr class="table-header">
-                    <td width="5%"></td>
+                    <td width="5%"></td><!-- fixme: Стили пишем в css  -->
                     <td width="35%" colspan="2">Product</td>
                     <td width="25%" >Format</td>
                     <td width="15%">Language</td>
@@ -45,21 +45,21 @@
                 </tr>
 
                 <tr class="tr-container">
-                    <div class="td-background">
+                    <div class="td-background"><!-- fixme: Тег tr может содержать только td  -->
                         <td class="del-img"><a href="#"><img src="img/rectangle63.png" width="13" height="19" alt="del"></a></td>
                         <td><img src="img/corpse.png" width="60" height="93" alt="corpse"></td>
                         <td class="name-book"><a href="#"><span class="font-name-book">The Meandering Corpse</span></a><p><span class="font-autor">Richard S. Prather</span></p></td>
                         <td><span class="font-book-size">Hardback, 170x 215 mm</span></td>
                         <td><span class="font-book-size">English</span></td>
                         <td class="quantity-number"><a href="#"><span class="minus font-number">-</span></a>
-                            <input type="number" min="1" placeholder="1">
+                            <input type="number" min="1" placeholder="1"><!-- fixme: Инпут лишком узкий для 2-3 значных чисел  -->
                             <a href="#"> <span class="font-number">+</span></a>
                         </td>
                         <td><span class="font-money">$25</span></td>
                     </div>
                 </tr>
                  <tr>
-                    <td class="td-height"></td>
+                    <td class="td-height"></td><!-- fixme: В строке должно быть одинаковое количество ячеек либо задан аттрибут colspan  -->
                 </tr>
                 <tr class="tr-container">
                     <td class="del-img"><a href="#"><img src="img/rectangle63.png" width="13" height="19" alt="del"></a></td>
@@ -92,11 +92,11 @@
         </div>
 
         <div class="count-form-inner table-cart">
-            <form action="\">
+            <form action="\"><!-- fixme: Эта форма ограничивается только полем ввода купона  -->
                 <div class="coupon-wrap">
-                    <div class="coupon-inner">
+                    <div class="coupon-inner"><!-- fixme: Лишняя вложенность  -->
                         <div class="coupon-code">
-                            <input type="number" id="coupon" name="coupon" placeholder="Coupon code">
+                            <input type="number" id="coupon" name="coupon" placeholder="Coupon code"><!-- fixme: Купон может содержать буквенные символы  -->
                             <button class="coupon_button" type="submit" >Apply </button>
                             <p>Type your coupone code (if you have), and take 20% discount for your order.</p>
                         </div>
@@ -116,7 +116,7 @@
                             </table>
                         </div>
                         <div class="proceed-payment">
-                            <input type="button" class="btn size-button" value="Checkout">
+                            <input type="button" class="btn size-button" value="Checkout"><!-- fixme: Это кнопка отправки формы с продуктами  -->
                         </div>
                         <div class="clearfix"></div>
 
@@ -126,7 +126,7 @@
             </form>
         </div>
 
-        <div class="wrap-footer ">
+        <div class="wrap-footer "><!-- fixme: Футер должен иметь голубой фон на всю ширину окна  -->
             <nav class="menu_futer container">
                 <ul>
                     <li><a href="#">sitemap</a></li>

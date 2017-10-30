@@ -684,7 +684,7 @@ span.font-number {
 }
 span.font-money {
     font-family: 'Yrsa', serif;
-    font-style: 25px;
+    font-style: 25px; /* fixme: Некорректное значение аттрибута */
     color: #555963;
     font-weight: 600;
 }
@@ -1623,13 +1623,13 @@ span.minus {
     padding-right: 13px;
 }
 .name-book {
-    padding-bottom: 50px;
+    padding-bottom: 50px; /* fixme:  Используй центрирование и небольшой отступ для всех ячеек */
 }
 tr.tr-container {
     background-color: #f5fdff;
 }
 .td-height {
-    vpadding-top: 10px;
+    vpadding-top: 10px; /* fixme: Некорректное свойство */
    }
 
 .del-img {
@@ -1698,7 +1698,7 @@ tr {
     opacity: 1;
 }
 .
-.inner-login-form {
+.inner-login-form { /* fixme: Точка со строки 1700 считается селектором */
     padding-left: 50px;
 }
 .inner-login-form {
