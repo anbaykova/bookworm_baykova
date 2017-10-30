@@ -30,7 +30,9 @@
             <ul class="info_boks">
                 <li><div class="search"></div></li>
                 <li><div class="shoppingcart"></div></li>
-                <li> <div class="userpic"></div></li>
+                <li> <div id="inner-userpic">
+                    <a href="#wrap-login"><img src="img/Userpic.png" alt="userpic" width="39" height="39"></a></div>
+                </li>
             </ul>
         </nav>
 
@@ -288,6 +290,47 @@
             </div>
         </div>
     </div> <!-- end your cart> -->
+
+    <div class="container">
+    <div id="wrap-login">
+        <div class="transp-back-wrap-login"></div>
+        <a href="#"><img class="rectangle-arrow" src="img/rectangle9.png" alt="rectangle"></a>
+        <p>Login</p>
+        <form id="form-login" action="">
+            <div class="inner-login-email">
+                <input type="text" class="" placeholder="E-mail" name="login-email">
+            </div>
+            <div class="inner-login-password">
+                <input type="text" placeholder="Password" name="login-password">
+            </div>
+            <div class="inner-checkbox-remember">
+                <input type="checkbox" class="checkbox-remember" id="remember" name="remember">
+                <label for="remember">Remember me</label>
+            </div>
+            <div class="forgot-password">
+                <a href="#">Forgot password</a>
+            </div>
+            <div class="sign-in">
+                <input type="button" value="Sign in">
+            </div>
+            <!-- <div class="create-account"> -->
+            <a href="#" class="input-create">Create account<img src="img/rectangle55.png" width="17" height="13" alt="arrow"></a>
+            <!-- <input type="text" class="input-create" placeholder="Create account">
+            <button class="arrow-button"><img src="img/rectangle55.png" width="17" height="13" alt="arrow"></button> -->
+            <!-- </div> -->
+            <div class="hr-form"></div>
+            <div class="inner-login-social">
+                <h3>Sign in with social:</h3>
+                <div class="login-social">
+                    <a href="#"><img src="img/icons_svg/rectangle57.png" width="10" height="18" alt="facebook"></a>
+                    <a href="#"><img src="img/icons_svg/rectangle58.png" width="17" height="14" alt="pinterest"></a>
+                    <a href="#"><img src="img/icons_svg/Google.svg" alt="google"></a>
+
+                </div>
+            </div>
+        </form>
+    </div>
+    </div>
 
     <script src="js/classie.js"></script>
     <script src="js/selectFx.js"></script>
