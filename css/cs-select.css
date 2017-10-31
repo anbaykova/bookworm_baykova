@@ -93,7 +93,7 @@ div.cs-active {
 }
 
 .cs-select ul span {
-	padding: 1em;
+	/* padding: 1em; */
 }
 
 .cs-select ul li.cs-focus span {
