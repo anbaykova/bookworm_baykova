@@ -4,11 +4,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="">
-    <meta property="og:title" content="">
-    <meta property="og:description" content="">
-    <meta property="og:image" content=""/>
     <title>cart2</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
@@ -38,7 +33,11 @@
             <h1>Your cart</h1>
             <table class="table-cart">
                 <tr class="table-header">
-                    <td width="5%"></td>
+                    <form action="" id="id-product">
+
+
+                    </form>
+                    <td class="width-del-img" width="5%"></td>
                     <td width="35%" colspan="2">Product</td>
                     <td width="25%" >Format</td>
                     <td width="15%">Language</td>
@@ -47,31 +46,33 @@
                 </tr>
 
                 <tr class="tr-container">
-                    <div class="td-background">
-                        <td class="del-img"><a href="#"><img src="img/rectangle63.png" width="13" height="19" alt="del"></a></td>
-                        <td><img src="img/corpse.png" width="60" height="93" alt="corpse"></td>
-                        <td class="name-book"><a href="#"><span class="font-name-book">The Meandering Corpse</span></a><p><span class="font-autor">Richard S. Prather</span></p></td>
-                        <td><span class="font-book-size">Hardback, 170x 215 mm</span></td>
-                        <td><span class="font-book-size">English</span></td>
-                        <td class="quantity-number"><a href="#"><span class="minus font-number">-</span></a>
-                            <input type="number" min="1" placeholder="1">
-                            <a href="#"> <span class="font-number">+</span></a>
-                        </td>
-                        <td><span class="font-money">$25</span></td>
-                    </div>
+                    <td class="del-img"><a href="#"><img src="img/rectangle63.png" width="13" height="19" alt="del"></a>
+                    </td>
+                    <td class="img-table"><img src="img/corpse.png" width="60" height="93" alt="corpse"></td>
+                    <td class="name-book"><a href="#"><span class="font-name-book">The Meandering Corpse</span></a>
+                        <p><span class="font-autor">Richard S. Prather</span></p></td>
+                    <td><span class="font-book-size">Hardback, 170x 215 mm</span></td>
+                    <td><span class="font-book-size">English</span></td>
+                    <td class="quantity-number">
+                        <input class="del" type="button" value="-">
+                        <input type="number" min="1" placeholder="1">
+                        <input class="add" type="button" name="product" value="+">
+                    </td>
+                    <td><span class="font-money">$25</span></td>
                 </tr>
                  <tr>
                     <td class="td-height"></td>
                 </tr>
                 <tr class="tr-container">
                     <td class="del-img"><a href="#"><img src="img/rectangle63.png" width="13" height="19" alt="del"></a></td>
-                    <td><img src="img/corpse3.png" width="60" height="93" alt="corpse"></td>
+                    <td class="img-table"><img src="img/corpse3.png" width="60" height="93" alt="corpse"></td>
                     <td class="name-book"><a href="#"><span class="font-name-book">English Detective Storiesspan</span></a><p><span class="font-autor">Patricia Craig</span></p></td>
                     <td><span class="font-book-size">Hardback, 170x 215 mm</span></td>
                     <td><span class="font-book-size">English</span></td>
-                    <td class="quantity-number"><a href="#"><span class="minus font-number">-</span></a>
+                    <td class="quantity-number">
+                        <input class="del" type="button" value="-">
                         <input type="number" min="1" placeholder="1">
-                        <a href="#"> <span class="font-number">+</span></a>
+                        <input class="add" type="button" name="product" value="+">
                     </td>
                     <td><span class="font-money">$25</span></td>
                 </tr>
@@ -80,13 +81,14 @@
                 </tr>
                 <tr class="tr-container">
                     <td class="del-img"><img src="img/rectangle63.png" width="13" height="19" alt="del"></td>
-                    <td><img src="img/corpse2.png" width="60" height="93" alt="corpse"></td>
+                    <td class="img-table"><img src="img/corpse2.png" width="60" height="93" alt="corpse"></td>
                     <td class="name-book"><a href="#"><span class="font-name-book">Die Like a Dog</span></a><p><span class="font-autor">Brett Halliday</span></p></td>
                     <td><span class="font-book-size">Hardback, 170x 215 mm</span> </td>
                     <td><span class="font-book-size">English</span></td>
-                    <td class="quantity-number"><a href="#"><span class="minus font-number">-</span></a>
+                    <td class="quantity-number">
+                        <input class="del" type="button" value="-">
                         <input type="number" min="1" placeholder="1">
-                        <a href="#"> <span class="font-number">+</span></a>
+                        <input class="add" type="button" name="product" value="+">
                     </td>
                     <td><span class="font-money">$25</span></td>
                 </tr>

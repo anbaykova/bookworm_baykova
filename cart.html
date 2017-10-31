@@ -4,11 +4,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="">
-    <meta property="og:title" content="">
-    <meta property="og:description" content="">
-    <meta property="og:image" content=""/>
     <title>Cart</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/responsive.css">
@@ -52,19 +47,19 @@
                     <div class="form-input">
                         <div class="input-text required has-error has-success">
                             <input type="text" placeholder="First name" class="form-control" name="firstname" maxlength="100" required >
-                            <div class="help-block">Title cannot be blank</div>
+                            <div class="help-block">First cannot be blank</div>
                         </div>
                         <div class="input-text required has-error has-success">
                             <input type="text" placeholder="Last name" name="lastname" maxlength="100" required >
-                            <div class="help-block">Title cannot be blank</div>
+                            <div class="help-block">Last name cannot be blank</div>
                         </div>
                         <div class="input-text required has-error has-success">
                             <input type="email" placeholder="E-mail" name="email" maxlength="100" required >
-                            <div class="help-block">Title cannot be blank</div>
+                            <div class="help-block">E-mail cannot be blank</div>
                         </div>
                         <div class="input-text required has-error has-success">
                             <input type="tel" placeholder="Phone" pattern="^\+?\d{10,13}" name="phone" required >
-                            <div class="help-block">Title cannot be blank.</div>
+                            <div class="help-block">Phone cannot be blank.</div>
                         </div>
                         <div class="clearfix"></div>
                     </div>
@@ -73,33 +68,31 @@
                     <div class="form-input required has-error has-success">
                         <div class="input-text-inner">
                             <textarea placeholder="Address" maxlength="150" required name="address" id="address"></textarea>
-                            <div class="help-block">Title cannot be blank</div>
-                            <!--<input type="text" placeholder="Address" name="address" maxlength="150" required >
-                               <div class="help-block">Title cannot be blank</div> -->
+                            <div class="help-block">Address cannot be blank</div>
                         </div>
                     </div>
                     <div class="form-input">
                         <div class="input-text required has-error has-success ">
                             <select name="country" class="cs-select cs-skin-elastic"  title="country">
                                 <option value="" disabled selected>Country</option>
-                                <option value="france" data-class="flag-france">France</option>
-                                <option value="brazil" data-class="flag-brazil">Brazil</option>
-                                <option value="argentina" data-class="flag-argentina">Argentina</option>
-                                <option value="south-africa" data-class="flag-safrica">South Africa</option>
+                                <option value="ukraine" >Ukraine</option>
+                                <option value="russion">Russian Federation</option>
+                                <option value="belarus">Belarus</option>
+                                <option value="kazakhstan" >Kazakhstan</option>
                             </select>
-                            <div class="help-block">Title cannot be blank</div>
+                            <div class="help-block">Country cannot be blank</div>
                         </div>
                         <div class="input-text required has-error has-success">
                             <input type="text" name="city" placeholder="City" class="" maxlength="150" required >
-                            <div class="help-block">Title cannot be blank</div>
+                            <div class="help-block">City cannot be blank</div>
                         </div>
                         <div class="input-text required has-error has-success">
                             <input type="text" name="state" placeholder="State/Providence" minlength="5" maxlength="10" required >
-                            <div class="help-block">Title cannot be blank.</div>
+                            <div class="help-block">State/Providence cannot be blank.</div>
                         </div>
                         <div class="input-text has-error has-success ">
-                            <input type="text" name="zip" class="form-block" placeholder="Zip/Postal" pattern="[A-Z,a-z, ]*" maxlength="100"  >
-                            <div class="help-block">Title cannot be blank.</div>
+                            <input type="text" name="zip" class="form-block" placeholder="Zip/Postal" pattern="[0-9]{,5}" maxlength="100"  >
+                            <div class="help-block">Zip/Postal cannot be blank.</div>
                         </div>
                     </div>
                     <div class="clearfix"></div>
@@ -115,10 +108,8 @@
                             <label for="ups_saver">UPS_SAVER</label> Free
                         </div>
                         <div class="shipping-inner">
-                            <!--<input type="text" name="ups" value="Free"> -->
                             <input id="ups_express" type="radio" name="ups" value="ups_express">
                             <label for="ups_express">UPS Express</label> $7,50
-                            <!-- <input type="text" name="ups" value="$7,50"> -->
                         </div>
                     </div>
                     <div class="shipping_right">
