@@ -620,6 +620,7 @@ span.book_series_fonts {
     color: #555963;
 }
 .book_series {
+    height: 420px;
     width: 100%;
 }
 .popwrites_header p {
@@ -894,7 +895,6 @@ span.text_info {
     text-align: center;
 }
 
-
 .background_books {
     /* background-image: url("../img/Bitmap.png");
     background-repeat: repeat;
@@ -918,12 +918,22 @@ width: 1060px;
 }
 .popular_book {
     position: relative;
+    width: 200px;
+    display: inline-block;
     padding: 0 40px 0 40px;
 }
-.popular_book p {
-display: block;
+.popular_book img {
+
 }
+.popular_book_img {
+
+}
+.popular-book-text {
+    margin-top: 282px;
+}
+
 .publishers {
+    max-height: 480px;
     margin: 80px auto;
     width: 100%;
 }
@@ -1682,8 +1692,12 @@ tr {
 
 #slider-wrap {
     margin: 0 auto;
+    max-height: 560px;
 }
-
+#slider-wrap-popularseries {
+    width: 100%;
+    max-height: 500px;
+}
 #slider {
     margin-top: 50px;
 }
@@ -1905,6 +1919,9 @@ button.arrow-button {
 }
 .add {
     border: none;
+}
+.width-del-img {
+
 }
 
 
