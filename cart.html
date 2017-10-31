@@ -88,11 +88,11 @@
                         </div>
                         <div class="input-text required has-error has-success">
                             <input type="text" name="state" placeholder="State/Providence" minlength="5" maxlength="10" required >
-                            <div class="help-block">State/Providence cannot be blank.</div>
+                            <div class="help-block">State/Providence cannot be blank</div>
                         </div>
                         <div class="input-text has-error has-success ">
                             <input type="text" name="zip" class="form-block" placeholder="Zip/Postal" pattern="[0-9]{,5}" maxlength="100"  >
-                            <div class="help-block">Zip/Postal cannot be blank.</div>
+                            <div class="help-block">Zip/Postal cannot be blank</div>
                         </div>
                     </div>
                     <div class="clearfix"></div>
@@ -166,6 +166,9 @@
                                 </div>
                             </div>
                         </div>
+                    </form>
+                    <!-- todo -->
+                    <!-- fixme -->
                         <div class="proceed-wrap">
                             <div class="proceed-checkbox">
                                 <input type="checkbox" id="checkbox-proceed" class="checkbox-accept" >
@@ -190,14 +193,14 @@
                                     </table>
                                 </div>
                                 <div class="proceed-payment">
-                                    <input type="button" class="btn" value="Proceed to payment">
+                                    <input type="submit" form="cart" class="btn" value="Proceed to payment">
                                 </div>
                                 <div class="clearfix"></div>
                             </div>
                             <div class="clearfix"></div>
                         </div>
                     <div class="clearfix"></div>
-                    </form>
+
                 </div>
             </div>
 
@@ -300,7 +303,7 @@
                 <a href="#">Forgot password</a>
             </div>
             <div class="sign-in">
-                <input type="button" value="Sign in">
+                <input type="submit" value="Sign in">
             </div>
             <!-- <div class="create-account"> -->
             <a href="#" class="input-create">Create account<img src="img/rectangle55.png" width="17" height="13" alt="arrow"></a>
