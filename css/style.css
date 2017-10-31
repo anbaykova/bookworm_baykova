@@ -362,7 +362,7 @@ a.btn:active { background: white; }
     float: left;
     width: 50%;
 }
-span.proceed-count-font1 {
+span.proceed-count-font1 { /* fixme: Убрать селекторы по тегу. Тут и ниже. Удалтиь лишние теги в html */
     font-family: 'Ramaraja', serif;
     font-size: 21px;
     color: #45474b;
@@ -682,7 +682,7 @@ span.font-number {
 }
 span.font-money {
     font-family: 'Yrsa', serif;
-    font-size: 25px;
+    font-style: 25px; /* fixme: Некорректное значение аттрибута */
     color: #555963;
     font-weight: 600;
 }
@@ -1195,7 +1195,7 @@ button.subscribe_button::after {
 .footer_social {
     margin: 80px 0 0 0;
 }
-input[type=radio] {
+input[type=radio] { /* fixme: Глобальные стили - плохо.  */
     display: none;
 }
 input[type=radio]+label {
@@ -1443,7 +1443,7 @@ input[type=radio]:checked + label::after {
     color: #45474b;
 }
 
-button.coupon_button {
+button.coupon_button { /* fixme: Убрать селекторы по тегу */
     background-color: white;
     color: #555963;
     padding: 10px 0px;
@@ -1634,7 +1634,7 @@ span.minus {
     padding-right: 13px;
 }
 .name-book {
-    padding-bottom: 40px;
+    padding-bottom: 50px; /* fixme:  Используй центрирование и небольшой отступ для всех ячеек */
 }
 tr.tr-container {
     background-color: #f5fdff;
@@ -1716,7 +1716,6 @@ tr {
 .slide-picture:checked + img {
     opacity: 1;
 }
-
 /*.inner-login-form {
     width: 100%;
    } */
