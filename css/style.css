@@ -32,10 +32,6 @@ body {
     text-align: center;
 }
 
-#your-cart {
-    width: calc(100% - 30px);
-}
-
 .menu {
     top: 15px;
     left: 100px;
@@ -362,7 +358,7 @@ a.btn:active { background: white; }
     float: left;
     width: 50%;
 }
-span.proceed-count-font1 {
+span.proceed-count-font1 { /* fixme: Убрать селекторы по тегу. Тут и ниже. Удалтиь лишние теги в html */
     font-family: 'Ramaraja', serif;
     font-size: 21px;
     color: #45474b;
@@ -452,6 +448,9 @@ span.proceed-count-font4 {
     float: left;
     min-width: 650px;
 }
+/* tr td {
+    padding: 10px;
+} */
 /* books li:nth-child(1) {
     padding: 42px 31px 0 0;
 }
@@ -659,28 +658,35 @@ h2 {
     color: #555963;
     line-height: 30px;
 }
-span.font-name-book {
+.name-book {
+    vertical-align: top;
+    line-height: 21px;
     font-family: 'Ramaraja', serif;
     font-size: 19px;
     color: #45474b;
 }
-span.font-autor {
+.name-book p {
     font-family: 'Amiri', serif;
     font-size: 15px;
     color: #dd9327;
 }
-span.font-book-size {
+/*span.font-autor {
+    font-family: 'Amiri', serif;
+    font-size: 15px;
+    color: #dd9327;
+} */
+.font-book-size {
     font-family: 'Lato', sans-serif;
     font-size: 15px;
     color: #555963;
 }
-span.font-number {
+/*span.font-number {
     font-family: 'Yrsa', serif;
     font-size: 25px;
     color: #555963;
     font-weight: 400;
-}
-span.font-money {
+} */
+.font-money {
     font-family: 'Yrsa', serif;
     font-size: 25px;
     color: #555963;
@@ -1196,7 +1202,7 @@ button.subscribe_button::after {
 .footer_social {
     margin: 80px 0 0 0;
 }
-input[type=radio] {
+input[type=radio] { /* fixme: Глобальные стили - плохо.  */
     display: none;
 }
 input[type=radio]+label {
@@ -1444,10 +1450,10 @@ input[type=radio]:checked + label::after {
     color: #45474b;
 }
 
-button.coupon_button {
+button.coupon_button { /* fixme: Убрать селекторы по тегу */
     background-color: white;
     color: #555963;
-    padding: 10px 0px;
+    padding: 10px 0 0 63px;
     margin: 8px 0;
     border: none;
     cursor: pointer;
@@ -1474,7 +1480,7 @@ button.coupon_button::before {
 }
 
 .wrap-footer {
-    width: 100%;
+    /*width: 100%; */
     background-color: #f2fdff;
     margin: 0 auto;
 }
@@ -1623,10 +1629,39 @@ input.size-button {
     font-size: 18px;
     color: #555963;
 }
+.table-header td {
+    padding: 10px;
+}
+.del-book {
+    width: 1%;
+}
+.img-table {
+    width: 1%;
+}
+.img-table img {
+    vertical-align: middle;
+}
+.name-book {
+    width: 33%;
+}
+.format {
+    width: 30%;
+}
+.hardback {
+    width: 15%;
+}
+
+.language {
+    width: 15%;
+}
+.price {
+    width: 5%;
+}
+
 .quantity-number input {
     background-color: #f5fdff;
-    width: 30px;
-    text-align: center;
+    width: 24px;
+    text-align: left;
     font-family: 'Yrsa', serif;
     font-size: 25px;
     color: #555963;
@@ -1634,27 +1669,31 @@ input.size-button {
 span.minus {
     padding-right: 13px;
 }
-.name-book {
-    padding-bottom: 40px;
-}
-tr.tr-container {
+/*.name-book {
+    padding-bottom: 50px;
+    padding: 0 0 50px 15px  /* fixme:  Используй центрирование и небольшой отступ для всех ячеек */
+ /*}  */
+
+.tr-container {
     background-color: #f5fdff;
-    height: 130px;
 }
-.img-table {
+.tr-container td {
+    padding: 10px 10px;
+}
+
+
+/* .img-table {
     padding-top: 10px;
-}
-.del-img {
+} */
+/*.del-img {
     padding: 10px 23px;
-}
-tr {
-    margin-bottom: 10px;
-}
+} */
+ /*tr {
+     padding: 10px;
+     margin-bottom: 10px;
+} */
 
-.td-height {
-    padding: 20px 0 0 0;
 
-}
 #popup-demo {
     /*margin-top: 100px; */
     background-color: indianred;
@@ -1696,7 +1735,7 @@ tr {
     max-height: 560px;
 }
 #slider-wrap-popularseries {
-    margin-top: 500px;
+    margin-top: 200px;
     width: 100%;
     height: 500px;
 }
@@ -1709,10 +1748,7 @@ tr {
 .arrow-left {
 
 }
-.inner-slider {
-    width: 100%;
 
-}
 .slide-picture + img {
     opacity: 0;
     position: absolute;
@@ -1721,12 +1757,28 @@ tr {
 .slide-picture + .popular_book {
     opacity: 0;
     position: absolute;
-    transition: opacity 0.5s  ;
+    transition: opacity 0.5s;
 }
+.slide-picture:checked + .popular_book {
+    opacity: 1;
+}
+
+.slide-picture + .inner-slider {
+    opacity: 0;
+    position: absolute;
+    transition: opacity 0.5s ;
+}
+
+.inner-slide {
+    width: 100%;
+    position: absolute;
+}
+
 .slide-picture:checked + img {
     opacity: 1;
 }
-.slide-picture:checked + .popular_book {
+
+.slide-picture:checked + .inner-slider {
     opacity: 1;
 }
 /*.inner-login-form {
@@ -1932,11 +1984,27 @@ button.arrow-button {
 .add {
     border: none;
 }
-.width-del-img {
 
+/* slider --- */
+
+#anna-wrap-sl {
+    margin-top: 100px;
 }
 
-
+.r {
+    position: absolute;
+}
+.sk + .r {
+    opacity: 0;
+    position: absolute;
+    transition: opacity 0.5s  ;
+}
+.sk:checked + r {
+    opacity: 1;
+}
+.r {
+    position: absolute;
+}
 
 
 

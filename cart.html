@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Cart</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive.css"><!-- fixme: Страница должны быть адаптивной. На маленьких расширениях не влезают поля   -->
     <link rel="stylesheet" type="text/css" href="css/cs-select.css" />
     <link rel="stylesheet" type="text/css" href="css/cs-skin-elastic.css" />
 </head>
@@ -45,9 +45,9 @@
                         <label for="gen-woman">Woman</label>
                     </div>
                     <div class="form-input">
-                        <div class="input-text required has-error has-success">
+                        <div class="input-text required has-error has-success"><!-- fixme: Стили для валидного и невалидного поля не применяются  -->
                             <input type="text" placeholder="First name" class="form-control" name="firstname" maxlength="100" required >
-                            <div class="help-block">First cannot be blank</div>
+                            <div class="help-block">Title cannot be blank</div><!-- fixme: Указать разные подсказви для полей  -->
                         </div>
                         <div class="input-text required has-error has-success">
                             <input type="text" placeholder="Last name" name="lastname" maxlength="100" required >
@@ -73,7 +73,7 @@
                     </div>
                     <div class="form-input">
                         <div class="input-text required has-error has-success ">
-                            <select name="country" class="cs-select cs-skin-elastic"  title="country">
+                            <select name="country" class="cs-select cs-skin-elastic"  title="country"><!-- fixme: Стилизировать в цветах и отступах макета. Убрать флаги  -->
                                 <option value="" disabled selected>Country</option>
                                 <option value="ukraine" >Ukraine</option>
                                 <option value="russion">Russian Federation</option>
@@ -91,6 +91,9 @@
                             <div class="help-block">State/Providence cannot be blank</div>
                         </div>
                         <div class="input-text has-error has-success ">
+                            <input type="text" name="zip" class="form-block" placeholder="Zip/Postal" pattern="[A-Z,a-z, ]*" maxlength="100"  >
+                            <!-- fixme: Почтовый индекс может содердать и буквы и цифры (в Украине используются цифры) -->
+                            <div class="help-block">Title cannot be blank.</div>
                             <input type="text" name="zip" class="form-block" placeholder="Zip/Postal" pattern="[0-9]{,5}" maxlength="100"  >
                             <div class="help-block">Zip/Postal cannot be blank</div>
                         </div>
@@ -115,6 +118,7 @@
                     <div class="shipping_right">
                         <div class="create_account">
                             <input type="checkbox" class="checkbox-create-account" id="checkbox-create">
+                            <!-- fixme: Инпут должен содержать аттрибут name  -->
                             <label for="checkbox-create">Create account for latter use</label>
                         </div>
                     </div>
@@ -193,7 +197,11 @@
                                     </table>
                                 </div>
                                 <div class="proceed-payment">
+<<<<<<< HEAD
                                     <input type="submit" form="cart" class="btn" value="Proceed to payment">
+=======
+                                    <input type="button" class="btn" value="Proceed to payment"><!-- fixme: Эта кнопка не отправляет форму и не связана с ней.  -->
+>>>>>>> 298944d178e0be5ceac88c83e151f096573db0b8
                                 </div>
                                 <div class="clearfix"></div>
                             </div>

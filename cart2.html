@@ -6,10 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>cart2</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/responsive.css"><!-- fixme: Страница должна быть адаптивной  -->
 </head>
 <body>
-    <div id="your-cart">
         <nav class="menu container">
             <div class="menu_logo">
             </div>
@@ -31,87 +30,87 @@
 
         <div class="cart-wrap container">
             <h1>Your cart</h1>
-            <table class="table-cart">
-                <tr class="table-header">
-                    <form action="" id="id-product">
+            <form action="" id="id-product">
+                <table class="table-cart"><!-- fixme: Нет формы и скрытых инпутов для ID продуктов  -->
+                    <tr class="table-header">
+                        <td class="del-book"></td>
+                        <td class="img-table">Product</td>
+                        <td class="name-book"></td>
+                        <td class="format">Format</td>
+                        <td class="hardback">Language</td>
+                        <td class="language">Quantity</td>
+                        <td class="price">Price</td>
+                    </tr>
 
-
-                    </form>
-                    <td class="width-del-img" width="5%"></td>
-                    <td class="width-book-img" width="35%" colspan="2">Product</td>
-                    <td class="width-name-book" width="25%" >Format</td>
-                    <td class="width-hardback" width="15%">Language</td>
-                    <td class="width-language" width="15%">Quantity</td>
-                    <td class="width-price" width="5%">Price</td>
-                </tr>
-
-                <tr class="tr-container">
-                    <td class="del-img"><a href="#"><img src="img/rectangle63.png" width="13" height="19" alt="del"></a>
-                    </td>
-                    <td class="img-table"><img src="img/corpse.png" width="60" height="93" alt="corpse"></td>
-                    <td class="name-book"><a href="#"><span class="font-name-book">The Meandering Corpse</span></a>
-                        <p><span class="font-autor">Richard S. Prather</span></p></td>
-                    <td><span class="font-book-size">Hardback, 170x 215 mm</span></td>
-                    <td><span class="font-book-size">English</span></td>
-                    <td class="quantity-number">
-                        <form action="" id="quantity">
+                    <tr class="tr-container">
+                        <td class="del-img">
+                            <a href="#"><img src="img/rectangle63.png" width="13" height="19" alt="del"></a>
+                            <input type="hidden" id="product-book1">
+                        </td>
+                        <td class="img-table"><img src="img/corpse.png" width="60" height="93" alt="corpse"></td>
+                        <td class="name-book"><a href="#">The Meandering Corpse</a>
+                            <p>Richard S. Prather</p></td>
+                        <td class="font-book-size">Hardback, 170x 215 mm</td>
+                        <td class="font-book-size">English</td>
+                        <td class="quantity-number">
                             <input class="del" type="button" value="-">
                             <input type="number" min="1" placeholder="1">
                             <input class="add" type="button" name="product" value="+">
-                        </form>
-                    </td>
-                    <td><span class="font-money">$25</span></td>
-                </tr>
-                 <tr>
-                    <td class="td-height"></td>
-                </tr>
-                <tr class="tr-container">
-                    <td class="del-img"><a href="#"><img src="img/rectangle63.png" width="13" height="19" alt="del"></a></td>
-                    <td class="img-table"><img src="img/corpse3.png" width="60" height="93" alt="corpse"></td>
-                    <td class="name-book"><a href="#"><span class="font-name-book">English Detective Storiesspan</span></a><p><span class="font-autor">Patricia Craig</span></p></td>
-                    <td><span class="font-book-size">Hardback, 170x 215 mm</span></td>
-                    <td><span class="font-book-size">English</span></td>
-                    <td class="quantity-number">
-                        <form action="" id="quantity"">
+                        </td>
+                        <td class="font-money">$25</td>
+                    </tr>
+
+                    <tr class="tr-container">
+                        <td class="del-img">
+                            <a href="#"><img src="img/rectangle63.png" width="13" height="19" alt="del"></a>
+                            <input type="hidden" id="product-book2">
+                        </td>
+                        <td class="img-table"><img src="img/corpse3.png" width="60" height="93" alt="corpse"></td>
+                        <td class="name-book"><a href="#">English Detective Storiesspan</a>
+                            <p>Patricia Craig</p>
+                        </td>
+                        <td class="font-book-size">Hardback, 170x 215 mm</td>
+                        <td class="font-book-size">English</td>
+                        <td class="quantity-number">
                             <input class="del" type="button" value="-">
                             <input type="number" min="1" placeholder="1">
                             <input class="add" type="button" name="product" value="+">
-                        </form>
-                    </td>
-                    <td><span class="font-money">$25</span></td>
-                </tr>
-                <tr>
-                    <td class="td-height"></td>
-                </tr>
-                <tr class="tr-container">
-                    <td class="del-img"><img src="img/rectangle63.png" width="13" height="19" alt="del"></td>
-                    <td class="img-table"><img src="img/corpse2.png" width="60" height="93" alt="corpse"></td>
-                    <td class="name-book"><a href="#"><span class="font-name-book">Die Like a Dog</span></a><p><span class="font-autor">Brett Halliday</span></p></td>
-                    <td><span class="font-book-size">Hardback, 170x 215 mm</span> </td>
-                    <td><span class="font-book-size">English</span></td>
-                    <td class="quantity-number">
-                        <form action="" id="quantity">
+                        </td>
+                        <td class="font-money">$25</td>
+                    </tr>
+
+                    <tr class="tr-container">
+                        <td class="del-img">
+                            <img src="img/rectangle63.png" width="13" height="19" alt="del">
+                            <input type="hidden" id="product-book3">
+                        </td>
+                        <td class="img-table"><img src="img/corpse2.png" width="60" height="93" alt="corpse"></td>
+                        <td class="name-book"><a href="#">Die Like a Dog</a>
+                            <p>Brett Halliday</p>
+                        </td>
+                        <td class="font-book-size">Hardback, 170x 215 mm</td>
+                        <td class="font-book-size">English</td>
+                        <td class="quantity-number">
                             <input class="del" type="button" value="-">
                             <input type="number" min="1" placeholder="1">
                             <input class="add" type="button" name="product" value="+">
-                        </form>
-                    </td>
-                    <td><span class="font-money">$25</span></td>
-                </tr>
-            </table>
+                        </td>
+                        <td class="font-money">$25</td>
+                    </tr>
+                </table>
+            </form>
         </div>
 
         <div class="count-form-inner table-cart">
-            <form action="\">
+            <form action="">
                 <div class="coupon-wrap">
-                    <div class="coupon-inner">
-                        <div class="coupon-code">
-                            <input type="number" id="coupon" name="coupon" placeholder="Coupon code">
-                            <button class="coupon_button" type="submit" >Apply </button>
-                            <p>Type your coupone code (if you have), and take 20% discount for your order.</p>
-                        </div>
+                    <div class="coupon-code">
+                        <input type="text" id="coupon" name="coupon" placeholder="Coupon code">
+                        <button class="coupon_button" type="submit">Apply</button>
+                        <p>Type your coupone code (if you have), and take 20% discount for your order.</p>
                     </div>
                 </div>
+            </form>
                 <div class="proceed-wrap">
                         <div class="proceed-count">
                             <table>
@@ -126,18 +125,16 @@
                             </table>
                         </div>
                         <div class="proceed-payment">
-                            <input type="button" class="btn size-button" value="Checkout">
+                            <input type="submit" form="id-product" class="btn size-button" value="Checkout">
                         </div>
                         <div class="clearfix"></div>
-
-                    <div class="clearfix"></div>
                 </div>
                 <div class="clearfix"></div>
-            </form>
-        </div>
+        </div> <!-- end yourcart -->
 
-        <div class="wrap-footer ">
-            <nav class="menu_futer container">
+        <div class="wrap-footer"><!-- fixme: Футер должен иметь голубой фон на всю ширину окна  -->
+            <div class="container">
+            <nav class="menu_futer">
                 <ul>
                     <li><a href="#">sitemap</a></li>
                     <li><a href="#">help</a></li>
@@ -212,48 +209,50 @@
                     <hr>
                 </div>
             </div>
+            </div> <!-- end container -->
         </div>
-        <div class="container">
-        <div id="wrap-login">
-            <div class="transp-back-wrap-login"></div>
-            <a href="#"><img class="rectangle-arrow" src="img/rectangle9.png" alt="rectangle"></a>
-            <p>Login</p>
-            <form id="form-login" action="">
-                <div class="inner-login-email">
-                    <input type="text" class="" placeholder="E-mail" name="login-email">
-                </div>
-                <div class="inner-login-password">
-                    <input type="text" placeholder="Password" name="login-password">
-                </div>
-                <div class="inner-checkbox-remember">
-                    <input type="checkbox" class="checkbox-remember" id="remember" name="remember">
-                    <label for="remember">Remember me</label>
-                </div>
-                <div class="forgot-password">
-                    <a href="#">Forgot password</a>
-                </div>
-                <div class="sign-in">
-                    <input type="button" value="Sign in">
-                </div>
-                <!-- <div class="create-account"> -->
-                <a href="#" class="input-create">Create account<img src="img/rectangle55.png" width="17" height="13" alt="arrow"></a>
-                <!-- <input type="text" class="input-create" placeholder="Create account">
-                <button class="arrow-button"><img src="img/rectangle55.png" width="17" height="13" alt="arrow"></button> -->
-                <!-- </div> -->
-                <div class="hr-form"></div>
-                <div class="inner-login-social">
-                    <h3>Sign in with social:</h3>
-                    <div class="login-social">
-                        <a href="#"><img src="img/icons_svg/rectangle57.png" width="10" height="18" alt="facebook"></a>
-                        <a href="#"><img src="img/icons_svg/rectangle58.png" width="17" height="14" alt="pinterest"></a>
-                        <a href="#"><img src="img/icons_svg/Google.svg" alt="google"></a>
 
+        <div class="container">
+            <div id="wrap-login">
+                <div class="transp-back-wrap-login"></div>
+                <a href="#"><img class="rectangle-arrow" src="img/rectangle9.png" alt="rectangle"></a>
+                <p>Login</p>
+                <form id="form-login" action="">
+                    <div class="inner-login-email">
+                        <input type="text" class="" placeholder="E-mail" name="login-email">
                     </div>
-                </div>
-            </form>
-        </div>
+                    <div class="inner-login-password">
+                        <input type="text" placeholder="Password" name="login-password">
+                    </div>
+                    <div class="inner-checkbox-remember">
+                        <input type="checkbox" class="checkbox-remember" id="remember" name="remember">
+                        <label for="remember">Remember me</label>
+                    </div>
+                    <div class="forgot-password">
+                        <a href="#">Forgot password</a>
+                    </div>
+                    <div class="sign-in">
+                        <input type="button" value="Sign in">
+                    </div>
+                    <!-- <div class="create-account"> -->
+                    <a href="#" class="input-create">Create account<img src="img/rectangle55.png" width="17" height="13" alt="arrow"></a>
+                    <!-- <input type="text" class="input-create" placeholder="Create account">
+                    <button class="arrow-button"><img src="img/rectangle55.png" width="17" height="13" alt="arrow"></button> -->
+                    <!-- </div> -->
+                    <div class="hr-form"></div>
+                    <div class="inner-login-social">
+                        <h3>Sign in with social:</h3>
+                        <div class="login-social">
+                            <a href="#"><img src="img/icons_svg/rectangle57.png" width="10" height="18" alt="facebook"></a>
+                            <a href="#"><img src="img/icons_svg/rectangle58.png" width="17" height="14" alt="pinterest"></a>
+                            <a href="#"><img src="img/icons_svg/Google.svg" alt="google"></a>
+
+                        </div>
+                    </div>
+                </form>
+            </div>
     </div>
-    </div>
+
 
 </body>
 </html>
