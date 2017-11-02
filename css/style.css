@@ -1487,7 +1487,7 @@ button.subscribe_button::after {
     color: #45474b;
 }
 
-button.coupon_button { /* fixme: Убрать селекторы по тегу */
+.coupon_button { /* fixme: Убрать селекторы по тегу */
     background-color: white;
     color: #555963;
     padding: 10px 0 0 63px;
@@ -1495,7 +1495,7 @@ button.coupon_button { /* fixme: Убрать селекторы по тегу *
     border: none;
     cursor: pointer;
 }
-button.coupon_button::after {
+.coupon_button::after {
     background-repeat: no-repeat;
     content: "";
     background-image: url(../img/Rectangle45.png);
@@ -1505,7 +1505,7 @@ button.coupon_button::after {
     margin-left: 5px;
 }
 
-button.coupon_button::before {
+.coupon_button::before {
     content: "";
     width: 1px;
     height: 20px;
@@ -1558,23 +1558,6 @@ button.coupon_button::before {
     color: red;
     padding: 0 0 0 10px;
 }
-/*input.form-control::after {
-    display: inline-block;
-    content: '';
-    width: 100%;
-    height: 2px;
-    background-color: #ececed;
-    margin-top: 5px;
-    }*/
-
-/*
-input.form-control::after {
-    content: '';
-    width: 100%;
-    display: inline-block;
-    border-bottom: solid 2px #ececed;
-} */
-
 .input-text {
     width: 245px;
     display: inline-block;
@@ -1651,7 +1634,7 @@ input.form-control::after {
     border-collapse: collapse;
     /*border-spacing: 20px 40px;*/
 }
-input.size-button {
+.size-button {
     padding: 10px 56px;
 }
 .table-header {
@@ -2160,37 +2143,7 @@ div.cs-skin-elastic {
 
 }
 
-@media screen and (max-width: 30em) {
-    div.cs-skin-elastic { font-size: 1em; }
-}
 
-.cs-skin-elastic > span {
-    color: #959ba1;
-    font-family: 'Lato', sans-serif;
-    font-size: 16px;
-    background-color: #fff;
-    z-index: 100;
-}
-
-.cs-skin-elastic > span::after {
-    font-family: 'Lato', sans-serif;
-    font-size: 16px;
-    content: '';
-    background-image: url("../img/shape19.png");
-    width: 14px;
-    height: 8px;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-}
-
-.cs-skin-elastic .cs-options {
-    overflow: visible;
-    background: transparent;
-    opacity: 1;
-    visibility: visible;
-    padding-bottom: 1.25em;
-    /* pointer-events: none; */
-}
 
 /*.cs-skin-elastic.cs-active .cs-options {
     pointer-events: auto;
