@@ -358,22 +358,22 @@ a.btn:active { background: white; }
     float: left;
     width: 50%;
 }
-span.proceed-count-font1 { /* fixme: Убрать селекторы по тегу. Тут и ниже. Удалтиь лишние теги в html */
+.proceed-count-font1 { /* fixme: Убрать селекторы по тегу. Тут и ниже. Удалтиь лишние теги в html */
     font-family: 'Ramaraja', serif;
     font-size: 21px;
     color: #45474b;
 }
-span.proceed-count-font2 {
+.proceed-count-font2 {
      font-family: 'Yrsa', serif;
      font-size: 25px;
      color: #555963;
  }
-span.proceed-count-font3 {
+.proceed-count-font3 {
     font-family: 'Ramaraja', serif;
     font-size: 28px;
     color: #555963;
 }
-span.proceed-count-font4 {
+.proceed-count-font4 {
     font-family: 'Yrsa', serif;
     font-size: 31px;
     color: #555963;
@@ -1169,14 +1169,8 @@ input[type=number] {
     width: 206px;
     padding: 5px 5px;
 }
-.has-success {
-    color: darkgreen;
-    border-bottom-color: darkgreen;
-}
-.has-error{
-    color: red;
-    border-bottom-color: red;
-}
+
+
 button.subscribe_button{
     background-color: #f2fdff;
     color: #555963;
@@ -1480,7 +1474,7 @@ button.coupon_button::before {
 }
 
 .wrap-footer {
-    /*width: 100%; */
+    width: 100%;
     background-color: #f2fdff;
     margin: 0 auto;
 }
@@ -1548,6 +1542,17 @@ input.form-control::after {
     /*border-bottom: 1px solid #555963;*/
     margin: 37px 35px 0 1px ;
 }
+
+
+.input-text .has-success {
+    color: darkgreen;
+    border-bottom-color: darkgreen;
+}
+.input-text .has-error {
+    color: red;
+    border-bottom-color: red;
+}
+
 .input-text input {
     width: 245px;
     border-bottom: 1px solid #555963;
@@ -1669,10 +1674,6 @@ input.size-button {
 span.minus {
     padding-right: 13px;
 }
-/*.name-book {
-    padding-bottom: 50px;
-    padding: 0 0 50px 15px  /* fixme:  Используй центрирование и небольшой отступ для всех ячеек */
- /*}  */
 
 .tr-container {
     background-color: #f5fdff;
@@ -1978,6 +1979,7 @@ button.arrow-button {
     position: absolute;
 
 }
+
 .del {
     border: none;
 }
@@ -1985,9 +1987,9 @@ button.arrow-button {
     border: none;
 }
 
-/* slider --- */
+/* slider --- */ /*  --------   after delete ---- */
 
-#anna-wrap-sl {
+/* #anna-wrap-sl {
     margin-top: 100px;
 }
 
@@ -2004,7 +2006,286 @@ button.arrow-button {
 }
 .r {
     position: absolute;
+} */
+
+
+/* -------  */
+
+/* select country */
+/* Default custom select styles */
+div.cs-select {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    text-align: left;
+    background: #fff;
+    z-index: 100;
+    width: 100%;
+    max-width: 245px;
+    margin-left: 10px;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
+div.cs-select:focus {
+    outline: none; /* For better accessibility add a style for this in your skin */
+}
+
+.cs-select select {
+    display: none;
+}
+
+.cs-select span {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    /*padding: 1em; */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Placeholder and selected option */
+.cs-select > span {
+    border-bottom: 1px solid #555963;
+    padding-right: 3em;
+
+}
+
+.cs-select > span::after,
+.cs-select .cs-selected span::after {
+    speak: none;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.cs-select > span::after {
+    content: '\25BE';
+    right: 1em;
+}
+
+.cs-select .cs-selected span::after {
+    content: '\2713';
+    margin-left: 1em;
+}
+
+.cs-select.cs-active > span::after {
+    -webkit-transform: translateY(-50%) rotate(180deg);
+    transform: translateY(-50%) rotate(180deg);
+}
+
+div.cs-active {
+    z-index: 200;
+}
+
+/* Options */
+.cs-select .cs-options {
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+    background: #fff;
+    visibility: hidden;
+}
+
+.cs-select.cs-active .cs-options {
+    visibility: visible;
+}
+
+.cs-select ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.cs-select ul span {
+    /* padding: 1em; */
+}
+
+.cs-select ul li.cs-focus span {
+    background-color: #ddd;
+}
+
+/* Optgroup and optgroup label */
+.cs-select li.cs-optgroup ul {
+    padding-left: 1em;
+}
+
+.cs-select li.cs-optgroup > span {
+    cursor: default;
+}
+
+div.cs-skin-elastic {
+    background: transparent;
+
+}
+
+@media screen and (max-width: 30em) {
+    div.cs-skin-elastic { font-size: 1em; }
+}
+
+.cs-skin-elastic > span {
+    color: #959ba1;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    background-color: #fff;
+    z-index: 100;
+}
+
+.cs-skin-elastic > span::after {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    content: '';
+    background-image: url("../img/shape19.png");
+    width: 14px;
+    height: 8px;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.cs-skin-elastic .cs-options {
+    overflow: visible;
+    background: transparent;
+    opacity: 1;
+    visibility: visible;
+    padding-bottom: 1.25em;
+    pointer-events: none;
+}
+
+.cs-skin-elastic.cs-active .cs-options {
+    pointer-events: auto;
+}
+
+.cs-skin-elastic .cs-options > ul::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    -webkit-transform: scale3d(1,0,1);
+    transform: scale3d(1,0,1);
+    background: #fff;
+    -webkit-transform-origin: 50% 0%;
+    transform-origin: 50% 0%;
+    -webkit-transition: -webkit-transform 0.3s;
+    transition: transform 0.3s;
+}
+
+.cs-skin-elastic.cs-active .cs-options > ul::before {
+    -webkit-transform: scale3d(1,1,1);
+    transform: scale3d(1,1,1);
+    -webkit-transition: none;
+    transition: none;
+    -webkit-animation: expand 0.6s ease-out;
+    animation: expand 0.6s ease-out;
+}
+
+.cs-skin-elastic .cs-options ul li {
+    opacity: 0;
+    -webkit-transform: translate3d(0,-25px,0);
+    transform: translate3d(0,-25px,0);
+    -webkit-transition: opacity 0.15s, -webkit-transform 0.15s;
+    transition: opacity 0.15s, transform 0.15s;
+}
+
+.cs-skin-elastic.cs-active .cs-options ul li {
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+    opacity: 1;
+    -webkit-transition: none;
+    transition: none;
+    -webkit-animation: bounce 0.6s ease-out;
+    animation: bounce 0.6s ease-out;
+    width: 180px;
+}
+
+/* Optional delays (problematic in IE 11/Win) */
+/*
+.cs-skin-elastic.cs-active .cs-options ul li:first-child {
+	-webkit-animation-delay: 0.1s;
+	animation-delay: 0.1s;
+}
+
+.cs-skin-elastic.cs-active .cs-options ul li:nth-child(2) {
+	-webkit-animation-delay: 0.15s;
+	animation-delay: 0.15s;
+}
+
+.cs-skin-elastic.cs-active .cs-options ul li:nth-child(3) {
+	-webkit-animation-delay: 0.2s;
+	animation-delay: 0.2s;
+}
+
+.cs-skin-elastic.cs-active .cs-options ul li:nth-child(4) {
+	-webkit-animation-delay: 0.25s;
+	animation-delay: 0.25s;
+}
+
+/* with more items, more delays declarations are needed */
+
+
+.cs-skin-elastic .cs-options span {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    color: #959ba1;
+    background-repeat: no-repeat;
+    background-position: 1.5em 50%;
+    background-size: 2em auto;
+    padding: 5px 0 0 24px;
+}
+
+.cs-skin-elastic .cs-options span:hover,
+.cs-skin-elastic .cs-options li.cs-focus span,
+.cs-skin-elastic .cs-options .cs-selected span {
+    color: #1e4c4a;
+}
+
+.cs-skin-elastic .cs-options .cs-selected span::after {
+    content: '';
+}
+
+
+@-webkit-keyframes expand {
+    0% { -webkit-transform: scale3d(1,0,1); }
+    25% { -webkit-transform: scale3d(1,1.2,1); }
+    50% { -webkit-transform: scale3d(1,0.85,1); }
+    75% { -webkit-transform: scale3d(1,1.05,1) }
+    100% { -webkit-transform: scale3d(1,1,1); }
+}
+
+@keyframes expand {
+    0% { -webkit-transform: scale3d(1,0,1); transform: scale3d(1,0,1); }
+    25% { -webkit-transform: scale3d(1,1.2,1); transform: scale3d(1,1.2,1); }
+    50% { -webkit-transform: scale3d(1,0.85,1); transform: scale3d(1,0.85,1); }
+    75% { -webkit-transform: scale3d(1,1.05,1); transform: scale3d(1,1.05,1); }
+    100% { -webkit-transform: scale3d(1,1,1); transform: scale3d(1,1,1); }
+}
+
+
+@-webkit-keyframes bounce {
+    0% { -webkit-transform: translate3d(0,-25px,0); opacity:0; }
+    25% { -webkit-transform: translate3d(0,10px,0); }
+    50% { -webkit-transform: translate3d(0,-6px,0); }
+    75% { -webkit-transform: translate3d(0,2px,0); }
+    100% { -webkit-transform: translate3d(0,0,0); opacity: 1; }
+}
+
+@keyframes bounce {
+    0% { -webkit-transform: translate3d(0,-25px,0); transform: translate3d(0,-25px,0); opacity:0; }
+    25% { -webkit-transform: translate3d(0,10px,0); transform: translate3d(0,10px,0); }
+    50% { -webkit-transform: translate3d(0,-6px,0); transform: translate3d(0,-6px,0); }
+    75% { -webkit-transform: translate3d(0,2px,0); transform: translate3d(0,2px,0); }
+    100% { -webkit-transform: translate3d(0,0,0); transform: translate3d(0,0,0); opacity: 1; }
+}
+/* --------    */
 
 
