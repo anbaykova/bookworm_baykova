@@ -208,7 +208,6 @@ a:focus {
 .wraper_books {
     width: 100%;
 }
-
 .book-title {
     text-align: left;
     width: 146px;
@@ -227,10 +226,40 @@ a:focus {
 }
 .book-item {
     text-align: center;
-    margin: 20px 15px;
+    /*margin: 20px 15px; */
     display: inline-block;
-
 }
+
+
+
+.book-item:nth-child(1) {
+    padding: 42px 31px 0 0;
+}
+.book-item:nth-child(5n+1) {
+    padding: 42px 0 0 31px;
+}
+.book-item:nth-child(n+2):nth-child(-n+5) {
+    padding: 42px 30px 0 30px;
+}
+.book-item:nth-child(7) {
+    padding: 42px 31px 0 0;
+}
+.book-item:nth-child(11n+1) {
+    padding: 42px 0 0 31px;
+}
+.book-item:nth-child(n+8):nth-child(-n+11) {
+    padding: 42px 30px 0 30px;
+}
+.book-item:nth-child(13) {
+    padding: 42px 31px 0 0;
+}
+.book-item:nth-child(17n+1) {
+    padding: 42px 0 0 31px;
+}
+.book-item:nth-child(n+14):nth-child(-n+17) {
+    padding: 42px 30px 0 30px;
+}
+
 .book-item img {
     width: 146px;
     height: 227px;
@@ -421,20 +450,7 @@ a:focus {
 /* tr td {
     padding: 10px;
 } */
-/* books li:nth-child(1) {
-    padding: 42px 31px 0 0;
-}
-.books li:nth-child(6) {
-    padding: 42px 0 0 31px;
-}
-*/
 
-/*.books ul li  {
-    width: 150px;
-    float: left;
-    padding: 42px 31px 0 31px;
-
-} */
 
 .clearfix {
     clear: both;
@@ -1832,9 +1848,10 @@ a.input-create:hover {
     margin-top: 15px;
     margin-left: 15px;
     position: absolute;
-    opacity: 0.8;
+    opacity: 0.9;
     z-index: -1;
     box-shadow: 0 5px 7px #8F8C8D;
+    background-color: white;
 
 }
 
@@ -1966,7 +1983,6 @@ div.cs-select:focus {
     font-size: 16px;
     border-bottom: 1px solid #555963;
     padding-right: 3em;
-
 }
 
 .cs-select > span::after,
