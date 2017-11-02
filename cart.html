@@ -37,7 +37,7 @@
             <form id="cart" action="">
              <div class="form-cart">
                 <div class="leftpart">
-                    <div class="gender">
+                    <div class="gender checkbox-design">
                         <h3>Gender:</h3>
                         <input id="gen-man" type="radio" name="gender" value="man">
                         <label for="gen-man">Man</label>
@@ -45,7 +45,7 @@
                         <label for="gen-woman">Woman</label>
                     </div>
                     <div class="form-input">
-                        <div class="input-text required has-error has-success"><!-- fixme: Стили для валидного и невалидного поля не применяются  -->
+                        <div class="input-text required has-error has-success">
                             <input type="text" placeholder="First name" class="form-control" name="firstname" maxlength="100" required >
                             <div class="help-block">First name cannot be blank</div>
                         </div>
@@ -73,7 +73,7 @@
                     </div>
                     <div class="form-input">
                         <div class="input-text required has-error has-success ">
-                            <select name="country" class="cs-select cs-skin-elastic"  title="country"><!-- fixme: Стилизировать в цветах и отступах макета. Убрать флаги  -->
+                            <select name="country" class="cs-select cs-skin-elastic"  title="country">
                                 <option value="" disabled selected>Country</option>
                                 <option value="ukraine" >Ukraine</option>
                                 <option value="russion">Russian Federation</option>
@@ -103,11 +103,11 @@
                 <div class="shipping-method" >
                     <div class="shipping_left">
                         <h3>Shipping method:</h3>
-                        <div class="shipping-inner">
+                        <div class="shipping-inner checkbox-design">
                             <input id="ups_saver" type="radio" name="ups" value="ups_saver">
                             <label for="ups_saver">UPS_SAVER</label> Free
                         </div>
-                        <div class="shipping-inner">
+                        <div class="shipping-inner checkbox-design">
                             <input id="ups_express" type="radio" name="ups" value="ups_express">
                             <label for="ups_express">UPS Express</label> $7,50
                         </div>
@@ -127,7 +127,7 @@
                             <input type="radio" id="creditcard" name="payment" value="creditcard">
                             <label for="creditcard">Credit Card</label> <img src="img/cart/creditcard.png" width="23" height="16" alt="creditcart">
                         </div>
-                        <div class="payment-radio">
+                        <div class="payment-radio ">
                             <input type="radio" id="bancontract" name="payment" value="bancontract">
                             <label for="bancontract">Bancontract</label> <img src="img/cart/mistercash.png" width="23" height="10" alt="bancontract">
                         </div>
@@ -255,12 +255,14 @@
                         </div>
                     </div>
                 </div> <!-- footer_section_about -->
+             
                 <div class="footer_section_active">
-                     <form action="" name="subscribe-form" class="subscribe_form">
-                        <h2>Stay in touch</h2>
+                    <h2>Stay in touch</h2>
+                    <form action=""  name="subscribe-form" class="subscribe_form">
                         <input type="email" id="fname" name="fname" placeholder="Your E-mail">
-                        <button class="subscribe_button" type="submit" >Subscribe </button>
+                        <button class="subscribe_button" type="submit">Subscribe</button>
                     </form>
+
                     <div class="footer_social">
                         <h2>Follow us</h2>
                         <div class="social_icon">

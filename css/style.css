@@ -1058,23 +1058,20 @@ button[type=submit]:hover {
 .subscribe_form {
 
 }
-form.subscribe_form {
+.subscribe_form {
     width: auto;
-    height: 76px;
+    height: 50px;
     border-bottom: 1px solid rgb(69, 70, 74);
 }
 .subscribe_form input {
     background-color: #f2fdff;
-
-    padding: 12px 20px;
-    margin: 8px 0;
     box-sizing: border-box;
     font-size: 16px;
     font-family: 'Lato', sans-serif;
     color: #45474b;
     border: none;
 }
-button.subscribe_button::before {
+.subscribe_button::before {
     content: "";
     width: 1px;
     height: 15px;
@@ -1084,66 +1081,69 @@ button.subscribe_button::before {
     vertical-align: middle;
 }
 
-input[type=email] {
+/* input[type=email] {
+    border: none;
+    padding: 5px 0;
+    outline: none;
+    box-sizing: border-box;
+} */
+.input-text input {
     border: none;
     padding: 5px 0;
     outline: none;
     box-sizing: border-box;
 }
-input[type=email]:focus {
+.input-text input:focus {
     border-color: #da8913;
     color: #da8913;
 }
-input[type=email]:active {
+/*
+input[type=email]:focus {
+    border-color: #da8913;
+    color: #da8913;
+} */
+.input-text input:active {
     border-color: #959ba1;
     color: #959ba1;
 }
 
-input[type=tel] {
+/* input[type=email]:active {
+    border-color: #959ba1;
+    color: #959ba1;
+} */
+
+/*input[type=tel] {
     border: none;
     padding: 5px 0;
     outline: none;
     box-sizing: border-box;
-}
-input[type=tel]:focus {
+} */
+/*input[type=tel]:focus {
     border-color: #da8913;
     color: #da8913;
-}
+} */
 
-.input-text textarea {
+/*.input-text textarea {
     border-bottom: 1px solid #555963;
-}
+} */
 .shipping-inner {
     width: 170px;
     float: left;
 }
-textarea {
-    margin-left: 10px;
-    display: block;
 
-    height: 27px;
-    border: none;
-    font-family: 'Lato', sans-serif;
-    font-size: 16px;
-    color: #959ba1;
-    outline: none;
-}
-textarea:focus {
-    border-color: #da8913;
-    color: #da8913;
-}
 
-input[type=text] {
+/*input[type=text] {
     border: none;
     outline: none;
     padding: 5px 0;
     /* border-color: #959ba1; */
-    box-sizing: border-box;
+   /* box-sizing: border-box; */
     /*border: 3px solid #1e4c4a;
     -webkit-transition: 0.5s;
     transition: 0.5s;
     outline: none; */
-}
+/*} */
+
 input[type=text]:disabled {
     border-color: #45474b;
     background-color: #959ba1;
@@ -1181,8 +1181,10 @@ button.subscribe_button{
 }
 
 button.subscribe_button::after {
+    background-repeat: no-repeat;
     content: "";
-    background-image: url("../img/icons_svg/mail.svg");
+    margin-left: 5px;
+    background-image: url(../img/icons_svg/mail.svg);
     width: 21px;
     height: 13px;
     display: inline-block;
@@ -1196,14 +1198,15 @@ button.subscribe_button::after {
 .footer_social {
     margin: 80px 0 0 0;
 }
-input[type=radio] { /* fixme: Глобальные стили - плохо.  */
+
+.checkbox-design input {
     display: none;
 }
-input[type=radio]+label {
+.checkbox-design input + label {
     padding-left: 30px;
     position: relative;
 }
-input[type=radio]+label::before {
+.checkbox-design input + label::before {
     content: '';
     position: absolute;
     left: 0;
@@ -1215,7 +1218,7 @@ input[type=radio]+label::before {
     border: 1px solid #da8913;
     border-radius: 50%;
 }
-input[type=radio]+label::after{
+.checkbox-design input + label::after {
     content: '';
     position: absolute;
     left: 4px;
@@ -1227,9 +1230,57 @@ input[type=radio]+label::after{
     background: transparent;
     border-radius: 50%;
 }
-input[type=radio]:checked + label::after {
+.checkbox-design input:checked + label::after {
     background: #da8913;
 }
+
+.payment-radio {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    color: #45474b;
+    width: 187px;
+    height: 29px;
+    display: inline-block;
+    margin: 35px 80px 0 10px
+}
+.payment-radio input {
+    display: none;
+}
+
+.payment-radio input + label {
+    padding-left: 30px;
+    position: relative;
+}
+
+.payment-radio input + label::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    border: 1px solid #da8913;
+    border-radius: 50%;
+}
+.payment-radio input + label::after {
+    content: '';
+    position: absolute;
+    left: 4px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: inline-block;
+    width: 11px;
+    height: 11px;
+    background: transparent;
+    border-radius: 50%;
+}
+
+.payment-radio input:checked+label::after {
+    background: #da8913;
+}
+
 
 /* Далее идет оформление чекбокса в современных браузерах, а также IE9 и выше.
 Благодаря тому, что старые браузеры не поддерживают селекторы :not и :checked,
@@ -1391,15 +1442,7 @@ input[type=radio]:checked + label::after {
     margin-top: 86px;
 
     }
-.payment-radio {
-    font-family: 'Lato', sans-serif;
-    font-size: 16px;
-    color: #45474b;
-    width: 187px;
-    height: 29px;
-    display: inline-block;
-    margin: 35px 80px 0 10px
-}
+
 
 .payment label {
     margin-right: 10px;
@@ -1508,9 +1551,6 @@ button.coupon_button::before {
     width: 100%;
 }
 
-
-
-
 .help-block {
     display: none;
     font-family: 'Lato', sans-serif;
@@ -1539,11 +1579,8 @@ input.form-control::after {
     width: 245px;
     display: inline-block;
     border: none;
-    /*border-bottom: 1px solid #555963;*/
     margin: 37px 35px 0 1px ;
 }
-
-
 .input-text .has-success {
     color: darkgreen;
     border-bottom-color: darkgreen;
@@ -1560,39 +1597,24 @@ input.form-control::after {
     font-family: 'Lato', sans-serif;
     font-size: 16px;
 }
+
 .input-text-inner {
-   width: auto;
+    width: auto;
     display: inline-block;
-    border: none;
-    margin: 6px 35px 0 1px ;
+    border-bottom: 1px solid #555963;
+    margin: 6px 35px 0 12px ;
 }
 .input-text-inner textarea {
+    border: none;
     width: 530px;
-    border-bottom: 1px solid #555963;
-    color: #959ba1;
+    color: #da8913;
     font-family: 'Lato', sans-serif;
     font-size: 16px;
+    display: block;
+    height: 27px;
+    outline: none;
 }
 
-
-/*.input-text-inner input {
-    width: 245px;
-    margin-left: 10px;
-    color: #959ba1;
-    font-family: 'Lato', sans-serif;
-    font-size: 16px;
-    border-bottom: 1px solid #555963;
-}
-.input-text-inner{
-    width: 100%;
-    border-bottom: 1px solid #555963;
-    margin: 0 0 0 10px;
-} */
-
-
-
-input.form-block  {
-}
 .required::before {
     position: absolute;
     content: '*';
@@ -1604,7 +1626,10 @@ input.form-block  {
 .gender {
     margin-bottom: 5px;
 }
-.gender label {
+.checkbox-design {
+
+}
+.checkbox-design label {
     font-family: 'Lato', sans-serif;
     font-size: 16px;
     color: #45474b;
@@ -1986,6 +2011,12 @@ button.arrow-button {
 .add {
     border: none;
 }
+.tr-container:nth-child(3){
+    margin: 10px 0 10px 0;
+}
+.tr-container {
+    display: table-row;
+}
 
 /* slider --- */ /*  --------   after delete ---- */
 
@@ -2028,7 +2059,7 @@ div.cs-select {
     -khtml-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
-    user-select: none;
+    /*user-select: none; */
 }
 
 div.cs-select:focus {
@@ -2084,6 +2115,7 @@ div.cs-select:focus {
 
 div.cs-active {
     z-index: 200;
+    height: 30px;
 }
 
 /* Options */
@@ -2157,12 +2189,12 @@ div.cs-skin-elastic {
     opacity: 1;
     visibility: visible;
     padding-bottom: 1.25em;
-    pointer-events: none;
+    /* pointer-events: none; */
 }
 
-.cs-skin-elastic.cs-active .cs-options {
+/*.cs-skin-elastic.cs-active .cs-options {
     pointer-events: auto;
-}
+} */
 
 .cs-skin-elastic .cs-options > ul::before {
     content: '';
@@ -2208,30 +2240,6 @@ div.cs-skin-elastic {
     width: 180px;
 }
 
-/* Optional delays (problematic in IE 11/Win) */
-/*
-.cs-skin-elastic.cs-active .cs-options ul li:first-child {
-	-webkit-animation-delay: 0.1s;
-	animation-delay: 0.1s;
-}
-
-.cs-skin-elastic.cs-active .cs-options ul li:nth-child(2) {
-	-webkit-animation-delay: 0.15s;
-	animation-delay: 0.15s;
-}
-
-.cs-skin-elastic.cs-active .cs-options ul li:nth-child(3) {
-	-webkit-animation-delay: 0.2s;
-	animation-delay: 0.2s;
-}
-
-.cs-skin-elastic.cs-active .cs-options ul li:nth-child(4) {
-	-webkit-animation-delay: 0.25s;
-	animation-delay: 0.25s;
-}
-
-/* with more items, more delays declarations are needed */
-
 
 .cs-skin-elastic .cs-options span {
     font-family: 'Lato', sans-serif;
@@ -2254,7 +2262,7 @@ div.cs-skin-elastic {
 }
 
 
-@-webkit-keyframes expand {
+/*@-webkit-keyframes expand {
     0% { -webkit-transform: scale3d(1,0,1); }
     25% { -webkit-transform: scale3d(1,1.2,1); }
     50% { -webkit-transform: scale3d(1,0.85,1); }
@@ -2285,7 +2293,7 @@ div.cs-skin-elastic {
     50% { -webkit-transform: translate3d(0,-6px,0); transform: translate3d(0,-6px,0); }
     75% { -webkit-transform: translate3d(0,2px,0); transform: translate3d(0,2px,0); }
     100% { -webkit-transform: translate3d(0,0,0); transform: translate3d(0,0,0); opacity: 1; }
-}
+} */
 /* --------    */
 
 
