@@ -42,9 +42,7 @@ body {
     background-color: white;
     height: 98px;
 }
-.menu.container {
 
-}
 .menu ul li {
     display: inline;
     float: left;
@@ -208,7 +206,7 @@ a:focus {
 }
 
 .wraper_books {
-width: 100%;
+    width: 100%;
 }
 
 .book-title {
@@ -286,29 +284,13 @@ width: 100%;
     transition: 5s ease color;
 }
 .btn:hover {
-    font-family: 'Lato', sans-serif;
-    font-size: 16px;
-    text-align: center;
-    font-weight: 400;
-    color: #45474b;
-    text-decoration: none;
-    padding: 10px 60px;
-    border: 2px solid #555963;
+    /*text-decoration: none; */
+    /*padding: 10px 60px;
+    border: 2px solid #555963;*/
     background: #da8913
 }
-.btn:hover {
-    font-family: 'Lato', sans-serif;
-    font-size: 16px;
-    text-align: center;
-    font-weight: 400;
-    color: #45474b;
-    text-decoration: none;
-    border: 2px solid #555963;
-    background: #da8913;
-}
 
-
-a.btn {
+/*a.btn {
     font-family: 'Lato', sans-serif;
     font-size: 16px;
     text-align: center;
@@ -318,8 +300,8 @@ a.btn {
     padding: 10px 60px;
     border: 2px solid #555963;
     background: white;
-}
-input.btn {
+} */
+/*input.btn {
     font-family: 'Lato', sans-serif;
     font-size: 16px;
     text-align: center;
@@ -329,24 +311,12 @@ input.btn {
     padding: 10px 15px;
     border: 2px solid #555963;
     background: white;
+}
+*/
 
-}
-.btn {
-    font-family: 'Lato', sans-serif;
-    font-size: 16px;
-    text-align: center;
-    font-weight: 400;
-    color: #45474b;
-    text-decoration: none;
-    padding: 10px 60px;
-    border: 2px solid #555963;
-    background: white;
-}
 .btn:active { background: white; }
 
 .btn:active { background: white; }
-
-
 .btn:hover { background: #da8913; }
 .btn:active { background: white; }
 
@@ -765,10 +735,21 @@ span.bookworm {
     font-size: 29px;
     line-height: 37.46px;
 }
-span.btn {
+/*.btn {
     font-family: 'Lato', sans-serif;
     font-size: 16px;
     line-height: 32px;
+} */
+.btn {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    text-align: center;
+    font-weight: 400;
+    color: #45474b;
+    text-decoration: none;
+    padding: 10px 60px;
+    border: 2px solid #555963;
+    background: white;
 }
 span.literature_vote {
     font-family: "Work Sans";
@@ -816,7 +797,7 @@ span.fontcaption_text::before {
     background-image: url("../img/rectangle26.png");
     width: 20px;
     height: 18px;
-    margin: -24px 0px 0px 267px;
+    margin: -24px 0 0 267px;
 }
 
 span.fontcaption_grey {
@@ -1103,6 +1084,9 @@ background-color: #f2fdff;;
     margin: 8px 0;
     border: none;
     cursor: pointer;
+}
+.subscribe_button:focus {
+    outline: none;
 }
 
 .subscribe_button::after {
@@ -1399,19 +1383,20 @@ background-color: #f2fdff;;
     color: #555963;
     margin-top: 20px;
 }
-.coupon_button {
-    font-family: 'Lato', sans-serif;
-    font-size: 16px;
-    color: #45474b;
-}
 
-.coupon_button { /* fixme: Убрать селекторы по тегу */
+
+.coupon_button {
     background-color: white;
-    color: #555963;
     padding: 10px 0 0 63px;
     margin: 8px 0;
     border: none;
     cursor: pointer;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    color: #45474b;
+}
+.coupon_button:focus {
+    outline: none;
 }
 .coupon_button::after {
     background-repeat: no-repeat;
@@ -1590,6 +1575,7 @@ background-color: #f2fdff;;
 }
 
 .quantity-number input {
+    border: none;
     background-color: #f5fdff;
     width: 24px;
     text-align: left;
@@ -1597,6 +1583,11 @@ background-color: #f2fdff;;
     font-size: 25px;
     color: #555963;
 }
+
+.quantity-number input:focus {
+    outline: none;
+}
+
 .minus {
     padding-right: 13px;
 }
@@ -1833,7 +1824,7 @@ a.input-create:hover {
     position: absolute;
     opacity: 0;
     visibility: hidden;
-    top: 800px;
+    top: 930px;
 }
 #wrap-login .transp-back-wrap-login {
     width: 460px;
@@ -1893,10 +1884,10 @@ a.input-create:hover {
 
 }
 
-.del {
+.del input {
     border: none;
 }
-.add {
+.add input {
     border: none;
 }
 .tr-container:nth-child(3){
