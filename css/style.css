@@ -33,14 +33,17 @@ body {
 }
 
 .menu {
+    z-index: 500;
     top: 15px;
     left: 100px;
     right: 100px;
     position: fixed;
-    z-index: 10000;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
     background-color: white;
     height: 98px;
+}
+.menu.container {
+
 }
 .menu ul li {
     display: inline;
@@ -328,7 +331,7 @@ input.btn {
     background: white;
 
 }
-button.btn {
+.btn {
     font-family: 'Lato', sans-serif;
     font-size: 16px;
     text-align: center;
@@ -339,14 +342,13 @@ button.btn {
     border: 2px solid #555963;
     background: white;
 }
+.btn:active { background: white; }
 
-button.btn:active { background: white; }
-
-input.btn:active { background: white; }
+.btn:active { background: white; }
 
 
-a.btn:hover { background: #da8913; }
-a.btn:active { background: white; }
+.btn:hover { background: #da8913; }
+.btn:active { background: white; }
 
 .proceed-inner {
     margin-top: 42px;
@@ -396,14 +398,14 @@ a.btn:active { background: white; }
     color: #d3d9db;
     width: 100%;
 }
-.shopfrontmenu::after {
+/*.shopfrontmenu::after {
     content: "";
     width: 100%;
     height: 2px;
     display: block;
     background-color: #ececed;
     margin-top: 5px;
-}
+} */
 .shopfrontmenu a:hover {
     text-decoration: none;
     color: #45474b;
@@ -579,7 +581,7 @@ a.btn:active { background: white; }
 }
 
 .list_book img {
-    padding: 45px 15px 10px 0px;
+    padding: 45px 15px 10px 0;
 }
 .bookmark {
     position: absolute;
@@ -1032,10 +1034,10 @@ background-color: #f2fdff;;
     margin: 150px 0 0 0;
 }
 
-button[type=submit]:hover {
+/*button[type=submit]:hover {
     border: none;
 }
-
+*/
 .subscribe_form {
     width: auto;
     height: 50px;
@@ -1048,6 +1050,9 @@ button[type=submit]:hover {
     font-family: 'Lato', sans-serif;
     color: #45474b;
     border: none;
+}
+.subscribe_form input:focus {
+    outline: none;
 }
 .subscribe_button::before {
     content: "";
@@ -1075,59 +1080,11 @@ button[type=submit]:hover {
     color: #959ba1;
 }
 
-/* input[type=email]:active {
-    border-color: #959ba1;
-    color: #959ba1;
-} */
-
-/*input[type=tel] {
-    border: none;
-    padding: 5px 0;
-    outline: none;
-    box-sizing: border-box;
-} */
-/*input[type=tel]:focus {
-    border-color: #da8913;
-    color: #da8913;
-} */
-
-/*.input-text textarea {
-    border-bottom: 1px solid #555963;
-} */
 .shipping-inner {
     width: 170px;
     float: left;
 }
 
-
-/*input[type=text] {
-    border: none;
-    outline: none;
-    padding: 5px 0;
-    /* border-color: #959ba1; */
-   /* box-sizing: border-box; */
-    /*border: 3px solid #1e4c4a;
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
-    outline: none; */
-/*} */
-
-input[type=text]:disabled {
-    border-color: #45474b;
-    background-color: #959ba1;
-    color: #45474b;
-}
-input[type=text]:active {
-    border-color: #959ba1;
-    color: #959ba1;
-}
-input[type=text]:focus {
-    border-color: #da8913;
-    color: #da8913;
-}
-input[type=number] {
-    border: none;
-}
 .form-input input {
     position: relative;
     margin-left: 10px;
@@ -1139,7 +1096,7 @@ input[type=number] {
 }
 
 
-button.subscribe_button{
+.subscribe_button{
     background-color: #f2fdff;
     color: #555963;
     padding: 10px 0px;
@@ -1148,7 +1105,7 @@ button.subscribe_button{
     cursor: pointer;
 }
 
-button.subscribe_button::after {
+.subscribe_button::after {
     background-repeat: no-repeat;
     content: "";
     margin-left: 5px;
@@ -1420,7 +1377,6 @@ button.subscribe_button::after {
     height:50px;
    }
 
-
 .coupon-wrap {
     width: 30%;
     float: left;
@@ -1437,12 +1393,6 @@ button.subscribe_button::after {
     color: #da8913;
 }
 
-/*.coupon-code input:after{
-    content: '';
-    height: 2px;
-    background-color: #45474b;
-    width: 100%;
-} */
 .coupon-code p {
     font-family: 'Yrsa', serif;
     font-size: 19px;
@@ -1659,18 +1609,6 @@ button.subscribe_button::after {
 }
 
 
-/* .img-table {
-    padding-top: 10px;
-} */
-/*.del-img {
-    padding: 10px 23px;
-} */
- /*tr {
-     padding: 10px;
-     margin-bottom: 10px;
-} */
-
-
 #popup-demo {
     /*margin-top: 100px; */
     background-color: indianred;
@@ -1827,21 +1765,12 @@ a.input-create:hover {
     padding: 0 0 0 15px;
 }
 
-/* input.input-create {
-    border-bottom: 2px solid #45474b;
-    padding: 0 10px 10px 10px ;
-    font-family: 'Lato', sans-serif;
-    font-size: 16px;
-    color: #45474b;
-
-} */
-
 .arrow-button:focus {
     border: none;
     outline: none;
 }
 
-button.arrow-button {
+.arrow-button {
     border: none;
     background-color: white;
 }
@@ -1864,7 +1793,8 @@ button.arrow-button {
 .inner-login-email {
     margin-top: 49px;
 }
-.inner-login-email input{
+.inner-login-email input {
+    border: none;
     border-bottom: 1px solid #45474b;
     font-family: 'Lato', sans-serif;
     font-size: 16px;
@@ -1872,12 +1802,16 @@ button.arrow-button {
     width: 360px;
     box-sizing: border-box;
     margin-left: 50px;
+}
+.inner-login-email input:focus {
+    outline: none;
 }
 .inner-login-password {
     margin-top: 43px;
     margin-bottom: 36px;
 }
 .inner-login-password input {
+    border: none;
     box-sizing: border-box;
     margin-left: 50px;
     border-bottom: 1px solid #45474b;
@@ -1885,10 +1819,12 @@ button.arrow-button {
     font-size: 16px;
     color: #959ba1;
     width: 360px;
-
+}
+.inner-login-password input:focus {
+    outline: none;
 }
 #wrap-login {
-
+    z-index: 505;
     background: white;
     box-shadow:0 7px 24px #8F8C8D;
     margin: 280px 375px 0 375px;
@@ -1897,6 +1833,7 @@ button.arrow-button {
     position: absolute;
     opacity: 0;
     visibility: hidden;
+    top: 800px;
 }
 #wrap-login .transp-back-wrap-login {
     width: 460px;
