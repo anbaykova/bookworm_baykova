@@ -1670,12 +1670,12 @@ background-color: #f2fdff;;
 .arrow-left {
 
 }
-
-.slide-picture + img {
+/*  ----    */
+/*.slide-picture + img {
     opacity: 0;
     position: absolute;
     transition: opacity 0.5s  ;
-}
+}*/
 .slide-picture + .popular_book {
     opacity: 0;
     position: absolute;
@@ -1703,6 +1703,10 @@ background-color: #f2fdff;;
 .slide-picture:checked + .inner-slider {
     opacity: 1;
 }
+.inner-login-form {
+    margin-top: 55px;
+}
+
 /*.inner-login-form {
     width: 100%;
    } */
@@ -1711,40 +1715,51 @@ background-color: #f2fdff;;
     width: 100%;
 } */
 .inner-checkbox-remember {
+    float: left;
     font-family: 'Lato', sans-serif;
     font-size: 16px;
     color: #45474b;
-    width: 120px;
     display: inline-block;
-    margin: 0 53px 0 54px;
     font-weight: 500;
 }
 .forgot-password {
+    float: right;
     font-weight: 500;
-    width: 120px;
-    display: inline-block;
+    /*width: 120px;*/
+    display: block;
     font-family: 'Lato', sans-serif;
     font-size: 16px;
     color: #45474b;
-    margin: 0 54px 0 54px;
+    /*margin: 0 54px 0 54px; */
 }
 
 #login-form {
     position: relative;
     width: 1210px;
 }
+.sign-in input:hover {
+    background-color: #da8913;
+}
+
+.sign-in {
+    padding-bottom: 60px;
+    text-align: center;
+    padding-top: 60px;
+}
 .sign-in input {
+    text-align: center;
     font-family: 'Lato', sans-serif;
     font-size: 16px;
     font-weight: 500;
     color: #45474b;
     border: 2px solid #45474b;
     background-color: white;
-    padding: 10px 101px 10px 56px;
-    width: 100px;
-    margin: 50px 150px 80px 150px;
-
+    padding: 10px 56px 10px 56px;
+    /*width: 100px;*/
+    /*margin: 50px 150px 80px 150px; */
 }
+
+
 /* .create-account {
     margin-top: 80px;
     width: 150px;
@@ -1752,9 +1767,10 @@ background-color: #f2fdff;;
 
 } */
 
-a.input-create {
-    margin: 0 160px 0 160px;
-    padding: 0 0 12px 0;
+.input-create {
+    margin: 0 110px 40px 110px;
+    display: block;
+    text-align: center;
     border-bottom: 2px solid #45474b;
     font-size: 16px;
     color: #45474b;
@@ -1763,7 +1779,7 @@ a.input-create {
     transition: color 0.5s ease;
 }
 
-a.input-create:hover {
+.input-create:hover {
     color: #da8913;
     border-bottom: 2px solid #da8913;
 }
@@ -1781,24 +1797,30 @@ a.input-create:hover {
     border: none;
     background-color: white;
 }
-.hr-form {
+/*.hr-form {
     margin-top: 30px;
     border-bottom: 1px solid #bfbfbf;
     width: 76%;
+} */
+
+.inner-login-social {
+    padding-top: 15px;
+    border-top: 1px solid #959ba1;
 }
+
 .inner-login-social h3 {
     margin-top: 30px;
     text-align: center;
 }
 .login-social {
     width: 172px;
-    margin: 20px 138px 0 138px;
+    /*margin: 20px 138px 0 138px; */
 }
 .login-social a {
     padding: 0 20px 0 20px;
 }
 .inner-login-email {
-    margin-top: 49px;
+    margin-top: 85px;
 }
 .inner-login-email input {
     border: none;
@@ -1806,26 +1828,24 @@ a.input-create:hover {
     font-family: 'Lato', sans-serif;
     font-size: 16px;
     color: #959ba1;
-    width: 360px;
-    box-sizing: border-box;
-    margin-left: 50px;
+    width: 100%;
 }
 .inner-login-email input:focus {
     outline: none;
 }
 .inner-login-password {
-    margin-top: 43px;
-    margin-bottom: 36px;
+    /*margin-top: 43px;
+    margin-bottom: 36px;*/
 }
 .inner-login-password input {
+    padding-top: 55px;
     border: none;
     box-sizing: border-box;
-    margin-left: 50px;
+    width: 100%;
     border-bottom: 1px solid #45474b;
     font-family: 'Lato', sans-serif;
     font-size: 16px;
     color: #959ba1;
-    width: 360px;
 }
 .inner-login-password input:focus {
     outline: none;
@@ -1842,6 +1862,9 @@ a.input-create:hover {
     visibility: hidden;
     top: 930px;
 }
+.inner-wrap-login {
+    margin: 75px 50px;
+}
 #wrap-login .transp-back-wrap-login {
     width: 460px;
     height: 755px;
@@ -1854,7 +1877,6 @@ a.input-create:hover {
     background-color: white;
 
 }
-
 .rectangle-arrow {
     z-index: 4;
     left: 402px;
@@ -1866,7 +1888,7 @@ a.input-create:hover {
     visibility: visible;
     opacity: 1;
 }
-/*.wrap-login-substrate {
+.wrap-login-substrate {
     left: 20px;
     top: 20px;
     z-index: 8;
@@ -1874,10 +1896,10 @@ a.input-create:hover {
     box-shadow: 0px 0px 10px #8F8C8D;
     width: 460px;
     position: absolute;
-} */
+}
 
 #wrap-login p {
-    padding-top: 75px;
+    /*padding-top: 75px;*/
     text-align: center;
     font-family: 'Ramaraja', serif;
     font-size: 42px;
