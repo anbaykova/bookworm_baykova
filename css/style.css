@@ -1,14 +1,10 @@
 
-
-@import url('https://fonts.googleapis.com/css?family=Amiri|Lato:400,700|Ramaraja|Rozha+One|PT+Serif|Work+Sans|Yrsa');
-
 * {
     margin: 0 auto;
     padding: 0;
 }
 
 html {
-
     margin: 0;
 }
 
@@ -576,17 +572,15 @@ a:focus {
     font-size: 17px;
     color: #555963;
 }
-/* fonts used in html */
-/*span.fontcaption */
 
-span.fontcaption {
+.fontcaption {
     font-family: 'Ramaraja', serif;
     font-size: 28px;
     color: #555963;
     line-height: 30px;
 }
 
-span.font_slider_grey {
+.font_slider_grey {
     font-family: 'Ramaraja', serif;
     display: inherit;
     text-align: left;
@@ -595,7 +589,7 @@ span.font_slider_grey {
     font-size: 57px;
 }
 
-span.book_series_fonts {
+.book_series_fonts {
     font-family: 'Ramaraja', serif;
     font-size: 23px;
     line-height: 23px;
@@ -674,29 +668,28 @@ h2 {
     display: inline-block;
 }
 
-span.font_orange {
+.font_orange {
     font-family: 'Amiri', serif;
     font-size: 18px;
     line-height: 22px;
     color: #eaad54;
     }
 
-span.font_slider_orange {
+.font_slider_orange {
     font-family: 'Amiri', serif;
     font-size: 21px;
     line-height: 58px;
     color: #da8913;
 }
 
-
-span.font_slider_vote {
+.font_slider_vote {
     font-family: 'Work Sans', sans-serif;
     color: #555963;
     font-size: 17px;
     font-weight: bold;
 }
 
-span.font_slider_vote::before {
+.font_slider_vote::before {
     content: "";
     width: 1px;
     height: 20px;
@@ -707,20 +700,20 @@ span.font_slider_vote::before {
 }
 
 
-span.font_slider_sum {
+.font_slider_sum {
     font-family: 'Work Sans', sans-serif;
     color: #555963;
     font-size: 17px;
     font-weight: bold;
 }
 
-span.font_vote {
+.font_vote {
     font-family: 'Work Sans', sans-serif;
     font-size: 15px;
     line-height: 58px;
     color: #555963;
 }
-span.font_yrsa {
+.font_yrsa {
     display: block;
     margin-top: 50px;
     font-family: 'Yrsa', serif;
@@ -729,24 +722,24 @@ span.font_yrsa {
     color: #555963;
 }
 
-span.books_font_grey {
+.books_font_grey {
     font-family: 'Ramaraja', serif;
     font-size: 21px;
     line-height: 30px;
     color: #555963;
 }
-span.books_font_orange {
+.books_font_orange {
     font-family: 'Amiri', serif;
     font-size: 16px;
     line-height: 30px;
     color: #dd9327;
 }
-span.aboutliterature {
+.aboutliterature {
     font-family: 'Lato', sans-serif;
     font-size: 11px;
     line-height: 37.46px;
 }
-span.bookworm {
+.bookworm {
     font-family: 'Rozha One', serif;
     font-size: 29px;
     line-height: 37.46px;
@@ -767,7 +760,7 @@ span.bookworm {
     border: 2px solid #555963;
     background: white;
 }
-span.literature_vote {
+.literature_vote {
     font-family: "Work Sans";
     font-size: 16px;
     line-height: 58px;
@@ -777,24 +770,24 @@ span.literature_vote {
     padding-left: 10px;
 }
 
-span.font_comment {
+.font_comment {
     font-family: 'Ramaraja', serif;
     font-size: 21px;
     line-height: 23px;
     color: #555963;
 }
-span.font_comment_text {
+.font_comment_text {
     font-family: 'Yrsa', serif;
     font-size: 21px;
     line-height: 29px;
     color: #555963;
 }
-span.writer_page {
+.writer_page {
     font-family: 'Lato', sans-serif;
     font-size: 16px;
     line-height: 29px;
 }
-span.fontcaption_text {
+.fontcaption_text {
     font-family: 'PT Serif', serif;
     font-size: 17px;
     font-weight: bold;
@@ -803,7 +796,7 @@ span.fontcaption_text {
     font-style: italic;
 }
 
-span.fontcaption_text::before {
+.fontcaption_text::before {
     font-family: 'Ramaraja', serif;
     content: '';
     position: absolute;
@@ -816,13 +809,13 @@ span.fontcaption_text::before {
     margin: -24px 0 0 267px;
 }
 
-span.fontcaption_grey {
+.fontcaption_grey {
     font-family: 'Lato', sans-serif;
     font-size: 13px;
     color: #bfbfbf;
     line-height: 22px;
 }
-span.text_info {
+.text_info {
     font-family: 'Yrsa', serif;
     color: #555963;
     line-height: 29px;
@@ -1707,13 +1700,6 @@ background-color: #f2fdff;;
     margin-top: 55px;
 }
 
-/*.inner-login-form {
-    width: 100%;
-   } */
-/* .inner-login-enter {
-    margin-top: 36px;
-    width: 100%;
-} */
 .inner-checkbox-remember {
     float: left;
     font-family: 'Lato', sans-serif;
@@ -1758,15 +1744,6 @@ background-color: #f2fdff;;
     /*width: 100px;*/
     /*margin: 50px 150px 80px 150px; */
 }
-
-
-/* .create-account {
-    margin-top: 80px;
-    width: 150px;
-    border-bottom: 2px solid #45474b;
-
-} */
-
 .input-create {
     margin: 0 110px 40px 110px;
     display: block;
@@ -1868,8 +1845,8 @@ background-color: #f2fdff;;
 #wrap-login .transp-back-wrap-login {
     width: 460px;
     height: 755px;
-    margin-top: 15px;
-    margin-left: 15px;
+    margin-top: -60px;
+    margin-left: -34px;
     position: absolute;
     opacity: 0.9;
     z-index: -1;
@@ -2006,7 +1983,6 @@ div.cs-select:focus {
     border-bottom: 1px solid #555963;
     padding-right: 3em;
 }
-
 .cs-select > span::after,
 .cs-select .cs-selected span::after {
     speak: none;
