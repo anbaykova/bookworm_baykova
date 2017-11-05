@@ -24,9 +24,7 @@ body {
     margin: -63px 0 100px 0;
     background-color: #f2fdff;
 }
-.container button {
-    text-align: center;
-}
+
 
 .menu {
     z-index: 500;
@@ -352,6 +350,9 @@ a:focus {
 .proceed-count {
     float: left;
     width: 50%;
+}
+.proceed-count table {
+    float: left;
 }
 .proceed-count-font1 { /* fixme: Убрать селекторы по тегу. Тут и ниже. Удалтиь лишние теги в html */
     font-family: 'Ramaraja', serif;
@@ -978,7 +979,9 @@ h2 {
 .footer_section_active {
     width: 30%;
     float: right;
-
+}
+.footer_section_active h2 {
+    text-align: left;
 }
 
 .footer_section_active input {
@@ -986,16 +989,16 @@ background-color: #f2fdff;;
 }
 
 .section_about_header {
-    width: 55%;
+    width: 47%;
     float: left;
 }
 .section_about_header h2 {
     padding-bottom: 37px;
+    text-align: left;
 }
 
 .section_about_header p {
     padding-bottom: 20px;
-
     font-family: 'Yrsa', serif;
     color: #555963;
     font-size: 19px;
@@ -1161,6 +1164,9 @@ background-color: #f2fdff;;
     float: right;
     width: 30%;
     padding-top: 40px;
+}
+.footer_social h2{
+    text-align: left;
 }
 
 .checkbox-design input {
@@ -1389,6 +1395,8 @@ background-color: #f2fdff;;
 .cart-wrap h1 {
     text-align: center;
 }
+
+
 .payment-method {
     margin-top: 65px;
 }
@@ -1413,7 +1421,7 @@ background-color: #f2fdff;;
 }
 .coupon-code {
     border-bottom: 1px solid #555963;
-    height:50px;
+    height: 40px;
    }
 
 .coupon-wrap {
@@ -1441,6 +1449,7 @@ background-color: #f2fdff;;
 
 
 .coupon_button {
+    float: right;
     background-color: white;
     margin: 8px 0;
     border: none;
@@ -1478,9 +1487,14 @@ background-color: #f2fdff;;
     background-color: #f2fdff;
     margin: 0 auto;
 }
+
+.coupon-form {
+    float: left;
+    width: 30%;
+}
 .proceed-wrap {
     float: right;
-    width: 50%;
+    width: 45%;
 }
 .count-form-inner {
     margin-bottom: 80px;

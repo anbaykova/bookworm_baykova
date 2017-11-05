@@ -10,134 +10,172 @@
         .form-cart {
             padding-top: 2px;
         }
-        .shipping-inner {
-            box-sizing: border-box;
-        }
-
+        /*.shipping-inner {*/
+           /*float: left;*/
+        /*}*/
     }
 
-    @media all and (max-width: 1024px){
+    @media all and (min-width: 320px) and (max-width: 1190px) {
+        .shipping_left h3 {
+            height: 50px;
+        }
         .menu_list {
             display: none;
         }
-        .presentation_book {
-            float: none;
-            width: auto;
-            margin-bottom: 50px;
-        }
-        .presentation_text {
-            border: 1px solid grey;
-            width: auto;
-        }
-        .form-cart {
-           width: calc(100%-10px);
-        }
-        .wrap-footer {
-            width: 100%;
-            background-color: #f2fdff;
-            margin: 0 auto;
-        }
-    }
 
-    @media all and (max-width: 1200px){
-         .menu_list {
-             display: none;
-         }
-    }
-    @media all and (max-width: 1150px) {
-        .bookschoice {
-            height: 910px;
-            /*margin-left: 50px; */
-            float: none;
-            margin: 0 auto;
-        }
-        .booktext {
-            margin: 0 auto;
-            height: 355px;
-            float: none;
-            width: 500px;
-        }
-        .presentation_books {
-            margin-top: 500px;
-        }
-        .presentation_book_img {
-            right: -100px;
-        }
-    }
-
-    @media all and (max-width: 600px){
-        .presentation_book {
-            background-color: #da8913;
-        }
-        .form-cart {
-            padding-top: 2px;
+    @media all and (min-width: 768px) and (max-width: 992px) {
+        .proceed-wrap {
+            width: 40%;
         }
 
     }
-    @media all and (max-width: 658px){
-        .info_boks {
-            float: left;
-        }
-        .menu {
-            width: 300px;
-            height: 190px;
-        }
-        .cart-wrap {
-            margin-top: 280px;
-        }
-        .coupon-code input {
-            width: 120px;
-        }
-        .coupon-code {
-            width: 233px;
-        }
-        button.btn {
-            padding: 5px 5px;
-        }
-        span.proceed-count-font1 {
-            font-size: 18px;
-        }
-        span.proceed-count-font2 {
-            font-size: 21px;
-        }
-        span.proceed-count-font3 {
-            font-size: 25px;
-        }
-        span.proceed-count-font4 {
-            font-size: 28px;
-        }
-        .proceed-payment {
+
+    @media all and (min-width: 480px) and (max-width: 768px) {
+        .rightpart {
             float: none;
         }
+
+        .leftpart {
+            float: none;
+        }
+
+        .shipping_left {
+            float: none;
+        }
+
+        .shipping_right {
+            float: none;
+        }
+
+        .payment-method {
+            padding: 65px 100px 0 100px;
+        }
+
     }
 
-    @media all and (max-width: 600px) and (orientation: landscape){
-        .presentation_book {
-            background-color: chocolate;
-        }
-    }
+        @media all and (max-width: 1024px){
 
-    @media only screen and (max-width: 768px) {
-        .form-cart {
-            padding-top: 2px;
+            .presentation_book {
+                float: none;
+                width: auto;
+                margin-bottom: 50px;
+            }
+            .presentation_text {
+                border: 1px solid grey;
+                width: auto;
+            }
+            .form-cart {
+               width: calc(100%-10px);
+            }
+            .wrap-footer {
+                width: 100%;
+                background-color: #f2fdff;
+                margin: 0 auto;
+            }
         }
-        .button.btn {
-            padding: 10px 10px;
-        }
-        .coupon-code {
-         width: 277px;
-        }
-        .coupon-code input {
-            width: 120px;
-        }
-        .wrap-footer {
-            width: 100%;
-            background-color: #f2fdff;
-            margin: 0 auto;
-        }
-    }
 
-    /* больше чем 768px */
+
+        @media all and (min-width: 910px) and (max-width: 1045px){
+            .shipping-inner {
+               float: none;
+            }
+            .shipping_left h3 {
+                height: 50px;
+            }
+
+        }
+
+        @media all and (max-width: 1150px) {
+            .bookschoice {
+                height: 910px;
+                float: none;
+                margin: 0 auto;
+            }
+            .booktext {
+                margin: 0 auto;
+                height: 355px;
+                float: none;
+                width: 500px;
+            }
+            .presentation_books {
+                margin-top: 500px;
+            }
+            .presentation_book_img {
+                right: -100px;
+            }
+            .coupon-form {
+                float: left;
+                width: 33%;
+            }
+        }
+
+        @media all and (max-width: 600px){
+            .presentation_book {
+                background-color: #da8913;
+            }
+            .form-cart {
+                padding-top: 2px;
+            }
+
+        }
+        @media all and (max-width: 658px){
+
+            .cart-wrap {
+                margin-top: 280px;
+            }
+            .coupon-code input {
+                width: 120px;
+            }
+            .coupon-code {
+                width: 233px;
+            }
+            button.btn {
+                padding: 5px 5px;
+            }
+            span.proceed-count-font1 {
+                font-size: 18px;
+            }
+            span.proceed-count-font2 {
+                font-size: 21px;
+            }
+            span.proceed-count-font3 {
+                font-size: 25px;
+            }
+            span.proceed-count-font4 {
+                font-size: 28px;
+            }
+            .proceed-payment {
+                float: none;
+            }
+        }
+
+        @media all and (max-width: 600px) and (orientation: landscape){
+            .presentation_book {
+                background-color: chocolate;
+            }
+        }
+
+        @media only screen and (max-width: 768px) {
+            .form-cart {
+                padding-top: 2px;
+            }
+            .button.btn {
+                padding: 10px 10px;
+            }
+            .coupon-code {
+             width: 277px;
+            }
+            .coupon-code input {
+                width: 120px;
+            }
+            .wrap-footer {
+                width: 100%;
+                background-color: #f2fdff;
+                margin: 0 auto;
+            }
+        }
+
+        /* больше чем 768px */
     @media only screen and (min-width: 1280px) {
         .menu_list {
             margin-left: 80px;
@@ -203,7 +241,7 @@
         div.cs-skin-elastic { font-size: 1em; }
     }
 
-    .cs-skin-elastic > span {
+    .cs-skin-country > span {
         color: #959ba1;
         font-family: 'Lato', sans-serif;
         font-size: 16px;
@@ -211,7 +249,7 @@
         z-index: 100;
     }
 
-    .cs-skin-elastic > span::after {
+    .cs-skin-country > span::after {
         font-family: 'Lato', sans-serif;
         font-size: 16px;
         content: '';
@@ -222,42 +260,11 @@
         backface-visibility: hidden;
     }
 
-    .cs-skin-elastic .cs-options {
+    .cs-skin-country .cs-options {
         overflow: visible;
         background: transparent;
         opacity: 1;
         visibility: visible;
         padding-bottom: 1.25em;
-        /* pointer-events: none; */
     }
 
-/*
-<div class="creditcard">
-<input type="radio" id="creditcard" name="payment" value="creditcard">
-<label for="creditcard">Credit Card</label> <img src="img/cart/creditcard.png" width="23" height="16" alt="creditcart">
-</div>
-  <div class="bancontract">
-<input type="radio" id="bancontract" name="payment" value="bancontract">
-<label for="bancontract">Bancontract</label>
-                                      </div>
-                                        <div class="paypal">
-<input type="radio" id="paypal" name="payment" value="paypal">
-<label for="paypal">Paypal</label>
-                            </div>
-                              <div class="banktransfer">
-<input type="radio" id="banktransfer" name="payment" value="banktransfer">
-<label for="banktransfer">Banktransfer</label>
-                                        </div>
-                                          <div class="ideal">
-<input type="radio" id="ideal" name="payment" value="ideal">
-<label for="ideal">IDEAL</label>
-                          </div>
-                            <div class="sofort">
-<input type="radio" id="sofort" name="payment" value="sofort">
-<label for="sofort">SOFORT Banking</label>
-                                    </div>
-                                      <div class="bitcoin">
-<input type="radio" id="bitcoin" name="payment" value="bitcoin">
-<label for="bitcoin">Bitcoin</label>
-                              </div>
-*/
