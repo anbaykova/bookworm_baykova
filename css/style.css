@@ -307,40 +307,9 @@ a:focus {
     transition: 5s ease color;
 }
 .btn:hover {
-    /*text-decoration: none; */
-    /*padding: 10px 60px;
-    border: 2px solid #555963;*/
-    background: #da8913
-}
+    background: #da8913;
+    color: white;}
 
-/*a.btn {
-    font-family: 'Lato', sans-serif;
-    font-size: 16px;
-    text-align: center;
-    font-weight: 400;
-    color: #45474b;
-    text-decoration: none;
-    padding: 10px 60px;
-    border: 2px solid #555963;
-    background: white;
-} */
-/*input.btn {
-    font-family: 'Lato', sans-serif;
-    font-size: 16px;
-    text-align: center;
-    font-weight: 400;
-    color: #45474b;
-    text-decoration: none;
-    padding: 10px 15px;
-    border: 2px solid #555963;
-    background: white;
-}
-*/
-
-.btn:active { background: white; }
-
-.btn:active { background: white; }
-.btn:hover { background: #da8913; }
 .btn:active { background: white; }
 
 .proceed-inner {
@@ -354,12 +323,14 @@ a:focus {
 .proceed-count table {
     float: left;
 }
-.proceed-count-font1 { /* fixme: Убрать селекторы по тегу. Тут и ниже. Удалтиь лишние теги в html */
+.proceed-count-font1 {
+    width: 50%;
     font-family: 'Ramaraja', serif;
     font-size: 21px;
     color: #45474b;
 }
 .proceed-count-font2 {
+     width: 50%;
      font-family: 'Yrsa', serif;
      font-size: 25px;
      color: #555963;
@@ -382,7 +353,7 @@ a:focus {
     margin-top: 30px;
 }
 
-.proceed-count table tr td {
+.proceed-count tr td {
     padding-bottom: 15px;
     padding-right: 10px;
 }
@@ -1356,6 +1327,9 @@ background-color: #f2fdff;;
     float: left;
     width: 50%;
 }
+.leftpart h2 {
+    padding-bottom: 30px;
+}
 .rightpart {
     margin-top: 40px;
     float: right;
@@ -2107,7 +2081,6 @@ div.cs-active {
 
 div.cs-skin-country {
     background: transparent;
-
 }
 
 
