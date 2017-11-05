@@ -10,7 +10,6 @@ html {
 
 body {
     margin: 0;
-    height: 100%;
     font-family: 'Yrsa', serif;
     font-size: 23px;
     line-height: 32px;
@@ -1071,34 +1070,6 @@ background-color: #f2fdff;;
     color: #555963;
     border: none;
     cursor: pointer;
-}
-@media all and (max-width: 980px) {
-    .footer_section_about {
-        /*width: 70%;*/
-    }
-    .footer_section_active {
-
-        /*width: 29%;*/
-    }
-    .subscribe-button {
-        /*float: none;
-        border-top: 1px solid rgb(69, 70, 74); */
-    }
-    .subscribe-form {
-       /* border-bottom: none; */
-
-    }
-
-}
-@media all and (max-width: 955px) {
-    .footer_section_active {
-       width: 30%;
-    }
-}
-@media all and (max-width: 910px){
-    .subscribe-form input {
-        width: 90px;
-    }
 }
 
 @media all and (min-width: 720px) and (max-width: 910px) {
