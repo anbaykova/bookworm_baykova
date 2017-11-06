@@ -122,17 +122,6 @@
             }
         }
 
-            /*.subscribe-button {*/
-                /*float: left;*/
-                /*padding: 0;*/
-            /*}*/
-            /*.subscribe-form {*/
-                /*border-bottom: none;*/
-            /*}*/
-            /*.subscribe-form input {*/
-                /*padding-bottom: 2px;*/
-                /*border-bottom: 1px solid #45474b;*/
-            /*}*/
 
         @media all and (min-width: 320px) and (max-width: 480px) {
             .rightpart {
@@ -175,6 +164,16 @@
                 float: none;
             }
     }
+        @media all and (min-width: 720px) and (max-width: 910px) {
+            .subscribe-form input {
+                width: 90px;
+            }
+        }
+        @media all and (min-width: 640px) and (max-width: 720px) {
+            .social_icon ul li a {
+                padding: 25px 34px 0 0;
+            }
+        }
 
 
         @media all and (max-width: 1024px) {
