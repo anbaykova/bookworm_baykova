@@ -1,7 +1,7 @@
-#slider-popular-book { /*положение слайдера*/
+.slider-popular-book { /*положение слайдера*/
     position: relative;
     text-align: center;
-    top: 10px;
+    top: 70px;
     margin: 0 auto;
 }
 
