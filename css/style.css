@@ -2460,10 +2460,33 @@ label, a{ /*при наведении на стрелки или переклю�
     color: #555963;
     line-height: 58px;
     text-align: left;
-
+    border-bottom: 1px solid #959ba1;
 }
 .article-container {
     max-width: 1137px;
     margin: 0 auto;
+}
+.article-name {
+    font-family: 'Amiri', serif;
+    color: #da8913;
+    font-size: 18px;
+    float: left;
+}
+.article-name a {
+    float: right;
+}
+.article-date {
+    font-family: 'Lato', sans-serif;
+    color: #a8a8a8;
+    font-size: 13px;
+}
+.article-date:before {
+    content: "";
+    width: 1px;
+    height: 16px;
+    background: #a8a8a8;
+    display: inline-block;
+    margin: 0 10px;
+    vertical-align: middle;
 }
 
