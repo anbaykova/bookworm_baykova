@@ -14,6 +14,7 @@ body {
     font-family: 'Yrsa', serif;
     font-size: 23px;
     line-height: 32px;
+    color: #555963;
     }
 .container  {
     max-width: 1210px;
@@ -232,7 +233,7 @@ a:focus {
 
 
 
-.book-item:nth-child(1) {
+.book-item:first-child {
     padding: 42px 31px 0 0;
 }
 .book-item:nth-child(5n+1) {
@@ -1623,7 +1624,8 @@ background-color: #f2fdff;;
     background-color: #f5fdff;
 }
 .tr-container td {
-    padding: 10px 10px;
+    padding: 25px 25px;
+    border-bottom: 20px white solid;
 }
 
 
@@ -2429,21 +2431,25 @@ label, a{ /*при наведении на стрелки или переклю�
     position: absolute;
     left: 39px;
 }
-.switch-blog {
 
+/* ========= article ============= */
+.switch-blog {
+    border-bottom: 2px solid transparent;
     text-align: left;
-    max-width: 55px;
+    max-width: 65px;
     margin-top: 200px;
 }
 .switch-blog a {
-
     font-family: 'Lato', sans-serif;
     font-size: 16px;
     color: #45474b;
     text-decoration: none;
 }
+.switch-blog img {
+    padding-left: 10px;
+}
 .switch-blog:hover{
-    border-bottom: 1px solid #45474b;
+    border-bottom: 2px solid #45474b;
 }
 .single-post {
     max-width: 750px;
@@ -2460,11 +2466,13 @@ label, a{ /*при наведении на стрелки или переклю�
     color: #555963;
     line-height: 58px;
     text-align: left;
-    border-bottom: 1px solid #959ba1;
+    border-bottom: 1px solid #bfbfbf;
+    padding-bottom: 45px;
 }
 .article-container {
     max-width: 1137px;
     margin: 0 auto;
+    box-sizing: border-box;
 }
 .article-name {
     font-family: 'Amiri', serif;
@@ -2472,13 +2480,12 @@ label, a{ /*при наведении на стрелки или переклю�
     font-size: 18px;
     float: left;
 }
-.article-name a {
-    float: right;
-}
+
 .article-date {
     font-family: 'Lato', sans-serif;
     color: #a8a8a8;
     font-size: 13px;
+    float: left;
 }
 .article-date:before {
     content: "";
@@ -2488,5 +2495,48 @@ label, a{ /*при наведении на стрелки или переклю�
     display: inline-block;
     margin: 0 10px;
     vertical-align: middle;
+}
+.post-author {
+    padding: 20px 0;
+}
+.post-author-right {
+    float: right;
+}
+.post-author-right a {
+    padding-left: 20px;
+}
+.feature-image img{
+    box-sizing: border-box;
+}
+.article-figcaption {
+    margin: 0 auto;
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    color: #a8a8a8;
+    line-height: 21px;
+    padding-bottom: 70px;
+    padding-top: 10px;
+}
+.article-text {
+    width: 748px;
+}
+/*.post-content p {*/
+    /*font-family: 'Yrsa', serif;*/
+    /*font-size: 23px;*/
+    /*line-height: 32px;*/
+    /*color: #555963;*/
+/*}*/
+.post-content a {
+    color: #efa63b;
+}
+.post-content blockquote {
+    font-family: 'PT Serif', serif;
+    font-size: 20px;
+    color: #555963;
+    line-height: 29px;
+    font-weight: bold;
+    font-style: italic;
+    padding-top: 35px;
+    padding-bottom: 30px;
 }
 
