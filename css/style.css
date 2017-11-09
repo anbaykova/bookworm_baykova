@@ -2606,23 +2606,22 @@ label, a{ /*при наведении на стрелки или переклю�
     margin: 0 auto;
     padding-bottom: 30px;
 }
-.inner-article-block {
-    width: 100%;
-    margin: 0 auto;
-}
+/*.inner-article-block {*/
+    /*width: 100%;*/
+    /*margin: 0 auto;*/
+/*}*/
+
+/*.article-block-right {*/
+    /*float: left;*/
+    /*display: inline;*/
+    /*!*width: 49%;*!*/
+/*}*/
 .article-block-left {
-    float: left;
-    width: 50%;
-    background: white;
-    /*padding-top: 30px;*/
-}
-.article-block-right {
-    float: left;
-    width: 49%;
+    /*background: white;*/
 }
 .inner-article-block-left {
-    width: 90%;
-    margin-top: 45px;
+    max-width: 370px;
+    /*margin-top: 45px;*/
     box-sizing: border-box;
     background: #f5fdff;
     padding: 40px 45px 50px 30px;
