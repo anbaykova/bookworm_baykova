@@ -2641,10 +2641,10 @@ label, a{ /*при наведении на стрелки или переклю�
     border-bottom: 1px solid #bfbfbf;
       }
 .related-item {
-    margin-right: 57px;
+    margin-right: 45px;
     vertical-align: top;
     display: inline-block;
-    width: 28%;
+    width: 29%;
 }
 .related-item img {
     float: left;
@@ -2671,11 +2671,15 @@ label, a{ /*при наведении на стрелки или переклю�
     font-size: 28px;
     line-height: 29px;
 }
-.comments-count {
+.comments-count a {
     font-family: 'Lato', sans-serif;
     font-size: 16px;
     color: #bfbfbf;
     float: right;
+}
+.comments-count a:hover {
+    color: #da8913;
+    transition: color 0.5s ease;
 }
 .article-form {
     width: calc(748px + 20px);
@@ -2713,6 +2717,20 @@ label, a{ /*при наведении на стрелки или переклю�
     float: left;
     padding-right: 15px;
 }
+.single-comment a {
+    float: right;
+}
+.answer-comment {
+    width: calc(100% - 50px);
+    float: right;
+}
+.answer-comment img {
+    float: left;
+    padding-right: 15px;
+}
+.answer-comment a {
+    float: right;
+}
 .comment-author {
     padding-top: 3px;
     font-family: 'Ramaraja', serif;
@@ -2731,10 +2749,22 @@ label, a{ /*при наведении на стрелки или переклю�
 }
 .date:before {
     content: "";
-    
+    width: 1px;
+    height: 15px;
+    background: #a8a8a8;
+    display: inline-block;
+    margin: 0 10px;
+    vertical-align: middle;
 }
 .comment-item-text {
     font-family: 'Yrsa', serif;
     font-size: 19px;
     line-height: 26px;
+}
+.actions {
+    float: right;
+    vertical-align: top;
+}
+.comment-left {
+    float: left;
 }
