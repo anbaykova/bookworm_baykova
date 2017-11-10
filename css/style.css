@@ -72,11 +72,20 @@ ul li {
 .menu_list li a {
     padding: 0 20px 0 20px;
 }
+.menu_list li a:hover:before {
+    bottom: 35px;
+    position: absolute;
+    content: '';
+    width: 20px;
+    height: 2px;
+    background: #da8913;
 
-.menu_list li a:hover {
-    color: #da8913;
-    border-bottom: 1px solid #da8913;
 }
+
+/*.menu_list li a:hover {*/
+    /*color: #da8913;*/
+    /*border-bottom: 1px solid #da8913;*/
+/*}*/
 
 .menu_list {
     text-transform: uppercase;
@@ -86,8 +95,9 @@ ul li {
     font-size: 14px;
     font-weight: bold;
     margin-top: 2.5%;
-    margin-left: 2%;
+    margin-left: 12%;
     float: left;
+    transition: color 0.5ms ease;
 }
 
 .search {
@@ -2713,7 +2723,7 @@ label, a{ /*при наведении на стрелки или переклю�
 }
 .single-comment img {
     float: left;
-    padding-right: 15px;
+    padding-right: 5px;
 }
 .single-comment a {
     float: right;
@@ -2781,14 +2791,12 @@ label, a{ /*при наведении на стрелки или переклю�
     font-family: "Work Sans";
     font-size: 14px;
     line-height: 23px;
-    padding-right: 5px;
+    padding-right: 7px;
 }
 .comment-link img {
     padding-bottom: 5px;
 }
-/*.show-comment {*/
-    /*margin-top: 100px;*/
-/*}*/
+
 .show-comment {
     /*width: 100px;*/
     /*height: 30px;*/
@@ -2814,4 +2822,14 @@ label, a{ /*при наведении на стрелки или переклю�
     border: 2px solid #555963;
     height: 27px;
     padding: 10px 10px;
+}
+.comment-vote:before {
+    content: "";
+    width: 1px;
+    height: 16px;
+    background: #cccdd0;
+    display: inline-block;
+    margin: 0 15px;
+    vertical-align: text-top;
+
 }
