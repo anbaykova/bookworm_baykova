@@ -1,19 +1,18 @@
 
     /* большие экраны свыше 1200px, планшеты (768 - 922 px) и смартфоны (320px - 480px) */
-    @media all and (max-width: 980px){
-        .info_boks {
-            float: right;
-        }
-        button.btn {
-            padding: 10px 10px;
-        }
-        .form-cart {
-            padding-top: 2px;
-        }
 
+    /*======== menu_list ===========*/
+    @media all and (min-width: 1286px) and (max-width: 1350px){
+        .menu_list {
+            margin: 3% 1% 0 9%;
+        }
     }
-
-    @media all and (min-width: 320px) and (max-width: 1190px) {
+    @media all and (min-width: 1190px) and (max-width: 1285px){
+        .menu_list {
+            margin: 3% 1% 0 1%;
+        }
+    }
+    @media all and (min-width: 320px) and (max-width: 1189px) {
         .menu_list {
             display: none;
         }
@@ -22,7 +21,25 @@
         }
     }
 
-        @media all and (min-width: 768px) and (max-width: 992px) {
+
+    /*@media all and (max-width: 980px){*/
+        /*.info_boks {*/
+            /*float: right;*/
+        /*}*/
+        /*button.btn {*/
+            /*padding: 10px 10px;*/
+        /*}*/
+        /*.form-cart {*/
+            /*padding-top: 2px;*/
+        /*}*/
+
+    /*}*/
+
+    /*========= end menu_list ===========*/
+
+
+        /*======= article ============*/
+        @media all and (min-width: 768px) and (max-width:841px) {
             .proceed-wrap {
                 width: 40%;
             }
@@ -32,26 +49,150 @@
             .single-post-header {
                 margin: 0 27%;
             }
-
-
-        }
-
-        @media all and (min-width: 480px) and (max-width: 768px) {
-            .rightpart {
+            .article-figcaption {
+                margin: 0 25%;
+                width: 100%;
+            }
+            .article-figcaption-next {
+                margin: 0 0;
+                width: 100%;
+            }
+            .post-content {
+                margin: 0 25%;
+                width: 100%;
+            }
+            .related-item img{
                 float: none;
+                width: auto;
+                padding: 0 25px 25px 0;
             }
-
-            .leftpart {
-                float: none;
+            .related-item {
+                margin: 0 7%;
+                vertical-align: top;
+                display: inline-block;
+                width: 18%;
             }
-
-
-            .payment-method {
-                padding: 65px 100px 0 100px;
+            .relation-post {
+                margin: 0 25%;
+                width: 100%;
             }
-
+            .post-comments {
+                width: 100%;
+                margin: 0 25%;
+            }
+            .show-href {
+                margin: 0 25%;
+                width: 100%;
+            }
         }
-        @media all and (min-width: 480px) and (max-width: 680px){
+    @media all and (min-width: 842px) and (max-width:991px) {
+        .proceed-wrap {
+            width: 40%;
+        }
+        .switch-blog {
+            padding-left: 13%;
+        }
+        .single-post-header {
+            margin: 0 27%;
+        }
+        .article-figcaption {
+            margin: 0 25%;
+            width: 100%;
+        }
+        .article-figcaption-next {
+            margin: 0 0;
+            width: 100%;
+        }
+        .post-content {
+            margin: 0 25%;
+            width: 100%;
+        }
+        .related-item img{
+            float: none;
+            width: auto;
+            padding: 0 25px 25px 0;
+        }
+        .related-item {
+            margin: 0 7%;
+            vertical-align: top;
+            display: inline-block;
+            width: 18%;
+        }
+        .relation-post {
+            margin: 0 25%;
+            width: 100%;
+        }
+        .post-comments {
+            width: 100%;
+            margin: 0 25%;
+        }
+        .show-href {
+            margin: 0 25%;
+            width: 100%;
+        }
+    }
+    @media all and (min-width:992px)and (max-width: 1115px) {
+        .single-post-header {
+            margin: 0 20%;
+        }
+        .relation-post {
+            margin: 0 8%;
+            padding-bottom: 60px;
+            padding-top: 50px;
+            width: 100%;
+            border-top: 1px solid #bfbfbf;
+            border-bottom: 1px solid #bfbfbf;
+        }
+        .related-item img{
+            float: none;
+            width: auto;
+            padding: 0 25px 25px 0;
+        }
+        .related-item {
+            margin: 0 73px;
+            /* margin-right: 45px; */
+            vertical-align: top;
+            display: inline-block;
+            width: 18%;
+        }
+        .switch-blog {
+            padding-left: 50px;
+        }
+    }
+    @media all and (min-width:1116px)and (max-width: 1200px) {
+        .relation-post {
+            margin: 0 8%;
+            padding-bottom: 60px;
+            padding-top: 50px;
+            width: 100%;
+            border-top: 1px solid #bfbfbf;
+            border-bottom: 1px solid #bfbfbf;
+        }
+        .related-item img{
+            float: none;
+            width: auto;
+            padding: 0 25px 25px 0;
+        }
+        .related-item {
+            margin: 0 7%;
+            vertical-align: top;
+            display: inline-block;
+            width: 18%;
+        }
+        .switch-blog {
+            padding-left: 50px;
+        }
+    }
+    /*=========== end article ============*/
+
+    /*======= wrap-footer =======*/
+    @media all and (min-width: 1190px) and (max-width: 1285px){
+            
+    }
+    /*======= end wrap-footer =======*/
+
+
+        @media all and (min-width: 480px) and (max-width: 679px){
             .shipping_left {
                 float: none;
             }
@@ -73,7 +214,7 @@
             }
         }
 
-        @media all and (min-width: 680px) and (max-width: 768px){
+        @media all and (min-width: 680px) and (max-width: 767px){
             .shipping_left {
                 float: none;
             }
@@ -94,6 +235,17 @@
         }
 
         @media all and (min-width: 480px) and (max-width: 768px) {
+            .rightpart {
+                float: none;
+            }
+
+            .leftpart {
+                float: none;
+            }
+
+            .payment-method {
+                padding: 65px 100px 0 100px;
+            }
             .footer_section_active {
                 float: none;
             }
@@ -122,7 +274,7 @@
             width: 45%;
         }
     }
-        @media all and (min-width: 480px) and (max-width: 610px) {
+        @media all and (min-width: 480px) and (max-width: 609px) {
             .footer_section_active {
                 float: none;
                 width: 57%;
@@ -199,16 +351,11 @@
                 border: 1px solid grey;
                 width: auto;
             }
-
-            /*.form-cart {*/
-                /*width: calc(100% - 10px);*/
+            /*.wrap-footer {*/
+                /*width: 100%;*/
+                /*background-color: #f2fdff;*/
+                /*margin: 0 auto;*/
             /*}*/
-
-            .wrap-footer {
-                width: 100%;
-                background-color: #f2fdff;
-                margin: 0 auto;
-            }
         }
 
 
@@ -323,25 +470,25 @@
                 width: 120px;
             }
 
-            .wrap-footer {
-                width: 100%;
-                background-color: #f2fdff;
-                margin: 0 auto;
-            }
+            /*.wrap-footer {*/
+                /*width: 100%;*/
+                /*background-color: #f2fdff;*/
+                /*margin: 0 auto;*/
+            /*}*/
         }
 
         /* больше чем 768px */
-        @media only screen and (min-width: 1280px) {
-            .menu_list {
-                margin-left: 80px;
-            }
+        /*@media only screen and (min-width: 1280px) {*/
+            /*.menu_list {*/
+                /*margin-left: 7%;*/
+            /*}*/
 
-            .wrap-footer {
-                width: 100%;
-                background-color: #f2fdff;
-                margin: 0 auto;
-            }
-        }
+            /*.wrap-footer {*/
+                /*width: 100%;*/
+                /*background-color: #f2fdff;*/
+                /*margin: 0 auto;*/
+            /*}*/
+        /*}*/
         @media all and (min-width:992px)and (max-width: 1115px) {
             .related-item img{
                 float: none;

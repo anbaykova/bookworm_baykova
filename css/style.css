@@ -46,11 +46,11 @@ body {
     list-style-type: none;
 }
 
-ul li {
-    display: inline;
-    float: left;
-    list-style-type: none;
-}
+/*ul li {*/
+    /*display: inline;*/
+    /*float: left;*/
+    /*list-style-type: none;*/
+/*}*/
 .menuimg {
     text-align: center;
 }
@@ -67,6 +67,7 @@ ul li {
     float: left;
     padding: 19px 60px 15px 35px;
     background-repeat: no-repeat;
+
 }
 
 .menu_list li a {
@@ -82,11 +83,6 @@ ul li {
 
 }
 
-/*.menu_list li a:hover {*/
-    /*color: #da8913;*/
-    /*border-bottom: 1px solid #da8913;*/
-/*}*/
-
 .menu_list {
     text-transform: uppercase;
     color: #45474b;
@@ -95,7 +91,8 @@ ul li {
     font-size: 14px;
     font-weight: bold;
     margin-top: 2.5%;
-    margin-left: 12%;
+    margin-left: 10%;
+    margin-right: 5%;
     float: left;
     transition: color 0.5ms ease;
 }
@@ -949,11 +946,11 @@ h2 {
 .menu_futer {
     width: 100%;
 }
-.menu_futer hr {
-    display: block;
-    color: #555963;
-    position: relative;
-}
+/*.menu_futer hr {*/
+    /*display: block;*/
+    /*color: #555963;*/
+    /*position: relative;*/
+/*}*/
 .menu_futer {
     height: 50px;
     border-bottom: 1px solid #959ba1;
@@ -961,6 +958,8 @@ h2 {
 }
 
 .menu_futer ul li {
+    list-style-type: none;
+    float: left;
      padding: 20px 50px 20px 0;
     /*border-bottom: solid #959ba1 1px;*/
 }
@@ -2526,6 +2525,15 @@ label, a{ /*при наведении на стрелки или переклю�
     padding-bottom: 40px;
     padding-top: 10px;
 }
+.article-figcaption-next {
+    margin: 0 auto;
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    color: #a8a8a8;
+    line-height: 21px;
+    padding-bottom: 40px;
+    padding-top: 10px;
+}
 .article-text {
     max-width: 748px;
     margin: 0 auto;
@@ -2644,8 +2652,6 @@ label, a{ /*при наведении на стрелки или переклю�
     padding-top: 50px;
     width: 100%;
     border-top: 1px solid #bfbfbf ;
-    /*margin: 0 -34px;*/
-    overflow: hidden;
     border-bottom: 1px solid #bfbfbf;
       }
 .related-item {
@@ -2720,6 +2726,9 @@ label, a{ /*при наведении на стрелки или переклю�
 }
 .post-users {
     padding: 80px 0;
+}
+.post-users ul li {
+   list-style-type: none;
 }
 .single-comment img {
     float: left;
@@ -2811,6 +2820,9 @@ label, a{ /*при наведении на стрелки или переклю�
     /*!*background: white;*!*/
     /*overflow: visible;*/
 
+}
+show-all {
+    margin-bottom: 100px;
 }
 .show-href {
     width: 100%;
