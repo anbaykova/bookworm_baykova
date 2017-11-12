@@ -2693,7 +2693,7 @@ label, a{ /*при наведении на стрелки или переклю�
     width: 29%;
 }
 .related-item img {
-    width: 100%;
+    /*width: 100%;*/
     height: auto;
     float: left;
     padding: 0 25px 25px 0;
@@ -2759,7 +2759,7 @@ label, a{ /*при наведении на стрелки или переклю�
     border-bottom: 2px solid #555963;
 }
 .post-users {
-    padding: 80px 0;
+    padding: 80px 0 0 0;
 }
 .post-users ul li {
    list-style-type: none;
@@ -2859,16 +2859,15 @@ label, a{ /*при наведении на стрелки или переклю�
     /*margin: 20% 0;*/
 }
 .show-comments {
+    margin: 10% auto;
     display: inline-block;
     width: 100%;
     text-align: center;
-    max-width: 748px;
-    margin: 1% 0 15% 0;
     font-family: 'Lato', sans-serif;
     font-size: 16px;
     border: 2px solid #555963;
     height: 27px;
-    padding: 10px 10px;
+    padding: 10px 0 15px 0;
 }
 .comment-vote:before {
     content: "";
