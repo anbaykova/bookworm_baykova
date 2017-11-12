@@ -2544,6 +2544,7 @@ label, a{ /*при наведении на стрелки или переклю�
     padding-top: 65px;
 }
 .article-figcaption {
+    width: 100%;
     margin: 0 auto;
     font-family: 'Lato', sans-serif;
     font-size: 14px;
@@ -2768,9 +2769,17 @@ label, a{ /*при наведении на стрелки или переклю�
     float: left;
     padding-right: 5px;
 }
+.single-comment-next img {
+    float: left;
+    padding-right: 5px;
+}
 .single-comment a {
     float: right;
 }
+.single-comment-next a {
+    float: right;
+}
+
 .answer-comment {
     width: calc(100% - 50px);
     float: right;
