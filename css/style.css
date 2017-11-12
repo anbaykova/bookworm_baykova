@@ -2767,21 +2767,15 @@ label, a{ /*при наведении на стрелки или переклю�
 }
 .single-comment img {
     float: left;
-    padding-right: 5px;
+    padding-right: 15px;
 }
-.single-comment-next img {
-    float: left;
-    padding-right: 5px;
-}
+
 .single-comment a {
-    float: right;
-}
-.single-comment-next a {
     float: right;
 }
 
 .answer-comment {
-    width: calc(100% - 50px);
+    padding: 40px 0 60px 53px;
     float: right;
 }
 .answer-comment img {
@@ -2829,9 +2823,6 @@ label, a{ /*при наведении на стрелки или переклю�
     float: left;
 }
 
-.answer-comment {
-    padding: 40px 0 60px 0;
-}
 .comment-to-user a {
     padding-left: 10px;
     float: left;
@@ -2876,7 +2867,7 @@ label, a{ /*при наведении на стрелки или переклю�
     font-size: 16px;
     border: 2px solid #555963;
     height: 27px;
-    padding: 10px 0 15px 0;
+    padding: 5px 0 10px 0;
 }
 .comment-vote:before {
     content: "";
