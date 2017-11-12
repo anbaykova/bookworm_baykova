@@ -1034,6 +1034,7 @@ background-color: #f2fdff;;
 }
 
 .footer_info {
+    display: inline-block;
     width: 100%;
     font-family: 'Lato', sans-serif;
     font-size: 15px;
@@ -1475,7 +1476,7 @@ background-color: #f2fdff;;
 }
 
 .wrap-footer {
-    height: 657px;
+    height: 607px;
     width: 100%;
     background-color: #f2fdff;
     margin: 0 auto;
