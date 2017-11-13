@@ -56,7 +56,7 @@
             padding-bottom: 1px;
         }
         .wrap-footer {
-            height: 911px;
+            /*height: 100%;*/
         }
         .footer_section_about {
             width: 100%;
@@ -210,10 +210,10 @@
         }
         .single-comment img {
             float: left;
-            padding-right: 0;
+            padding-right: 6px;
         }
         .answer-comment {
-            padding: 40px 0 60px 30px;
+            /*padding: 40px 0 60px 30px;*/
             float: right;
         }
         .answer-comment img {
@@ -233,7 +233,7 @@
             width: 95%;
         }
         .wrap-footer {
-            height: 941px;
+            /*height: 100%;*/
         }
         .footer_info {
            padding-top: 60px;
@@ -625,11 +625,7 @@
                 border: 1px solid grey;
                 width: auto;
             }
-            /*.wrap-footer {*/
-                /*width: 100%;*/
-                /*background-color: #f2fdff;*/
-                /*margin: 0 auto;*/
-            /*}*/
+
         }
 
 

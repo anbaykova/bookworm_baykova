@@ -950,17 +950,8 @@ h2 {
     height: 120px;
    }
 .menu_futer {
-    width: 100%;
-}
-/*.menu_futer hr {*/
-    /*display: block;*/
-    /*color: #555963;*/
-    /*position: relative;*/
-/*}*/
-.menu_futer {
-    height: 50px;
     border-bottom: 1px solid #959ba1;
-    padding-bottom: 20px;
+    padding-bottom: 65px;
 }
 
 .menu_futer ul li {
@@ -1386,6 +1377,7 @@ background-color: #f2fdff;;
     margin-top: 230px;
 }
 .cart-wrap h1 {
+    padding-bottom: 70px;
     text-align: center;
 }
 
@@ -1476,7 +1468,6 @@ background-color: #f2fdff;;
 }
 
 .wrap-footer {
-    height: 607px;
     width: 100%;
     background-color: #f2fdff;
     margin: 0 auto;
@@ -1595,9 +1586,12 @@ background-color: #f2fdff;;
     margin-right: 60px;
 }
 .table-cart {
-    width: 1140px;
+    overflow-x: scroll;
+    /*width: 1140px;*/
+    margin: 0 auto;
+    width: 100%;
     border-collapse: collapse;
-    /*border-spacing: 20px 40px;*/
+    /* border-spacing: 20px 40px; */
 }
 .size-button {
     padding: 10px 56px;
@@ -2778,6 +2772,7 @@ label, a{ /*при наведении на стрелки или переклю�
 .answer-comment {
     padding: 40px 0 60px 53px;
     float: right;
+    position: relative;
 }
 .answer-comment img {
     float: left;
@@ -2785,6 +2780,18 @@ label, a{ /*при наведении на стрелки или переклю�
 }
 .answer-comment a {
     float: right;
+}
+.img-arrow {
+    top: 47px;
+    left: 25px;
+    position: absolute;
+
+}
+.img-line {
+    left: 27px;
+    top: 49px;
+    position: absolute;
+    float: left;
 }
 .comment-author {
     padding-top: 3px;
