@@ -40,6 +40,92 @@
         /*======= article ============*/
 
     @media all and (min-width: 320px) and (max-width:767px) {
+        .literature_news {
+            width: 100%;
+            height: auto;
+            margin: 80px auto;
+        }
+        .literature_news ul li {
+            width: 100%;
+            padding: 35px 1px 10px 1px;
+        }
+        .block_news {
+            padding: 0 50px 0 0;
+            float: none;
+        }
+        .container_button {
+            margin: 0 auto;
+            text-align: center;
+        }
+        .description {
+            margin: 0 auto;
+            padding-bottom: 40px;
+            float: none;
+            width: 90%;
+        }
+        .partners {
+            float: none;
+            width: 100%;
+            margin: 0 auto;
+            margin-bottom: 100px;
+        }
+        .partners_block li {
+            text-align: center;
+            width: 38%;
+            margin: 0 15px;
+            display: inline-block;
+        }
+        .presentation_book {
+            width: 100%;
+        }
+        .presentation_text {
+            float: none;
+            width: 100%;
+            margin: 82px 10px 0px 18px;
+        }
+        .presentation_book_img {
+            height: auto;
+            left: -13px;
+            right: 34px;
+            position: relative;
+            bottom: -18px;
+        }
+        .section_about_autor {
+            text-align: right;
+            padding: 35px 10px;
+            width: 78%;
+            float: none;
+        }
+        .section_photo_autor img {
+            width: 85%;
+            height: auto;
+        }
+        .section_photo_autor {
+
+            float: none;
+        }
+        .section_book_autor {
+            position: relative;
+            /* padding: 10px 10px 10px 10px; */
+            width: 100%;
+            float: none;
+        }
+        .section_book_autor {
+            position: relative;
+            width: 95%;
+            float: none;
+            margin: 0 auto;
+        }
+        .list_book {
+            width: 73%;
+            margin: 0 auto;
+        }
+        .books {
+            margin: 0 auto;
+            float: none;
+            width: 66%;
+            /* min-width: 650px; */
+        }
         .count-form-inner {
             width: 95%;
             margin: 0 auto;
@@ -306,7 +392,7 @@
         .description {
             float: none;
             width: 80%;
-            margin: 0 auto;
+            margin: 40px auto;
         }
         .partners {
             float: none;
@@ -704,8 +790,8 @@
             /*}*/
         }
 
-
         @media all and (min-width: 320px) and (max-width: 480px) {
+
             .table-cart {
                 overflow-x: scroll;
             }
@@ -759,24 +845,6 @@
                 padding: 25px 34px 0 0;
             }
         }
-
-
-        /*@media all and (max-width: 1024px) {*/
-
-            /*.presentation_book {*/
-                /*float: none;*/
-                /*width: auto;*/
-                /*margin-bottom: 50px;*/
-            /*}*/
-
-            /*.presentation_text {*/
-                /*border: 1px solid grey;*/
-                /*width: auto;*/
-            /*}*/
-
-        /*}*/
-
-
         @media all and (min-width: 910px) and (max-width: 1045px) {
             .shipping-inner {
                 float: none;
@@ -788,7 +856,25 @@
 
         }
 
-        /*@media all and (max-width: 1150px) {*/
+
+
+
+
+    /*@media all and (max-width: 1024px) {*/
+
+    /*.presentation_book {*/
+    /*float: none;*/
+    /*width: auto;*/
+    /*margin-bottom: 50px;*/
+    /*}*/
+
+    /*.presentation_text {*/
+    /*border: 1px solid grey;*/
+    /*width: auto;*/
+    /*}*/
+
+    /*}*/
+    /*@media all and (max-width: 1150px) {*/
             /*!*.bookschoice {*!*/
                 /*!*height: 910px;*!*/
                 /*!*float: none;*!*/
@@ -816,54 +902,54 @@
             /*!*}*!*/
         /*}*/
 
-        @media all and (max-width: 600px) {
-            .presentation_book {
-                background-color: #da8913;
-            }
-
-            .form-cart {
-                padding-top: 2px;
-            }
-
-        }
-        @media all and (max-width: 658px) {
-
-            /*.cart-wrap {*/
-                /*margin-top: 280px;*/
+        /*@media all and (max-width: 600px) {*/
+            /*.presentation_book {*/
+                /*background-color: #da8913;*/
             /*}*/
 
-            /*.coupon-code input {*/
-                /*width: 120px;*/
+            /*.form-cart {*/
+                /*padding-top: 2px;*/
             /*}*/
 
-            /*.coupon-code {*/
-                /*width: 233px;*/
+        /*}*/
+        /*@media all and (max-width: 658px) {*/
+
+            /*!*.cart-wrap {*!*/
+                /*!*margin-top: 280px;*!*/
+            /*!*}*!*/
+
+            /*!*.coupon-code input {*!*/
+                /*!*width: 120px;*!*/
+            /*!*}*!*/
+
+            /*!*.coupon-code {*!*/
+                /*!*width: 233px;*!*/
+            /*!*}*!*/
+
+            /*button.btn {*/
+                /*padding: 5px 5px;*/
             /*}*/
 
-            button.btn {
-                padding: 5px 5px;
-            }
+            /*span.proceed-count-font1 {*/
+                /*font-size: 18px;*/
+            /*}*/
 
-            span.proceed-count-font1 {
-                font-size: 18px;
-            }
+            /*span.proceed-count-font2 {*/
+                /*font-size: 21px;*/
+            /*}*/
 
-            span.proceed-count-font2 {
-                font-size: 21px;
-            }
+            /*span.proceed-count-font3 {*/
+                /*font-size: 25px;*/
+            /*}*/
 
-            span.proceed-count-font3 {
-                font-size: 25px;
-            }
+            /*span.proceed-count-font4 {*/
+                /*font-size: 28px;*/
+            /*}*/
 
-            span.proceed-count-font4 {
-                font-size: 28px;
-            }
-
-            .proceed-payment {
-                float: none;
-            }
-        }
+            /*.proceed-payment {*/
+                /*float: none;*/
+            /*}*/
+        /*}*/
 
         /*@media all and (max-width: 600px) and (orientation: landscape) {*/
             /*.presentation_book {*/
