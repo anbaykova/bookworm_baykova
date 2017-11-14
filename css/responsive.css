@@ -299,6 +299,20 @@
             float: none;
             vertical-align: top;
         }
+        .publishers {
+         height: auto;
+            padding-bottom: 360px;
+        }
+        .description {
+            float: none;
+            width: 80%;
+            margin: 0 auto;
+        }
+        .partners {
+            float: none;
+            margin: 0 auto;
+            width: 80%;
+        }
         .text-literature {
             float: left;
             width: 46%;
