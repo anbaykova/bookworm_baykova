@@ -1855,6 +1855,8 @@ background-color: #f2fdff;;
 }
 
 .inner-login-social {
+    width: 100%;
+    margin: 0 auto;
     padding-top: 15px;
     border-top: 1px solid #959ba1;
 }
@@ -1864,8 +1866,8 @@ background-color: #f2fdff;;
     text-align: center;
 }
 .login-social {
+    margin: 0 auto;
     width: 172px;
-    /*margin: 20px 138px 0 138px; */
 }
 .login-social a {
     padding: 0 20px 0 20px;
