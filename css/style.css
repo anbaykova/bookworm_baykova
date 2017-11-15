@@ -21,8 +21,11 @@ body {
     margin: 0 auto;
 }
 .wrap {
+    width: 100%;
     position: relative;
-    margin: -63px 0 100px 0;
+    /*width: 1300px;*/
+    /*height: auto;*/
+    /*margin: -63px 0 100px 0;*/
     background-color: #f2fdff;
 }
 
@@ -33,13 +36,13 @@ body {
     width: 1210px;
     z-index: 500;
     top: 15px;
-    left: 100px;
-    right: 100px;
     position: fixed;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
     background-color: white;
     height: 98px;
-    margin: 0 auto;
+    margin: auto;
+    left: 50%;
+    margin-left: -605px;
 }
 
 .menu ul li {
@@ -94,7 +97,7 @@ body {
     font-family: 'Lato', sans-serif;
     font-size: 14px;
     font-weight: bold;
-    margin-top: 2.5%;
+    margin-top: 32px;
     margin-left: 10%;
     margin-right: 5%;
     float: left;
@@ -120,7 +123,7 @@ body {
 }
 .info_boks {
     width: 185px;
-    padding: 9px 17px 0 0;
+    padding: 8px 17px 0 0;
     float: right;
 }
 
@@ -2528,13 +2531,11 @@ label, a{ /*при наведении на стрелки или переклю�
     color: #555963;
     line-height: 58px;
     text-align: left;
-    /*border-bottom: 1px solid #bfbfbf;*/
-    padding-bottom: 43px;
+    padding: 50px 0 43px 15px;
 }
 .article-container {
     max-width: 1137px;
     margin: 0 auto;
-    box-sizing: border-box;
 }
 .article-name a {
     font-family: 'Amiri', serif;
@@ -2561,7 +2562,7 @@ label, a{ /*при наведении на стрелки или переклю�
     vertical-align: top;
 }
 .post-author {
-    padding: 19px 0 10px 4px;
+    padding: 19px 0 12px 18px;
 }
 .post-author-right {
     float: right;
@@ -2570,10 +2571,10 @@ label, a{ /*при наведении на стрелки или переклю�
     padding-left: 18px;
 }
 .feature-image img{
-    width: 100%;
+    
     height: auto;
-    box-sizing: border-box;
-    padding-top: 65px;
+    margin-top: 21px;
+    /*box-sizing: border-box;*/
 }
 .article-figcaption {
     width: 100%;
@@ -2595,9 +2596,10 @@ label, a{ /*при наведении на стрелки или переклю�
     padding-top: 10px;
 }
 .article-text {
+    margin: 0 auto;
     max-width: 748px;
-    padding-left: 28px;
-    margin: 50px auto;
+    /*padding-left: 28px;*/
+    /*margin: 50px auto;*/
 }
 .post-content p {
     /*padding: 30px 0;*/
