@@ -40,6 +40,45 @@
         /*======= article ============*/
 
     @media all and (min-width: 320px) and (max-width:767px) {
+        .inner-wrap-container {
+            max-width: 318px;
+            position: relative;
+            margin: 0 auto;
+            bottom: 6700px;
+        }
+        #wrap-login {
+            margin: 0 auto;
+            max-width: 300px;
+            max-height: 755px;
+            position: absolute;
+        }
+        #wrap-login .transp-back-wrap-login {
+            max-width: 318px;
+            max-height: 755px;
+            margin-top: -60px;
+            margin-left: -34px;
+        }
+        .rectangle-arrow {
+            left: 245px;
+        }
+        .inner-checkbox-remember {
+            float: none;
+        }
+        .forgot-password {
+            float: none;
+        }
+        inner-login-password input {
+            padding-top: 25px;
+        }
+        .inner-login-form {
+            margin-top: 25px;
+        }
+        .input-create {
+            margin: 0 auto;
+        }
+        .input-create {
+            width: 140px;
+        }
         .literature_news {
             width: 100%;
             height: auto;

@@ -30,7 +30,7 @@ body {
     background-color: #f1fdff;
 }
 .menu {
-    /*width: 1210px;*/
+    width: 1210px;
     z-index: 500;
     top: 15px;
     left: 100px;
@@ -75,7 +75,7 @@ body {
 }
 
 .menu_list li a {
-    padding: 0 20px 0 20px;
+    padding: 0 15px 0 31px;
 }
 .menu_list li a:hover:before {
     bottom: 35px;
@@ -1858,7 +1858,7 @@ background-color: #f2fdff;;
     width: 100%;
     margin: 0 auto;
     padding-top: 15px;
-    border-top: 1px solid #959ba1;
+    /*border-top: 1px solid #959ba1;*/
 }
 
 .inner-login-social h3 {
@@ -1906,21 +1906,28 @@ background-color: #f2fdff;;
 #wrap-login {
     z-index: 505;
     background: white;
+    margin: 0 auto;
     box-shadow:0 7px 24px #8F8C8D;
-    margin: 280px 375px 0 375px;
-    width: 460px;
-    height: 755px;
+    /*margin: 280px 375px 0 375px;*/
+    max-width: 460px;
+    max-height: 755px;
     position: absolute;
     opacity: 0;
     visibility: hidden;
-    top: 930px;
+    top: 100px;
+}
+.inner-wrap-container {
+    max-width: 768px;
+    position: relative;
+    margin: 0 auto;
+    bottom: 6700px;
 }
 .inner-wrap-login {
     margin: 75px 50px;
 }
 #wrap-login .transp-back-wrap-login {
-    width: 460px;
-    height: 755px;
+    max-width: 460px;
+    max-height: 755px;
     margin-top: -60px;
     margin-left: -34px;
     position: absolute;
