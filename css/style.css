@@ -1058,6 +1058,7 @@ background-color: #f2fdff;;
 }
 
 .footer_info {
+    margin-top: 73px;
     display: inline-block;
     width: 100%;
     font-family: 'Lato', sans-serif;
@@ -1109,7 +1110,7 @@ background-color: #f2fdff;;
     background: #555963;
     display: inline-block;
     vertical-align: text-top;
-    margin-right: 26px;
+    margin-right: 20px;
 }
 
 .input-text input {
@@ -1166,7 +1167,7 @@ background-color: #f2fdff;;
 .subscribe-button::after {
     background-repeat: no-repeat;
     content: "";
-    margin-left: 5px;
+    margin-left: 11px;
     background-image: url(../img/icons_svg/mail.svg);
     width: 21px;
     height: 13px;
@@ -1175,13 +1176,13 @@ background-color: #f2fdff;;
 
 .social_icon ul li {
     float: left;
-    padding: 25px 15px 0 0;
+    padding: 25px 19px 0 0;
     list-style-type: none;
 }
 .footer_social {
     float: right;
     width: 30%;
-    padding-top: 40px;
+    padding: 33px 19px 0 0;
 }
 .footer_social h2{
     text-align: left;
