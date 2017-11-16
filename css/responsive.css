@@ -2,6 +2,7 @@
     /* большие экраны свыше 1200px, планшеты (768 - 922 px) и смартфоны (320px - 480px) */
 
     /*======== menu_list ===========*/
+
     @media all and (min-width: 1286px) and (max-width: 1350px){
         .menu_list {
             margin: 3% 1% 0 6%;
@@ -10,6 +11,7 @@
     @media all and (min-width: 1190px) and (max-width: 1285px){
         .menu_list {
             margin: 3% 0 0 0;
+
         }
     }
     @media all and (min-width: 320px) and (max-width: 1189px) {
@@ -40,6 +42,15 @@
         /*======= article ============*/
 
     @media all and (min-width: 320px) and (max-width:767px) {
+        .menu {
+            width: 300px;
+            margin: auto;
+            left: 50%;
+            margin-left: -150px;
+        }
+        .feature-image img {
+            width: 100%;
+        }
         .inner-wrap-container {
             max-width: 318px;
             position: relative;
@@ -179,8 +190,8 @@
             margin: 0 auto;
         }
         .menu {
-            width: 95%;
-            left: 7px;
+            /*width: 95%;*/
+            /*left: 7px;*/
             height: 157px;
         }
         .footer_section_active {
@@ -381,6 +392,15 @@
 
     }
     @media all and (min-width: 768px) and (max-width:991px) {
+        .menu {
+            width: 740px;
+            margin: auto;
+            left: 50%;
+            margin-left: -370px;
+        }
+        .feature-image img {
+            width: 100%;
+        }
         .presentation_book {
             width: 90%;
             float: none;
@@ -586,6 +606,15 @@
         }
     }
     @media all and (min-width:992px)and (max-width: 1115px) {
+        .menu {
+            width: 1214px;
+            margin: auto;
+            left: 50%;
+            margin-left: -390px;
+        }
+        .feature-image img {
+            width: 100%;
+        }
         .container {
             max-width: 80%;
         }

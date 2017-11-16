@@ -979,15 +979,15 @@ h2 {
     height: 120px;
    }
 .menu_futer {
+    margin-top: 58px;
     border-bottom: 1px solid #959ba1;
-    padding-bottom: 65px;
+    padding-bottom: 84px;
 }
 
 .menu_futer ul li {
     list-style-type: none;
     float: left;
-     padding: 20px 50px 20px 0;
-    /*border-bottom: solid #959ba1 1px;*/
+    padding: 20px 45px 20px 0;
 }
 .menu_futer a {
     font-family: 'Lato', sans-serif;
@@ -998,16 +998,16 @@ h2 {
 }
 .footer_content {
     width: 100%;
-    padding-top: 115px;
+    padding-top: 70px;
 }
 .footer_section_about {
     width: 100%;
     float: left;
-    padding-top: 1%;
+    /*padding-top: 1%;*/
 }
 .footer_section_active {
-    width: 30%;
-    padding-top: 13px;
+    width: 350px;
+    padding: 27px 11px 0 0;
     float: right;
 }
 .footer_section_active h2 {
@@ -1019,37 +1019,41 @@ background-color: #f2fdff;;
 }
 
 .section_about_header {
-    width: 47%;
+    padding-top: 25px;
+    /*width: 47%;*/
+    max-width: 585px;
     float: left;
 }
 .section_about_header h2 {
-    padding-bottom: 37px;
+    padding-bottom: 25px;
     text-align: left;
 }
 
 .section_about_header p {
-    padding-bottom: 20px;
+    /*padding-bottom: 20px;*/
     font-family: 'Yrsa', serif;
     color: #555963;
     font-size: 19px;
     line-height: 26px;
 }
 .footer_section_box {
-    width: 62%;
+    width: 663px;
     float: left;
-    margin: 40px 0 0 0;
+    margin: 37px 0 0 0;
 }
 .section_box {
     display: inline-block;
+    max-width: 217px;
     width: 25%;
     vertical-align: top;
-    margin-bottom: 25px;
+    /* margin: 0 -10px 33px 0; */
+    padding: 0 23px 40px 0;
 }
 
 .section_box p {
     font-family: 'Lato', sans-serif;
     font-size: 14px;
-    line-height: 26px;
+    line-height: 21px;
     color: #4f6569;
 }
 
@@ -1085,12 +1089,12 @@ background-color: #f2fdff;;
 */
 .subscribe-form {
     border-bottom: 1px solid rgb(69, 70, 74);
-    padding-top: 25px;
+    padding-top: 19px;
 }
 .subscribe-form input {
     background-color: #f2fdff;
     box-sizing: border-box;
-    font-size: 16px;
+    font-size: 15px;
     font-family: 'Lato', sans-serif;
     color: #da8913;
     border: none;
@@ -1104,8 +1108,8 @@ background-color: #f2fdff;;
     height: 15px;
     background: #555963;
     display: inline-block;
-    vertical-align: middle;
-    margin-right: 15px;
+    vertical-align: text-top;
+    margin-right: 26px;
 }
 
 .input-text input {
@@ -1141,7 +1145,11 @@ background-color: #f2fdff;;
 
 
 .subscribe-button{
-    padding-top: 10px;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    line-height: 32px;
+    font-weight: 500;
+    padding-top: 0px;
     float: right;
     background-color: #f2fdff;
     color: #555963;
@@ -1498,7 +1506,8 @@ background-color: #f2fdff;;
 }
 
 .wrap-footer {
-    width: 100%;
+    max-width: 1140px;
+    /*width: 100%;*/
     background-color: #f2fdff;
     margin: 0 auto;
 }
@@ -2631,7 +2640,7 @@ label, a{ /*при наведении на стрелки или переклю�
     font-size: 28px;
 }
 .post-content .about-story p {
-    padding-top: 5px;
+    /*padding-top: 5px;*/
 }
 .about-story {
     /*padding-top: 5px;*/
@@ -2700,12 +2709,12 @@ label, a{ /*при наведении на стрелки или переклю�
 
 .article-block {
     max-width: 325px;
-    height: 284px;
+    height: 295px;
     float: left;
     box-sizing: border-box;
     background: #f5fdff;
     padding: 40px 40px 40px 30px;
-    margin: 50px 63px 63px 0;
+    margin: 47px 63px 51px 0;
 }
 .article-block h5 {
     font-family: 'Ramaraja', serif;
@@ -2714,29 +2723,35 @@ label, a{ /*при наведении на стрелки или переклю�
     font-weight: 500;
 }
 .article-block p {
+    padding-top: 6px;
     box-sizing: border-box;
     font-family: 'Lato', sans-serif;
     font-size: 15px;
     line-height: 23px;
 }
-.article-block-text {
-
+article-block .article-block-text {
+    padding-top: 9px;
+}
+.inner-article-block p {
+    padding-top: 0;
 }
 .inner-article-block {
     padding-bottom: 115px;
 }
 .relation-post {
-    padding-bottom: 60px;
+    padding-bottom: 46px;
     padding-top: 50px;
     width: 100%;
-    border-top: 1px solid #bfbfbf ;
-    border-bottom: 1px solid #bfbfbf;
+    /*border-top: 1px solid #bfbfbf ;*/
+    /*border-bottom: 1px solid #bfbfbf;*/
       }
 .related-item {
-    margin-right: 45px;
+    padding-top: 9px;
+    margin-right: 59px;
     vertical-align: top;
     display: inline-block;
-    width: 29%;
+    /* width: 29%; */
+    max-width: 316px;
 }
 .related-item img {
     /*width: 100%;*/
@@ -2756,10 +2771,10 @@ label, a{ /*при наведении на стрелки или переклю�
     color: #eaad54;
 }
 .post-comments {
-    padding-top: 105px;
+    padding-top: 113px;
 }
 .post-comments h3 {
-    padding-bottom: 50px;
+    padding-bottom: 34px;
     float: left;
     font-family: 'Ramaraja', serif;
     font-size: 28px;
@@ -2805,22 +2820,23 @@ label, a{ /*при наведении на стрелки или переклю�
     border-bottom: 2px solid #555963;
 }
 .post-users {
-    padding: 80px 0 0 0;
+    padding: 85px 0 0 4px;
 }
 .post-users ul li {
    list-style-type: none;
 }
 .single-comment img {
     float: left;
-    padding-right: 15px;
+    padding-right: 13px;
 }
 
 .single-comment a {
+    padding: 10px 3px 0 0;
     float: right;
 }
 
 .answer-comment {
-    padding: 40px 0 60px 53px;
+    padding: 40px 0 108px 53px;
     float: right;
     position: relative;
 }
@@ -2865,13 +2881,14 @@ label, a{ /*при наведении на стрелки или переклю�
     height: 15px;
     background: #a8a8a8;
     display: inline-block;
-    margin: 0 10px;
+    margin: 0 4px;
     vertical-align: middle;
 }
 .comment-item-text {
     font-family: 'Yrsa', serif;
     font-size: 19px;
     line-height: 26px;
+    padding-top: 10px;
 }
 .actions {
     float: right;
@@ -2894,9 +2911,9 @@ label, a{ /*при наведении на стрелки или переклю�
     line-height: 23px;
     padding-right: 7px;
 }
-.comment-link img {
-    padding-bottom: 5px;
-}
+/*.comment-link img {*/
+    /*padding-bottom: 5px;*/
+/*}*/
 
 .show-comment {
     /*width: 100px;*/
@@ -2914,7 +2931,7 @@ label, a{ /*при наведении на стрелки или переклю�
 
 }
 .show-all {
-    /*margin: 20% 0;*/
+    margin-top: -3px;
 }
 .show-comments {
     margin: 10% auto;
@@ -2933,7 +2950,7 @@ label, a{ /*при наведении на стрелки или переклю�
     height: 16px;
     background: #cccdd0;
     display: inline-block;
-    margin: 0 15px;
+    margin: 0 13px 0 4px;
     vertical-align: text-top;
 
 }
