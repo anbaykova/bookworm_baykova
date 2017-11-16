@@ -42,6 +42,15 @@
         /*======= article ============*/
 
     @media all and (min-width: 320px) and (max-width:767px) {
+        .social_icon ul li {
+            padding: 25px 29px 0 0;
+        }
+        .subscribe-form input {
+            max-width: 79px;
+        }
+        .article-left {
+            width: 95%;
+        }
         .menu {
             width: 300px;
             margin: auto;
@@ -199,6 +208,7 @@
             width: 90%;
         }
         .footer_content {
+            width: 83%;
             padding-top: 35px;
         }
         .menu_futer ul li {
@@ -215,8 +225,8 @@
             height: 16px;
         }
         .menu_futer {
-            width: 95%;
-            padding-bottom: 1px;
+            width: 83%;
+            padding-bottom: 50px;
         }
         .wrap-footer {
             /*height: 100%;*/
@@ -253,13 +263,14 @@
         }
         .footer-info-left {
             float: left;
-            width: 35%;
+            width: 40%;
         }
         .footer_info {
             font-size: 6px;
         }
         .footer-info-right {
-            width: 65%;
+            width: 60%;
+            margin-top: 17px;
         }
         .single-post-header h1 {
             font-size: 35px;
@@ -530,7 +541,7 @@
         }
         .footer_social {
             float: none;
-            width: 30%;
+            width: 31%;
             padding-top: 40px;
             margin: 0 auto;
         }
