@@ -1501,6 +1501,9 @@ background-color: #f2fdff;;
     vertical-align: middle;
 
 }
+.inner-footer {
+    background-color: #f2fdff;
+}
 
 .wrap-footer {
     max-width: 1140px;
@@ -1958,8 +1961,8 @@ background-color: #f2fdff;;
 #wrap-login .transp-back-wrap-login {
     width: 460px;
     height: 755px;
-    margin-top: -60px;
-    margin-left: -34px;
+    margin-top: -92px;
+    margin-left: -67px;
     position: absolute;
     opacity: 0.9;
     z-index: -1;

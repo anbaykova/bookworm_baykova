@@ -4,12 +4,12 @@ var close = document.getElementById("hide-popup");
 var popup = document.getElementById("wrap-login")
 console.log(open, close);
 open.addEventListener("click", function (event) {
-    popup.classList.add("open");
+    popup.classList.toggle("open");
 });
 close.addEventListener("click", function (event) {
-    popup.classList.remove("open");
+    popup.classList.toggle("open");
 });
-open.removeEventListener("click");
+
 
 
 // var open = document.getElementById("show-popup");
