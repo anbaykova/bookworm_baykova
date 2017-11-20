@@ -73,8 +73,8 @@
             position: absolute;
         }
         #wrap-login .transp-back-wrap-login {
-            max-width: 318px;
-            max-height: 755px;
+            width: 287px;
+            height: 755px;
             margin-top: -60px;
             margin-left: -34px;
         }

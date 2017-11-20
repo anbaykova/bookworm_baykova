@@ -9,6 +9,7 @@ open.addEventListener("click", function (event) {
 close.addEventListener("click", function (event) {
     popup.classList.remove("open");
 });
+open.removeEventListener("click");
 
 
 // var open = document.getElementById("show-popup");
