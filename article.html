@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
     <link href="https://fonts.googleapis.com/css?family=Amiri|Lato:400,700|Ramaraja|Rozha+One|PT+Serif|Work+Sans|Yrsa" rel="stylesheet">
+
 </head>
 <body>
 
@@ -31,7 +32,7 @@
             </li>
             <li>
                 <div id="inner-userpic">
-                    <a href="#wrap-login"><img src="img/Userpic.png" alt="userpic" width="39" height="39"></a>
+                    <a href="#wrap-login" id="show-popup" class="show-button" ><img src="img/Userpic.png" alt="userpic" width="39" height="39"></a>
                 </div>
             </li>
         </ul>
@@ -402,7 +403,7 @@
         <div id="wrap-login">
             <div class="inner-wrap-login">
                 <div class="transp-back-wrap-login"></div>
-                <a href="#"><img class="rectangle-arrow" src="img/rectangle9.png" alt="rectangle"></a>
+                <a id="hide-popup" class="hide"  href="#"><img class="rectangle-arrow" src="img/rectangle9.png" alt="rectangle"></a>
                 <p>Login</p>
                 <form id="form-login" action="">
                     <div class="inner-login-email">
@@ -441,6 +442,6 @@
         </div>
          </div>
 
-
+    <script src="js/popup.js"></script>
 </body>
 </html>

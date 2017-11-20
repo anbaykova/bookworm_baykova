@@ -32,7 +32,7 @@
 
         <div class="cart-wrap container">
             <h1>Your cart</h1>
-            <form id="cart" action="">
+            <form id="cart" action="" novalidate>
 
              <div class="form-cart">
                 <div class="leftpart">
@@ -46,18 +46,23 @@
                     </div>
                     <div class="form-input">
                         <div class="input-text required has-error has-success">
+                            <div class="req-symbol">*</div>
                             <input type="text" placeholder="First name" class="form-control" name="firstname" maxlength="100" required >
+                            <label for=""></label>
                             <div class="help-block">First name cannot be blank</div>
                         </div>
                         <div class="input-text required has-error has-success">
+                            <div class="req-symbol">*</div>
                             <input type="text" placeholder="Last name" name="lastname" maxlength="100" required >
                             <div class="help-block">Last name cannot be blank</div>
                         </div>
                         <div class="input-text required has-error has-success">
+                            <div class="req-symbol">*</div>
                             <input type="email" placeholder="E-mail" name="email" maxlength="100" required >
                             <div class="help-block">E-mail cannot be blank</div>
                         </div>
                         <div class="input-text required has-error has-success">
+                            <div class="req-symbol">*</div>
                             <input type="tel" placeholder="Phone" pattern="^\+?\d{10,13}" name="phone" required >
                             <div class="help-block">Phone cannot be blank.</div>
                         </div>
@@ -67,12 +72,14 @@
                 <div class="rightpart">
                     <div class="form-input required has-error has-success">
                         <div class="input-text-inner">
+                            <div class="req-symbol">*</div>
                             <textarea placeholder="Address" maxlength="150" required name="address" id="address"></textarea>
                             <div class="help-block">Address cannot be blank</div>
                         </div>
                     </div>
                     <div class="form-input">
                         <div class="input-text required has-error has-success ">
+                            <div class="req-symbol">*</div>
                             <select name="country" class="cs-select cs-skin-country" title="country">
                                 <option value="country" disabled selected>Country</option>
                                 <option value="ukraine" >Ukraine</option>
@@ -83,10 +90,12 @@
                             <div class="help-block">Country cannot be blank</div>
                         </div>
                         <div class="input-text required has-error has-success">
+                            <div class="req-symbol">*</div>
                             <input type="text" name="city" placeholder="City" class="" maxlength="150" required >
                             <div class="help-block">City cannot be blank</div>
                         </div>
                         <div class="input-text required has-error has-success">
+                            <div class="req-symbol">*</div>
                             <input type="text" name="state" placeholder="State/Providence" minlength="5" maxlength="10" required >
                             <div class="help-block">State/Providence cannot be blank</div>
                         </div>
