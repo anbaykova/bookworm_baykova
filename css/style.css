@@ -1182,7 +1182,7 @@ background-color: #f2fdff;;
     display: none;
 }
 .checkbox-design input + label {
-    /*padding-left: 27px;*/
+    padding-left: 27px;
     position: relative;
 }
 #gen-man + label {
