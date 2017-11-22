@@ -16,6 +16,9 @@ body {
     line-height: 32px;
     color: #555963;
     }
+body .scroll {
+    overflow: hidden;
+}
 .container  {
     max-width: 1210px;
     margin: 0 auto;
@@ -1953,7 +1956,7 @@ background-color: #f2fdff;;
     max-width: 768px;
     position: relative;
     margin: 0 auto;
-    bottom: 6700px;
+    /*bottom: 6700px;*/
 }
 .inner-wrap-login {
     margin: 75px 50px;

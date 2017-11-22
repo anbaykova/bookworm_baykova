@@ -7,7 +7,7 @@
     <title>Cart</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Amiri|Lato:400,700|Ramaraja|Rozha+One|PT+Serif|Work+Sans|Yrsa" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/responsive.css"><!-- fixme: Страница должны быть адаптивной. На маленьких расширениях не влезают поля   -->
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
 </head>
 <body>
     <div id="your-cart">
@@ -24,8 +24,10 @@
             <ul class="info_boks">
                 <li><div class="search"></div></li>
                 <li><div class="shoppingcart"></div></li>
-                <li> <div id="inner-userpic">
-                    <a href="#wrap-login"><img src="img/Userpic.png" alt="userpic" width="39" height="39"></a></div>
+                <li>
+                    <div id="inner-userpic">
+                        <a href="#wrap-login"  class="show-button" ><img src="img/Userpic.png" alt="userpic" width="39" height="39"></a>
+                    </div>
                 </li>
             </ul>
         </nav>
@@ -33,7 +35,6 @@
         <div class="cart-wrap container">
             <h1>Your cart</h1>
             <form id="cart" action="" novalidate>
-
              <div class="form-cart">
                 <div class="leftpart">
                     <h2>Billing address</h2>
@@ -288,7 +289,7 @@
         <div id="wrap-login">
             <div class="inner-wrap-login">
                 <div class="transp-back-wrap-login"></div>
-                <a href="#"><img class="rectangle-arrow" src="img/rectangle9.png" alt="rectangle"></a>
+                <a  href="#"><img class="rectangle-arrow" src="img/rectangle9.png" alt="rectangle"></a>
                 <p>Login</p>
                 <form id="form-login" action="">
                     <div class="inner-login-email">
@@ -326,7 +327,7 @@
             </div>
         </div>
     </div>
-
+    <script src="js/popup.js"></script>
     <script src="js/classie.js"></script>
     <script src="js/selectFx.js"></script>
     <script>
