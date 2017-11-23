@@ -1951,7 +1951,7 @@ background-color: #f2fdff;;
     position: absolute;
     opacity: 0;
     visibility: hidden;
-    top: 250px;
+    top: 450px;
     left: 50%;
     transform: translate(-50%);
 }

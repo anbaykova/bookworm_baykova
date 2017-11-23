@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7b5c655e-f22d-4f2d-9739-be3b957e33b4" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cart.html" afterPath="$PROJECT_DIR$/cart.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cart2.html" afterPath="$PROJECT_DIR$/cart2.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/popup.js" afterPath="$PROJECT_DIR$/js/popup.js" />
@@ -25,8 +23,8 @@
       <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="1558" column="24" lean-forward="false" selection-start-line="1558" selection-start-column="24" selection-end-line="1558" selection-end-column="24" />
+            <state relative-caret-position="408">
+              <caret line="1953" column="10" lean-forward="false" selection-start-line="1953" selection-start-column="10" selection-end-line="1953" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -35,7 +33,7 @@
       <file leaf-file-name="cart.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cart.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
+            <state relative-caret-position="-2788">
               <caret line="111" column="93" lean-forward="true" selection-start-line="111" selection-start-column="93" selection-end-line="111" selection-end-column="93" />
               <folding>
                 <element signature="n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -47,8 +45,8 @@
       <file leaf-file-name="cart2.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cart2.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="27" column="23" lean-forward="false" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
+            <state relative-caret-position="528">
+              <caret line="255" column="39" lean-forward="true" selection-start-line="255" selection-start-column="39" selection-end-line="255" selection-end-column="39" />
               <folding>
                 <element signature="n#section#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -60,8 +58,8 @@
       <file leaf-file-name="article.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/article.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="494">
-              <caret line="401" column="2" lean-forward="true" selection-start-line="401" selection-start-column="2" selection-end-line="442" selection-end-column="10" />
+            <state relative-caret-position="238">
+              <caret line="34" column="65" lean-forward="false" selection-start-line="34" selection-start-column="50" selection-end-line="34" selection-end-column="65" />
               <folding>
                 <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#article#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -76,8 +74,8 @@
       <file leaf-file-name="popup.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/popup.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="497">
-              <caret line="93" column="40" lean-forward="false" selection-start-line="93" selection-start-column="40" selection-end-line="93" selection-end-column="40" />
+            <state relative-caret-position="255">
+              <caret line="15" column="30" lean-forward="false" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
               <folding />
             </state>
           </provider>
@@ -104,7 +102,6 @@
       <find>wrap-footer</find>
       <find>.checkbox-design input + label</find>
       <find>wrap-foo</find>
-      <find>inner-userpic</find>
       <find>wrap-login</find>
       <find>wrap-lo</find>
       <find>pattern</find>
@@ -120,12 +117,13 @@
       <find>help-block</find>
       <find>.inner-wrap-container</find>
       <find>scroll</find>
-      <find>#wrap-login</find>
-      <find>hide-popup</find>
-      <find>wra</find>
       <find>transp-back-wrap-login</find>
       <find>input-text.</find>
+      <find>hide-popup</find>
       <find>country</find>
+      <find>inner-userpic</find>
+      <find>wra</find>
+      <find>#wrap-login</find>
     </findStrings>
     <replaceStrings>
       <replace>45</replace>
@@ -157,8 +155,8 @@
         <option value="$PROJECT_DIR$/css/responsive.css" />
         <option value="$PROJECT_DIR$/article.html" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/cart2.html" />
         <option value="$PROJECT_DIR$/cart.html" />
+        <option value="$PROJECT_DIR$/cart2.html" />
         <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$PROJECT_DIR$/js/popup.js" />
       </list>
@@ -369,15 +367,15 @@
       <workItem from="1511179750575" duration="15770000" />
       <workItem from="1511256506441" duration="4713000" />
       <workItem from="1511283017971" duration="27249000" />
-      <workItem from="1511428572856" duration="9248000" />
+      <workItem from="1511428572856" duration="10401000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="463904000" />
+    <option name="totallyTimeSpent" value="465057000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1616" height="876" extended-state="7" />
+    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.086185046" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -708,10 +706,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/cart.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2788">
+          <caret line="111" column="93" lean-forward="true" selection-start-line="111" selection-start-column="93" selection-end-line="111" selection-end-column="93" />
+          <folding>
+            <element signature="n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/article.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="401" column="2" lean-forward="true" selection-start-line="401" selection-start-column="2" selection-end-line="442" selection-end-column="10" />
+        <state relative-caret-position="238">
+          <caret line="34" column="65" lean-forward="false" selection-start-line="34" selection-start-column="50" selection-end-line="34" selection-end-column="65" />
           <folding>
             <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#article#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -724,8 +732,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/cart2.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="27" column="23" lean-forward="false" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
+        <state relative-caret-position="528">
+          <caret line="255" column="39" lean-forward="true" selection-start-line="255" selection-start-column="39" selection-end-line="255" selection-end-column="39" />
           <folding>
             <element signature="n#section#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -735,26 +743,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="1558" column="24" lean-forward="false" selection-start-line="1558" selection-start-column="24" selection-end-line="1558" selection-end-column="24" />
+        <state relative-caret-position="408">
+          <caret line="1953" column="10" lean-forward="false" selection-start-line="1953" selection-start-column="10" selection-end-line="1953" selection-end-column="10" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cart.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="111" column="93" lean-forward="true" selection-start-line="111" selection-start-column="93" selection-end-line="111" selection-end-column="93" />
-          <folding>
-            <element signature="n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/popup.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="497">
-          <caret line="93" column="40" lean-forward="false" selection-start-line="93" selection-start-column="40" selection-end-line="93" selection-end-column="40" />
+        <state relative-caret-position="255">
+          <caret line="15" column="30" lean-forward="false" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
           <folding />
         </state>
       </provider>

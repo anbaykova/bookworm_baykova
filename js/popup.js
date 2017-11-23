@@ -13,6 +13,7 @@ if (open !== null) {
         document.getElementsByClassName("inner-wrap-container")[0].style.display = 'block';
 
         document.body.classList.toggle("scroll");
+        window.scrollTo(0, 0);
     });
 }
 if (close !== null) {
