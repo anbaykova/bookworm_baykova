@@ -11,10 +11,12 @@ html {
 body {
     width: 100%;
     margin: 0;
+    height:auto;
     font-family: 'Yrsa', serif;
     font-size: 23px;
     line-height: 32px;
     color: #555963;
+    position: relative;
     }
 body .scroll {
     overflow: hidden;
@@ -1951,7 +1953,7 @@ background-color: #f2fdff;;
     position: absolute;
     opacity: 0;
     visibility: hidden;
-    top: 450px;
+    top: 0;
     left: 50%;
     transform: translate(-50%);
 }
@@ -1960,7 +1962,7 @@ background-color: #f2fdff;;
     /*position: relative;*/
     /*margin: 0 auto;*/
     /*bottom: 6700px;*/
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     display: none;
