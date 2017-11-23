@@ -46,63 +46,71 @@
                         <label for="gen-woman">Woman</label>
                     </div>
                     <div class="form-input">
-                        <div class="input-text required has-error has-success">
+                        <div class="input-text">
                             <div class="req-symbol">*</div>
-                            <input type="text" placeholder="First name" class="form-control" name="firstname" maxlength="100" required >
-                            <label for=""></label>
-                            <div class="help-block">First name cannot be blank</div>
+                            <input required id="firsrname" type="text" placeholder="First name" name="firstname" maxlength="100"  >
+                            <label for="firsrname"></label>
+                            <div class="input-text-error">First name cannot be blank</div>
                         </div>
-                        <div class="input-text required has-error has-success">
+                        <div class="input-text">
                             <div class="req-symbol">*</div>
-                            <input type="text" placeholder="Last name" name="lastname" maxlength="100" required >
-                            <div class="help-block">Last name cannot be blank</div>
+                            <input required id="lastname" type="text" placeholder="Last name" name="lastname" maxlength="100"  >
+                            <label for="lastname"></label>
+                            <div class="input-text-error">Last name cannot be blank</div>
                         </div>
-                        <div class="input-text required has-error has-success">
+                        <div class="input-text">
                             <div class="req-symbol">*</div>
-                            <input type="email" placeholder="E-mail" name="email" maxlength="100" required >
-                            <div class="help-block">E-mail cannot be blank</div>
+                            <input required id="email" type="email" placeholder="E-mail" name="email" maxlength="100">
+                            <label for="email"></label>
+                            <div class="input-text-error">E-mail cannot be blank</div>
                         </div>
-                        <div class="input-text required has-error has-success">
+                        <div class="input-text">
                             <div class="req-symbol">*</div>
-                            <input type="tel" placeholder="Phone" pattern="^\+?\d{10,13}" name="phone" required >
-                            <div class="help-block">Phone cannot be blank.</div>
+                            <input required id="tel" type="tel" placeholder="Phone"  name="phone">
+                            <label for="tel"></label>
+                            <div class="input-text-error">Phone cannot be blank.</div>
                         </div>
                         <div class="clearfix"></div>
                     </div>
                 </div> <!-- leftpart -->
                 <div class="rightpart">
-                    <div class="form-input required has-error has-success">
+                    <div class="form-input ">
                         <div class="input-text-inner">
                             <div class="req-symbol">*</div>
-                            <textarea placeholder="Address" maxlength="150" required name="address" id="address"></textarea>
-                            <div class="help-block">Address cannot be blank</div>
+                            <textarea required id="adress" placeholder="Address" maxlength="150"  name="address" id="address"></textarea>
+                            <label for="address"></label>
+                            <span class="input-text-error">Address cannot be blank</span>
                         </div>
                     </div>
                     <div class="form-input">
-                        <div class="input-text required has-error has-success ">
+                        <div class="input-text ">
                             <div class="req-symbol">*</div>
-                            <select name="country" class="cs-select cs-skin-country" title="country">
+                            <select id="country" name="country" class="cs-select cs-skin-country" title="country">
                                 <option value="country" disabled selected>Country</option>
                                 <option value="ukraine" >Ukraine</option>
                                 <option value="russion">Russian Federation</option>
                                 <option value="belarus">Belarus</option>
                                 <option value="kazakhstan" >Kazakhstan</option>
                             </select>
-                            <div class="help-block">Country cannot be blank</div>
+                            <label for="country"></label>
+                            <span class="input-text-error">Country cannot be blank</span>
                         </div>
-                        <div class="input-text required has-error has-success">
+                        <div class="input-text">
                             <div class="req-symbol">*</div>
-                            <input type="text" name="city" placeholder="City" class="" maxlength="150" required >
-                            <div class="help-block">City cannot be blank</div>
+                            <input required id="city" type="text" name="city" placeholder="City" class="" maxlength="150"  >
+                            <label for="city"></label>
+                            <span class="input-text-error">City cannot be blank</span>
                         </div>
-                        <div class="input-text required has-error has-success">
+                        <div class="input-text">
                             <div class="req-symbol">*</div>
-                            <input type="text" name="state" placeholder="State/Providence" minlength="5" maxlength="10" required >
-                            <div class="help-block">State/Providence cannot be blank</div>
+                            <input required id="state" type="text" name="state" placeholder="State/Providence" minlength="5" maxlength="10" >
+                            <label for="state"></label>
+                            <span class="input-text-error">State/Providence cannot be blank</span>
                         </div>
-                        <div class="input-text has-error has-success ">
-                            <input type="text" name="zip" class="form-block" placeholder="Zip/Postal" pattern="[A-Z,a-z,0-9]*" maxlength="100"  >
-                            <div class="help-block">Zip/Postal cannot be blank.</div>
+                        <div class="input-text">
+                            <input id="field-zip" type="text" name="zip" id="field-zip" placeholder="Zip/Postal">
+                            <label for="field-zip"></label>
+                            <span class="input-text-error">Zip/Postal cannot be blank.</span>
                         </div>
                     </div>
                     <div class="clearfix"></div>

@@ -1549,12 +1549,23 @@ background-color: #f2fdff;;
     width: 100%;
 }
 
-.help-block {
+.input-text-error {
     display: none;
     font-family: 'Lato', sans-serif;
     font-size: 15px;
-    color: red;
+    color: #555963;
     padding: 0 0 0 10px;
+}
+.input-text.has-error{
+    visibility: visible;
+    /*display: inline-block;*/
+    /*position: absolute;*/
+    color: red;
+}
+.input-text.has-success {
+    /*position: absolute;*/
+    color: darkgreen;
+    border-bottom-color: darkgreen;
 }
 .input-text {
     position: relative;
@@ -1562,14 +1573,8 @@ background-color: #f2fdff;;
     display: inline-block;
     margin: 34px 38px 0 0;
 }
-.input-text .has-success {
-    color: darkgreen;
-    border-bottom-color: darkgreen;
-}
-.input-text .has-error {
-    color: red;
-    border-bottom-color: red;
-}
+
+
 
 .input-text input {
     width: 245px;

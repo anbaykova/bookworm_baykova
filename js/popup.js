@@ -29,31 +29,58 @@ billingForm.addEventListener("submit", function (event) {
 });
 
 if(billingForm !== null){
-    billingForm.addEventListener('submit', valideteForm);
+    billingForm.addEventListener("submit", valideteForm);
 }
-
 
 function valideteForm(event) {
     event.preventDefault();
     console.log("петя");
     requiredFields.forEach(function (element) {
         if (element.value.length === 0) {
-            console.log(element.parentNode.classList.add('has-error'));
+            element.parentNode.classList.add('has-error')
             // console.log(element);
         }
         else {
-            console.log(element.parentNode.classList.remove('has-error'));
-            console.log(element.parentNode.classList.add('has-success'))
+            element.parentNode.classList.remove('has-error');
+            element.parentNode.classList.add('has-success');
         }
-    })
+    });
+    checkZip();
 }
+// billingForm.addEventListener('submit', valideteForm);
+// bilingForm.removeEventListener('submit', valideteForm);
 
-    var zip = document.getElementsByClassName('form-block');
-    console.log(zip);
 
-    if (zip.value.length < 5 || zip.value.length > 10){
-        console.log("Invalit Zip Length");
+    function checkZip() {
+        var zip = document.getElementById('field-zip');
+        console.log(zip.value,length);
+        var message = "";
+        var parent = zip.closest('.input-text');
+
+        if(zip.value.length === 0) {
+            message = "Field Zip/Postal can not be blank";
+            console.log(message);
+
+            zip.parentNode.classList.add('has-error');
+            parent.querySelector('span').innerText = message
+        } else if (zip.value.length < 5) {
+            message = "Zip length too small";
+            zip.parentNode.classList.add('has-error');
+            console.log(parent);
+            console.log(parent.querySelectorAll('span'));
+        } else if (zip.value.length > 10) {
+            message = "Zip length too large";
+            zip.parentNode.classList.add('has-error');
+            parent.querySelector('span').innerText = message;
+        } else {
+            zip.parentNode.classList.remove('has-error');
+            zip.parentNode.classList.add('has-success');
+        }
     }
+
+    // if (zip.value.length < 5 || zip.value.length > 10){
+    //     console.log("Invalit Zip Length");
+    // }
     // if(document.getElementById("phone"));
     //     }
     //
