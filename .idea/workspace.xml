@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7b5c655e-f22d-4f2d-9739-be3b957e33b4" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/formcart.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cart.html" afterPath="$PROJECT_DIR$/cart.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/popup.js" afterPath="$PROJECT_DIR$/js/popup.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -42,11 +39,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="cart.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="cart.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/cart.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="392">
-              <caret line="294" column="38" lean-forward="true" selection-start-line="294" selection-start-column="38" selection-end-line="294" selection-end-column="38" />
+            <state relative-caret-position="154">
+              <caret line="290" column="22" lean-forward="true" selection-start-line="290" selection-start-column="22" selection-end-line="290" selection-end-column="22" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -55,13 +52,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="684">
-              <caret line="923" column="0" lean-forward="false" selection-start-line="923" selection-start-column="0" selection-end-line="923" selection-end-column="0" />
+            <state relative-caret-position="420">
+              <caret line="920" column="53" lean-forward="true" selection-start-line="920" selection-start-column="53" selection-end-line="920" selection-end-column="53" />
               <folding>
-                <element signature="n#section#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -70,8 +67,8 @@
       <file leaf-file-name="cart2.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cart2.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="528">
-              <caret line="255" column="39" lean-forward="true" selection-start-line="255" selection-start-column="39" selection-end-line="255" selection-end-column="39" />
+            <state relative-caret-position="460">
+              <caret line="253" column="10" lean-forward="true" selection-start-line="212" selection-start-column="4" selection-end-line="253" selection-end-column="10" />
               <folding>
                 <element signature="n#section#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -83,8 +80,8 @@
       <file leaf-file-name="article.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/article.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="34" column="65" lean-forward="false" selection-start-line="34" selection-start-column="50" selection-end-line="34" selection-end-column="65" />
+            <state relative-caret-position="409">
+              <caret line="396" column="18" lean-forward="true" selection-start-line="393" selection-start-column="12" selection-end-line="396" selection-end-column="18" />
               <folding>
                 <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#article#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -145,10 +142,10 @@
       <find>transp-back-wrap-login</find>
       <find>input-text.</find>
       <find>hide-popup</find>
-      <find>inner-userpic</find>
-      <find>wra</find>
       <find>#wrap-login</find>
+      <find>wra</find>
       <find>country</find>
+      <find>inner-userpic</find>
     </findStrings>
     <replaceStrings>
       <replace>45</replace>
@@ -179,11 +176,11 @@
         <option value="$PROJECT_DIR$/js/new.js" />
         <option value="$PROJECT_DIR$/css/responsive.css" />
         <option value="$PROJECT_DIR$/article.html" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/cart2.html" />
         <option value="$PROJECT_DIR$/js/formcart.js" />
         <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$PROJECT_DIR$/js/popup.js" />
+        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/cart.html" />
       </list>
     </option>
@@ -393,15 +390,15 @@
       <workItem from="1511179750575" duration="15770000" />
       <workItem from="1511256506441" duration="4713000" />
       <workItem from="1511283017971" duration="27249000" />
-      <workItem from="1511428572856" duration="14225000" />
+      <workItem from="1511428572856" duration="14416000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="468881000" />
+    <option name="totallyTimeSpent" value="469072000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1616" height="876" extended-state="7" />
+    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.086185046" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -724,31 +721,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/article.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="34" column="65" lean-forward="false" selection-start-line="34" selection-start-column="50" selection-end-line="34" selection-end-column="65" />
-          <folding>
-            <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#article#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#figure#0;n#article#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#section#0;n#article#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cart2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="255" column="39" lean-forward="true" selection-start-line="255" selection-start-column="39" selection-end-line="255" selection-end-column="39" />
-          <folding>
-            <element signature="n#section#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/formcart.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
@@ -773,23 +745,48 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cart.html">
+    <entry file="file://$PROJECT_DIR$/cart2.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="294" column="38" lean-forward="true" selection-start-line="294" selection-start-column="38" selection-end-line="294" selection-end-column="38" />
+        <state relative-caret-position="460">
+          <caret line="253" column="10" lean-forward="true" selection-start-line="212" selection-start-column="4" selection-end-line="253" selection-end-column="10" />
           <folding>
-            <element signature="n#style#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#section#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/article.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="409">
+          <caret line="396" column="18" lean-forward="true" selection-start-line="393" selection-start-column="12" selection-end-line="396" selection-end-column="18" />
+          <folding>
+            <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#article#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#figure#0;n#article#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#section#0;n#article#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="684">
-          <caret line="923" column="0" lean-forward="false" selection-start-line="923" selection-start-column="0" selection-end-line="923" selection-end-column="0" />
+        <state relative-caret-position="420">
+          <caret line="920" column="53" lean-forward="true" selection-start-line="920" selection-start-column="53" selection-end-line="920" selection-end-column="53" />
           <folding>
-            <element signature="n#section#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cart.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="290" column="22" lean-forward="true" selection-start-line="290" selection-start-column="22" selection-end-line="290" selection-end-column="22" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
