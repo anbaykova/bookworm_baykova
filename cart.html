@@ -26,7 +26,7 @@
                 <li><div class="shoppingcart"></div></li>
                 <li>
                     <div id="inner-userpic">
-                        <a href="#wrap-login"  class="show-button" ><img src="img/Userpic.png" alt="userpic" width="39" height="39"></a>
+                        <a href="#wrap-login" id="show-popup" class="show-button" ><img src="img/Userpic.png" alt="userpic" width="39" height="39"></a>
                     </div>
                 </li>
             </ul>
@@ -50,25 +50,25 @@
                             <div class="req-symbol">*</div>
                             <input required id="firsrname" type="text" placeholder="First name" name="firstname" maxlength="100"  >
                             <label for="firsrname"></label>
-                            <div class="input-text-error">First name cannot be blank</div>
+                            <span class="input-text-error">First name cannot be blank</span>
                         </div>
                         <div class="input-text">
                             <div class="req-symbol">*</div>
                             <input required id="lastname" type="text" placeholder="Last name" name="lastname" maxlength="100"  >
                             <label for="lastname"></label>
-                            <div class="input-text-error">Last name cannot be blank</div>
+                            <span class="input-text-error">Last name cannot be blank</span>
                         </div>
                         <div class="input-text">
                             <div class="req-symbol">*</div>
                             <input required id="email" type="email" placeholder="E-mail" name="email" maxlength="100">
                             <label for="email"></label>
-                            <div class="input-text-error">E-mail cannot be blank</div>
+                            <span class="input-text-error">E-mail cannot be blank</span>
                         </div>
                         <div class="input-text">
                             <div class="req-symbol">*</div>
                             <input required id="tel" type="tel" placeholder="Phone"  name="phone">
                             <label for="tel"></label>
-                            <div class="input-text-error">Phone cannot be blank.</div>
+                            <span class="input-text-error">Phone cannot be blank.</span>
                         </div>
                         <div class="clearfix"></div>
                     </div>
@@ -84,7 +84,6 @@
                     </div>
                     <div class="form-input">
                         <div class="input-text ">
-                            <div class="req-symbol">*</div>
                             <select id="country" name="country" class="cs-select cs-skin-country" title="country">
                                 <option value="country" disabled selected>Country</option>
                                 <option value="ukraine" >Ukraine</option>
@@ -293,11 +292,11 @@
         </div> <!-- wrap-footer -->
     </div> <!-- end inner inner-wrap-login -->
 
-    <div class="container">
+    <div class="inner-wrap-container">
         <div id="wrap-login">
             <div class="inner-wrap-login">
                 <div class="transp-back-wrap-login"></div>
-                <a  href="#"><img class="rectangle-arrow" src="img/rectangle9.png" alt="rectangle"></a>
+                <a id="hide-popup" class="hide"  href="#"><img class="rectangle-arrow" src="img/rectangle9.png" alt="rectangle"></a>
                 <p>Login</p>
                 <form id="form-login" action="">
                     <div class="inner-login-email">
