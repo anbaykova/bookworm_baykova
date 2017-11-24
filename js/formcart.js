@@ -74,8 +74,8 @@ function checkZip() {
         zip.parentNode.getElementsByClassName("input-text-error")[0].style.display = 'none';
         // zip.parentNode.getElementsByClassName("input-text-error")[0].innerText ="Ok" ;
     }
-    if (zip.value.match('[A-Z, a-z, ]*')[0] === "") {
-        message =+ "Invalid value: support only string";
+    if (zip.value.match('[A-Z,a-z, ]*')[0] === "") {
+        message =+ " Invalid value: support only string";
         zip.parentNode.classList.add('has-error');
         parent.querySelector('span').innerText = message
     }

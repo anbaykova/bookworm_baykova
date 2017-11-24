@@ -1815,7 +1815,9 @@ background-color: #f2fdff;;
 .inner-login-form {
     margin-top: 55px;
 }
-
+.inner-checkbox-remember label {
+    padding-left: 35px;
+}
 .inner-checkbox-remember {
     float: left;
     font-family: 'Lato', sans-serif;
@@ -1824,6 +1826,35 @@ background-color: #f2fdff;;
     display: inline-block;
     font-weight: 500;
 }
+.checkbox-remember:not(checked) {
+    opacity: 0;
+    position: absolute;
+}
+
+.checkbox-remember:not(checked) + label:before {
+    content: '';
+    position: absolute;
+    top: 365px;
+    left: 50px;
+    width: 17px;
+    height: 17px;
+    border: 2px solid #45474b;
+    background: transparent;
+}
+.checkbox-remember:not(checked) + label:after {
+    content: '';
+    position: absolute;
+    top: 365px;
+    left: 50px;
+    width: 17px;
+    height: 17px;
+    border: 2px solid #45474b;
+    background: transparent;
+    box-shadow: 0 2px 5px rgba(0,0,0,.3);
+    transition: all .2s;
+}
+
+
 .forgot-password {
     float: right;
     font-weight: 500;
@@ -1953,7 +1984,7 @@ background-color: #f2fdff;;
     position: absolute;
     opacity: 0;
     visibility: hidden;
-    top: 0;
+    top: 200px;
     left: 50%;
     transform: translate(-50%);
 }
