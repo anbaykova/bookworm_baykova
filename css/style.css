@@ -1273,6 +1273,10 @@ background-color: #f2fdff;;
 }
 
 
+
+
+
+
 /* Далее идет оформление чекбокса в современных браузерах, а также IE9 и выше.
 Благодаря тому, что старые браузеры не поддерживают селекторы :not и :checked,
 в них все нижеследующие стили не сработают. */
@@ -1286,12 +1290,20 @@ background-color: #f2fdff;;
     position: absolute;
     opacity: 0;
 }
-
+.checkbox-remember:not(checked) {
+opacity: 0;
+position: absolute;
+}
 
 .checkbox-create-account:not(checked) + label {
     position: relative; /* будем позиционировать псевдочекбокс относительно label */
     padding: 0 0 0 35px; /* оставляем слева от label место под псевдочекбокс */
 }
+.checkbox-remember:not(checked) + label {
+    position: relative;
+    padding: 0 0 0 35px;
+}
+
 .checkbox-accept:not(checked) + label {
     position: relative; /* будем позиционировать псевдочекбокс относительно label */
     padding: 0 0 0 35px; /* оставляем слева от label место под псевдочекбокс */
@@ -1308,6 +1320,16 @@ background-color: #f2fdff;;
    /* box-shadow: inset 0 2px 3px rgba(0,0,0,.2); */
     background: transparent;
 }
+.checkbox-remember:not(checked) + label:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 17px;
+    height: 17px;
+    border: 2px solid #45474b;
+    background: transparent;
+}
 .checkbox-accept:not(checked) + label:before {
     content: '';
     position: absolute;
@@ -1320,6 +1342,18 @@ background-color: #f2fdff;;
     background: transparent;
 }
 /* Оформление второй части чекбокса в выключенном состоянии (переключатель). */
+.checkbox-remember:not(checked) + label:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 17px;
+    height: 17px;
+    border: 2px solid #45474b;
+    background: transparent;
+    box-shadow: 0 2px 5px rgba(0,0,0,.3);
+    transition: all .2s;
+}
 .checkbox-create-account:not(checked) + label:after {
     content: '';
     position: absolute;
@@ -1350,6 +1384,9 @@ background-color: #f2fdff;;
 .checkbox-create-account:checked + label:before {
      background: #da8913;
  }
+.checkbox-remember:checked + label:before {
+    background: #da8913;
+}
 .checkbox-accept:checked + label:before {
     background: #da8913;
 }
@@ -1358,6 +1395,9 @@ background-color: #f2fdff;;
     left: 26px;
 }*/
 /* Показываем получение фокуса. */
+.checkbox-remember:focus + label:before {
+    box-shadow: 0 0 0 3px rgba(255,255,0,.5);
+}
 .checkbox-create-account:focus + label:before {
     box-shadow: 0 0 0 3px rgba(255,255,0,.5);
 }
@@ -1825,33 +1865,6 @@ background-color: #f2fdff;;
     color: #45474b;
     display: inline-block;
     font-weight: 500;
-}
-.checkbox-remember:not(checked) {
-    opacity: 0;
-    position: absolute;
-}
-
-.checkbox-remember:not(checked) + label:before {
-    content: '';
-    position: absolute;
-    top: 365px;
-    left: 50px;
-    width: 17px;
-    height: 17px;
-    border: 2px solid #45474b;
-    background: transparent;
-}
-.checkbox-remember:not(checked) + label:after {
-    content: '';
-    position: absolute;
-    top: 365px;
-    left: 50px;
-    width: 17px;
-    height: 17px;
-    border: 2px solid #45474b;
-    background: transparent;
-    box-shadow: 0 2px 5px rgba(0,0,0,.3);
-    transition: all .2s;
 }
 
 
