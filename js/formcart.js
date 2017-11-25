@@ -3,6 +3,8 @@
 var billingForm = document.getElementById("cart");
 var requiredFields = document.querySelectorAll("input[required], textarea[required]");
 console.log(requiredFields);
+// var validateEmail = document.getElementById("email");
+// var ValidPhone = document.getElementById('tel');
 
 billingForm.addEventListener("submit", function (event) {
     event.preventDefault();
@@ -80,6 +82,25 @@ function checkZip() {
         parent.querySelector('span').innerText = message
     }
 }
+
+function validateEmail(email) {
+    var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(email);
+    if( ! validateEmail(document.getElementById("email").value)){
+        console.log("Заполните поле корректно!");
+    }
+
+}
+
+function ValidPhone(Phone) {
+    var re = /^\d[\d\(\)\ -]{4,14}\d$/;
+    return re.test(myPhone);
+    if(! ValidPhone(document.getElementById('tel').value))
+    {
+        console.log("Заполните поле корректно!");
+    }
+}
+
 
 
 // billingForm.addEventListener('submit', valideteForm);
