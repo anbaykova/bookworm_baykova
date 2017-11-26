@@ -5,10 +5,10 @@ calcForm.addEventListener("submit", function (event) {
     event.preventDefault();
     console.log("вася");
 });
-var bedRooms = document.get('name')
-function calcForm() {
-    
-}
+// var bedRooms = document.get('name')
+// function calcForm() {
+//
+// }
 
 // Uncaught TypeError: document.get is not a function
 // at formcalc.js:8

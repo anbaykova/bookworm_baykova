@@ -215,7 +215,7 @@
             padding: 33px 10px 0px 0;
         }
         .menu_futer a {
-            font-size: 5px;
+            font-size: 6px;
         }
         .switch-blog {
             margin-top: 40px;
@@ -377,7 +377,8 @@
             line-height: 18px;
         }
         .article-block {
-            margin: 34px 10px;
+            width: 100%;
+            float: none;
         }
         .inner-article-block {
             padding-bottom: 46px;
@@ -392,7 +393,7 @@
         }
         .answer-comment img {
             float: left;
-            padding-right: 0;
+            padding-right: 10px;
         }
         /*.related-item {*/
             /*width: 100%;*/
@@ -586,21 +587,23 @@
             width: 100%;
         }
         .related-item img{
-            float: none;
+            float: left;
             width: auto;
             padding: 0 25px 25px 0;
         }
         .related-item {
-            margin: 0 7%;
-            vertical-align: top;
-            display: inline-block;
-            width: 18%;
+            padding: 20px 0;
+            width: 100%;
+            /*margin: 0 7%;*/
+            /*vertical-align: top;*/
+            /*display: inline-block;*/
+            /*width: 18%;*/
         }
         .post-users {
             width: 85%;
         }
         .relation-post {
-            width: 90%;
+            width: 100%;
         }
         .post-comments {
             width: 100%;
@@ -614,6 +617,30 @@
         }
         .section_box {
             width: 30%;
+        }
+        .inner-article-block {
+            width: 100%;
+        }
+        .article-block {
+            float: none;
+            width: 100%;
+            height: auto;
+            /*margin: 35px 10px;*/
+        }
+        .article-left {
+            width: 100%;
+            float: none;
+        }
+        .article-right {
+            width: 100%;
+            float: none;
+        }
+        .block-float {
+            width: 100%;
+            float: left;
+        }
+        .inner-article-block p {
+            padding-bottom: 45px;
         }
     }
     @media all and (min-width:992px)and (max-width: 1115px) {
