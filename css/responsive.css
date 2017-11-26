@@ -524,8 +524,8 @@
             margin: 0 auto;
         }
         .footer_section_box {
-            width: 77%;
-            padding-top: 50px;
+            width: 100%;
+            padding-top: 60px;
             float: none;
             margin: 0 auto;
         }
@@ -536,7 +536,7 @@
         }
         .footer_section_active {
             width: 47%;
-            padding-top: 13px;
+            padding-top: 40px;
             float: none;
             margin: 0 auto;
         }
@@ -616,7 +616,12 @@
             width: 90%;
         }
         .section_box {
-            width: 30%;
+            width: 100%;
+            float: none;
+            padding: 0 23px 40px 65px;
+        }
+        .input-create {
+            margin: 0 65px 40px 65px;
         }
         .inner-article-block {
             width: 100%;
@@ -642,6 +647,16 @@
         .inner-article-block p {
             padding-bottom: 45px;
         }
+        #wrap-login .transp-back-wrap-login {
+            width: 375px;
+        }
+        .rectangle-arrow {
+            z-index: 4;
+            left: 305px;
+            position: absolute;
+            top: 30px;
+        }
+
     }
     @media all and (min-width:992px)and (max-width: 1115px) {
         .menu {
