@@ -2039,8 +2039,8 @@ position: absolute;
     margin: 75px 50px;
 }
 #wrap-login .transp-back-wrap-login {
-    max-width: 460px;
-    height: 100%;
+    width: 460px;
+    height: 803px;
     margin-top: -88px;
     margin-left: -67px;
     position: absolute;

@@ -35,7 +35,7 @@ function valideteForm(event) {
     checkZip();
 
     validateEmail(document.getElementById("email").value);
-    // ValidPhone();
+    ValidPhone(document.getElementById("phone").value);
 }
 
 function checkZip() {
@@ -90,26 +90,52 @@ function checkZip() {
 function validateEmail(email) {
     var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     console.log( re.test(email));
+    var emailInp = document.getElementById('email');
     // return re.test(email);
     if (re.test(email))
     {
+        emailInp.parentNode.classList.remove('has-error');
+        emailInp.parentNode.classList.add('has-success');
+
+        emailInp.parentNode.getElementsByClassName("input-text-error")[0].style.display = 'none';
         console.log('OK');
     }else{
         console.log('Error');
+        emailInp.parentNode.classList.remove('has-success');
+        emailInp.parentNode.classList.add('has-error');
+        emailInp.parentNode.getElementsByClassName("input-text-error")[0].style.display = 'block';
+        emailInp.parentNode.getElementsByClassName("input-text-error")[0].innerText ="E-mail cannot be blank";
     }
 
 }
 
-function ValidPhone(Phone) {
+function ValidPhone(phone) {
     var re = /^\d[\d\(\)\ -]{4,14}\d$/;
-    return re.test(myPhone);
-    if(! ValidPhone(document.getElementById('tel').value))
+    console.log(re.test(phone));
+    var myPhone = document.getElementById("phone");
+    // return re.test(myPhone);
+    if (re.test(phone))
     {
-        console.log("Заполните поле корректно!");
+        myPhone.parentNode.classList.remove('has-error');
+        myPhone.parentNode.classList.add('has-success');
+        myPhone.parentNode.getElementsByClassName('input-text-error')[0].style.display = 'none';
+        console.log('OK');
+    }else {
+        console.log('ERROR');
+        myPhone.parentNode.classList.remove('has-success');
+        myPhone.parentNode.classList.add('has-error');
+        myPhone.parentNode.getElementsByClassName("input-text-error")[0].style.display = 'block';
+        myPhone.parentNode.getElementsByClassName("input-text-error")[0].innerText ="Phone cannot be blank";
+
     }
+
 }
 
 
 
 // billingForm.addEventListener('submit', valideteForm);
 // bilingForm.removeEventListener('submit', valideteForm);
+// if(! ValidPhone(document.getElementById('tel').value))
+// {
+//     console.log("Заполните поле корректно!");
+// }
