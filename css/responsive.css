@@ -52,6 +52,7 @@
             width: 95%;
         }
         .menu {
+            z-index: 0;
             width: 300px;
             margin: auto;
             left: 50%;
@@ -61,10 +62,10 @@
             width: 100%;
         }
         .inner-wrap-container {
-            max-width: 318px;
-            position: relative;
-            margin: 0 auto;
-            bottom: 6700px;
+            /*max-width: 318px;*/
+            /*position: relative;*/
+            /*margin: 0 auto;*/
+            /*bottom: 6700px;*/
         }
         #wrap-login {
             margin: 0 auto;
@@ -74,9 +75,8 @@
         }
         #wrap-login .transp-back-wrap-login {
             width: 287px;
-            height: 755px;
             margin-top: -60px;
-            margin-left: -34px;
+            margin-left: -50px;
         }
         .rectangle-arrow {
             left: 245px;
@@ -87,7 +87,7 @@
         .forgot-password {
             float: none;
         }
-        inner-login-password input {
+        .inner-login-password input {
             padding-top: 25px;
         }
         .inner-login-form {
@@ -307,7 +307,7 @@
             padding: 0 25px 25px 0;
         }
         .related-item {
-            margin: 0 0 40px 0;
+            margin: 0;
             width: 100%;
             display: inline-block;
         }
@@ -405,6 +405,7 @@
     }
     @media all and (min-width: 768px) and (max-width:991px) {
         .menu {
+            z-index: 0;
             width: 740px;
             margin: auto;
             left: 50%;
@@ -594,6 +595,7 @@
         .related-item {
             padding: 20px 0;
             width: 100%;
+            margin: 0;
             /*margin: 0 7%;*/
             /*vertical-align: top;*/
             /*display: inline-block;*/

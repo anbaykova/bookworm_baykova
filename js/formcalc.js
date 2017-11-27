@@ -5,6 +5,7 @@ calcForm.addEventListener("submit", function (event) {
     event.preventDefault();
     console.log("вася");
 });
+
 // var bedRooms = document.get('name')
 // function calcForm() {
 //

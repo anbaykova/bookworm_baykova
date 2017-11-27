@@ -3,6 +3,7 @@
 var billingForm = document.getElementById("cart");
 var requiredFields = document.querySelectorAll("input[required], textarea[required]");
 console.log(requiredFields);
+
 // var validateEmail = document.getElementById("email");
 // var ValidPhone = document.getElementById('tel');
 
@@ -32,6 +33,9 @@ function valideteForm(event) {
         }
     });
     checkZip();
+
+    validateEmail(document.getElementById("email").value);
+    // ValidPhone();
 }
 
 function checkZip() {
@@ -79,15 +83,19 @@ function checkZip() {
     if (zip.value.match('[A-Z,a-z, ]*')[0] === "") {
         message =+ " Invalid value: support only string";
         zip.parentNode.classList.add('has-error');
-        parent.querySelector('span').innerText = message
+        parent.querySelector('span').innerText = message;
     }
 }
 
 function validateEmail(email) {
     var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-    return re.test(email);
-    if( ! validateEmail(document.getElementById("email").value)){
-        console.log("Заполните поле корректно!");
+    console.log( re.test(email));
+    // return re.test(email);
+    if (re.test(email))
+    {
+        console.log('OK');
+    }else{
+        console.log('Error');
     }
 
 }

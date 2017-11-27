@@ -1353,7 +1353,7 @@ position: absolute;
     height: 17px;
     border: 2px solid #555963;
     background: transparent;
-    box-shadow: 0 2px 5px rgba(0,0,0,.3);
+    /*box-shadow: 0 2px 5px rgba(0,0,0,.3);*/
     transition: all .2s;
 }
 .checkbox-create-account:not(checked) + label:after {
@@ -1366,7 +1366,7 @@ position: absolute;
     border: 2px solid #555963;
     /* box-shadow: inset 0 2px 3px rgba(0,0,0,.2); */
     background: transparent;
-    box-shadow: 0 2px 5px rgba(0,0,0,.3);
+    /*box-shadow: 0 2px 5px rgba(0,0,0,.3);*/
     transition: all .2s; /* анимация, чтобы чекбокс переключался плавно */
 }
 .checkbox-accept:not(checked) + label:after {
@@ -1384,10 +1384,22 @@ position: absolute;
 }
 /* Меняем фон чекбокса, когда он включен. */
 .checkbox-create-account:checked + label:before {
-     background: #555963;
+     /*background: #555963;*/
+    content: '';
+    background-image: url("../img/rectangle45.png");
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-repeat: no-repeat;
  }
 .checkbox-remember:checked + label:before {
-    background: #555963;
+    /*background: #555963;*/
+    content: '';
+    background-image: url("../img/rectangle45.png");
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-repeat: no-repeat;
 }
 .checkbox-accept:checked + label:before {
     /*background: #555963;*/
@@ -1404,10 +1416,10 @@ position: absolute;
 }*/
 /* Показываем получение фокуса. */
 .checkbox-remember:focus + label:before {
-    box-shadow: 0 0 0 3px rgba(255,255,0,.5);
+    /*box-shadow: 0 0 0 3px rgba(255,255,0,.5);*/
 }
 .checkbox-create-account:focus + label:before {
-    box-shadow: 0 0 0 3px rgba(255,255,0,.5);
+    /*box-shadow: 0 0 0 3px rgba(255,255,0,.5);*/
 }
 .checkbox-accept:focus + label:before {
     /*box-shadow: 0 0 0 3px rgba(255,255,0,.5);*/
@@ -1493,9 +1505,12 @@ position: absolute;
     margin-right: 10px;
 }
 .coupon-code {
-    border-bottom: 1px solid #555963;
+    border-bottom: 2px solid #555963;
     height: 40px;
    }
+.coupon-code input[type="text"] {
+    color: #d5d7d9;
+}
 
 .coupon-wrap {
     width: 30%;
@@ -1505,7 +1520,7 @@ position: absolute;
     border: none;
     font-family: 'Lato', sans-serif;
     font-size: 15px;
-    color: #e0e0e0;
+    color: #d5d7d9;
     outline: none;
 }
 .coupon-code input:focus{
@@ -2005,15 +2020,11 @@ position: absolute;
     position: absolute;
     opacity: 0;
     visibility: hidden;
-    top: 200px;
+    top: 300px;
     left: 50%;
     transform: translate(-50%);
 }
 .inner-wrap-container {
-    /*max-width: 768px;*/
-    /*position: relative;*/
-    /*margin: 0 auto;*/
-    /*bottom: 6700px;*/
     position: absolute;
     top: 0;
     left: 0;
@@ -2030,7 +2041,7 @@ position: absolute;
 #wrap-login .transp-back-wrap-login {
     max-width: 460px;
     height: 100%;
-    margin-top: -92px;
+    margin-top: -88px;
     margin-left: -67px;
     position: absolute;
     opacity: 0.9;
