@@ -33,9 +33,9 @@ function valideteForm(event) {
         }
     });
     checkZip();
-
     validateEmail(document.getElementById("email").value);
-    ValidPhone(document.getElementById("phone").value);
+    validPhone(document.getElementById("phone").value);
+    validAddress();
 }
 
 function checkZip() {
@@ -96,7 +96,6 @@ function validateEmail(email) {
     {
         emailInp.parentNode.classList.remove('has-error');
         emailInp.parentNode.classList.add('has-success');
-
         emailInp.parentNode.getElementsByClassName("input-text-error")[0].style.display = 'none';
         console.log('OK');
     }else{
@@ -109,7 +108,7 @@ function validateEmail(email) {
 
 }
 
-function ValidPhone(phone) {
+function validPhone(phone) {
     var re = /^\d[\d\(\)\ -]{4,14}\d$/;
     console.log(re.test(phone));
     var myPhone = document.getElementById("phone");
@@ -128,8 +127,22 @@ function ValidPhone(phone) {
         myPhone.parentNode.getElementsByClassName("input-text-error")[0].innerText ="Phone cannot be blank";
 
     }
-
 }
+function validAddress(text) {
+    var address = document.getElementById("address");
+    if (address.value.length > 150) {
+        address.parentNode.classList.remove('has-success');
+        address.parentNode.classList.add('has-error');
+        address.parentNode.getElementsByClassName("input-text-error")[0].style.display = 'block';
+        address.parentNode.getElementsByClassName("input-text-error")[0].innerText ="Address max 150 symbols";
+    }else{
+        address.parentNode.classList.remove('has-error');
+        address.parentNode.classList.add('has-success');
+        address.parentNode.getElementsByClassName("input-text-error")[0].style.display = 'none';
+
+    }
+}
+
 
 
 

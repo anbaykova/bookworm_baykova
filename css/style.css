@@ -21,6 +21,9 @@ body {
 body .scroll {
     overflow: hidden;
 }
+.padding_0 {
+    padding: 0 !important;
+}
 .container  {
     max-width: 1210px;
     margin: 0 auto;
@@ -1652,13 +1655,15 @@ position: absolute;
     padding: 0 0 16px 0;
 }
 .input-text-inner textarea[placeholder] {
-    padding: 0px 0 8px 0
+    padding: 0px 0 8px 0;
+    border-bottom: 1px solid #555963;
 }
+
 .input-text-inner {
     width: 540px;
     /* width: auto; */
     display: inline-block;
-    border-bottom: 1px solid #555963;
+    /*border-bottom: 1px solid #555963;*/
     margin: 6px 35px 0 12px;
 
 }
