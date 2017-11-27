@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7b5c655e-f22d-4f2d-9739-be3b957e33b4" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cart.html" afterPath="$PROJECT_DIR$/cart.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/formcart.js" afterPath="$PROJECT_DIR$/js/formcart.js" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/responsive.css" afterPath="$PROJECT_DIR$/css/responsive.css" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -65,11 +63,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="responsive.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="responsive.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/responsive.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="407" column="23" lean-forward="true" selection-start-line="407" selection-start-column="23" selection-end-line="407" selection-end-column="23" />
+            <state relative-caret-position="119">
+              <caret line="77" column="25" lean-forward="false" selection-start-line="77" selection-start-column="25" selection-end-line="77" selection-end-column="25" />
               <folding>
                 <element signature="e#137#265#0" expanded="false" />
                 <element signature="e#402#525#0" expanded="false" />
@@ -90,7 +88,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="formcart.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="formcart.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/formcart.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="637">
@@ -178,11 +176,11 @@
         <option value="$PROJECT_DIR$/formcalc.html" />
         <option value="$PROJECT_DIR$/js/formcalc — копия.js" />
         <option value="$PROJECT_DIR$/js/formcalc.js" />
-        <option value="$PROJECT_DIR$/css/responsive.css" />
         <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/cart.html" />
         <option value="$PROJECT_DIR$/js/formcart.js" />
+        <option value="$PROJECT_DIR$/css/responsive.css" />
       </list>
     </option>
   </component>
@@ -425,12 +423,12 @@
       <workItem from="1511650884013" duration="13000" />
       <workItem from="1511650959785" duration="338000" />
       <workItem from="1511689424896" duration="16824000" />
-      <workItem from="1511779101856" duration="6481000" />
+      <workItem from="1511779101856" duration="7115000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="514404000" />
+    <option name="totallyTimeSpent" value="515038000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="70" y="6" width="1460" height="860" extended-state="1" />
@@ -695,19 +693,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/formcalc — копия.js" />
     <entry file="file://$PROJECT_DIR$/formcalc — копия.html" />
-    <entry file="file://$PROJECT_DIR$/css/responsive.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="407" column="23" lean-forward="true" selection-start-line="407" selection-start-column="23" selection-end-line="407" selection-end-column="23" />
-          <folding>
-            <element signature="e#137#265#0" expanded="false" />
-            <element signature="e#402#525#0" expanded="false" />
-            <element signature="e#530#711#0" expanded="false" />
-            <element signature="e#716#903#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
@@ -742,14 +727,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cart2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="255" column="39" lean-forward="false" selection-start-line="255" selection-start-column="39" selection-end-line="255" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-3400">
@@ -773,6 +750,27 @@
         <state relative-caret-position="637">
           <caret line="127" column="108" lean-forward="true" selection-start-line="127" selection-start-column="108" selection-end-line="127" selection-end-column="108" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cart2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="506">
+          <caret line="255" column="39" lean-forward="false" selection-start-line="255" selection-start-column="39" selection-end-line="255" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/responsive.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="77" column="25" lean-forward="false" selection-start-line="77" selection-start-column="25" selection-end-line="77" selection-end-column="25" />
+          <folding>
+            <element signature="e#137#265#0" expanded="false" />
+            <element signature="e#402#525#0" expanded="false" />
+            <element signature="e#530#711#0" expanded="false" />
+            <element signature="e#716#903#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -75,6 +75,7 @@
         }
         #wrap-login .transp-back-wrap-login {
             width: 287px;
+            height: auto;
             margin-top: -60px;
             margin-left: -50px;
         }
