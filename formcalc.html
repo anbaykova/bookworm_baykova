@@ -72,16 +72,22 @@
             <div class="calc-dirty container">
                 <h3>Степень загрязнения</h3>
                 <div class="block-bed">
-                    <input type="radio" id="dirty-1" value="1" name="dirty" data-rate="0.75" >
-                    <label for="dirty-1">Н</label>
+                    <div class="block-bed-label">
+                        <input type="radio" id="dirty-1" value="1" name="dirty" data-rate="0.75" >
+                        <label for="dirty-1">Низкая</label>
+                    </div>
                 </div>
                 <div class="block-bed">
-                    <input type="radio" id="dirty-2" value="2" name="dirty" data-rate="1">
-                    <label for="dirty-2">С</label>
+                    <div class="block-bed-label">
+                        <input type="radio" id="dirty-2" value="2" name="dirty" data-rate="1">
+                        <label for="dirty-2">Средняя</label>
+                    </div>
                 </div>
                 <div class="block-bed">
-                    <input type="radio" id="dirty-3" value="3" name="dirty">
-                    <label for="dirty-3">В</label>
+                    <div class="block-bed-label">
+                        <input type="radio" id="dirty-3" value="3" name="dirty" data-rate="1.55">
+                        <label for="dirty-3">Высокая</label>
+                    </div>
                 </div>
             </div>
             <div class="clearfix"></div>
@@ -89,19 +95,21 @@
                 <h3>Тип чистки</h3>
                 <div class="block-bed">
                     <input type="radio" id="clean-1" value="1" name="clean" data-price="33" data-time-bed="20" data-time-bath="40">
-                    <label for="clean-1">Пер</label>
+                    <label for="clean-1">Периодическая</label>
                 </div>
                 <div class="block-bed">
                     <input type="radio" id="clean-2" value="2" name="clean"  data-price="40" data-time-bed="45" data-time-bath="85">
-                    <label for="clean-2">Ед</label>
+                    <label for="clean-2">Единоразовая</label>
                 </div>
                 <div class="block-bed">
                     <input type="radio" id="clean-3" value="3" name="clean" data-price="40" data-time-bed="70" data-time-bath="130">
-                    <label for="clean-3">К ар</label>
+                    <label for="clean-3">Конец аренды</label>
                 </div>
             </div>
             <div class="clearfix"></div>
-            <div id="time" class="container">Оценка стоимости</div>
+            <div class="container"> <p>Оценка стоимости</p></div>
+            <div id="time" class="container">Количество часов</div>
+
             <div id="cost" class="container"> за чистку </div>
             <div class="container">
                 <input type="submit">

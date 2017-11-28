@@ -3,8 +3,46 @@ var calcForm = document.getElementById("form-calc");
 
 calcForm.addEventListener("submit", function (event) {
     event.preventDefault();
-    console.log("вася");
+    console.log("форма отработала");
+    calculate();
 });
+function calculate () {
+    var bedroom = calcForm.querySelector('[name="bed-rooms"]:checked').value;
+    console.log(bedroom);
+    var bath = calcForm.querySelector('[name=bath-rooms]:checked').value;
+    console.log(bath);
+    var dirty = calcForm.querySelector('[name=dirty]:checked').dataset.rate;
+    console.log(dirty);
+    var typeClean = calcForm.querySelector('[name=clean]:checked').dataset.price;
+    console.log(typeClean);
+    // var typeClean = calcForm.querySelector('[name=clean]:checked').dataset.price.dataset.time.bed.dataset.time.bath;
+    var result = dirty*(bedroom + bath);
+    document.getElementById('time').innerHTML = result;
+}
+
+// function calculate() {
+//     var bedroom, bath, dirtlvl, cleantype, result;
+//     bedroom = document.getElementsByName('bed-rooms');
+//     for (var i=0;i<bedroom.length; i++) {
+//         if (bedroom[i].checked) {
+//             bedroom =bedroom[i].value ;
+//         }
+//     }
+//     bath = document.getElementsByName('bath-rooms');
+//     for (var i=0;i<bath.length; i++) {
+//         if (bath[i].checked) {
+//             bath=bath[i].value;
+//         }
+//     }
+//     dirtlvl = document.getElementsByName('dirty');
+//     for (var i=0;i<dirtlvl.length; i++) {
+//         if (dirtlvl[i].checked) {
+//             dirtlvl=dirtlvl[i].value;
+//             console.log(dirtlvl);
+//         }
+//     }
+
+
 
 // var bedRooms = document.get('name')
 // function calcForm() {
