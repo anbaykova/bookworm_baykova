@@ -13,14 +13,22 @@ function calculate () {
     console.log(bath);
     var dirty = calcForm.querySelector('[name=dirty]:checked').dataset.rate;
     console.log(dirty);
-    var typeClean = calcForm.querySelector('[name=clean]:checked').dataset.price;
-    console.log(typeClean);
-    // var typeClean = calcForm.querySelector('[name=clean]:checked').dataset.price.dataset.time.bed.dataset.time.bath;
-    var result = dirty*(bedroom + bath);
-    document.getElementById('time').innerHTML = result;
-    var cost = result*typeCleant;
+    var price = calcForm.querySelector('[name=clean]:checked').dataset.price;
+    console.log(price);
+    var timeRoom = calcForm.querySelector('[name=clean]:checked').dataset.timeBed;
+    console.log(timeRoom);
+    var timeBath = calcForm.querySelector('[name=clean]:checked').dataset.timeBath;
+    console.log(timeBath);
+    var result = (bedroom * timeRoom) + (timeBath * bath) * dirty;
+    var time = result/60;
+    document.getElementById('time').innerHTML = time;
+    var cost = (result/60)*price;
     document.getElementById('cost').innerHTML = cost;
 }
+
+// function calcPrime (room, bath, dirty, timeRoom, timeBath) {
+//     return (bedroom + timeRoom) + (timeBath * bath) * dirty;
+// }
 
 // function calculate() {
 //     var bedroom, bath, dirtlvl, cleantype, result;

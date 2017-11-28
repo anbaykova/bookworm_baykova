@@ -6,7 +6,9 @@ var popup = document.getElementById("wrap-login");
 console.log(close);
 
 if (open !== null) {
+
     open.addEventListener("click", function (event) {
+        event.preventDefault();
         popup.classList.toggle("open");
         // document.body.setAttribute("style", "overflow: hidden;");
 

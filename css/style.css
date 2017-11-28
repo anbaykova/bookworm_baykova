@@ -2038,7 +2038,7 @@ position: absolute;
     position: absolute;
     opacity: 0;
     visibility: hidden;
-    top: 300px;
+    top: 150px;
     left: 50%;
     transform: translate(-50%);
 }
@@ -3091,7 +3091,7 @@ article-block .article-block-text {
 }
 .block-bed {
     padding: 0 0 0 0;
-    border: 1px solid blueviolet;
+    /*border: 1px solid blueviolet;*/
     float: left;
     margin: 0 0 0 0;
     border-radius: 10px;

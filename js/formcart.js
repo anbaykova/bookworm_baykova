@@ -109,7 +109,7 @@ function validateEmail(email) {
 }
 
 function validPhone(phone) {
-    var re = /^\d[\d\(\)\ -]{4,14}\d$/;
+    var re = /^\d[\d\(\)\ -]{10,13}\d$/;
     console.log(re.test(phone));
     var myPhone = document.getElementById("phone");
     // return re.test(myPhone);
