@@ -18,6 +18,8 @@ function calculate () {
     // var typeClean = calcForm.querySelector('[name=clean]:checked').dataset.price.dataset.time.bed.dataset.time.bath;
     var result = dirty*(bedroom + bath);
     document.getElementById('time').innerHTML = result;
+    var cost = result*typeCleant;
+    document.getElementById('cost').innerHTML = cost;
 }
 
 // function calculate() {

@@ -24,6 +24,9 @@ body .scroll {
 .padding_0 {
     padding: 0 !important;
 }
+.pd-left {
+    padding-left: 10px;
+}
 .container  {
     max-width: 1210px;
     margin: 0 auto;
@@ -1134,7 +1137,7 @@ background-color: #f2fdff;;
 }
 
 .shipping-inner {
-    width: 170px;
+    width: 180px;
     float: left;
 }
 
@@ -1201,7 +1204,17 @@ background-color: #f2fdff;;
 #gen-woman + label {
     padding: 0 0 0 27px;
 }
-
+.ups-saver {
+    float: left;
+}
+#ups-saver-left {
+    padding-left: 10px;
+    float: left;
+}
+#ups-saver-right {
+    padding-left: 10px;
+    float: left;
+}
 .checkbox-design input + label::before {
     content: '';
     position: absolute;
@@ -1459,8 +1472,8 @@ position: absolute;
 .shipping_left {
     font-family: 'Lato', sans-serif;
     font-size: 16px;
-    padding-top: 65px;
-    width: 50%;
+    padding-top: 31px;
+    width: 80%;
     float: left;
     color: #45474b;
 }
@@ -1471,7 +1484,7 @@ position: absolute;
 
 .shipping_right {
     text-align: right;
-    width: 50%;
+    width: 20%;
     float: right;
 }
 .cart-wrap {
@@ -1486,7 +1499,7 @@ position: absolute;
 
 
 .payment-method {
-    margin-top: 65px;
+    margin-top: 4px;
 }
 .payment {
     width: 100%;
