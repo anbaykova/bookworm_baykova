@@ -7,69 +7,70 @@
     <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
-    <div >
+<div class="inner-formcalc container">
+    <div class="inner-form">
         <form action="" id="form-calc">
             <div class="calc-rooms">
-                <div class="inner-rooms container">
+                <div class="inner-rooms ">
                     <h3>Количество спален</h3>
                     <div class="block-bed">
-                        <input type="radio" id="bed-1" value="1" name="bed-rooms" >
+                        <input class="check-room" type="radio" id="bed-1" value="1" name="bed-rooms" >
                         <label for="bed-1"></label>
                     </div>
                     <div class="block-bed">
-                        <input type="radio" id="bed-2" value="2" name="bed-rooms">
+                        <input class="check-room" type="radio" id="bed-2" value="2" name="bed-rooms">
                         <label for="bed-2"></label>
                     </div>
                     <div class="block-bed">
-                        <input type="radio" id="bed-3" value="3" name="bed-rooms">
+                        <input class="check-room" type="radio" id="bed-3" value="3" name="bed-rooms">
                         <label for="bed-3"></label>
                     </div>
                     <div class="block-bed">
-                        <input type="radio" id="bed-4" value="4" name="bed-rooms" >
+                        <input class="check-room" type="radio" id="bed-4" value="4" name="bed-rooms" >
                         <label for="bed-4"></label>
                     </div>
                     <div class="block-bed">
-                        <input type="radio" id="bed-5" value="5" name="bed-rooms">
+                        <input class="check-room" type="radio" id="bed-5" value="5" name="bed-rooms">
                         <label for="bed-5"></label>
                     </div>
                     <div class="block-bed">
-                        <input type="radio" id="bed-6" value="6" name="bed-rooms">
+                        <input class="check-room" type="radio" id="bed-6" value="6" name="bed-rooms">
                         <label for="bed-6"></label>
                     </div>
                 </div>
             </div>
             <div class="clearfix"></div>
             <div class="calc-rooms">
-                <div class="inner-bathrooms container">
+                <div class="inner-bathrooms ">
                     <h3>Количество ванных комнат</h3>
                     <div class="block-bed">
-                        <input type="radio" id="bath-1" value="1" name="bath-rooms">
+                        <input class="check-room" type="radio" id="bath-1" value="1" name="bath-rooms">
                         <label for="bath-1"></label>
                     </div>
                     <div class="block-bed">
-                        <input type="radio" id="bath-2" value="2" name="bath-rooms">
+                        <input class="check-room" type="radio" id="bath-2" value="2" name="bath-rooms">
                         <label for="bath-2"></label>
                     </div>
                     <div class="block-bed">
-                        <input type="radio" id="bath-3" value="3" name="bath-rooms">
+                        <input class="check-room" type="radio" id="bath-3" value="3" name="bath-rooms">
                         <label for="bath-3"></label>
                     </div>
                     <div class="block-bed">
-                        <input type="radio" id="bath-4" value="4" name="bath-rooms">
+                        <input class="check-room" type="radio" id="bath-4" value="4" name="bath-rooms">
                         <label for="bath-4"></label>
                     </div>
                     <div class="block-bed">
-                        <input type="radio" id="bath-5" value="5" name="bath-rooms">
+                        <input class="check-room" type="radio" id="bath-5" value="5" name="bath-rooms">
                         <label for="bath-5"></label>
                     </div>
                     <div class="block-bed">
-                        <input type="radio" id="bath-6" value="6" name="bath-rooms">
+                        <input class="check-room" type="radio" id="bath-6" value="6" name="bath-rooms">
                         <label for="bath-6"></label>
                     </div>
                 </div>
             </div>
             <div class="clearfix"></div>
-            <div class="calc-dirty container">
+            <div class="calc-dirty ">
                 <h3>Степень загрязнения</h3>
                 <div class="block-bed">
                     <div class="block-bed-label">
@@ -91,7 +92,7 @@
                 </div>
             </div>
             <div class="clearfix"></div>
-            <div class="calc-clean container">
+            <div class="calc-clean ">
                 <h3>Тип чистки</h3>
                 <div class="block-bed">
                     <input type="radio" id="clean-1" value="1" name="clean" data-price="33" data-time-bed="20" data-time-bath="40">
@@ -107,16 +108,19 @@
                 </div>
             </div>
             <div class="clearfix"></div>
-            <div class="container"> <p>Оценка стоимости</p></div>
-            <div id="time" class="container">Количество часов</div>
-
-            <div id="cost" class="container"> за чистку </div>
+    </div>
+    <div class="inner-result">
+            <div class="result-price container"> <h1>Оценка стоимости</h1></div>
+            <div id="time" class="container">0 часов</div>
+            <div class="price-off"> Цена за чистку</div>
+            <div id="cost" class="container"> $ 0  </div>
             <div class="container">
                 <input type="submit">
             </div>
 
         </form>
     </div>
+</div>
     <script src="js/formcalc.js"></script>
 </body>
 </html>

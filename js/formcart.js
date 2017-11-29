@@ -22,13 +22,13 @@ function valideteForm(event) {
     requiredFields.forEach(function (element) {
         if (element.value.length === 0) {
             element.parentNode.classList.add('has-error');
-            element.parentNode.getElementsByClassName("input-text-error")[0].style.display = 'block';
+            // element.parentNode.getElementsByClassName("input-text-error")[0].style.display = 'block';
             // console.log(element);
         }
         else {
             element.parentNode.classList.remove('has-error');
             element.parentNode.classList.add('has-success');
-            element.parentNode.getElementsByClassName("input-text-error")[0].style.display = 'block';
+            // element.parentNode.getElementsByClassName("input-text-error")[0].style.display = 'block';
             element.parentNode.getElementsByClassName("input-text-error")[0].innerText = 'OK';
         }
     });
@@ -47,37 +47,37 @@ function checkZip() {
     if(zip.value.length === 0) {
         message = "Field Zip/Postal can not be blank";
         console.log(message);
-        zip.style.borderBottom = '1px solid #555963';
-        zip.style.color = '#959ba1';
+        // zip.style.borderBottom = '1px solid #555963';
+        // zip.style.color = '#959ba1';
         zip.parentNode.classList.remove('has-success');
         zip.parentNode.classList.add('has-error');
-        zip.parentNode.getElementsByClassName("input-text-error")[0].style.display = 'block';
+        // zip.parentNode.getElementsByClassName("input-text-error")[0].style.display = 'block';
         parent.querySelector('span').innerText = message;
     } else if (zip.value.length < 5) {
         message = "Zip length too small";
-        zip.style.borderBottom = '1px solid #555963';
-        zip.style.color = '#959ba1';
+        // zip.style.borderBottom = '1px solid #555963';
+        // zip.style.color = '#959ba1';
         zip.parentNode.classList.remove('has-success');
         zip.parentNode.classList.add('has-error');
-        zip.parentNode.getElementsByClassName("input-text-error")[0].style.display = 'block';
+        // zip.parentNode.getElementsByClassName("input-text-error")[0].style.display = 'block';
         zip.parentNode.getElementsByClassName("input-text-error")[0].innerText =message ;
         // console.log(parent);
         // console.log(parent.querySelectorAll('span'));
     } else if (zip.value.length > 10) {
         message = "Zip length too large";
-        zip.style.borderBottom = '1px solid #555963';
-        zip.style.color = '#959ba1';
+        // zip.style.borderBottom = '1px solid #555963';
+        // zip.style.color = '#959ba1';
         zip.parentNode.classList.remove('has-success');
         zip.parentNode.classList.add('has-error');
-        zip.parentNode.getElementsByClassName("input-text-error")[0].style.display = 'block';
+        // zip.parentNode.getElementsByClassName("input-text-error")[0].style.display = 'block';
         zip.parentNode.getElementsByClassName("input-text-error")[0].innerText =message ;
         parent.querySelector('span').innerText = message;
     } else {
         zip.parentNode.classList.remove('has-error');
         zip.parentNode.classList.add('has-success');
-        zip.style.borderBottom = '1px solid green';
-        zip.style.color = 'green';
-        zip.parentNode.getElementsByClassName("input-text-error")[0].style.display = 'none';
+        // zip.style.borderBottom = '1px solid green';
+        // zip.style.color = 'green';
+        // zip.parentNode.getElementsByClassName("input-text-error")[0].style.display = 'none';
         // zip.parentNode.getElementsByClassName("input-text-error")[0].innerText ="Ok" ;
     }
     if (zip.value.match('[A-Z,a-z, ]*')[0] === "") {
