@@ -603,7 +603,7 @@ a:focus {
     top: 165px;
     left: 259px;
     position: absolute;
-    width: 55%;
+    width: 53%;
     text-align: center;
     margin: 0 auto;
     padding: 50px 0 185px 0;
@@ -621,17 +621,20 @@ a:focus {
 .literature_writes {
     padding: 45px 20px 20px 20px;
     width: 100%;
-
+}
+.literature {
+    padding-top: 75px;
+    padding-bottom: 100px;
 }
 .literature_books {
-    padding-top: 75px;
+
 }
 .literature_books p {
     text-align: center;
 }
 .literature_news {
     width: 100%;
-    height: 670px;
+    /*height: 670px;*/
     margin: 80px auto;
     /*width: calc(100% - 33px);*/
 }
@@ -1102,7 +1105,7 @@ h2 {
     position: relative;
     height: 908px;
     background: url("../img/allbooks.png");
-    width: 1134px;
+    max-width: 1134px;
     background-repeat: no-repeat;
 }
 
@@ -1127,6 +1130,7 @@ h2 {
 }
 
 .popular-book-text {
+    text-align: left;
     margin-top: 282px;
 }
 

@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7b5c655e-f22d-4f2d-9739-be3b957e33b4" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/responsive.css" afterPath="$PROJECT_DIR$/css/responsive.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
     </list>
@@ -19,12 +20,24 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="139">
-              <caret line="1133" column="22" lean-forward="false" selection-start-line="1133" selection-start-column="22" selection-end-line="1133" selection-end-column="22" />
+            <state relative-caret-position="207">
+              <caret line="1136" column="11" lean-forward="false" selection-start-line="1136" selection-start-column="0" selection-end-line="1136" selection-end-column="11" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="responsive.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/css/responsive.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="224">
+              <caret line="553" column="21" lean-forward="false" selection-start-line="553" selection-start-column="21" selection-end-line="553" selection-end-column="21" />
+              <folding>
+                <element signature="e#996#9469#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -32,8 +45,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
-              <caret line="575" column="35" lean-forward="false" selection-start-line="575" selection-start-column="35" selection-end-line="575" selection-end-column="35" />
+            <state relative-caret-position="190">
+              <caret line="453" column="43" lean-forward="false" selection-start-line="453" selection-start-column="33" selection-end-line="453" selection-end-column="43" />
               <folding />
             </state>
           </provider>
@@ -92,14 +105,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>.book-item:nth-child(n+2):nth-child(-n+5)</find>
-      <find>.books</find>
-      <find>shopfrontmenuleft</find>
-      <find>.fontcaption_text</find>
-      <find>fontcaption_text</find>
-      <find>.fontcaption_text::before</find>
-      <find>inner-boo</find>
-      <find>bookmark</find>
       <find>list_book</find>
       <find>.list_book a</find>
       <find>writer</find>
@@ -108,7 +113,6 @@
       <find>.writer_page im</find>
       <find>bookma</find>
       <find>block_news</find>
-      <find>.block_news</find>
       <find>block-literature</find>
       <find>img-literature</find>
       <find>literature_news</find>
@@ -121,7 +125,16 @@
       <find>discount</find>
       <find>about_discounts</find>
       <find>.background_books</find>
+      <find>.description</find>
       <find>background_books</find>
+      <find>.shopfrontmenu</find>
+      <find>literature_books</find>
+      <find>.literature_news_autor</find>
+      <find>.literature_news</find>
+      <find>.block_news</find>
+      <find>.discount</find>
+      <find>.presentation_text</find>
+      <find>.publishers</find>
     </findStrings>
     <replaceStrings>
       <replace>45</replace>
@@ -153,7 +166,6 @@
         <option value="$PROJECT_DIR$/test.html" />
         <option value="$PROJECT_DIR$/article.html" />
         <option value="$PROJECT_DIR$/js/formcalc — копия.js" />
-        <option value="$PROJECT_DIR$/css/responsive.css" />
         <option value="$PROJECT_DIR$/js/popup.js" />
         <option value="$PROJECT_DIR$/cart.html" />
         <option value="$PROJECT_DIR$/js/formcart.js" />
@@ -162,6 +174,7 @@
         <option value="$PROJECT_DIR$/js/formcalc.js" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/css/style.css" />
+        <option value="$PROJECT_DIR$/css/responsive.css" />
       </list>
     </option>
   </component>
@@ -428,12 +441,12 @@
       <workItem from="1512028851488" duration="14992000" />
       <workItem from="1512052411403" duration="1072000" />
       <workItem from="1512053554898" duration="1944000" />
-      <workItem from="1512062599622" duration="3413000" />
+      <workItem from="1512062599622" duration="7482000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="568278000" />
+    <option name="totallyTimeSpent" value="572347000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="189" y="69" width="1352" height="835" extended-state="0" />
@@ -705,13 +718,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/responsive.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="77" column="25" lean-forward="false" selection-start-line="77" selection-start-column="25" selection-end-line="77" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cart.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -753,17 +759,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="575" column="35" lean-forward="false" selection-start-line="575" selection-start-column="35" selection-end-line="575" selection-end-column="35" />
+        <state relative-caret-position="190">
+          <caret line="453" column="43" lean-forward="false" selection-start-line="453" selection-start-column="33" selection-end-line="453" selection-end-column="43" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="139">
-          <caret line="1133" column="22" lean-forward="false" selection-start-line="1133" selection-start-column="22" selection-end-line="1133" selection-end-column="22" />
+        <state relative-caret-position="207">
+          <caret line="1136" column="11" lean-forward="false" selection-start-line="1136" selection-start-column="0" selection-end-line="1136" selection-end-column="11" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/responsive.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="553" column="21" lean-forward="false" selection-start-line="553" selection-start-column="21" selection-end-line="553" selection-end-column="21" />
+          <folding>
+            <element signature="e#996#9469#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
