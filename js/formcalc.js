@@ -24,7 +24,18 @@ function calculate () {
     document.getElementById('time').innerHTML = time;
     var cost = (result/60)*price;
     document.getElementById('cost').innerHTML = cost;
+
+    if (bedroom=="" || bedroom==null, bath=="" || bath==null, dirtlvl=="" || dirtlvl==null){
+        alert('не все поля отмечены');
+        return false;
+    } else () {
+        alert('поля заполнены');
+    }
 }
+
+//empty fields
+
+
 
 // function calcPrime (room, bath, dirty, timeRoom, timeBath) {
 //     return (bedroom + timeRoom) + (timeBath * bath) * dirty;
