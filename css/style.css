@@ -589,12 +589,20 @@ a:focus {
 .button {
     text-align: center;
 }
+.about_discounts p{
+    padding: 50px 0;
+}
 .discount_procent {
-    padding: 20px 20px 83px 20px;
+    border-bottom: 1px solid #e5e6e7;
+    padding: 10px 20px 45px 20px;
     margin: 0 auto;
     width: 70%;
+    border-top: 1px solid #e5e6e7;
 }
 .discount {
+    top: 165px;
+    left: 259px;
+    position: absolute;
     width: 55%;
     text-align: center;
     margin: 0 auto;
@@ -1051,8 +1059,16 @@ h2 {
     height: 513px;
     position: absolute;
     top: 75px;
-    left: 728px;
+    left: 700px;
 
+}
+.release-of-date {
+    background: url("../img/date-release.png");
+    width: 78px;
+    height: 116px;
+    position: absolute;
+    top: 50px;
+    left: -341px;
 }
 .slide_block1 {
     position: relative;
@@ -1067,6 +1083,7 @@ h2 {
     float: left;
 }
 .slide_block3 {
+    position: relative;
     padding-top: 135px;
     background-color: #f7fdff;
     width: 32%;
@@ -1082,11 +1099,11 @@ h2 {
 }
 
 .background_books {
-    /* background-image: url("../img/Bitmap.png");
-    background-repeat: repeat;
-    height: 750px;*/
-    padding: 200px 0;
-    background-color: #da8913;
+    position: relative;
+    height: 908px;
+    background: url("../img/allbooks.png");
+    width: 1134px;
+    background-repeat: no-repeat;
 }
 
 .clearfix {
@@ -1114,14 +1131,14 @@ h2 {
 }
 
 .publishers {
-    max-height: 480px;
-    margin: 120px auto;
+    padding-top: 70px;
     width: 100%;
 }
 .description h1 {
     text-align: left;
 }
 .description {
+    padding-top: 50px;
     float: left;
     width: 30%;
 }
@@ -2664,7 +2681,7 @@ label, a{ /*при наведении на стрелки или переклю�
 .slider-popular-book { /*положение слайдера*/
     position: relative;
     text-align: center;
-    top: 70px;
+    padding-top: 100px;
     margin: 0 auto;
 }
 
