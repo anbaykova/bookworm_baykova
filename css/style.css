@@ -30,16 +30,19 @@ body .scroll {
     background-color: #ffbb58;
     width: 146px;
     height: 227px;
-    top: 42px;
-    left: 30px;
+    top: 28px;
+    left: -1px;
+}
+.inner-cover-img {
+    position: relative;
 }
 .oval {
     position: absolute;
     background: url("../img/icons_svg/ellipse2.png");
     width: 57px;
     height: 57px;
-    top: 72px;
-    left: 75px;
+    top: 30px;
+    left: -25px;
 }
 /*.oval::hover {*/
     /*color: #da8913;*/
@@ -54,8 +57,8 @@ body .scroll {
 }
 .oval-sm-left {
     position: absolute;
-    top: 142px;
-    left: 54px;
+    top: 103px;
+    left: -57px;
     background: url("../img/icons_svg/ellipse2copy.png");
     width: 41px;
     height: 41px;
@@ -70,8 +73,8 @@ body .scroll {
 }
 .oval-sm-right {
     position: absolute;
-    top: 141px;
-    left: 113px;
+    top: 103px;
+    left: 18px;
     background: url("../img/icons_svg/ellipse2copy.png");
     width: 41px;
     height: 41px;
@@ -102,8 +105,8 @@ body .scroll {
     height: 4px;
 }
 .img-text {
-    top: 221px;
-    left: 56px;
+    top: 182px;
+    left: -54px;
     position: absolute;
     color: #555963;
     font-family: 'Yrsa', serif;
@@ -350,6 +353,7 @@ a:focus {
     text-align: center;
     display: inline-block;
     padding-right: 38px;
+    padding-top: 28px;
 }
 
 
@@ -627,7 +631,7 @@ a:focus {
     width: 100%;
     box-sizing: border-box;
 }
-.literature_news ul li {
+.block-literature {
     padding-left: 11px;
     vertical-align: top;
     display: inline-block;
@@ -1018,7 +1022,7 @@ h2 {
 }
 
 .block_news {
-    padding-left: 55px;
+    padding-right: 55px;
     display: inline-block;
     width: 20%;
     float: left;
@@ -1041,8 +1045,17 @@ h2 {
     margin-top: 40px;
     margin-bottom: 172px;
 }
+.lili {
+    background: url("../img/lili.png");
+    width: 353px;
+    height: 513px;
+    position: absolute;
+    top: 75px;
+    left: 728px;
 
+}
 .slide_block1 {
+    position: relative;
     width: 68%;
     float: left;
 }
@@ -1054,6 +1067,7 @@ h2 {
     float: left;
 }
 .slide_block3 {
+    padding-top: 135px;
     background-color: #f7fdff;
     width: 32%;
     float: right;
