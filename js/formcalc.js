@@ -25,12 +25,12 @@ function calculate () {
     var cost = (result/60)*price;
     document.getElementById('cost').innerHTML = cost;
 
-    if (bedroom=="" || bedroom==null, bath=="" || bath==null, dirtlvl=="" || dirtlvl==null){
-        alert('не все поля отмечены');
-        return false;
-    } else () {
-        alert('поля заполнены');
-    }
+    // if (bedroom=="" || bedroom==null, bath=="" || bath==null, dirtlvl=="" || dirtlvl==null){
+    //     alert('не все поля отмечены');
+    //     return false;
+    // } else {
+    //     alert('поля заполнены');
+    // }
 }
 
 //empty fields

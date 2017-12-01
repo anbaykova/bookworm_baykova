@@ -21,6 +21,9 @@ body {
 body .scroll {
     overflow: hidden;
 }
+.relative {
+    position: relative;
+}
 .padding_0 {
     padding: 0 !important;
 }
@@ -180,18 +183,18 @@ body .scroll {
 }
 
 .menu_list li a {
+    position: relative;
     padding: 0 16px 0 30px;
 }
-.menu_list li a:hover:before {
-    bottom: 35px;
+.menu_list li a:hover:after {
+    bottom: -8px;
     position: absolute;
     content: '';
     width: 20px;
     height: 2px;
     background: #da8913;
-
+    left: 31px;
 }
-
 .menu_list {
     text-transform: uppercase;
     color: #45474b;
@@ -205,7 +208,15 @@ body .scroll {
     float: left;
     transition: color 0.5ms ease;
 }
-
+.menu_list.active {
+    display: block;
+}
+.menu_list.open {
+    display: block;
+}
+.info_boks.active {
+    display: block;
+}
 .search {
     background-image: url("../img/icons_svg/search.svg");
     width: 23px;
@@ -1191,9 +1202,10 @@ h2 {
     /*padding-top: 1%;*/
 }
 .footer_section_active {
-    width: 350px;
-    padding: 27px 11px 0 0;
+    max-width: 350px;
+    padding: 27px 11px -1px 0;
     float: right;
+    width: 50%;
 }
 .footer_section_active h2 {
     text-align: left;
@@ -1205,7 +1217,7 @@ background-color: #f2fdff;;
 
 .section_about_header {
     padding-top: 25px;
-    /*width: 47%;*/
+    width: 47%;
     max-width: 585px;
     float: left;
 }
@@ -1970,7 +1982,7 @@ position: absolute;
 .quantity-number input {
     border: none;
     background-color: #f5fdff;
-    width: 24px;
+    width: 30px;
     text-align: left;
     font-family: 'Yrsa', serif;
     font-size: 25px;
@@ -3335,4 +3347,96 @@ article-block .article-block-text {
 }
 .result-price h1 {
     text-align: left;
+}
+/*======= gamburger ========*/
+#mobile-menu-button {
+    cursor: pointer;
+    display: block;
+    width: 4em;
+    height: 4em;
+    position: absolute;
+    top: 0;
+    right: .1em;
+}
+#mobile-menu-button.change {
+    cursor: pointer;
+    display: block;
+    width: 4em;
+    height: 4em;
+    position: absolute;
+    top: 0;
+    right: .1em;
+}
+#mobile-menu-button.change a {
+    margin: 1em;
+    display: block;
+    position: relative;
+}
+#mobile-menu-button a {
+    margin: 1em;
+    display: block;
+    position: relative;
+}
+#mobile-menu-button a:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.25em;
+    width: 2em;
+    height: 0.35em;
+    background: #3a693f;
+    box-shadow: 0 0.6em 0 0 #3a693f, 0 1.2em 0 0 #3a693f;
+}
+#mobile-menu-button.active a:before {
+    background: #7bb640;
+    box-shadow: 0 0.6em 0 0 #7bb640, 0 1.2em 0 0 #7bb640;
+}
+.navigation {
+    display: none;
+}
+/*========*/
+.burger {
+    width: 31px;
+    height: 22px;
+    display: flex;
+    position: relative;
+    background: none;
+    border: none;
+    padding: 0;
+}
+
+.burger span,
+.burger:before,
+.burger:after {
+    display: block;
+    height: 3px;
+    background-color: #000;
+    width: 100%;
+    margin: auto;
+}
+
+.burger:before,
+.burger:after {
+    position: absolute;
+    top: 0;
+    content: '';
+    transform-origin: 50% 50%;
+}
+
+.burger:before {
+    top: calc(100% - 3px);
+}
+
+.burger.active span {
+    opacity: 0;
+}
+
+.burger.active:after {
+    transform: rotate(-45deg);
+    top: 9px;
+}
+
+.burger.active:before {
+    transform: rotate(45deg);
+    top: 9px;
 }
