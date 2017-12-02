@@ -27,4 +27,4 @@ if (open !== null) {
 //     $(this).toggleClass("active");
 //     $(".menu_list").toggleClass("open");
 // })
-// .style.transition = 'all 0.3s ease-in-out';
+// menuOpen.classList.toggle("active").style.transition = 'all 0.3s ease-in-out';

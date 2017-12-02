@@ -600,7 +600,7 @@ a:focus {
     padding-top: 40px;
     margin: 0 auto;
     float: left;
-    min-width: 650px;
+    width: 650px;
 }
 /* tr td {
     padding: 10px;
