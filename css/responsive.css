@@ -83,16 +83,15 @@
         }
     }
 
-    /*@media all and (max-width: 1350px){*/
-        /*.menu_list {*/
-            /*margin: 3% 1% 0 6%;*/
-        /*}*/
-    /*}*/
+
 
 
         /*======= article ============*/
 
     @media all and (max-width:767px) {
+        .container_wrap {
+           display: none;
+        }
         .social_icon ul li {
             padding: 25px 29px 0 0;
         }

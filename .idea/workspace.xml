@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7b5c655e-f22d-4f2d-9739-be3b957e33b4" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/responsive.css" afterPath="$PROJECT_DIR$/css/responsive.css" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -31,9 +32,11 @@
       <file leaf-file-name="responsive.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/responsive.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="23" lean-forward="true" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
-              <folding />
+            <state relative-caret-position="97">
+              <caret line="463" column="61" lean-forward="true" selection-start-line="463" selection-start-column="61" selection-end-line="463" selection-end-column="61" />
+              <folding>
+                <element signature="e#332#2170#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -51,8 +54,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
-              <caret line="48" column="14" lean-forward="true" selection-start-line="14" selection-start-column="8" selection-end-line="48" selection-end-column="14" />
+            <state relative-caret-position="161">
+              <caret line="531" column="34" lean-forward="false" selection-start-line="531" selection-start-column="20" selection-end-line="531" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -101,7 +104,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>about_discounts</find>
       <find>.background_books</find>
       <find>.description</find>
       <find>background_books</find>
@@ -131,6 +133,7 @@
       <find>inner-userpic</find>
       <find>info_boks</find>
       <find>burger</find>
+      <find>container_wrap</find>
     </findStrings>
     <replaceStrings>
       <replace>45</replace>
@@ -183,8 +186,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="464" />
-    <option name="y" value="146" />
+    <option name="x" value="467" />
+    <option name="y" value="117" />
     <option name="width" value="1107" />
     <option name="height" value="795" />
   </component>
@@ -442,15 +445,15 @@
       <workItem from="1512062599622" duration="10558000" />
       <workItem from="1512133379388" duration="742000" />
       <workItem from="1512140412949" duration="18927000" />
-      <workItem from="1512225973764" duration="12996000" />
+      <workItem from="1512225973764" duration="13283000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="608088000" />
+    <option name="totallyTimeSpent" value="608375000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="464" y="146" width="1107" height="795" extended-state="1" />
+    <frame x="467" y="117" width="1107" height="795" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14312442" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -743,8 +746,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="48" column="14" lean-forward="true" selection-start-line="14" selection-start-column="8" selection-end-line="48" selection-end-column="14" />
+        <state relative-caret-position="161">
+          <caret line="531" column="34" lean-forward="false" selection-start-line="531" selection-start-column="20" selection-end-line="531" selection-end-column="34" />
           <folding />
         </state>
       </provider>
@@ -759,9 +762,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/responsive.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="23" lean-forward="true" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
-          <folding />
+        <state relative-caret-position="97">
+          <caret line="463" column="61" lean-forward="true" selection-start-line="463" selection-start-column="61" selection-end-line="463" selection-end-column="61" />
+          <folding>
+            <element signature="e#332#2170#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
