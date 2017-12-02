@@ -34,11 +34,11 @@
             display: none;
             position: absolute;
             top: 100px;
-            left: 137px;
+            left: 138px;
             float: left;
             width: auto;
             background-color: white;
-            padding: 52px 20px 27px 16px;
+            padding: 52px 20px 38px 16px;
         }
         .info_boks li a {
             padding: 0 0 4px 0;
@@ -54,11 +54,11 @@
             display: none;
             background-color: white;
             top: 100px;
-            left: 211px;
+            left: 213px;
             margin: 0 auto;
             float: left;
-            padding: 52px 25px 47px 0;
-            /* border: 1px solid red; */
+            padding: 52px 25px 48px 0;
+            /*border: 1px solid red;*/
             position: absolute;
             font-family: 'Lato', sans-serif;
             font-size: 14px;
@@ -74,16 +74,40 @@
         }
     }
 
-    /*@media all and (max-width: 1350px){*/
-        /*.menu_list {*/
-            /*margin: 3% 1% 0 6%;*/
-        /*}*/
-    /*}*/
+    @media all and (min-width: 1286px) and (max-width: 1350px){
+        .menu_list {
+            margin: 3% 1% 0 6%;
+        }
+    }
+    @media all and (min-width: 1190px) and (max-width: 1285px){
+        .menu_list {
+            margin: 3% 0 0 0;
+        }
+    }
+
+    @media only screen and (max-width: 1310px) {
+        .container_wrap {
+            display: none;
+        }
+        .background_books {
+           margin-top: 55px;
+        }
+    }
+    @media only screen and (max-width: 992px) {
+        .slider-header-book {
+            display: none;
+        }
+        .presentation_books {
+            margin-top: 225px;
+        }
+    }
+
+    /*========= end menu_list ===========*/
 
 
         /*======= article ============*/
 
-    @media all and (max-width:767px) {
+    @media all and (min-width: 320px) and (max-width:767px) {
         .social_icon ul li {
             padding: 25px 29px 0 0;
         }
@@ -1077,25 +1101,3 @@
 
         /*}*/
 
-    /*@media all and (min-width: 1190px) and (max-width: 1285px){*/
-    /*.menu_list {*/
-    /*margin: 3% 0 0 0;*/
-    /*}*/
-    /*}*/
-
-    /*@media only screen and (max-width: 1310px) {*/
-    /*.container_wrap {*/
-    /*display: none;*/
-    /*}*/
-    /*.background_books {*/
-    /*margin-top: 55px;*/
-    /*}*/
-    /*}*/
-    /*@media only screen and (max-width: 992px) {*/
-    /*.slider-header-book {*/
-    /*display: none;*/
-    /*}*/
-    /*.presentation_books {*/
-    /*margin-top: 225px;*/
-    /*}*/
-    /*}*/

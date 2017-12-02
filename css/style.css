@@ -173,14 +173,13 @@ body .scroll {
     margin: 20px 0 0 35px;
     background-image: url("../img/Logo.png");
     width: 120px;
-    /*width: 100%;*/
     height: 56px;
-    /*height: auto;*/
     float: left;
     padding: 19px 60px 15px 35px;
     background-repeat: no-repeat;
 
 }
+
 
 .menu_list li a {
     position: relative;
@@ -206,17 +205,29 @@ body .scroll {
     margin-left: 10%;
     margin-right: 5%;
     float: left;
-    transition: color 0.5ms ease;
+    /*transition: all 0.3s ease-in-out;*/
+    /*transition: height 2s;*/
+    -webkit-transition:-webkit-transform 0.075s linear;
+
+
 }
 .menu_list.active {
     display: block;
+    /*height: 0;*/
+    -webkit-transition:-webkit-transform 0.075s linear;
+
 }
-.menu_list.open {
-    display: block;
-}
+/*.menu_list.open {*/
+    /*display: block;*/
+/*}*/
 .info_boks.active {
     display: block;
 }
+.menu-about.active {
+    display: block;
+    transition: all 300ms;
+}
+
 .search {
     background-image: url("../img/icons_svg/search.svg");
     width: 23px;
@@ -243,7 +254,13 @@ body .scroll {
 .info_boks li{
     padding: 9%;
    }
-
+.info_boks li a{
+    display: block;
+    padding: 0 0 0 0;
+}
+.menu-about {
+    display: none;
+}
 a:link {
     color: #555963;
     background-color: transparent;
@@ -2033,9 +2050,9 @@ position: absolute;
     visibility: visible;
     opacity: 1;
 }
-#inner-userpic img {
-    display: block;
-}
+/*#inner-userpic img {*/
+    /*display: block;*/
+/*}*/
 
 #login img {
 
@@ -3396,6 +3413,7 @@ article-block .article-block-text {
 }
 /*========*/
 .burger {
+    outline: none;
     width: 31px;
     height: 22px;
     display: flex;
