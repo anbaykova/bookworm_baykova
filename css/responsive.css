@@ -240,8 +240,7 @@
         }
         .partners_block li {
             text-align: center;
-            width: 100%;
-            margin: 0 15px;
+            width: 90%;
             display: inline-block;
         }
         .presentation_book {
@@ -342,7 +341,7 @@
         }
         .menu_futer {
             width: 83%;
-            padding-bottom: 50px;
+            padding-bottom: 60px;
         }
         .wrap-footer {
             /*height: 100%;*/
