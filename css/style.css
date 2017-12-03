@@ -380,8 +380,7 @@ a:focus {
     vertical-align: top;
     text-align: center;
     display: inline-block;
-    padding-right: 38px;
-    padding-top: 28px;
+    padding: 28px 19px 0 19px;
 }
 
 
@@ -598,7 +597,7 @@ a:focus {
 }
 .books {
     padding-top: 40px;
-    margin: 0 auto;
+    margin: 0 -19px;
     float: left;
     width: 100%;
 }
