@@ -21,10 +21,12 @@ function calculate () {
     console.log(timeBath);
     var result = Math.round((bedroom * timeRoom) + (timeBath * bath) * dirty);
     var time = Math.round(result)/60;
+    time = Math.round(time);
     document.getElementById('time').innerHTML = time;
     var cost = (result/60)*price;
+    cost = Math.round(cost);
     document.getElementById('cost').innerHTML = cost;
-    Math.round(time);
+
 
     // var inputs = document.getElementsByTagName('input');
     // var anyCheck = 0;
