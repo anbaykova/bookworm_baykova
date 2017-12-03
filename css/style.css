@@ -34,7 +34,7 @@ body .scroll {
     width: 146px;
     height: 227px;
     top: 28px;
-    left: -1px;
+    left: 19px;
 }
 .inner-cover-img {
     position: relative;
@@ -226,6 +226,17 @@ body .scroll {
 .menu-about.active {
     display: block;
     transition: all 300ms;
+}
+/*#menu-all {*/
+    /*position: absolute;*/
+    /*width: 740px;*/
+    /*height: auto;*/
+    /*top: 100px;*/
+    /*left: 50px;*/
+    /*z-index: 10000;*/
+/*}*/
+#menu-all.active {
+    display: block;
 }
 
 .search {
@@ -3305,65 +3316,7 @@ article-block .article-block-text {
     vertical-align: text-top;
 
 }
-.calc-rooms {
-    margin: 50px 0 0 0;
-}
-.block-bed {
-    padding: 0 0 0 0;
-    /*border: 1px solid blueviolet;*/
-    float: left;
-    margin: 0 0 0 0;
-    border-radius: 10px;
-}
-.inner-rooms h3 {
-    float: left;
-    margin: 15px 0 0 0;
-}
-.inner-bathrooms h3 {
-    float: left;
-    margin: 15px 0 0 0;
-}
-.calc-dirty h3 {
-    float: left;
-    margin: 15px 0 0 0 ;
-}
-.calc-clean h3 {
-    float: left;
-    margin: 15px 0 0 0;
-}
-.block-bed-label {
-    float: left;
-}
-.inner-formcalc {
-    width: 100%;
-    padding-top: 150px;
 
-}
-.inner-form {
-    width: 80%;
-    float: left;
-}
-.inner-result {
-    width: 20%;
-    float: right;
-}
-#time {
-    color: red;
-    width: 100%;
-    float: left;
-}
-.price-off {
-    width: 100%;
-    float: left;
-}
-#cost {
-    color: red;
-    width: 100%;
-    float: left;
-}
-.result-price h1 {
-    text-align: left;
-}
 /*======= gamburger ========*/
 #mobile-menu-button {
     cursor: pointer;
@@ -3456,7 +3409,4 @@ article-block .article-block-text {
 .burger.active:before {
     transform: rotate(45deg);
     top: 9px;
-}
-.style-block {
-
 }

@@ -19,11 +19,12 @@ function calculate () {
     console.log(timeRoom);
     var timeBath = calcForm.querySelector('[name=clean]:checked').dataset.timeBath;
     console.log(timeBath);
-    var result = (bedroom * timeRoom) + (timeBath * bath) * dirty;
-    var time = result/60;
+    var result = Math.round((bedroom * timeRoom) + (timeBath * bath) * dirty);
+    var time = Math.round(result)/60;
     document.getElementById('time').innerHTML = time;
     var cost = (result/60)*price;
     document.getElementById('cost').innerHTML = cost;
+    Math.round(time);
 
     // var inputs = document.getElementsByTagName('input');
     // var anyCheck = 0;
@@ -36,13 +37,13 @@ function calculate () {
 
 }
 
-if(calcForm !== null){
-    calcForm.addEventListener("submit", calculate)
-        }
-else {
-    calcForm.getElementsByClassName("error-calc")[0].innerText = "Cannot be blank";
-//     console.log(bedroom);
-}
+// if(calcForm !== null){
+//     calcForm.addEventListener("submit", calculate)
+//         }
+// else {
+//     calcForm.getElementsByClassName("error-calc")[0].innerText = "Cannot be blank";
+// //     console.log(bedroom);
+// }
 
 // function valideteCalc(event) {
 //     event.preventDefault();

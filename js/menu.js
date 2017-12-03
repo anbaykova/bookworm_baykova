@@ -8,18 +8,27 @@ var menuNav = document.getElementsByClassName("info_boks")[0];
 console.log(menuNav);
 var menuAbout = document.getElementsByClassName("menu-about")[0];
 console.log(menuAbout);
+var openMenu = document.getElementById('menu-all');
+console.log(openMenu);
 
 if (open !== null) {
     menuOpen.addEventListener("click", function (event) {
         event.preventDefault();
-        // menuFirst.classList.toggle("open");
+        menuOpen.classList.toggle("active")
+        // openMenu.classList.toggle("active");
         menuNav.classList.toggle("active");
         menuFirst.classList.toggle("active");
-        menuOpen.classList.toggle("active");
         menuAbout.classList.toggle("active");
         // sample.classList.toggle("active");
+        // menuFirst.classList.toggle("open");
     })
 }
+// function openNav() {
+//     document.getElementById('menu-all').style.width = "740px";
+// }
+// function closeNav() {
+//
+// }
 // menuburger.onclick = function () {
 //     sample.classList.toggle("active");
 // }
