@@ -25,13 +25,42 @@ function calculate () {
     var cost = (result/60)*price;
     document.getElementById('cost').innerHTML = cost;
 
-    // if (bedroom=="" || bedroom==null, bath=="" || bath==null, dirtlvl=="" || dirtlvl==null){
-    //     alert('не все поля отмечены');
-    //     return false;
-    // } else {
-    //     alert('поля заполнены');
+    // var inputs = document.getElementsByTagName('input');
+    // var anyCheck = 0;
+    // for (var i=0; i<inputs.length; i++)
+    // {
+    //     var inp = inputs[i];
+    //     if ('radio'==inp.type && inp.checked) { anyCheck=1; break; }
     // }
+    // alert(anyCheck ? 'Есть отмеченные' : 'Нет отмеченных');
+
 }
+
+if(calcForm !== null){
+    calcForm.addEventListener("submit", calculate)
+        }
+else {
+    calcForm.getElementsByClassName("error-calc")[0].innerText = "Cannot be blank";
+//     console.log(bedroom);
+}
+
+// function valideteCalc(event) {
+//     event.preventDefault();
+//     console.log('anna');
+//
+// }
+// if(bedroom == 0) {
+//     calcForm.getElementsByClassName("error-calc")[0].innerText ="E-mail cannot be blank";
+//     console.log(bedroom);
+// }else  {
+//     console.log('выполнено');
+// }
+// if (bedroom=="" || bedroom==null, bath=="" || bath==null, dirtlvl=="" || dirtlvl==null){
+//     alert('не все поля отмечены');
+//     return false;
+// } else {
+//     alert('поля заполнены');
+// }
 
 //empty fields
 

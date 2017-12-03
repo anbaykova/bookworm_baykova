@@ -600,7 +600,7 @@ a:focus {
     padding-top: 40px;
     margin: 0 auto;
     float: left;
-    width: 650px;
+    width: 100%;
 }
 /* tr td {
     padding: 10px;
@@ -3457,4 +3457,7 @@ article-block .article-block-text {
 .burger.active:before {
     transform: rotate(45deg);
     top: 9px;
+}
+.style-block {
+
 }
