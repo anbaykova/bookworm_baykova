@@ -3,9 +3,49 @@ var calcForm = document.getElementById("form-calc");
 
 calcForm.addEventListener("submit", function (event) {
     event.preventDefault();
+
+    var bedRooms = document.getElementsByName("bed-rooms");
+    var bathRooms = document.getElementsByName("bath-rooms");
+    var dirtyRooms = document.getElementsByName("dirty");
+    var cleanRooms = document.getElementsByName("clean");
+
+
+    if(checkRadioBtn(bedRooms) == false){
+        document.getElementById('error-calc').innerHTML = "Выберите количество спален комнат";
+        return false;
+    } else {
+        // document.getElementById('error-calc').innerHTML = "Количество спален выбрано";
+    }
+
+    if(checkRadioBtn(bathRooms) == false){
+        document.getElementById('error-calc').innerHTML = "Выберите количество ванных комнат";
+        return false;
+    }
+    if(checkRadioBtn(dirtyRooms) == false){
+        document.getElementById('error-calc').innerHTML = "Выберите степень загрязнения";
+        return false;
+    }
+    if(checkRadioBtn(cleanRooms) == false){
+        document.getElementById('error-calc').innerHTML = "Выберите тип очистки";
+        return false;
+    }
+    document.getElementById('error-calc').innerHTML = "";
     console.log("форма отработала");
     calculate();
 });
+
+function  checkRadioBtn(arrInp) {
+    var checkResult = false;
+    arrInp.forEach(function(item, index){
+        if(item.checked)
+        {
+            checkResult = true;
+        }
+    });
+
+    return checkResult;
+}
+
 function calculate () {
     var bedroom = calcForm.querySelector('[name="bed-rooms"]:checked').value;
     console.log(bedroom);
@@ -20,24 +60,27 @@ function calculate () {
     var timeBath = calcForm.querySelector('[name=clean]:checked').dataset.timeBath;
     console.log(timeBath);
     var result = Math.round((bedroom * timeRoom) + (timeBath * bath) * dirty);
-    var time = Math.round(result)/60;
+    var time = Math.round(result) / 60;
     time = Math.round(time);
     document.getElementById('time').innerHTML = time;
-    var cost = (result/60)*price;
+    var cost = (result / 60) * price;
     cost = Math.round(cost);
     document.getElementById('cost').innerHTML = cost;
 
 
-    // var inputs = document.getElementsByTagName('input');
-    // var anyCheck = 0;
-    // for (var i=0; i<inputs.length; i++)
-    // {
-    //     var inp = inputs[i];
-    //     if ('radio'==inp.type && inp.checked) { anyCheck=1; break; }
-    // }
-    // alert(anyCheck ? 'Есть отмеченные' : 'Нет отмеченных');
-
 }
+
+
+// var inputs = document.getElementsByTagName('input');
+// var anyCheck = 0;
+// for (var i=0; i<inputs.length; i++)
+// {
+//     var inp = inputs[i];
+//     if ("radio"==inp.type && inp.checked) { anyCheck=1; break; }
+// }
+// alert(anyCheck ? 'Есть отмеченные' : 'Нет отмеченных');
+// document.getElementById('error-calc').innerHTML = inp;
+
 
 // if(calcForm !== null){
 //     calcForm.addEventListener("submit", calculate)
