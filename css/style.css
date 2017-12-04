@@ -1897,7 +1897,8 @@ position: absolute;
     padding: 0 0 16px 0;
 }
 .input-text-inner textarea[placeholder] {
-    padding: 0px 0 8px 0;
+    max-width: 580px;
+    padding: 0 0 8px 0;
     border-bottom: 1px solid #555963;
 }
 
@@ -2291,7 +2292,7 @@ position: absolute;
     margin-top: -88px;
     margin-left: -67px;
     position: absolute;
-    opacity: 0.9;
+    opacity: 1;
     z-index: -1;
     box-shadow: 0 5px 7px #8F8C8D;
     background-color: white;
