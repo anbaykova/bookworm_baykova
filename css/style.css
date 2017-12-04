@@ -207,7 +207,7 @@ body .scroll {
     float: left;
     /*transition: all 0.3s ease-in-out;*/
     /*transition: height 2s;*/
-    -webkit-transition:-webkit-transform 0.075s linear;
+    /*-webkit-transition:-webkit-transform 0.075s linear;*/
 
 
 }
@@ -235,9 +235,7 @@ body .scroll {
     /*left: 50px;*/
     /*z-index: 10000;*/
 /*}*/
-#menu-all.active {
-    display: block;
-}
+
 
 .search {
     background-image: url("../img/icons_svg/search.svg");
