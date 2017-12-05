@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7b5c655e-f22d-4f2d-9739-be3b957e33b4" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cart2.html" afterPath="$PROJECT_DIR$/cart2.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/responsive.css" afterPath="$PROJECT_DIR$/css/responsive.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -20,21 +18,21 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="326">
-              <caret line="2018" column="21" lean-forward="false" selection-start-line="2018" selection-start-column="21" selection-end-line="2018" selection-end-column="21" />
+            <state relative-caret-position="224">
+              <caret line="2012" column="21" lean-forward="true" selection-start-line="2012" selection-start-column="21" selection-end-line="2012" selection-end-column="21" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="responsive.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="responsive.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/responsive.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="411">
-              <caret line="362" column="24" lean-forward="false" selection-start-line="362" selection-start-column="24" selection-end-line="362" selection-end-column="24" />
+            <state relative-caret-position="360">
+              <caret line="359" column="24" lean-forward="true" selection-start-line="359" selection-start-column="24" selection-end-line="359" selection-end-column="24" />
               <folding>
                 <element signature="e#13503#21171#0" expanded="false" />
               </folding>
@@ -133,8 +131,8 @@
       <find>field-zip</find>
       <find>has</find>
       <find>input-text-inner</find>
-      <find>1024</find>
       <find>id-product</find>
+      <find>1024</find>
     </findStrings>
     <replaceStrings>
       <replace>45</replace>
@@ -178,8 +176,8 @@
         <option value="$PROJECT_DIR$/css/formcalc.css" />
         <option value="$PROJECT_DIR$/js/formcart.js" />
         <option value="$PROJECT_DIR$/cart2.html" />
-        <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$PROJECT_DIR$/css/responsive.css" />
+        <option value="$PROJECT_DIR$/css/style.css" />
       </list>
     </option>
   </component>
@@ -455,12 +453,12 @@
       <workItem from="1512368077526" duration="470000" />
       <workItem from="1512387198280" duration="5995000" />
       <workItem from="1512465131558" duration="412000" />
-      <workItem from="1512468407784" duration="7332000" />
+      <workItem from="1512468407784" duration="7536000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="645726000" />
+    <option name="totallyTimeSpent" value="645930000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="330" y="48" width="1107" height="783" extended-state="0" />
@@ -775,21 +773,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="326">
-          <caret line="2018" column="21" lean-forward="false" selection-start-line="2018" selection-start-column="21" selection-end-line="2018" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/responsive.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="411">
-          <caret line="362" column="24" lean-forward="false" selection-start-line="362" selection-start-column="24" selection-end-line="362" selection-end-column="24" />
+        <state relative-caret-position="360">
+          <caret line="359" column="24" lean-forward="true" selection-start-line="359" selection-start-column="24" selection-end-line="359" selection-end-column="24" />
           <folding>
             <element signature="e#13503#21171#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="2012" column="21" lean-forward="true" selection-start-line="2012" selection-start-column="21" selection-end-line="2012" selection-end-column="21" />
+          <folding />
         </state>
       </provider>
     </entry>
