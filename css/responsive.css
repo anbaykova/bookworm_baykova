@@ -113,6 +113,9 @@
         /*======= article ============*/
 
     @media all and (max-width:767px) {
+        #id-product {
+            overflow: scroll;
+        }
         .leftpart {
             float: none;
             width: 100%;
@@ -572,6 +575,9 @@
 
     }
     @media all and (min-width: 768px) and (max-width:991px) {
+        #id-product {
+            overflow: scroll;
+        }
         .coupon-form {
             width: 100%;
             float: none;

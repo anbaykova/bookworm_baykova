@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7b5c655e-f22d-4f2d-9739-be3b957e33b4" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/responsive.css" afterPath="$PROJECT_DIR$/css/responsive.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -22,7 +23,17 @@
         <entry file="file://$PROJECT_DIR$/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="224">
-              <caret line="2012" column="21" lean-forward="true" selection-start-line="2012" selection-start-column="21" selection-end-line="2012" selection-end-column="21" />
+              <caret line="2012" column="18" lean-forward="false" selection-start-line="2012" selection-start-column="18" selection-end-line="2012" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="cart2.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/cart2.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -31,11 +42,9 @@
       <file leaf-file-name="responsive.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/responsive.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="359" column="24" lean-forward="true" selection-start-line="359" selection-start-column="24" selection-end-line="359" selection-end-column="24" />
-              <folding>
-                <element signature="e#13503#21171#0" expanded="false" />
-              </folding>
+            <state relative-caret-position="174">
+              <caret line="579" column="9" lean-forward="false" selection-start-line="579" selection-start-column="9" selection-end-line="579" selection-end-column="9" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -103,8 +112,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>1190</find>
-      <find>quantity-number</find>
       <find>nav</find>
       <find>menu_lis</find>
       <find>wra</find>
@@ -132,6 +139,8 @@
       <find>has</find>
       <find>input-text-inner</find>
       <find>id-product</find>
+      <find>.language</find>
+      <find>quantity-number</find>
       <find>1024</find>
     </findStrings>
     <replaceStrings>
@@ -188,8 +197,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="330" />
-    <option name="y" value="48" />
+    <option name="x" value="270" />
+    <option name="y" value="82" />
     <option name="width" value="1107" />
     <option name="height" value="783" />
   </component>
@@ -453,15 +462,15 @@
       <workItem from="1512368077526" duration="470000" />
       <workItem from="1512387198280" duration="5995000" />
       <workItem from="1512465131558" duration="412000" />
-      <workItem from="1512468407784" duration="7536000" />
+      <workItem from="1512468407784" duration="8369000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="645930000" />
+    <option name="totallyTimeSpent" value="646763000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="330" y="48" width="1107" height="783" extended-state="0" />
+    <frame x="270" y="82" width="1107" height="783" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14312442" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -680,13 +689,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/cart2.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="24" lean-forward="true" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/popup.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -773,20 +775,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/js/cart2.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/css/responsive.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="359" column="24" lean-forward="true" selection-start-line="359" selection-start-column="24" selection-end-line="359" selection-end-column="24" />
-          <folding>
-            <element signature="e#13503#21171#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="174">
+          <caret line="579" column="9" lean-forward="false" selection-start-line="579" selection-start-column="9" selection-end-line="579" selection-end-column="9" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="224">
-          <caret line="2012" column="21" lean-forward="true" selection-start-line="2012" selection-start-column="21" selection-end-line="2012" selection-end-column="21" />
+          <caret line="2012" column="18" lean-forward="false" selection-start-line="2012" selection-start-column="18" selection-end-line="2012" selection-end-column="18" />
           <folding />
         </state>
       </provider>

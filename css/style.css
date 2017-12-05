@@ -2002,7 +2002,7 @@ position: absolute;
     width: 20%;
 }
 .format {
-    width: 30%;
+    width: 25%;
 }
 .hardback {
     width: 15%;
@@ -2010,13 +2010,16 @@ position: absolute;
 
 .language {
     /*width: 15%;*/
-    min-width: 105px;
+    min-width: 130px;
 }
 .price {
-    width: 5%;
+    /*width: 5%;*/
 }
-#id-product {
-    overflow: scroll;
+/*#id-product {*/
+    /*overflow: scroll;*/
+/*}*/
+.quantity-number {
+    padding: 0;
 }
 .quantity-number input {
     border: none;
@@ -2040,7 +2043,7 @@ position: absolute;
     background-color: #f5fdff;
 }
 .tr-container td {
-    padding: 25px 0 0 25px;
+    padding: 25px 25px 25px 25px;
     border-bottom: 20px white solid;
 }
 
