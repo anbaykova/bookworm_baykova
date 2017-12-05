@@ -10,15 +10,19 @@ console.log(delOne);
 
 var functionDelOne  = function () {
     var currInp = this.nextElementSibling;
-    var res = currInp.value - 1;
-    currInp.value = res;
+    if (currInp.value > 0) {
+        var res = currInp.value - 1;
+        currInp.value = res;
+    }
 }
+
 var addOne = document.getElementsByClassName('add');
 
 var functionAddOne  = function () {
     var currInp = this.previousElementSibling;
     var res = parseInt(currInp.value, 10) + 1;
     currInp.value = res;
+
 }
 
 
