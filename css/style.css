@@ -2009,12 +2009,15 @@ position: absolute;
 }
 
 .language {
-    width: 15%;
+    /*width: 15%;*/
+    min-width: 90px;
 }
 .price {
     width: 5%;
 }
-
+#id-product {
+    overflow: scroll;
+}
 .quantity-number input {
     border: none;
     background-color: #f5fdff;

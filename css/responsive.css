@@ -22,6 +22,7 @@
             /*border: 1px solid red;*/
             position: relative;
 
+
         }
         .navigation {
             cursor: pointer;
@@ -95,8 +96,9 @@
             height: 231px;
         }
         #menu-all.active {
-            width:300px;
+            width:293px;
             transition: 0.6s;
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
         }
     }
 
@@ -354,6 +356,10 @@
             padding: 80px 0;
         }
         .coupon-wrap {
+            width: 100%;
+            float: none;
+        }
+        .proceed-payment {
             float: none;
         }
         .proceed-wrap {
