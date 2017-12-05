@@ -3,6 +3,7 @@
 var billingForm = document.getElementById("cart");
 var requiredFields = document.querySelectorAll("input[required], textarea[required]");
 console.log(requiredFields);
+var hasError = "has-error";
 
 // var validateEmail = document.getElementById("email");
 // var ValidPhone = document.getElementById('tel');
@@ -109,7 +110,7 @@ function validateEmail(email) {
 }
 
 function validPhone(phone) {
-    var re = /^\d[\d\(\)\ -]{10,13}\d$/;
+    var re = /^\+\d[\d\(\)\-]{10,13}\d$/;
     console.log(re.test(phone));
     var myPhone = document.getElementById("phone");
     // return re.test(myPhone);

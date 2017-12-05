@@ -144,3 +144,8 @@
     color: #774eb7;
     text-align: left;
 }
+#error-calc {
+    color: #982FDE;
+    /*font-family: 'Lato', sans-serif;*/
+    font-size: 15px;
+}
