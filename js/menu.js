@@ -11,6 +11,7 @@ console.log(menuAbout);
 var menu = document.getElementById('menu-all');
 console.log(menu);
 
+
 if (open !== null) {
     menuOpen.addEventListener("click", function (event) {
         event.preventDefault();
