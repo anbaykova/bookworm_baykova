@@ -46,6 +46,6 @@ gulp.task('watch', ['sass', 'scripts'], function () {
     gulp.watch('./sass/**/*.scss', ['sass']).on('change', browserSync.reload);
     gulp.watch('./scripts/**/*.js', ['scripts']).on('change', browserSync.reload);
     gulp.watch('./*.html').on('change', browserSync.reload);
-    
+
 
 })
