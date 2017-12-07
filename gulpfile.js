@@ -39,12 +39,13 @@ gulp.task('scripts', function () {
         .pipe(minify())
         .pipe(gulp.dest('build/js'))
 });
-gulp.task('watch', ['styles', 'scripts'], function () {
+gulp.task('watch', ['sass', 'scripts'], function () {
     browserSync.init({
         server: "./"
     });
-    gulp.watch('./styles/**/*.scss', ['scripts']);
-    gulp.watch('./scripts/**/*.js', ['scripts']);
+    gulp.watch('./sass/**/*.scss', ['sass']).on('change', browserSync.reload);
+    gulp.watch('./scripts/**/*.js', ['scripts']).on('change', browserSync.reload);
     gulp.watch('./*.html').on('change', browserSync.reload);
+    
 
 })
