@@ -863,7 +863,24 @@ function resultTotal() {
     var totalEnd = (number1 * cost1) + (number2 * cost2) + (number3 * cost3);
     console.log(totalEnd);
     document.getElementById('total').innerHTML = totalEnd;
+    document.getElementById('subtotal').innerHTML = totalEnd;
+
 }
+
+
+var removeBasket = document.getElementsByClassName('del-img');
+// console.log(removeBasket.length);
+for (var i = 0; i < removeBasket.length; i++) {
+    removeBasket[i].addEventListener("click", function (event) {
+        event.preventDefault();
+        this.parentNode.remove();
+    })
+}
+
+
+
+
+
 // var subtotal = document.getElementById('subtotal').value;
 // console.log(subtotal);
 // var total = document.getElementById('total').value;
