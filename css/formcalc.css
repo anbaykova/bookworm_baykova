@@ -1,4 +1,5 @@
-
+/* TODO: Много дублирующегося кода. Используй один класс для инпутов и один для лейблов.
+ * TODO: Псевдоселектор :not(checked) не нужен - это обычное состояние инпута  */
 .check-room:not(checked) {
     opacity: 0;
 }
@@ -63,6 +64,7 @@
     color: white;
     background-color: #774eb7;
 }
+/* TODO: Вместо разных margin стоит расположить заголовки и инпуты в две колонки */
 .form-margin {
     color: #774eb7;
     margin-left: 70px;
