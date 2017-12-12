@@ -70,6 +70,8 @@ function calculate () {
 
 }
 
+// TODO: 1. Функция подсчета стоимости должна только обсчитывать резкльтат. calculate(param1, param2, ...otherParams) { ... }
+// TODO: 2. Оптимизируй код таким образом, чтобы один раз получать выбранные инпуты. Если все выбраны - вызывать функцию calculate. Иначе - функцию вывода ошибок.
 
 // var inputs = document.getElementsByTagName('input');
 // var anyCheck = 0;

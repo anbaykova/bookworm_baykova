@@ -4,7 +4,7 @@ var close = document.getElementById("hide-popup");
 var popup = document.getElementById("wrap-login");
 
 console.log(close);
-
+// todo Страница скроллится при открытом всплывающем окне
 if (open !== null) {
 
     open.addEventListener("click", function (event) {
@@ -15,6 +15,7 @@ if (open !== null) {
         document.getElementsByClassName("inner-wrap-container")[0].style.display = 'block';
 
         document.body.classList.toggle("scroll");
+        // todo Не нужно никуда скролить страницу открывая попап. Контент должен оставаться на месте
         var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
         console.log(scrollTop);
         window.scrollTo(0,0);

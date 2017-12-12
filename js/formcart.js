@@ -16,7 +16,9 @@ billingForm.addEventListener("submit", function (event) {
 if(billingForm !== null){
     billingForm.addEventListener("submit", valideteForm);
 }
-
+// todo Не выводится текст ошибки для незаполненных полей.
+// todo Не корректный текст ошибки для поля phone. не понятно что пользователь делает не так.
+// todo Ломается верстка если выведены ошибки. Елементы прыгают когда выибираешь страну
 function valideteForm(event) {
     event.preventDefault();
     console.log("петя");
