@@ -40,7 +40,8 @@ for (var i = 0; i < addOne.length; i++) {
 
 
 
-
+// todo Решение не универсальное, не работает если добавить еще товары в корзину
+// todo Ошибка, если удалить существующий товар из козины
 function resultTotal() {
     var remove1 = document.getElementById('del1').value;
     console.log(remove1);
