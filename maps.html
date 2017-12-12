@@ -2,9 +2,180 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>maps</title>
+    <link href="https://fonts.googleapis.com/css?family=Amiri|Lato:400,700|Ramaraja|Rozha+One|PT+Serif|Work+Sans|Yrsa" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
-$END$
+<div class="inner-content">
+    <nav class="menu container">
+        <div class="menu_logo">
+        </div>
+        <div id="menu-all">
+            <ul class="menu_list">
+                <li><a href="#">Books</a></li>
+                <li><a href="#">Writers</a></li>
+                <li><a href="#">Publishers</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <ul class="info_boks ">
+                <li>
+                    <a href="" class="search"></a>
+                </li>
+                <li>
+                    <a href="" class="shoppingcart" ></a>
+                </li>
+                <li>
+                    <!--<div id="inner-userpic">-->
+                    <a href="#wrap-login" id="show-popup" class="show-button" ><img src="img/Userpic.png" alt="userpic" width="39" height="39"></a>
+                    <!--</div>-->
+                </li>
+            </ul>
+            <ul class="menu-about">
+                <li><a href="">Search</a></li>
+                <li><a href="">Cart</a></li>
+                <li><a href="">User</a></li>
+            </ul>
+        </div>
+        <div class="clearfix"></div>
+        <div class="navigation">
+            <button id="menuburger" class="burger">
+                <span aria-hidden=true></span>
+            </button>
+        </div>
+    </nav>
+
+    <div id="map"></div>
+
+    <div class="inner-footer">
+        <section class="wrap-footer">
+            <nav class="menu_futer container">
+                <ul>
+                    <li><a href="#">sitemap</a></li>
+                    <li><a href="#">help</a></li>
+                    <li><a href="#">delivery</a></li>
+                    <li><a href="#">privacy policy</a></li>
+                    <li><a href="#">accessibilliti</a></li>
+                </ul>
+            </nav>
+            <div class="clearfix"></div>
+            <div class="footer_content container ">
+                <div class="footer_section_about">
+                    <div class="section_about_header">
+                        <h2>About</h2>
+                        <p>Cras quis nulla commodo, aliquam lectus sed, blandit augue.
+                            Cras ullamcorper bibendum bibendum. Duis tincidunt urna non pretium porta.
+                            Nam condimentum vitae ligula vel ornare. Phasellus at semper turpis.</p>
+                    </div>
+                    <div class="footer_section_active">
+                        <h2>Stay in touch</h2>
+                        <form action="" name="subscribe-form" class="subscribe-form">
+                            <input type="email" id="fname" name="fname" placeholder="Your E-mail">
+                            <button class="subscribe-button" type="submit">Subscribe</button>
+                        </form>
+                    </div>
+                </div> <!-- footer_section_about -->
+
+                <div class="footer_section_about">
+                    <div class="footer_section_box">
+                        <div class="section_box">
+                            <h3><a href="#">Ade books</a></h3>
+                            <p>Rare Books & Textbooks</p>
+                        </div>
+                        <div class="section_box">
+                            <h3><a href="#">DpReview</a></h3>
+                            <p>Digital Photography</p>
+                        </div>
+                        <div class="section_box">
+                            <h3><a href="#">Audible</a></h3>
+                            <p>Download Audio Books</p>
+                        </div>
+                        <div class="section_box">
+                            <h3><a href="#">Junglee</a></h3>
+                            <p>Shop Online in India</p>
+                        </div>
+                        <div class="section_box">
+                            <h3><a href="#">Look</a></h3>
+                            <p>Kids' Clothing & Shoes</p>
+                        </div>
+                        <div class="section_box">
+                            <h3><a href="#">MYHABIT</a></h3>
+                            <p>Private Fashion Designer
+                                Sales</p>
+                        </div>
+                    </div>
+                    <div class="footer_social">
+                        <h2>Follow us</h2>
+                        <div class="social_icon">
+                            <ul class="menu_social">
+                                <li><a href="#"><img src="img/icons_svg/facebook.svg" alt="facebook"></a></li>
+                                <li><a href="#"><img src="img/icons_svg/twitter.svg" alt="twitter"></a></li>
+                                <li><a href="#"><img src="img/icons_svg/pinterest.svg" alt="pinterest"></a></li>
+                                <li><a href="#"><img src="img/icons_svg/instagram.svg" alt="instagram"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div> <!-- footer_section_about -->
+
+                <div class="footer_info">
+                    <p class="footer-info-left" >&#169; 2016 Bookworm. All rights reserved</p>
+                    <p class="footer-info-right"></p>
+                </div>
+            </div> <!-- end footer_content container-->
+        </section> <!-- wrap-footer -->
+    </div>
+
+    <div class="inner-wrap-container">
+        <div id="wrap-login">
+            <div class="inner-wrap-login">
+                <div class="transp-back-wrap-login"></div>
+                <a id="hide-popup" class="hide"  href="#"><img class="rectangle-arrow" src="img/rectangle9.png" alt="rectangle"></a>
+                <p>Login</p>
+                <form id="form-login" action="">
+                    <div class="inner-login-email">
+                        <input type="text" class="" placeholder="E-mail" name="login-email">
+                    </div>
+                    <div class="inner-login-password">
+                        <input type="text" placeholder="Password" name="login-password">
+                    </div>
+                    <div class="inner-login-form">
+                        <div class="inner-checkbox-remember">
+                            <input type="checkbox" class="checkbox-remember" id="remember" name="remember">
+                            <label for="remember">Remember me</label>
+                        </div>
+                        <div class="forgot-password">
+                            <a href="#">Forgot password</a>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="sign-in">
+                        <input type="submit" value="Sign in">
+                    </div>
+                    <!-- <div class="create-account"> -->
+                    <a href="#" class="input-create">Create account<img src="img/rectangle55.png" width="17" height="13"
+                                                                        alt="arrow"></a>
+                    <!-- <div class="hr-form"></div> -->
+                    <div class="inner-login-social">
+                        <h3>Sign in with social:</h3>
+                        <div class="login-social">
+                            <a href="#"><img src="img/icons_svg/rectangle57.png" width="10" height="18" alt="facebook"></a>
+                            <a href="#"><img src="img/icons_svg/rectangle58.png" width="17" height="14" alt="pinterest"></a>
+                            <a href="#"><img src="img/icons_svg/Google.svg" alt="google"></a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/popup.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/maps.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBEhcAODAYMl78I4iR9HhlCmXAuV0jmrf0&callback=initMap"></script>
+
 </body>
 </html>

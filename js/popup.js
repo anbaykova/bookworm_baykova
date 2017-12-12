@@ -13,7 +13,6 @@ if (open !== null) {
         // document.body.setAttribute("style", "overflow: hidden;");
 
         document.getElementsByClassName("inner-wrap-container")[0].style.display = 'block';
-
         document.body.classList.toggle("scroll");
         var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
         console.log(scrollTop);
