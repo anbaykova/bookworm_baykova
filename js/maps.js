@@ -12,9 +12,11 @@ function initMap() {
             icon: './img/mark.png'
         }
     );
-
+    var infowindow = new google.maps.InfoWindow({
+        content: '1001 5th Avenue North, Nashville, TN 37219, USA'
+    });
     marker.addListener('click', function () {
-        infoWindow.open(map, marker);
+        infowindow.open(map, marker);
     });
 }
 
