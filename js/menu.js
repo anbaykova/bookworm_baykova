@@ -23,6 +23,8 @@ if (open !== null) {
         // openMenu.classList.toggle("active");
         // sample.classList.toggle("active");
            menu.classList.toggle("active");
+        document.body.style.overflow = 'hidden';
+
     })
 }
 // function openNav() {

@@ -18,7 +18,7 @@ body {
     color: #555963;
     position: relative;
     }
-body .scroll {
+body.scroll {
     overflow: hidden;
 }
 .relative {
@@ -211,9 +211,11 @@ body .scroll {
 
 
 }
+body.active {
+    overflow: hidden;
+}
 .menu_list.active {
     display: block;
-    /*height: 0;*/
     -webkit-transition:-webkit-transform 0.075s linear;
 
 }

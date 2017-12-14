@@ -10,9 +10,8 @@ if (open !== null) {
     open.addEventListener("click", function (event) {
         event.preventDefault();
         popup.classList.toggle("open");
-        // document.body.setAttribute("style", "overflow: hidden;");
-
         document.getElementsByClassName("inner-wrap-container")[0].style.display = 'block';
+        document.getElementsByClassName("inner-wrap-container")[0].style.position = 'fixed';
         document.body.classList.toggle("scroll");
         var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
         console.log(scrollTop);
