@@ -36,6 +36,25 @@ gulp.task('scripts', function () {
         .pipe(minify())
         .pipe(gulp.dest('build/js'))
 });
+
+gulp.task('scripts', ( =>
+    gulp.src("scripts/**/*.js")
+        .pipe(plumber())
+        .pipe(sourcemaps.init())
+        .pipe(babel())
+        .pipe(concat.write('.'))
+        .pipe(gulp.dest('build/js'))
+
+);
+gulp.task('libs', ( =>
+    gulp.src(
+        [
+            "node_modules/jquery/dist.js"
+
+        ]))
+
+
+
 gulp.task('watch', ['sass', 'scripts'], function () {
     browserSync.init({
         server: "./"
@@ -46,6 +65,8 @@ gulp.task('watch', ['sass', 'scripts'], function () {
 
 
 })
+
+
 
 
 // var gulp = require('gulp');
@@ -140,15 +161,7 @@ gulp.task('watch', ['sass', 'scripts'], function () {
 // var minify = require('gulp-minify');
 // var imagemin = require('gulp-imagemin');
 //
-// gulp.task('sass', function() {
-//     gulp.src("sass/style.scss")
-//         .pipe(sourcemaps.init())
-//         .pipe(sass())
-//         .pipe(autoprefixer())
-//         .pipe(rename('styles.min.css'))
-//         .pipe(cleanCss())
-//         .pipe(gulp.dest("build/css"));
-// });
+//
 // gulp.task('scripts', function () {
 //     gulp.src([
 //         './js/classie.js',
