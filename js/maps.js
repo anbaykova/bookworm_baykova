@@ -32,7 +32,7 @@ function initMap() {
     });
 
     var infowindowNext = new google.maps.InfoWindow({
-        content: 'bvekjbvievbd'
+        content: '238 Visitor Center Dr Golden Pond, KY 42211'
     });
     nextmarker.addListener('click', function () {
         infowindowNext.open(map, nextmarker);
@@ -94,12 +94,12 @@ function initMap() {
     });
 }
 
-function deleteMarkers(markersArray) {
-    for (var i = 0; i < markersArray.length; i++) {
-        markersArray[i].setMap(null);
-    }
-    markersArray = [];
-}
+// function deleteMarkers(markersArray) {
+//     for (var i = 0; i < markersArray.length; i++) {
+//         markersArray[i].setMap(null);
+//     }
+//     markersArray = [];
+// }
 
 
 
