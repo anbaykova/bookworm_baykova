@@ -25,7 +25,6 @@ function validateForm(event) {
             console.log( element.parentNode);
             element.parentNode.classList.add('has-error');
             element.parentNode.getElementsByClassName("input-text-error")[0].style.display = 'block';
-            // console.log(element);
         }
         else {
             element.parentNode.classList.remove('has-error');
@@ -34,10 +33,10 @@ function validateForm(event) {
             element.parentNode.getElementsByClassName("input-text-error")[0].innerText = 'OK';
         }
     });
-    // checkZip();
-    // validateEmail(document.getElementById("email").value);
-    // validPhone(document.getElementById("phone").value);
-    // validAddress();
+    checkZip();
+    validateEmail(document.getElementById("email").value);
+    validPhone(document.getElementById("phone").value);
+    validAddress();
 }
 
 function checkZip() {

@@ -2870,6 +2870,7 @@ label, a{ /*при наведении на стрелки или переклю�
 
 /* ========= article ============= */
 .switch-blog {
+    display: block;
     text-align: left;
     max-width: 67px;
     padding-top: 169px;
@@ -2931,9 +2932,11 @@ label, a{ /*при наведении на стрелки или переклю�
     vertical-align: top;
 }
 .post-author {
+    display: block;
     padding: 19px 0 12px 0;
 }
 .post-author-right {
+    display: block;
     float: right;
 }
 .post-author-right a {
@@ -2963,6 +2966,7 @@ label, a{ /*при наведении на стрелки или переклю�
     padding-top: 13px;
 }
 .article-text {
+    display: block;
     padding-bottom: 50px;
     margin: 0 auto;
     max-width: 748px;
@@ -3229,12 +3233,14 @@ label, a{ /*при наведении на стрелки или переклю�
     float: left;
 }
 .comment-author {
+    display: block;
     padding-top: 3px;
     font-family: 'Ramaraja', serif;
     font-size: 21px;
     line-height: 17px;
 }
 .comment-date {
+    display: block;
     font-family: 'Lato', sans-serif;
     font-size: 13px;
     color: #a8a8a8;
@@ -3264,6 +3270,7 @@ label, a{ /*при наведении на стрелки или переклю�
     vertical-align: top;
 }
 .comment-left {
+    display: block;
     float: left;
 }
 
