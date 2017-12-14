@@ -5,8 +5,9 @@ var autoprefixer = require('gulp-autoprefixer');
 var concat = require('gulp-concat');
 var cleanCss =require('gulp-clean-css');
 var rename = require('gulp-rename');
-var browserSync = require('browser-sync').create();
+// var browserSync = require('browser-sync').create();
 var minify = require('gulp-minify');
+var imagemin = require('gulp-imagemin');
 
 gulp.task('sass', function() {
     gulp.src("sass/style.scss")
@@ -37,7 +38,7 @@ gulp.task('scripts', function () {
         .pipe(gulp.dest('build/js'))
 });
 
-gulp.task('scripts', ( =>
+gulp.task('scripts', function() {
     gulp.src("scripts/**/*.js")
         .pipe(plumber())
         .pipe(sourcemaps.init())
@@ -45,13 +46,20 @@ gulp.task('scripts', ( =>
         .pipe(concat.write('.'))
         .pipe(gulp.dest('build/js'))
 
-);
-gulp.task('libs', ( =>
-    gulp.src(
-        [
-            "node_modules/jquery/dist.js"
+});
 
-        ]))
+gulp.task('compress', function() {
+    gulp.src('img/**/*')
+        .pipe(imagemin())
+        .pipe(gulp.dest('build/img'))
+});
+
+// gulp.task('libs', ( =>
+//     gulp.src(
+//         [
+//             "node_modules/jquery/dist.js"
+//
+//         ]))
 
 
 
