@@ -1858,7 +1858,7 @@ position: absolute;
     visibility: visible;
     color: red;
 }
-.input-text-inner.has-error input{
+.input-text-inner.has-error textarea[placeholder]{
     border-bottom-color: red;
     visibility: visible;
     color: red;

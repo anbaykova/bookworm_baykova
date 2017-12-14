@@ -1,20 +1,24 @@
 
+
+
 function initMap() {
+    var geocoder = new google.maps.Geocoder;
     var map = new google.maps.Map(document.getElementById('map'), {
         center: {lat: 36.148922, lng: -86.8053444},
         zoom: 8
     });
-
+    var origin = {lat: 36.148922, lng: -86.8053444};
+    var destination = {lat: 36.796047, lng: -88.074265};
     var marker = new google.maps.Marker(
         {
-            position: {lat: 36.148922, lng: -86.8053444},
+            position: origin,
             map: map,
             icon: './img/mark.png'
         }
     );
     var nextmarker = new google.maps.Marker(
         {
-            position: {lat: 36.796047, lng: -88.074265},
+            position: destination,
             map: map,
             icon: './img/mark.png'
         }
@@ -27,13 +31,80 @@ function initMap() {
         infowindow.open(map, marker);
     });
 
-}
     var infowindowNext = new google.maps.InfoWindow({
-        content: '1001 5th Avenue North, Nashville, TN 37219, USA'
+        content: 'bvekjbvievbd'
     });
     nextmarker.addListener('click', function () {
         infowindowNext.open(map, nextmarker);
-    })
+    });
+
+
+    var outputDiv = document.getElementById('output');
+    var service = new google.maps.DistanceMatrixService;
+    service.getDistanceMatrix({
+        origins: [origin],
+        destinations: [destination],
+        travelMode: 'DRIVING',
+        unitSystem: google.maps.UnitSystem.METRIC,
+        avoidHighways: false,
+        avoidTolls: false
+    }, function(response, status) {
+        if (status !== 'OK') {
+            alert('Error was: ' + status);
+        } else {
+            var originList = response.originAddresses;
+            var destinationList = response.destinationAddresses;
+            var outputDiv = document.getElementById('output');
+            outputDiv.innerHTML = '';
+
+
+
+            // deleteMarkers(markersArray);
+
+            // var showGeocodedAddressOnMap = function(asDestination) {
+            //     var icon = asDestination ? destinationIcon : originIcon;
+            //     return function(results, status) {
+            //         if (status === 'OK') {
+            //             map.fitBounds(bounds.extend(results[0].geometry.location));
+            //             markersArray.push(new google.maps.Marker({
+            //                 map: map,
+            //                 position: results[0].geometry.location,
+            //                 icon: icon
+            //             }));
+            //         } else {
+            //             alert('Geocode was not successful due to: ' + status);
+            //         }
+            //     };
+            // };
+
+            for (var i = 0; i < originList.length; i++) {
+                var results = response.rows[i].elements;
+
+                // geocoder.geocode({'address': originList[i]},
+                    // showGeocodedAddressOnMap(false));
+                for (var j = 0; j < results.length; j++) {
+                    // geocoder.geocode({'address': destinationList[j]},
+                    //     showGeocodedAddressOnMap(true));
+                    outputDiv.innerHTML += originList[i] + ' to ' + destinationList[j] +
+                        ': ' + results[j].distance.text + ' in ' +
+                        results[j].duration.text + '<br>';
+                }
+            }
+        }
+    });
+}
+
+function deleteMarkers(markersArray) {
+    for (var i = 0; i < markersArray.length; i++) {
+        markersArray[i].setMap(null);
+    }
+    markersArray = [];
+}
+
+
+
+
+
 
 
 

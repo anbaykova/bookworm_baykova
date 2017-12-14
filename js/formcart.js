@@ -2,7 +2,7 @@
 
 var billingForm = document.getElementById("cart");
 var requiredFields = document.querySelectorAll("input[required], textarea[required]");
-console.log(requiredFields);
+// console.log(requiredFields);
 var hasError = "has-error";
 
 // var validateEmail = document.getElementById("email");
@@ -10,20 +10,21 @@ var hasError = "has-error";
 
 billingForm.addEventListener("submit", function (event) {
     event.preventDefault();
-    console.log("вася");
+
 });
 
 if(billingForm !== null){
-    billingForm.addEventListener("submit", valideteForm);
+    billingForm.addEventListener("submit", validateForm);
 }
 
-function valideteForm(event) {
+function validateForm(event) {
     event.preventDefault();
-    console.log("петя");
     requiredFields.forEach(function (element) {
+
         if (element.value.length === 0) {
+            console.log( element.parentNode);
             element.parentNode.classList.add('has-error');
-            // element.parentNode.getElementsByClassName("input-text-error")[0].style.display = 'block';
+            element.parentNode.getElementsByClassName("input-text-error")[0].style.display = 'block';
             // console.log(element);
         }
         else {
@@ -33,10 +34,10 @@ function valideteForm(event) {
             element.parentNode.getElementsByClassName("input-text-error")[0].innerText = 'OK';
         }
     });
-    checkZip();
-    validateEmail(document.getElementById("email").value);
-    validPhone(document.getElementById("phone").value);
-    validAddress();
+    // checkZip();
+    // validateEmail(document.getElementById("email").value);
+    // validPhone(document.getElementById("phone").value);
+    // validAddress();
 }
 
 function checkZip() {
