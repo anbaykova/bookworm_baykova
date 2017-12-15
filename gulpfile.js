@@ -5,7 +5,7 @@ var autoprefixer = require('gulp-autoprefixer');
 var concat = require('gulp-concat');
 var cleanCss =require('gulp-clean-css');
 var rename = require('gulp-rename');
-// var browserSync = require('browser-sync').create();
+var browserSync = require('browser-sync').create();
 var minify = require('gulp-minify');
 var imagemin = require('gulp-imagemin');
 
