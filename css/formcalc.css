@@ -1,4 +1,22 @@
 
+#block1 {
+    width: 25%;
+    display: inline-block;
+    vertical-align: top;
+}
+#block1 h3 {
+    float: none;
+}
+#block2 {
+    width: 50%;
+    display: inline-block;
+    vertical-align: top;
+}
+#block3 {
+    display: inline-block;
+    vertical-align: top;
+    width: 25%;
+}
 .check-room:not(checked) {
     opacity: 0;
 }
@@ -63,18 +81,7 @@
     color: white;
     background-color: #774eb7;
 }
-.form-margin {
-    color: #774eb7;
-    margin-left: 70px;
-}
-.dirty-rooms {
-    color: #774eb7;
-    margin-left: 52px;
-}
-.clean-rooms {
-    color: #774eb7;
-    margin-left: 25px;
-}
+
 .sbm-formcalc {
     color: #774eb7;
     padding: 10px;
@@ -107,24 +114,24 @@ h3  {
     width: 80%;
     float: left;
 }
-.inner-result {
-    width: 20%;
-    float: right;
-}
+/*.inner-result {*/
+    /*width: 20%;*/
+    /*float: right;*/
+/*}*/
 #time {
     color: red;
     width: 100%;
-    float: left;
+    /*float: left;*/
 }
 .price-off {
     color: #774eb7;
     width: 100%;
-    float: left;
+    /*float: left;*/
 }
 #cost {
     color: red;
     width: 100%;
-    float: left;
+    /*float: left;*/
 }
 .result-price h1 {
     color: #774eb7;
@@ -136,23 +143,3 @@ h3  {
     font-size: 15px;
 }
 
-/*.inner-rooms h3 {*/
-/*color: #774eb7;*/
-/*float: left;*/
-/*margin: 56px 0 0 0;*/
-/*}*/
-/*.inner-bathrooms h3 {*/
-/*color: #774eb7;*/
-/*float: left;*/
-/*margin: 60px 0 0 0;*/
-/*}*/
-/*.calc-dirty h3 {*/
-/*color: #774eb7;*/
-/*float: left;*/
-/*margin: 58px 0 0 0 ;*/
-/*}*/
-/*.calc-clean h3 {*/
-/*color: #774eb7;*/
-/*float: left;*/
-/*margin: 58px 0 0 0;*/
-/*}*/

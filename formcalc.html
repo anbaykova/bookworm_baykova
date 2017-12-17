@@ -6,17 +6,20 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="css/formcalc.css">
-    <link rel="stylesheet" href="sass/style.scss">
-    <link rel="stylesheet" href="sass/mixins.scss">
 
 </head>
 <body>
 <div class="inner-formcalc container">
-    <div class="inner-form">
+    <section id="block1">
+        <h3>Количество спален</h3>
+        <h3>Количество ванных комнат</h3>
+        <h3>Степень загрязнения</h3>
+        <h3>Тип чистки</h3>
+    </section>
+    <section id="block2">
         <form action="" id="form-calc">
             <div class="calc-rooms">
-                <div class="inner-rooms ">
-                    <h3>Количество спален</h3>
+                <!--<div class="inner-rooms ">-->
                     <div class="block-bed form-margin">
                         <input class="check-room style-room" type="radio" id="bed-1" value="1" name="bed-rooms" >
                         <label class="style-block" for="bed-1">1</label>
@@ -41,12 +44,11 @@
                         <input class="check-room style-room" type="radio" id="bed-6" value="6" name="bed-rooms">
                         <label class="style-block" for="bed-6">6</label>
                     </div>
-                </div>
+                <!--</div>-->
             </div>
             <div class="clearfix"></div>
             <div class="calc-rooms">
-                <div class="inner-bathrooms ">
-                    <h3>Количество ванных комнат</h3>
+                <!--<div class="inner-bathrooms ">-->
                     <div class="block-bed">
                         <input class="check-room style-room" type="radio" id="bath-1" value="1" name="bath-rooms">
                         <label class="style-block" for="bath-1">1</label>
@@ -71,11 +73,10 @@
                         <input class="check-room style-room" type="radio" id="bath-6" value="6" name="bath-rooms">
                         <label class="style-block" for="bath-6">6</label>
                     </div>
-                </div>
+                <!--</div>-->
             </div>
             <div class="clearfix"></div>
-            <div class="calc-dirty ">
-                <h3>Степень загрязнения</h3>
+            <div class="calc-dirty">
                 <div class="block-bed dirty-rooms">
                     <div class="block-bed-label">
                         <input class="dirty-room" type="radio" id="dirty-1" value="1" name="dirty" data-rate="0.75" >
@@ -96,8 +97,7 @@
                 </div>
             </div>
             <div class="clearfix"></div>
-            <div class="calc-clean ">
-                <h3>Тип чистки</h3>
+            <div class="calc-clean">
                 <div class="block-bed clean-rooms">
                     <input class="clean-room" type="radio" id="clean-1" value="1" name="clean" data-price="33" data-time-bed="20" data-time-bath="40">
                     <label class="style-block" for="clean-1">Периодическая</label>
@@ -112,19 +112,28 @@
                 </div>
             </div>
             <div class="clearfix"></div>
-    </div>
-    <div class="inner-result">
-            <div class="result-price container"> <h1>Оценка стоимости</h1></div>
-            <div id="time" class="container">0 часов</div>
+
+
+    </section>
+    <!--<div class="inner-form">-->
+    <!--</div>-->
+    <section id="block3">
+        <div class="inner-result">
+            <div class="result-price"> <h1>Оценка стоимости</h1></div>
+            <div id="time">0 часов</div>
             <div class="price-off"> Цена за чистку</div>
-            <div id="cost" class="container"> $ 0  </div>
-            <div class="container">
+            <div id="cost" > $ 0  </div>
+            <div >
                 <input class="sbm-formcalc" type="submit">
             </div>
-        <div id="error-calc"></div>
+            <div id="error-calc"></div>
+        </div>
         </form>
-    </div>
-</div>
+    </section>
+
+
+
+</div> <!-- end inner-formcalc -->
     <script src="js/formcalc.js"></script>
 </body>
 </html>
