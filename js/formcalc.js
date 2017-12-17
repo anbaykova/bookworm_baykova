@@ -11,22 +11,22 @@ calcForm.addEventListener("submit", function (event) {
 
 
     if(checkRadioBtn(bedRooms) == false){
-        document.getElementById('error-calc').innerHTML = "Выберите количество спален комнат";
+        document.getElementById('error-calc').innerHTML = "* Выберите количество спален комнат";
         return false;
     } else {
         // document.getElementById('error-calc').innerHTML = "Количество спален выбрано";
     }
 
     if(checkRadioBtn(bathRooms) == false){
-        document.getElementById('error-calc').innerHTML = "Выберите количество ванных комнат";
+        document.getElementById('error-calc').innerHTML = "* Выберите количество ванных комнат";
         return false;
     }
     if(checkRadioBtn(dirtyRooms) == false){
-        document.getElementById('error-calc').innerHTML = "Выберите степень загрязнения";
+        document.getElementById('error-calc').innerHTML = "* Выберите степень загрязнения";
         return false;
     }
     if(checkRadioBtn(cleanRooms) == false){
-        document.getElementById('error-calc').innerHTML = "Выберите тип очистки";
+        document.getElementById('error-calc').innerHTML = "* Выберите тип очистки";
         return false;
     }
     document.getElementById('error-calc').innerHTML = "";
@@ -69,74 +69,5 @@ function calculate () {
 
 
 }
-
-
-// var inputs = document.getElementsByTagName('input');
-// var anyCheck = 0;
-// for (var i=0; i<inputs.length; i++)
-// {
-//     var inp = inputs[i];
-//     if ("radio"==inp.type && inp.checked) { anyCheck=1; break; }
-// }
-// alert(anyCheck ? 'Есть отмеченные' : 'Нет отмеченных');
-// document.getElementById('error-calc').innerHTML = inp;
-
-
-// if(calcForm !== null){
-//     calcForm.addEventListener("submit", calculate)
-//         }
-// else {
-//     calcForm.getElementsByClassName("error-calc")[0].innerText = "Cannot be blank";
-// //     console.log(bedroom);
-// }
-
-// function valideteCalc(event) {
-//     event.preventDefault();
-//     console.log('anna');
-//
-// }
-// if(bedroom == 0) {
-//     calcForm.getElementsByClassName("error-calc")[0].innerText ="E-mail cannot be blank";
-//     console.log(bedroom);
-// }else  {
-//     console.log('выполнено');
-// }
-// if (bedroom=="" || bedroom==null, bath=="" || bath==null, dirtlvl=="" || dirtlvl==null){
-//     alert('не все поля отмечены');
-//     return false;
-// } else {
-//     alert('поля заполнены');
-// }
-
-//empty fields
-
-
-
-// function calcPrime (room, bath, dirty, timeRoom, timeBath) {
-//     return (bedroom + timeRoom) + (timeBath * bath) * dirty;
-// }
-
-// function calculate() {
-//     var bedroom, bath, dirtlvl, cleantype, result;
-//     bedroom = document.getElementsByName('bed-rooms');
-//     for (var i=0;i<bedroom.length; i++) {
-//         if (bedroom[i].checked) {
-//             bedroom =bedroom[i].value ;
-//         }
-//     }
-//     bath = document.getElementsByName('bath-rooms');
-//     for (var i=0;i<bath.length; i++) {
-//         if (bath[i].checked) {
-//             bath=bath[i].value;
-//         }
-//     }
-//     dirtlvl = document.getElementsByName('dirty');
-//     for (var i=0;i<dirtlvl.length; i++) {
-//         if (dirtlvl[i].checked) {
-//             dirtlvl=dirtlvl[i].value;
-//             console.log(dirtlvl);
-//         }
-//     }
-
 
 
