@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7b5c655e-f22d-4f2d-9739-be3b957e33b4" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/formcalc.css" afterPath="$PROJECT_DIR$/css/formcalc.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/formcalc.html" afterPath="$PROJECT_DIR$/formcalc.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/css/styles.min.css" afterPath="$PROJECT_DIR$/build/css/styles.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/mixins.scss" afterPath="$PROJECT_DIR$/sass/mixins.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/style.scss" afterPath="$PROJECT_DIR$/sass/style.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/variables.scss" afterPath="$PROJECT_DIR$/sass/variables.scss" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -29,26 +31,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="cart.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cart.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1887">
-              <caret line="111" column="89" lean-forward="false" selection-start-line="111" selection-start-column="89" selection-end-line="111" selection-end-column="89" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="maps.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/maps.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3145">
-              <caret line="185" column="25" lean-forward="false" selection-start-line="185" selection-start-column="4" selection-end-line="185" selection-end-column="171" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="formcalc.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/formcalc.html">
           <provider selected="true" editor-type-id="text-editor">
@@ -59,7 +41,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="formcalc.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="formcalc.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/formcalc.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="322">
@@ -83,7 +65,17 @@
         <entry file="file://$PROJECT_DIR$/sass/mixins.scss">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="2" selection-end-line="3" selection-end-column="3" />
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="3" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="normalize.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sass/normalize.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1307">
+              <caret line="46" column="0" lean-forward="false" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -93,7 +85,17 @@
         <entry file="file://$PROJECT_DIR$/sass/style.scss">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="2" selection-end-line="10" selection-end-column="3" />
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="10" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="variables.scss" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/sass/variables.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -134,7 +136,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>article-left</find>
       <find>browser-sync</find>
       <find>browserSync</find>
       <find>textarea</find>
@@ -164,6 +165,7 @@
       <find>.result-price h1</find>
       <find>cos</find>
       <find>error-calc</find>
+      <find>.sbm-formcalc</find>
     </findStrings>
     <replaceStrings>
       <replace>45</replace>
@@ -203,7 +205,6 @@
         <option value="$PROJECT_DIR$/sass/global/type.scss" />
         <option value="$PROJECT_DIR$/sass/normalize.scss" />
         <option value="$PROJECT_DIR$/sass/global/fonts.scss" />
-        <option value="$PROJECT_DIR$/sass/variables.scss" />
         <option value="$PROJECT_DIR$/js/selectsw.js" />
         <option value="$PROJECT_DIR$/build/js/app.js" />
         <option value="$PROJECT_DIR$/css/responsive.css" />
@@ -223,11 +224,12 @@
         <option value="$PROJECT_DIR$/js/maps.js" />
         <option value="$PROJECT_DIR$/maps.html" />
         <option value="$PROJECT_DIR$/gulpfile.js" />
-        <option value="$PROJECT_DIR$/sass/mixins.scss" />
-        <option value="$PROJECT_DIR$/sass/style.scss" />
         <option value="$PROJECT_DIR$/js/formcalc.js" />
         <option value="$PROJECT_DIR$/formcalc.html" />
         <option value="$PROJECT_DIR$/css/formcalc.css" />
+        <option value="$PROJECT_DIR$/sass/mixins.scss" />
+        <option value="$PROJECT_DIR$/sass/style.scss" />
+        <option value="$PROJECT_DIR$/sass/variables.scss" />
       </list>
     </option>
   </component>
@@ -615,7 +617,7 @@
       <workItem from="1513435486446" duration="1513000" />
       <workItem from="1513500494092" duration="593000" />
       <workItem from="1513515554910" duration="2566000" />
-      <workItem from="1513534281207" duration="4548000" />
+      <workItem from="1513534281207" duration="5238000" />
     </task>
     <task id="LOCAL-00001" summary="add gulp sass">
       <created>1512498661544</created>
@@ -635,10 +637,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="760599000" />
+    <option name="totallyTimeSpent" value="761289000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1604" height="876" extended-state="1" />
+    <frame x="-8" y="-8" width="1604" height="876" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14176245" sideWeight="0.57931036" order="2" side_tool="true" content_ui="tabs" />
@@ -797,20 +799,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sass/global/layout.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sass/normalize.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="782">
-          <caret line="46" column="0" lean-forward="false" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sass/variables.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1015,22 +1003,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sass/mixins.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="2" selection-end-line="3" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sass/style.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="2" selection-end-line="10" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/formcalc.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2">
@@ -1051,6 +1023,38 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="322">
           <caret line="100" column="45" lean-forward="false" selection-start-line="100" selection-start-column="45" selection-end-line="100" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sass/mixins.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="3" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sass/normalize.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1307">
+          <caret line="46" column="0" lean-forward="false" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sass/style.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="10" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sass/variables.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
           <folding />
         </state>
       </provider>
