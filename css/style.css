@@ -28,7 +28,18 @@ body.scroll {
     padding: 0 !important;
 }
 .style-cover-img {
+    display: none;
     position: absolute;
+    opacity: 0.9;
+    background-color: #ffbb58;
+    width: 146px;
+    height: 227px;
+    top: 28px;
+    left: 19px;
+}
+.red-queen:hover {
+    /*display: block;*/
+    /*position: absolute;*/
     opacity: 0.9;
     background-color: #ffbb58;
     width: 146px;
