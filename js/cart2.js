@@ -52,39 +52,6 @@ function resultTotal() {
     console.log(result);
     document.getElementById('total').innerHTML = result;
     document.getElementById('subtotal').innerHTML = result;
-
-
-    // var remove = document.getElementsByClassName('del').value;
-    // console.log(remove);
-    // var remove1 = document.getElementById('del1').value;
-    // console.log(remove1);
-    // var remove2 = document.getElementById('del2').value;
-    // console.log(remove2);
-    // var remove3 = document.getElementById('del3').value;
-    // console.log(remove3);
-    // var append1 = document.getElementById('add1').value;
-    // console.log(append1);
-    // var append2 = document.getElementById('add2').value;
-    // console.log(append2);
-    // var append3 = document.getElementById('add3').value;
-    // console.log(append3);
-    // var number1 = document.getElementsByClassName('number1')[0].value;
-    // console.log(number1);
-    // var number2 = document.getElementsByClassName('number2')[0].value;
-    // console.log(number2);
-    // var number3 = document.getElementsByClassName('number3')[0].value;
-    // console.log(number3);
-    // var cost1 = document.getElementById('cost1').innerHTML;
-    // console.log(cost1);
-    // var cost2 = document.getElementById('cost2').innerHTML;
-    // console.log(cost2);
-    // var cost3 = document.getElementById('cost3').innerHTML;
-    // console.log(cost3);
-
-    // var totalEnd = (number1 * cost1) + (number2 * cost2) + (number3 * cost3);
-    // console.log(totalEnd);
-
-
 }
 
 

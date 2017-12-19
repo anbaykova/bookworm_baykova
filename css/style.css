@@ -599,7 +599,6 @@ a:focus {
 .books {
     padding-top: 40px;
     margin: 0 -19px;
-    float: left;
     width: 100%;
 }
 /* tr td {
@@ -1194,12 +1193,12 @@ h2 {
 .menu_futer {
     margin-top: 58px;
     border-bottom: 1px solid #959ba1;
-    padding-bottom: 84px;
+
 }
 
 .menu_futer ul li {
     list-style-type: none;
-    float: left;
+    display: inline-block;
     padding: 20px 45px 20px 0;
 }
 .menu_futer a {
@@ -1220,9 +1219,7 @@ h2 {
 }
 .footer_section_active {
     max-width: 350px;
-    padding: 27px 11px -1px 0;
-    float: right;
-    width: 50%;
+    /*padding: 27px 11px -1px 0;*/
 }
 .footer_section_active h2 {
     text-align: left;
@@ -1233,10 +1230,8 @@ background-color: #f2fdff;;
 }
 
 .section_about_header {
-    padding-top: 25px;
-    width: 47%;
     max-width: 585px;
-    float: left;
+
 }
 .section_about_header h2 {
     padding-bottom: 25px;
@@ -1252,7 +1247,6 @@ background-color: #f2fdff;;
 }
 .footer_section_box {
     width: 663px;
-    float: left;
     margin: 37px 0 0 0;
 }
 .section_box {
@@ -1386,10 +1380,9 @@ background-color: #f2fdff;;
     list-style-type: none;
 }
 .footer_social {
-    float: right;
-    width: 30%;
-    padding: 33px 19px 0 0;
+    padding: 87px 19px 0 0;
 }
+
 .footer_social h2{
     text-align: left;
 }
@@ -1803,7 +1796,7 @@ position: absolute;
 .wrap-footer {
     max-width: 1140px;
     /*width: 100%;*/
-    background-color: #f2fdff;
+    /*background-color: #f2fdff;*/
     margin: 0 auto;
 }
 
@@ -3434,4 +3427,12 @@ label, a{ /*при наведении на стрелки или переклю�
     min-height: 200px;
     font-size: 23px;
     color: #555963;
+}
+.section-left {
+    float: left;
+    width: 60%;
+}
+.section-right {
+    float: right;
+    width: 31%;
 }

@@ -30,7 +30,7 @@
             height: 4em;
             position: absolute;
             top: 38px;
-            right: -2.2em;
+            right: -22px;
         }
         .menu ul li {
             display: block;
@@ -105,11 +105,24 @@
         /*======= article ============*/
 
     @media all and (max-width:767px) {
+        .navigation {
+            right: -50px;
+        }
         .article-right img {
             /*margin-top: 50px;*/
             width: 100%;
             float: none;
         }
+        .section-left {
+            width: 100%;
+            float: none;
+        }
+        .section-right {
+            width: 100%;
+            float: none;
+        }
+
+
         .article-right {
             float: none;
         }
@@ -195,7 +208,7 @@
            display: none;
         }
         .social_icon ul li {
-            padding: 25px 29px 0 0;
+            padding: 10px 10px 0 0;
         }
         .subscribe-form input {
             max-width: 79px;
@@ -364,7 +377,7 @@
         }
         .menu {
             z-index: 1;
-            height: 157px;
+            height: 100px;
         }
         .footer_section_active {
             float: none;
@@ -375,7 +388,8 @@
             padding-top: 35px;
         }
         .menu_futer ul li {
-            padding: 33px 10px 0 0;
+            width: 100%;
+            padding: 15px 10px 0 0;
         }
 
         .switch-blog {
@@ -383,11 +397,11 @@
             margin-left: 0;
         }
         .menu_logo {
+            margin: 20px 0 0 10px;
             height: 26px;
         }
         .menu_futer {
             width: 83%;
-            padding-bottom: 130px;
         }
         .related-author {
             float: none;
@@ -421,7 +435,7 @@
         }
         .footer_social {
             width: 80%;
-            margin: 0 57px 10px 57px;
+            /*margin: 0 57px 10px 57px;*/
             float: none;
         }
         .footer-info-left {
@@ -559,6 +573,15 @@
     }
 
     @media all and (min-width: 768px) and (max-width:991px) {
+        .section-left {
+            width: 100%;
+            float: none;
+        }
+        .section-right {
+            width: 100%;
+            float: none;
+        }
+
         #id-product {
             overflow: scroll;
         }
@@ -766,15 +789,14 @@
             margin: 0 auto;
         }
         .footer_section_box {
-            width: 100%;
-            padding-top: 60px;
+            text-align: left;
             float: none;
-            margin: 0 auto;
+            padding: 60px 0 0 50px;
         }
         .section_about_header {
             float: none;
-            margin: 0 auto;
-            width: 95%;
+            padding: 0 50px;
+
         }
         .footer_section_active {
             width: 47%;
@@ -854,9 +876,9 @@
             width: 90%;
         }
         .section_box {
-            width: 100%;
+            width: 95%;
             float: none;
-            padding: 0 23px 40px 65px;
+            margin: 0 auto;
         }
         .input-create {
             margin: 0 65px 40px 65px;
@@ -898,6 +920,14 @@
 
     }
     @media all and (min-width:992px)and (max-width: 1115px) {
+        .section-left {
+            width: 100%;
+            float: none;
+        }
+        .section-right {
+            width: 100%;
+            float: none;
+        }
         .menu {
             width: 1214px;
             margin: auto;
@@ -952,6 +982,14 @@
         }
     }
     @media all and (min-width:1116px)and (max-width: 1200px) {
+        .section-left {
+            width: 100%;
+            float: none;
+        }
+        .section-right {
+            width: 100%;
+            float: none;
+        }
         .relation-post {
             margin: 0 8%;
             padding-bottom: 60px;
@@ -996,9 +1034,7 @@
         .section_box {
             margin-left: 10%;
         }
-        .footer_social {
-            width: 29%;
-        }
+
         .switch-blog {
             margin-left: 63px;
         }
@@ -1040,15 +1076,13 @@
             width: 88%;
         }
         .footer_section_box {
-            margin: 0 9%;
-            width: 53%;
+            /*margin: 0 9%;*/
+            width: 80%;
         }
         /*.section_box {*/
             /*margin-left: 10%;*/
         /*}*/
-        .footer_social {
-            width: 29%;
-        }
+
 
     }
 

@@ -439,6 +439,8 @@ if (open !== null) {
         // openMenu.classList.toggle("active");
         // sample.classList.toggle("active");
            menu.classList.toggle("active");
+        document.body.style.overflow = 'hidden';
+
     })
 }
 // function openNav() {
@@ -467,9 +469,8 @@ if (open !== null) {
     open.addEventListener("click", function (event) {
         event.preventDefault();
         popup.classList.toggle("open");
-        // document.body.setAttribute("style", "overflow: hidden;");
-
         document.getElementsByClassName("inner-wrap-container")[0].style.display = 'block';
+        document.getElementsByClassName("inner-wrap-container")[0].style.position = 'fixed';
         document.body.classList.toggle("scroll");
         var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
         console.log(scrollTop);
@@ -496,7 +497,7 @@ if (close !== null) {
 
 var billingForm = document.getElementById("cart");
 var requiredFields = document.querySelectorAll("input[required], textarea[required]");
-console.log(requiredFields);
+// console.log(requiredFields);
 var hasError = "has-error";
 
 // var validateEmail = document.getElementById("email");
@@ -504,21 +505,21 @@ var hasError = "has-error";
 
 billingForm.addEventListener("submit", function (event) {
     event.preventDefault();
-    console.log("вася");
+
 });
 
 if(billingForm !== null){
-    billingForm.addEventListener("submit", valideteForm);
+    billingForm.addEventListener("submit", validateForm);
 }
 
-function valideteForm(event) {
+function validateForm(event) {
     event.preventDefault();
-    console.log("петя");
     requiredFields.forEach(function (element) {
+
         if (element.value.length === 0) {
+            console.log( element.parentNode);
             element.parentNode.classList.add('has-error');
-            // element.parentNode.getElementsByClassName("input-text-error")[0].style.display = 'block';
-            // console.log(element);
+            element.parentNode.getElementsByClassName("input-text-error")[0].style.display = 'block';
         }
         else {
             element.parentNode.classList.remove('has-error');
@@ -660,22 +661,22 @@ calcForm.addEventListener("submit", function (event) {
 
 
     if(checkRadioBtn(bedRooms) == false){
-        document.getElementById('error-calc').innerHTML = "Выберите количество спален комнат";
+        document.getElementById('error-calc').innerHTML = "* Выберите количество спален комнат";
         return false;
     } else {
         // document.getElementById('error-calc').innerHTML = "Количество спален выбрано";
     }
 
     if(checkRadioBtn(bathRooms) == false){
-        document.getElementById('error-calc').innerHTML = "Выберите количество ванных комнат";
+        document.getElementById('error-calc').innerHTML = "* Выберите количество ванных комнат";
         return false;
     }
     if(checkRadioBtn(dirtyRooms) == false){
-        document.getElementById('error-calc').innerHTML = "Выберите степень загрязнения";
+        document.getElementById('error-calc').innerHTML = "* Выберите степень загрязнения";
         return false;
     }
     if(checkRadioBtn(cleanRooms) == false){
-        document.getElementById('error-calc').innerHTML = "Выберите тип очистки";
+        document.getElementById('error-calc').innerHTML = "* Выберите тип очистки";
         return false;
     }
     document.getElementById('error-calc').innerHTML = "";
@@ -720,75 +721,6 @@ function calculate () {
 }
 
 
-// var inputs = document.getElementsByTagName('input');
-// var anyCheck = 0;
-// for (var i=0; i<inputs.length; i++)
-// {
-//     var inp = inputs[i];
-//     if ("radio"==inp.type && inp.checked) { anyCheck=1; break; }
-// }
-// alert(anyCheck ? 'Есть отмеченные' : 'Нет отмеченных');
-// document.getElementById('error-calc').innerHTML = inp;
-
-
-// if(calcForm !== null){
-//     calcForm.addEventListener("submit", calculate)
-//         }
-// else {
-//     calcForm.getElementsByClassName("error-calc")[0].innerText = "Cannot be blank";
-// //     console.log(bedroom);
-// }
-
-// function valideteCalc(event) {
-//     event.preventDefault();
-//     console.log('anna');
-//
-// }
-// if(bedroom == 0) {
-//     calcForm.getElementsByClassName("error-calc")[0].innerText ="E-mail cannot be blank";
-//     console.log(bedroom);
-// }else  {
-//     console.log('выполнено');
-// }
-// if (bedroom=="" || bedroom==null, bath=="" || bath==null, dirtlvl=="" || dirtlvl==null){
-//     alert('не все поля отмечены');
-//     return false;
-// } else {
-//     alert('поля заполнены');
-// }
-
-//empty fields
-
-
-
-// function calcPrime (room, bath, dirty, timeRoom, timeBath) {
-//     return (bedroom + timeRoom) + (timeBath * bath) * dirty;
-// }
-
-// function calculate() {
-//     var bedroom, bath, dirtlvl, cleantype, result;
-//     bedroom = document.getElementsByName('bed-rooms');
-//     for (var i=0;i<bedroom.length; i++) {
-//         if (bedroom[i].checked) {
-//             bedroom =bedroom[i].value ;
-//         }
-//     }
-//     bath = document.getElementsByName('bath-rooms');
-//     for (var i=0;i<bath.length; i++) {
-//         if (bath[i].checked) {
-//             bath=bath[i].value;
-//         }
-//     }
-//     dirtlvl = document.getElementsByName('dirty');
-//     for (var i=0;i<dirtlvl.length; i++) {
-//         if (dirtlvl[i].checked) {
-//             dirtlvl=dirtlvl[i].value;
-//             console.log(dirtlvl);
-//         }
-//     }
-
-
-
 
 "use strict";
 var checkout = document.getElementById("id-product");
@@ -827,43 +759,23 @@ for (var i = 0; i < addOne.length; i++) {
     addOne[i].addEventListener('click', functionAddOne, false);
 }
 
-
-
-
-
-
-
 function resultTotal() {
-    var remove1 = document.getElementById('del1').value;
-    console.log(remove1);
-    var remove2 = document.getElementById('del2').value;
-    console.log(remove2);
-    var remove3 = document.getElementById('del3').value;
-    console.log(remove3);
-    var append1 = document.getElementById('add1').value;
-    console.log(append1);
-    var append2 = document.getElementById('add1').value;
-    console.log(append2);
-    var append3 = document.getElementById('add1').value;
-    console.log(append3);
-    var number1 = document.getElementsByClassName('number1')[0].value;
-    console.log(number1);
-    var number2 = document.getElementsByClassName('number2')[0].value;
-    console.log(number2);
-    var number3 = document.getElementsByClassName('number3')[0].value;
-    console.log(number3);
-    var cost1 = document.getElementById('cost1').innerHTML;
-    console.log(cost1);
-    var cost2 = document.getElementById('cost2').innerHTML;
-    console.log(cost2);
-    var cost3 = document.getElementById('cost3').innerHTML;
-    console.log(cost3);
+    var result = 0;
+    var number = document.getElementsByClassName('number');
 
-    var totalEnd = (number1 * cost1) + (number2 * cost2) + (number3 * cost3);
-    console.log(totalEnd);
-    document.getElementById('total').innerHTML = totalEnd;
-    document.getElementById('subtotal').innerHTML = totalEnd;
+    for (var i = 0; i < number.length; i++){
+        if(number[i].value != 0) {
+            var quantity = number[i].value;
+            var mainParent = number[i].parentNode.parentNode;
+            var cost = mainParent.getElementsByClassName('cost')[0].innerHTML;
+             // console.log(quantity*cost);
+                result = result + (quantity*cost);
+        }
 
+    }
+    console.log(result);
+    document.getElementById('total').innerHTML = result;
+    document.getElementById('subtotal').innerHTML = result;
 }
 
 
@@ -875,12 +787,3 @@ for (var i = 0; i < removeBasket.length; i++) {
         this.parentNode.remove();
     })
 }
-
-
-
-
-
-// var subtotal = document.getElementById('subtotal').value;
-// console.log(subtotal);
-// var total = document.getElementById('total').value;
-// console.log(total);

@@ -19,7 +19,8 @@ gulp.task('sass', function() {
         .pipe(autoprefixer())
         .pipe(rename('styles.min.css'))
         .pipe(cleanCss())
-        .pipe(gulp.dest("build/css"));
+        .pipe(gulp.dest("build/css"))
+        .pipe(browserSync.stream());
 });
 gulp.task('scripts', function () {
     gulp.src([
@@ -41,15 +42,15 @@ gulp.task('scripts', function () {
         .pipe(gulp.dest('build/js'))
 });
 
-gulp.task('scripts', function() {
-    gulp.src("scripts/**/*.js")
-        // .pipe(plumber())
-        .pipe(sourcemaps.init())
-        // .pipe(babel())
-        .pipe(concat.write('.'))
-        .pipe(gulp.dest('build/js'))
-
-});
+// gulp.task('scripts', function() {
+//     gulp.src("scripts/**/*.js")
+//         // .pipe(plumber())
+//         .pipe(sourcemaps.init())
+//         // .pipe(babel())
+//         .pipe(concat.write('.'))
+//         .pipe(gulp.dest('build/js'))
+//
+// });
 
 gulp.task('libs', function() {
     gulp.src(["node_modules/jquery/dist/jquery.js"])
@@ -74,7 +75,7 @@ gulp.task('watch', ['sass', 'scripts'], function () {
     browserSync.init({
         server: "./"
     });
-    gulp.watch('./sass/**/*.scss', ['sass']).on('change', browserSync.reload);
+    gulp.watch('./sass/**/*.scss', ['sass']);
     gulp.watch('./scripts/**/*.js', ['scripts']).on('change', browserSync.reload);
     gulp.watch('./*.html').on('change', browserSync.reload);
 

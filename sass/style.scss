@@ -1,11 +1,13 @@
-@import "mixins";
-@import "normalize.scss";
-@import "variables.scss";
-@import "mixins.scss";
-.book-author {
-  color: $link-color-orange;
-}
-
-body {
-  background-color:white;
-}
+//@import "mixins";
+//@import "normalize.scss";
+//@import "variables.scss";
+//@import "mixins.scss";
+//.book-author {
+//  color: $link-color-orange;
+//}
+//
+//body {
+//  background-color:white;
+//}
+@import "../css/style.css";
+@import "../css/responsive.css";
