@@ -149,7 +149,7 @@ body.scroll {
     background-color: #f1fdff;
 }
 .menu {
-    width: 1210px;
+    max-width: 1210px;
     z-index: 500;
     top: 15px;
     position: fixed;
@@ -157,8 +157,10 @@ body.scroll {
     background-color: white;
     height: 98px;
     margin: auto;
-    left: 50%;
-    margin-left: -605px;
+    left:0;
+    right:0;
+    /*left: 50%;*/
+    /*margin-left: -605px;*/
 }
 
 .menu ul li {

@@ -25,12 +25,12 @@
         }
         .navigation {
             cursor: pointer;
-            display: block;
-            width: 4em;
-            height: 4em;
-            position: absolute;
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            position: relative;
             top: 38px;
-            right: -22px;
+            padding-right: 15px;
         }
         .menu ul li {
             display: block;
@@ -105,9 +105,9 @@
         /*======= article ============*/
 
     @media all and (max-width:767px) {
-        .navigation {
-            right: -50px;
-        }
+        /*.navigation {*/
+            /*right: -50px;*/
+        /*}*/
         .article-right img {
             /*margin-top: 50px;*/
             width: 100%;
@@ -218,10 +218,9 @@
         }
         .menu {
             z-index: 0;
-            width: 300px;
-            margin: auto;
-            left: 50%;
-            margin-left: -150px;
+            /* max-width: 300px; */
+            margin: auto 10px;
+
         }
         .feature-image img {
             width: 100%;
@@ -376,6 +375,7 @@
             margin: 0 auto;
         }
         .menu {
+            text-align: right;
             z-index: 1;
             height: 100px;
         }

@@ -140,7 +140,6 @@ function validAddress(text) {
         address.parentNode.classList.remove('has-error');
         address.parentNode.classList.add('has-success');
         address.parentNode.getElementsByClassName("input-text-error")[0].style.display = 'none';
-
     }
 }
 
