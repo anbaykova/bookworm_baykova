@@ -8,7 +8,7 @@ var rename = require('gulp-rename');
 var browserSync = require('browser-sync').create();
 var minify = require('gulp-minify');
 var imagemin = require('gulp-imagemin');
-var plumber = require('gulp-plumber');
+// var plumber = require('gulp-plumber');
 // var coffee = require('gulp-coffee');
 // const babel = require('gulp-babel');
 
@@ -43,7 +43,7 @@ gulp.task('scripts', function () {
 
 gulp.task('scripts', function() {
     gulp.src("scripts/**/*.js")
-        .pipe(plumber())
+        // .pipe(plumber())
         .pipe(sourcemaps.init())
         // .pipe(babel())
         .pipe(concat.write('.'))
@@ -53,7 +53,7 @@ gulp.task('scripts', function() {
 
 gulp.task('libs', function() {
     gulp.src(["node_modules/jquery/dist/jquery.js"])
-        .pipe(plumber())
+        // .pipe(plumber())
         .pipe(sourcemaps.init())
         // .pipe(babel())
         .pipe(concat('libs.js'))
