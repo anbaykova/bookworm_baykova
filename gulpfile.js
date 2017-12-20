@@ -29,7 +29,7 @@ gulp.task('scripts', function () {
         './js/selectsw.js',
         './js/menu.js',
         './js/popup.js',
-        './js/formcart.js',
+        './js/cart.js',
         './js/formcalc.js',
         './js/cart2.js'
 

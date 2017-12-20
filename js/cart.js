@@ -2,11 +2,7 @@
 
 var billingForm = document.getElementById("cart");
 var requiredFields = document.querySelectorAll("input[required], textarea[required]");
-// console.log(requiredFields);
-var hasError = "has-error";
 
-// var validateEmail = document.getElementById("email");
-// var ValidPhone = document.getElementById('tel');
 
 billingForm.addEventListener("submit", function (event) {
     event.preventDefault();
