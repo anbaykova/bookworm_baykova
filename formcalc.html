@@ -10,16 +10,17 @@
 </head>
 <body>
 <div class="inner-formcalc container">
-    <section id="block1">
-        <h3>Количество спален</h3>
-        <h3>Количество ванных комнат</h3>
-        <h3>Степень загрязнения</h3>
-        <h3>Тип чистки</h3>
-    </section>
+    <!--<section id="block1">-->
+
+
+
+
+    <!--</section>-->
     <section id="block2">
+        <h3>Количество спален</h3>
         <form action="" id="form-calc">
             <div class="calc-rooms">
-                <div class="block-bed form-margin">
+                <div class="block-bed">
                     <input class="check-room style-room" type="radio" id="bed-1" value="1" name="bed-rooms" >
                     <label class="style-block" for="bed-1">1</label>
                 </div>
@@ -45,6 +46,7 @@
                 </div>
             </div>
             <div class="clearfix"></div>
+            <h3>Количество ванных комнат</h3>
             <div class="calc-rooms">
                     <div class="block-bed">
                         <input class="check-room style-room" type="radio" id="bath-1" value="1" name="bath-rooms">
@@ -72,27 +74,23 @@
                     </div>
             </div>
             <div class="clearfix"></div>
+            <h3>Степень загрязнения</h3>
             <div class="calc-dirty">
-                <div class="block-bed dirty-rooms">
-                    <div class="block-bed-label">
+                <div class="block-bed">
                         <input class="dirty-room" type="radio" id="dirty-1" value="1" name="dirty" data-rate="0.75" >
                         <label class="style-block" for="dirty-1">Низкая</label>
-                    </div>
                 </div>
                 <div class="block-bed">
-                    <div class="block-bed-label">
                         <input class="dirty-room" type="radio" id="dirty-2" value="2" name="dirty" data-rate="1">
                         <label class="style-block" for="dirty-2">Средняя</label>
-                    </div>
                 </div>
                 <div class="block-bed">
-                    <div class="block-bed-label ">
                         <input class="dirty-room" type="radio" id="dirty-3" value="3" name="dirty" data-rate="1.55">
                         <label class="style-block" for="dirty-3">Высокая</label>
-                    </div>
                 </div>
             </div>
             <div class="clearfix"></div>
+            <h3>Тип чистки</h3>
             <div class="calc-clean">
                 <div class="block-bed clean-rooms">
                     <input class="clean-room" type="radio" id="clean-1" value="1" name="clean" data-price="33" data-time-bed="20" data-time-bath="40">
