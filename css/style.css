@@ -1673,7 +1673,7 @@ position: absolute;
     padding-bottom: 52px;
 }
 .rightpart {
-    margin-top: 59px;
+    margin-top: 37px;
     float: right;
     width: 50%;
 }
@@ -1847,16 +1847,8 @@ position: absolute;
     width: 100%;
 }
 
-/*.input-text.has-error .input-text-error {*/
-    /*color: red;*/
-    /*display: block;*/
-/*}*/
-/*.input-text.has-success .input-text-error {*/
-    /*color: green;*/
-    /*display: block;*/
-/*}*/
 .input-text-error {
-    display: none;
+    /*display: block;*/
     font-family: 'Lato', sans-serif;
     font-size: 15px;
     padding: 0 0 0 10px;
