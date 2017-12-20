@@ -10,23 +10,21 @@ var menuAbout = document.getElementsByClassName("menu-about")[0];
 console.log(menuAbout);
 var menu = document.getElementById('menu-all');
 console.log(menu);
+console.log(open);
 
-
-if (open !== null) {
     menuOpen.addEventListener("click", function (event) {
         event.preventDefault();
-        menuOpen.classList.toggle("active")
-        // openMenu.classList.toggle("active");
-        // menuNav.classList.toggle("active");
-        // menuFirst.classList.toggle("active");
-        // menuAbout.classList.toggle("active");
-        // openMenu.classList.toggle("active");
-        // sample.classList.toggle("active");
-           menu.classList.toggle("active");
-        document.body.style.overflow = 'hidden';
-
+        menu.classList.toggle("active");
+        menuOpen.classList.toggle("active");
+        if (this.className.indexOf('active') == -1){
+            document.body.style.overflow = 'auto';
+        }else{
+            document.body.style.overflow = 'hidden';
+        }
+        console.log(this.className.indexOf('active')) ;
     })
-}
+
+
 // function openNav() {
 //     document.getElementById('menu-all').style.width = "740px";
 // }
