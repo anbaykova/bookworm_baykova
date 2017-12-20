@@ -52,8 +52,8 @@
             <h1>Your cart</h1>
             <form id="cart" action="" novalidate>
              <div class="form-cart">
-                <div class="leftpart">
                     <h2>Billing address</h2>
+                 <div class="leftpart">
                     <div class="gender checkbox-design">
                         <h3>Gender:</h3>
                         <input id="gen-man" type="radio" name="gender" value="man">
@@ -61,6 +61,7 @@
                         <input id="gen-woman" type="radio" name="gender" value="woman">
                         <label for="gen-woman">Woman</label>
                     </div>
+                     <div class="inner-form-left">
                     <div class="form-input">
                         <div class="input-text">
                             <div class="req-symbol">*</div>
@@ -88,6 +89,7 @@
                         </div>
                         <div class="clearfix"></div>
                     </div>
+                     </div>
                 </div> <!-- leftpart -->
                 <div class="rightpart">
                     <div class="form-input ">
@@ -100,16 +102,18 @@
                     </div>
                     <div class="form-input">
                         <div class="input-text">
-                            <select id="country" name="country" class="cs-select cs-skin-country" title="country">
-                                <!--<option value="country" disabled selected>Country</option>-->
-                                <option value="ukraine" >Ukraine</option>
-                                <option value="russion">Russian Federation</option>
-                                <option value="belarus">Belarus</option>
-                                <option value="kazakhstan" >Kazakhstan</option>
-                            </select>
-                            <label for="country"></label>
+                            <div>
+                                <select id="country" name="country" class="cs-select cs-skin-country" title="country">
+                                    <option value="ukraine" >Ukraine</option>
+                                    <option value="russion">Russian Federation</option>
+                                    <option value="belarus">Belarus</option>
+                                    <option value="kazakhstan" >Kazakhstan</option>
+                                </select>
+                                <label for="country"></label>
+                            </div>
                             <span class="input-text-error">Country cannot be blank</span>
                         </div>
+
                         <div class="input-text">
                             <div class="req-symbol">*</div>
                             <input required id="city" type="text" name="city" placeholder="City" class="" maxlength="150"  >
@@ -359,6 +363,7 @@
     <script src="js/classie.js"></script>
     <script src="js/selectFx.js"></script>
     <script src="js/selectsw.js"></script>
+
     <script src="js/menu.js"></script>
     <script src="js/popup.js"></script>
     <script src="js/formcart.js"></script>

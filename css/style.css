@@ -1673,7 +1673,6 @@ position: absolute;
     padding-bottom: 52px;
 }
 .rightpart {
-    margin-top: 37px;
     float: right;
     width: 50%;
 }
@@ -1682,7 +1681,9 @@ position: absolute;
     padding-top: 8px;
     min-height: 295px;
 }
-
+.form-cart h2 {
+    padding-bottom: 50px;
+}
 .shipping-method {
     width: 100%;
 }
@@ -1846,8 +1847,11 @@ position: absolute;
     position: relative;
     width: 100%;
 }
-
+.inner-form-left {
+    padding-top: 54px;
+}
 .input-text-error {
+    float: left;
     /*display: block;*/
     font-family: 'Lato', sans-serif;
     font-size: 15px;
