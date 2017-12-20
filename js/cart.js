@@ -50,6 +50,7 @@ function checkZip() {
         zip.parentNode.classList.add('has-error');
         // zip.parentNode.getElementsByClassName("input-text-error")[0].style.display = 'block';
         parent.querySelector('span').innerText = message;
+        return false;
     } else if (zip.value.length < 5) {
         message = "Zip length too small";
         // zip.style.borderBottom = '1px solid #555963';
