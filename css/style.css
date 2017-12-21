@@ -76,7 +76,7 @@ body.scroll {
     width: 57px;
     height: 57px;
     top: 30px;
-    left: -25px;
+    left: 46px;
 }
 /*.oval::hover {*/
     /*color: #da8913;*/
@@ -91,8 +91,8 @@ body.scroll {
 }
 .oval-sm-left {
     position: absolute;
-    top: 103px;
-    left: -57px;
+    top: 101px;
+    left: 24px;
     background: url("../img/icons_svg/ellipse2copy.png");
     width: 41px;
     height: 41px;
@@ -107,8 +107,8 @@ body.scroll {
 }
 .oval-sm-right {
     position: absolute;
-    top: 103px;
-    left: 18px;
+    top: 99px;
+    left: 84px;
     background: url("../img/icons_svg/ellipse2copy.png");
     width: 41px;
     height: 41px;
@@ -140,7 +140,7 @@ body.scroll {
 }
 .img-text {
     top: 182px;
-    left: -54px;
+    left: 28px;
     position: absolute;
     color: #555963;
     font-family: 'Yrsa', serif;
