@@ -27,26 +27,46 @@ body.scroll {
 .padding_0 {
     padding: 0 !important;
 }
-.style-cover-img {
-    display: none;
-    position: absolute;
-    opacity: 0.9;
-    background-color: #ffbb58;
-    width: 146px;
-    height: 227px;
-    top: 28px;
-    left: 19px;
-}
-.red-queen:hover {
-    /*display: block;*/
+/*.overlay {*/
+    /*display: none;*/
     /*position: absolute;*/
-    opacity: 0.9;
-    background-color: #ffbb58;
+    /*opacity: 0.9;*/
+    /*background-color: #ffbb58;*/
+
+/*}*/
+.overlay {
+    position: absolute;
     width: 146px;
     height: 227px;
     top: 28px;
     left: 19px;
+    /*top:0;*/
+    /*bottom: 0;*/
+    /*left: 0;*/
+    /*right: 0;*/
+    /*height: 100%;*/
+    /*width: 100%;*/
+    opacity: 0;
+    transition: 0.5s ease;
+    background-color: #ffbb58;
 }
+.red-queen {
+    position: relative;
+}
+.red-queen:hover .overlay {
+    opacity: 0.8;
+
+}
+/*.red-queen:hover {*/
+    /*!*display: block;*!*/
+    /*!*position: absolute;*!*/
+    /*opacity: 0.9;*/
+    /*background-color: #ffbb58;*/
+    /*width: 146px;*/
+    /*height: 227px;*/
+    /*top: 28px;*/
+    /*left: 19px;*/
+/*}*/
 .inner-cover-img {
     position: relative;
 }
