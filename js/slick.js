@@ -1,6 +1,4 @@
-/**
- * Created by D&A on 14.12.2017.
- */
+
 $(document).on('ready', function(){
     $('#slides-popular-book').slick({
         dots: true,
