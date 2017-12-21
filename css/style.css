@@ -27,14 +27,9 @@ body.scroll {
 .padding_0 {
     padding: 0 !important;
 }
-/*.overlay {*/
-    /*display: none;*/
-    /*position: absolute;*/
-    /*opacity: 0.9;*/
-    /*background-color: #ffbb58;*/
 
-/*}*/
 .overlay {
+    overflow: hidden;
     position: absolute;
     width: 146px;
     height: 227px;
@@ -57,16 +52,18 @@ body.scroll {
     opacity: 0.8;
 
 }
-/*.red-queen:hover {*/
-    /*!*display: block;*!*/
-    /*!*position: absolute;*!*/
-    /*opacity: 0.9;*/
-    /*background-color: #ffbb58;*/
-    /*width: 146px;*/
-    /*height: 227px;*/
-    /*top: 28px;*/
-    /*left: 19px;*/
-/*}*/
+
+.red-queen:hover .overlay .oval{
+    top: 30px;
+
+}
+.red-queen:hover .overlay .oval-left{
+    left: 24px;
+}
+.red-queen:hover .overlay .oval-right{
+    right: 22px;
+}
+
 .inner-cover-img {
     position: relative;
 }
@@ -75,12 +72,12 @@ body.scroll {
     background: url("../img/icons_svg/ellipse2.png");
     width: 57px;
     height: 57px;
-    top: 30px;
+    top: -58px;
+    transition: 0.5s ease;
+    /*top: 30px;*/
     left: 46px;
 }
-/*.oval::hover {*/
-    /*color: #da8913;*/
-/*}*/
+
 .glasses {
     position: absolute;
     top: 21px;
@@ -89,13 +86,15 @@ body.scroll {
     height: 18px;
     width: 24px;
 }
-.oval-sm-left {
+.oval-left {
     position: absolute;
     top: 101px;
-    left: 24px;
+    left: -42px;
+    /*left: 24px;*/
     background: url("../img/icons_svg/ellipse2copy.png");
     width: 41px;
     height: 41px;
+    transition: 0.5s ease;
 }
 .flag {
     position: absolute;
@@ -105,13 +104,15 @@ body.scroll {
     width: 14px;
     height: 16px;
 }
-.oval-sm-right {
+.oval-right {
     position: absolute;
-    top: 99px;
-    left: 84px;
+    top: 101px;
+    right: -43px;
+    /*right: 22px;*/
     background: url("../img/icons_svg/ellipse2copy.png");
     width: 41px;
     height: 41px;
+    transition: 0.5s ease;
 }
 .basket {
     position: absolute;
