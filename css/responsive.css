@@ -145,6 +145,12 @@
             float: none;
             margin-bottom: 40px;
         }
+        #cart {
+            padding-left: 10px;
+        }
+        /*.shipping-method {*/
+            /*padding-left: 10px;*/
+        /*}*/
         .payment {
             width: 100%;
             margin: 0;
@@ -368,7 +374,8 @@
             float: none;
         }
         .proceed-payment {
-            float: none;
+            margin: 0 -13px;
+            padding-left: 10px;
         }
         .proceed-wrap {
             padding-top: 110px;
@@ -395,7 +402,7 @@
 
         .switch-blog {
             margin-top: 40px;
-            margin-left: 0;
+            margin-left: 10px;
         }
         .menu_logo {
             margin: 20px 0 0 10px;
@@ -465,7 +472,7 @@
             max-width: 90%;
         }
         .proceed-wrap {
-            width: 40%;
+            width: 90%;
         }
 
         .article-figcaption {
