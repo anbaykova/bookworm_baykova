@@ -426,23 +426,21 @@ var menuAbout = document.getElementsByClassName("menu-about")[0];
 console.log(menuAbout);
 var menu = document.getElementById('menu-all');
 console.log(menu);
+console.log(open);
 
-
-if (open !== null) {
     menuOpen.addEventListener("click", function (event) {
         event.preventDefault();
-        menuOpen.classList.toggle("active")
-        // openMenu.classList.toggle("active");
-        // menuNav.classList.toggle("active");
-        // menuFirst.classList.toggle("active");
-        // menuAbout.classList.toggle("active");
-        // openMenu.classList.toggle("active");
-        // sample.classList.toggle("active");
-           menu.classList.toggle("active");
-        document.body.style.overflow = 'hidden';
-
+        menu.classList.toggle("active");
+        menuOpen.classList.toggle("active");
+        if (this.className.indexOf('active') == -1){
+            document.body.style.overflow = 'auto';
+        }else{
+            document.body.style.overflow = 'hidden';
+        }
+        console.log(this.className.indexOf('active')) ;
     })
-}
+
+
 // function openNav() {
 //     document.getElementById('menu-all').style.width = "740px";
 // }
@@ -497,11 +495,7 @@ if (close !== null) {
 
 var billingForm = document.getElementById("cart");
 var requiredFields = document.querySelectorAll("input[required], textarea[required]");
-// console.log(requiredFields);
-var hasError = "has-error";
 
-// var validateEmail = document.getElementById("email");
-// var ValidPhone = document.getElementById('tel');
 
 billingForm.addEventListener("submit", function (event) {
     event.preventDefault();
@@ -549,6 +543,7 @@ function checkZip() {
         zip.parentNode.classList.add('has-error');
         // zip.parentNode.getElementsByClassName("input-text-error")[0].style.display = 'block';
         parent.querySelector('span').innerText = message;
+        return false;
     } else if (zip.value.length < 5) {
         message = "Zip length too small";
         // zip.style.borderBottom = '1px solid #555963';

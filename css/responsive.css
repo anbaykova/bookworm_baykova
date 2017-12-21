@@ -210,18 +210,18 @@
             padding: 45px 0 20px 0;
             width: 100%;
         }
-        .bookslide {
-            display: none;
-        }
+        /*.bookslide {*/
+            /*display: none;*/
+        /*}*/
         .book-title {
             text-align: left;
         }
         .book-title a {
             text-align: left;
         }
-        .container_wrap {
-           display: none;
-        }
+        /*.container_wrap {*/
+           /*display: none;*/
+        /*}*/
         .social_icon ul li {
             padding: 10px 10px 0 0;
         }
