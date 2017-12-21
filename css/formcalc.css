@@ -188,7 +188,10 @@ h3  {
     }
 }
 @media  all and (max-width: 768px) {
-
+    #block3 {
+        width: 95%;
+        padding: 45px 0 0 30px;
+    }
     #block2 {
         width: 82%;
     }
@@ -218,7 +221,7 @@ h3  {
         padding: 0 31px 0 25px;
     }
     #block2 {
-        width: 65%;
+        width: 90%;
     }
     #block1 h3 {
         padding: 0 0 290px 0;
