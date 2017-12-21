@@ -324,7 +324,7 @@ a:focus {
     color: #da8913;
 }
 .bookslide {
-    margin-top: 200px;
+    /*margin-top: 200px;*/
     width: 100%;
     max-height: 831px;
     /*padding: 240px 0 0 0;*/
@@ -3468,4 +3468,22 @@ label, a{ /*при наведении на стрелки или переклю�
 }
 #output {
     padding-left: 15px;
+}
+
+/*slider*/
+.slider-slick {
+    margin-top: 150px;
+}
+.slick-prev {
+    background-image: url("../img/icons_svg/arrow-left.svg");
+    background-repeat: no-repeat;
+    width: 33px;
+    height: 26px;
+    background-color: white;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    top: 145px;
+    position: absolute;
+    left: -50px;
 }
