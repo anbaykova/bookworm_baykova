@@ -20,9 +20,8 @@
             background-color: white;
             padding: 10px 10px 5px 0;
             position: relative;
-
-
         }
+
         .navigation {
             cursor: pointer;
             display: inline-block;
@@ -106,6 +105,15 @@
         /*======= article ============*/
 
     @media all and (max-width:767px) {
+        .shopfrontmenu {
+            padding-left: 10px;
+        }
+        .inner-container {
+            max-width: 96%;
+        }
+        .literature_news_autor {
+            padding-left: 10px;
+        }
         /*.navigation {*/
             /*right: -50px;*/
         /*}*/

@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7b5c655e-f22d-4f2d-9739-be3b957e33b4" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/formcalc.css" afterPath="$PROJECT_DIR$/css/formcalc.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/responsive.css" afterPath="$PROJECT_DIR$/css/responsive.css" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -18,12 +18,14 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="gulpfile.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gulpfile.js">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="31" column="23" lean-forward="false" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
-              <folding />
+            <state relative-caret-position="68">
+              <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+              <folding>
+                <element signature="n#div#1;n#section#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -58,7 +60,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="formcalc.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="formcalc.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/formcalc.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="311">
@@ -88,36 +90,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="article.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/article.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="578">
-              <caret line="34" column="155" lean-forward="false" selection-start-line="34" selection-start-column="155" selection-end-line="34" selection-end-column="155" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="responsive.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="responsive.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/responsive.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="152" column="11" lean-forward="false" selection-start-line="150" selection-start-column="10" selection-end-line="152" selection-end-column="11" />
+            <state relative-caret-position="374">
+              <caret line="115" column="9" lean-forward="false" selection-start-line="115" selection-start-column="9" selection-end-line="115" selection-end-column="9" />
               <folding>
-                <element signature="e#21526#22939#0" expanded="false" />
-                <element signature="e#22944#23753#0" expanded="false" />
-                <element signature="e#23840#24326#0" expanded="false" />
+                <element signature="e#368#2426#0" expanded="false" />
+                <element signature="e#21732#23145#0" expanded="false" />
+                <element signature="e#23150#23959#0" expanded="false" />
+                <element signature="e#24046#24532#0" expanded="false" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="cart2.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cart2.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="45" column="18" lean-forward="true" selection-start-line="45" selection-start-column="18" selection-end-line="45" selection-end-column="18" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -229,8 +212,8 @@
         <option value="$PROJECT_DIR$/css/calc.css" />
         <option value="$PROJECT_DIR$/formcalc.html" />
         <option value="$PROJECT_DIR$/css/style.css" />
-        <option value="$PROJECT_DIR$/css/responsive.css" />
         <option value="$PROJECT_DIR$/css/formcalc.css" />
+        <option value="$PROJECT_DIR$/css/responsive.css" />
       </list>
     </option>
   </component>
@@ -270,8 +253,8 @@
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="91" />
-    <option name="y" value="24" />
+    <option name="x" value="157" />
+    <option name="y" value="28" />
     <option name="width" value="1242" />
     <option name="height" value="860" />
   </component>
@@ -597,7 +580,7 @@
       <workItem from="1513675929475" duration="20843000" />
       <workItem from="1513765864364" duration="11384000" />
       <workItem from="1513806394591" duration="4698000" />
-      <workItem from="1513846346557" duration="2194000" />
+      <workItem from="1513846346557" duration="2993000" />
     </task>
     <task id="LOCAL-00001" summary="add gulp sass">
       <created>1512498661544</created>
@@ -617,10 +600,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="800479000" />
+    <option name="totallyTimeSpent" value="801278000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="91" y="24" width="1242" height="860" extended-state="0" />
+    <frame x="157" y="28" width="1242" height="860" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18438539" sideWeight="0.34112793" order="2" side_tool="true" content_ui="tabs" />
@@ -941,16 +924,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="8" column="53" lean-forward="false" selection-start-line="8" selection-start-column="53" selection-end-line="8" selection-end-column="53" />
-          <folding>
-            <element signature="n#div#1;n#section#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/gulpfile.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -1023,18 +996,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/responsive.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="152" column="11" lean-forward="false" selection-start-line="150" selection-start-column="10" selection-end-line="152" selection-end-column="11" />
-          <folding>
-            <element signature="e#21526#22939#0" expanded="false" />
-            <element signature="e#22944#23753#0" expanded="false" />
-            <element signature="e#23840#24326#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cart2.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -1056,6 +1017,29 @@
         <state relative-caret-position="311">
           <caret line="192" column="27" lean-forward="false" selection-start-line="192" selection-start-column="27" selection-end-line="192" selection-end-column="27" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding>
+            <element signature="n#div#1;n#section#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/responsive.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="115" column="9" lean-forward="false" selection-start-line="115" selection-start-column="9" selection-end-line="115" selection-end-column="9" />
+          <folding>
+            <element signature="e#368#2426#0" expanded="false" />
+            <element signature="e#21732#23145#0" expanded="false" />
+            <element signature="e#23150#23959#0" expanded="false" />
+            <element signature="e#24046#24532#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
